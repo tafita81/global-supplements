@@ -1,0 +1,253 @@
+{
+  "site": {
+    "title": "Global Supplements - Premium Weltnetzwerk", 
+    "description": "Weltführer bei Nahrungsergänzungsmitteln, der Regierungen, Unternehmen und Verbraucher mit Premium-Lieferanten durch fortschrittliche KI-Technologie verbindet.",
+    "tagline": "Premium Weltnetzwerk"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "about": "Über Uns",
+    "services": "Dienstleistungen", 
+    "solutions": "Lösungen",
+    "contact": "Kontakt",
+    "getQuote": "Angebot Anfordern",
+    "partnerWithUs": "Partner Werden",
+    "beautySupplements": "Schönheits-Supplements",
+    "quantumMaterials": "Quantenmaterialien",
+    "medicalGrade": "Medizinische Qualität",
+    "smartGadgets": "Intelligente Geräte",
+    "traditionalWellness": "Traditionelles Wohlbefinden",
+    "b2bSolutions": "B2B-Lösungen",
+    "governmentContracts": "Regierungsverträge",
+    "manufacturing": "Herstellung",
+    "researchDevelopment": "Forschung & Entwicklung",
+    "marketIntelligence": "Marktintelligenz",
+    "enterpriseSolutions": "Unternehmenslösungen",
+    "tagline": "Schönheit • Quantum • Medizin • Geräte • Wellness",
+    "searchPlaceholder": "Suchen Sie Schönheit, Quantenmaterialien, medizinische Verbindungen, Geräte...",
+    "account": "Konto",
+    "cart": "Warenkorb"
+  },
+  "hero": {
+    "title": "Globales Premium-Supplement-Netzwerk",
+    "subtitle": "Verbindung von Regierungen, Unternehmen und Verbrauchern mit dem fortschrittlichsten globalen Netzwerk von Premium-Lieferanten durch revolutionäre KI-Technologie",
+    "scroll": "Scrollen",
+    "stats": {
+      "countries": "Länder",
+      "annualVolume": "Jahresvolumen", 
+      "globalSuppliers": "Globale Lieferanten",
+      "enterpriseClients": "Unternehmenskunden"
+    },
+    "videoCategories": {
+      "beautyEnhancement": "Schönheitsverbesserung",
+      "quantumProcessing": "Quantenverarbeitung",
+      "medicalGrade": "Medizinische Qualität",
+      "smartHealthGadgets": "Intelligente Gesundheitsgeräte",
+      "traditionalWellness": "Traditionelles Wohlbefinden",
+      "descriptions": {
+        "beautyEnhancement": "Revolutionäre Schönheits-Supplements mit fortschrittlichen bioaktiven Verbindungen",
+        "quantumProcessing": "Fortschrittliche Materialien für Quantencomputing und KI-Verbesserung",
+        "medicalGrade": "Pharmazeutische Supplements für klinische Anwendungen",
+        "smartHealthGadgets": "Innovative Gesundheitstechnologie-Geräte mit IoT-Fähigkeiten",
+        "traditionalWellness": "Premium traditionelle Supplements für allgemeine Gesundheit und Wohlbefinden"
+      }
+    }
+  },
+  "products": {
+    "badge": "🚀 Fortschrittliches Lösungsportfolio",
+    "title": "Fortschrittliche Globale Supplement-Kategorien",
+    "description": "Entdecken Sie unsere revolutionäre Kollektion, die 5 Hauptkategorien umfasst: Schönheitsverbesserungs-Supplements, Quantenverarbeitungsmaterialien, medizinische Verbindungen, intelligente Gesundheitsgeräte und traditionelle Wellness-Produkte.",
+    "requestQuote": "Angebot Anfordern",
+    "categories": {
+      "beauty": {
+        "title": "Schönheitsverbesserungs-Supplements",
+        "description": "Revolutionäre Schönheits-Supplements mit fortschrittlichen bioaktiven Verbindungen für Hautregeneration, Anti-Aging und ästhetische Verbesserung",
+        "features": ["Kollagen-Booster", "Anti-Aging-Formeln", "Hautstrahlen", "Haar & Nägel"]
+      },
+      "quantum": {
+        "title": "Quantenverarbeitungsmaterialien",
+        "description": "Fortschrittliche Materialien und Supplements für Quantencomputer-Systeme, KI-Verarbeitungsverbesserung und Maschinenoptimierung",
+        "features": ["Quantenkatalysatoren", "Verarbeitungsverstärker", "Systemoptimierer", "KI-Beschleuniger"]
+      },
+      "medical": {
+        "title": "Medizinische Verbindungen",
+        "description": "Pharmazeutische Supplements für klinische Anwendungen, therapeutische Behandlungen und medizinische Forschung",
+        "features": ["Klinische Formeln", "Therapeutische Verbindungen", "Forschungsmaterialien", "Präzisionsmedizin"]
+      },
+      "gadgets": {
+        "title": "Intelligente Gesundheitsgeräte",
+        "description": "Innovative Gesundheitstechnologie-Geräte, Wearables und intelligente Supplements mit IoT-Fähigkeiten",
+        "features": ["Intelligente Geräte", "Gesundheits-Wearables", "IoT-Integration", "Digitale Gesundheit"]
+      },
+      "wellness": {
+        "title": "Traditionelles Wohlbefinden",
+        "description": "Premium traditionelle Supplements für allgemeine Gesundheit, Fitness, Ernährung und tägliche Wellness-Bedürfnisse",
+        "features": ["Vitamine & Mineralien", "Fitness-Unterstützung", "Immunsystem", "Allgemeine Gesundheit"]
+      }
+    },
+    "businessModels": {
+      "b2b": "B2B",
+      "enterprise": "Unternehmen",
+      "b2c": "B2C",
+      "consumer": "Verbraucher",
+      "gov": "Regierung",
+      "procurement": "Beschaffung"
+    }
+  },
+  "testimonials": {
+    "badge": "Kunden-Erfolgsgeschichten",
+    "title": "Vertraut von Globalen Marktführern",
+    "subtitle": "Sehen Sie, wie Branchenführer in 32 Ländern ihre Supplement-Lieferketten revolutionieren",
+    "verified": "Verifizierter Unternehmenskunde",
+    "joinLeaders": "Schließen Sie sich Hunderten von globalen Führungskräften an",
+    "requestDemo": "Executive Demo Anfordern"
+  },
+  "countries": {
+    "usa": "Vereinigte Staaten",
+    "china": "China",
+    "germany": "Deutschland",
+    "japan": "Japan",
+    "taiwan": "Taiwan",
+    "india": "Indien",
+    "korea": "Südkorea",
+    "uk": "Vereinigtes Königreich",
+    "brazil": "Brasilien",
+    "australia": "Australien",
+    "canada": "Kanada",
+    "mexico": "Mexiko",
+    "spain": "Spanien",
+    "argentina": "Argentinien",
+    "chile": "Chile",
+    "colombia": "Kolumbien",
+    "peru": "Peru",
+    "portugal": "Portugal",
+    "saudi": "Saudi-Arabien",
+    "singapore": "Singapur",
+    "switzerland": "Schweiz",
+    "uae": "Vereinigte Arabische Emirate",
+    "france": "Frankreich",
+    "italy": "Italien",
+    "netherlands": "Niederlande",
+    "sweden": "Schweden",
+    "bahrain": "Bahrain",
+    "kuwait": "Kuwait",
+    "malaysia": "Malaysia",
+    "oman": "Oman",
+    "panama": "Panama",
+    "paraguay": "Paraguay",
+    "qatar": "Katar"
+  },
+  "partnerships": {
+    "badge": "Strategische Globale Partnerschaften",
+    "title": "Elite Weltweites Netzwerk Premium-Lieferanten",
+    "description": "Unsere exklusiven Partnerschaften erstrecken sich über 32 Länder auf 6 Kontinenten und verbinden Regierungen, Unternehmen und Gesundheitsorganisationen mit den vertrauenswürdigsten Supplement-Herstellern der Welt.",
+    "activeCountries": "Aktive Länder",
+    "globalMarketValue": "Globaler Marktwert",
+    "verifiedSuppliers": "Verifizierte Lieferanten",
+    "qualityCertified": "Qualitätszertifiziert",
+    "contactTeam": "Internationales Team Kontaktieren",
+    "operationsCenter": "Globales Operationszentrum",
+    "interestedExpanding": "Interessiert an der Expansion in strategische Märkte? Kontaktieren Sie unser globales Team"
+  },
+  "countries": {
+    "badge": "Strategische Globale Partnerschaften",
+    "title": "Elite Weltweites Netzwerk Premium-Lieferanten",
+    "subtitle": "Unsere exklusiven Partnerschaften erstrecken sich über 32 Länder auf 6 Kontinenten und verbinden Regierungen, Unternehmen und Gesundheitsorganisationen mit den vertrauenswürdigsten Supplement-Herstellern der Welt.",
+    "stats": {
+      "active": "Aktive Länder",
+      "market": "Globaler Marktwert",
+      "suppliers": "Verifizierte Lieferanten",
+      "verified": "Qualitätszertifiziert"
+    },
+    "cta": {
+      "title": "Interessiert an der Expansion in strategische Märkte? Kontaktieren Sie unser globales Team"
+    },
+    "contact": {
+      "international": "Internationales Team Kontaktieren",
+      "operations": "Globales Operationszentrum"
+    }
+  },
+  "tech": {
+    "badge": "Fortschrittliche Technologie",
+    "title": "Revolutionäre Tech-Plattform",
+    "subtitle": "Angetrieben von Quantencomputing, künstlicher Intelligenz und maschinellen Lernalgorithmen für beispiellose Markteinblicke und automatisierte Ausführungsfähigkeiten",
+    "features": {
+      "aiEngine": {
+        "title": "KI-Engine",
+        "description": "Fortschrittliche maschinelle Lernalgorithmen für Marktvorhersage und -analyse",
+        "stats": "94% Genauigkeit"
+      },
+      "realTime": {
+        "title": "Echtzeit-Verarbeitung",
+        "description": "Sofortige Marktdatenverarbeitung und Gelegenheitserkennung",
+        "stats": "< 50ms Antwort"
+      },
+      "security": {
+        "title": "Unternehmenssicherheit",
+        "description": "Bankgrad-Verschlüsselung und Sicherheitsprotokolle",
+        "stats": "256-bit SSL"
+      },
+      "globalNetwork": {
+        "title": "Globales Netzwerk",
+        "description": "Verbunden mit Lieferanten in über 185 Ländern weltweit",
+        "stats": "185+ Länder"
+      }
+    },
+    "tabs": {
+      "overview": "Technologie-Überblick",
+      "platforms": "KI-Plattformen",
+      "analytics": "Erweiterte Analytik"
+    },
+    "aiQuantum": {
+      "title": "Quanten-KI-Engine",
+      "description": "Revolutionäre künstliche Intelligenz, angetrieben von Quantencomputing-Algorithmen für beispiellose Marktanalyse und Vorhersagegenauigkeit.",
+      "badge": "Quantencomputing"
+    },
+    "bigData": {
+      "title": "Big Data Analytik",
+      "description": "Verarbeitung von Millionen von Datenpunkten in Echtzeit zur Identifizierung von Marktchancen und Vorhersage von Preisbewegungen mit außergewöhnlicher Genauigkeit.",
+      "badge": "Echtzeit-Verarbeitung"
+    },
+    "cloudInfra": {
+      "title": "Cloud-Infrastruktur",
+      "description": "Skalierbare Cloud-Architektur, die 99,9% Betriebszeit und blitzschnelle Antwortzeiten auf globalen Märkten gewährleistet.",
+      "badge": "99,9% Betriebszeit"
+    },
+    "dashboardIA": {
+      "title": "KI-Dashboard",
+      "description": "Zugriff auf alle künstliche Intelligenz und Echtzeit-Analytik"
+    }
+  },
+  "certifications": {
+    "title": "Premium-Qualitätszertifizierungen",
+    "subtitle": "Unser Engagement für Exzellenz wird durch die weltweit anerkanntesten Qualitäts- und Sicherheitsstandards validiert",
+    "items": {
+      "iso22000": "Internationaler Lebensmittelsicherheits-Managementsystem-Standard, der Qualität in jeder Phase gewährleistet",
+      "gmp": "Good Manufacturing Practice-Zertifizierung, die pharmazeutische Produktion garantiert",
+      "fda": "US Food and Drug Administration-Zulassung für Sicherheit und Wirksamkeit",
+      "haccp": "Hazard Analysis Critical Control Points-System für Lebensmittelsicherheit",
+      "nsf": "NSF International-Zertifizierung für öffentliche Gesundheit und Sicherheitsstandards",
+      "euOrganic": "Europäische Union Bio-Zertifizierung für natürliche und nachhaltige Produkte"
+    },
+    "verified": "Alle Zertifizierungen verifiziert und aktuell"
+  },
+  "footer": {
+    "description": "Weltführer bei Nahrungsergänzungsmitteln, der Regierungen, Unternehmen und Verbraucher mit Premium-Lieferanten durch fortschrittliche KI-Technologie verbindet.",
+    "businessSolutions": "Geschäftslösungen",
+    "b2bGlobalTrading": "B2B Globaler Handel",
+    "governmentContracts": "Regierungsverträge",
+    "b2cMarketplace": "B2C Marktplatz",
+    "technology": "Technologie",
+    "realTimeArbitrage": "Echtzeit-Arbitrage",
+    "autoExecution": "Auto-Ausführung",
+    "globalCompliance": "Globale Compliance",
+    "advancedAi": "Fortschrittliche KI",
+    "executiveDashboard": "Executive Dashboard",
+    "premiumContact": "Premium-Kontakt",
+    "globalNetwork": "Globales Netzwerk",
+    "copyright": "© 2024 Global Supplements. Alle Rechte vorbehalten.",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfUse": "Nutzungsbedingungen",
+    "compliance": "Compliance"
+  }
+}

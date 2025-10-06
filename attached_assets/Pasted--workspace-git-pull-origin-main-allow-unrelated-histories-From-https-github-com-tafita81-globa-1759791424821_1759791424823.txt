@@ -1,0 +1,160 @@
+/workspace$ git pull origin main --allow-unrelated-histories
+From https://github.com/tafita81/global-supplements
+ * branch            main       -> FETCH_HEAD
+Auto-merging .gitignore
+CONFLICT (add/add): Merge conflict in .gitignore
+Auto-merging .replit
+CONFLICT (add/add): Merge conflict in .replit
+Auto-merging README.md
+CONFLICT (add/add): Merge conflict in README.md
+Auto-merging index.html
+CONFLICT (add/add): Merge conflict in index.html
+Auto-merging package-lock.json
+CONFLICT (add/add): Merge conflict in package-lock.json
+Auto-merging package.json
+CONFLICT (add/add): Merge conflict in package.json
+Auto-merging src/App.tsx
+CONFLICT (add/add): Merge conflict in src/App.tsx
+Auto-merging src/components/layout/PublicHeader.tsx
+CONFLICT (add/add): Merge conflict in src/components/layout/PublicHeader.tsx
+Auto-merging src/components/layout/TopNavigation.tsx
+CONFLICT (add/add): Merge conflict in src/components/layout/TopNavigation.tsx
+Auto-merging src/components/premium/PremiumFooter.tsx
+CONFLICT (add/add): Merge conflict in src/components/premium/PremiumFooter.tsx
+Auto-merging src/components/premium/TechWellnessBundles.tsx
+CONFLICT (add/add): Merge conflict in src/components/premium/TechWellnessBundles.tsx
+Auto-merging src/components/public/PublicAbout.tsx
+CONFLICT (add/add): Merge conflict in src/components/public/PublicAbout.tsx
+Auto-merging src/components/public/PublicContact.tsx
+CONFLICT (add/add): Merge conflict in src/components/public/PublicContact.tsx
+Auto-merging src/components/public/PublicCredibility.tsx
+CONFLICT (add/add): Merge conflict in src/components/public/PublicCredibility.tsx
+Auto-merging src/components/public/PublicHero.tsx
+CONFLICT (add/add): Merge conflict in src/components/public/PublicHero.tsx
+Auto-merging src/components/public/PublicServices.tsx
+CONFLICT (add/add): Merge conflict in src/components/public/PublicServices.tsx
+Auto-merging src/components/ui/language-selector.tsx
+CONFLICT (add/add): Merge conflict in src/components/ui/language-selector.tsx
+Auto-merging src/i18n/locales/ar.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/ar.json
+Auto-merging src/i18n/locales/de.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/de.json
+Auto-merging src/i18n/locales/en.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/en.json
+Auto-merging src/i18n/locales/es-US.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/es-US.json
+Auto-merging src/i18n/locales/es.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/es.json
+Auto-merging src/i18n/locales/fr.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/fr.json
+Auto-merging src/i18n/locales/hi.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/hi.json
+Auto-merging src/i18n/locales/it.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/it.json
+Auto-merging src/i18n/locales/ja.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/ja.json
+Auto-merging src/i18n/locales/ko.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/ko.json
+Auto-merging src/i18n/locales/ms.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/ms.json
+Auto-merging src/i18n/locales/nl.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/nl.json
+Auto-merging src/i18n/locales/pt.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/pt.json
+Auto-merging src/i18n/locales/sv.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/sv.json
+Auto-merging src/i18n/locales/zh-TW.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/zh-TW.json
+Auto-merging src/i18n/locales/zh.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/zh.json
+Auto-merging src/index.css
+CONFLICT (add/add): Merge conflict in src/index.css
+Auto-merging src/pages/PublicSite.tsx
+CONFLICT (add/add): Merge conflict in src/pages/PublicSite.tsx
+Auto-merging vite.config.ts
+CONFLICT (add/add): Merge conflict in vite.config.ts
+Automatic merge failed; fix conflicts and then commit the result.
+~/workspace$ git push origin main
+To https://github.com/tafita81/global-supplements.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/tafita81/global-supplements.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+~/workspace$ git pull origin main --allow-unrelated-histories
+From https://github.com/tafita81/global-supplements
+ * branch            main       -> FETCH_HEAD
+Auto-merging .gitignore
+CONFLICT (add/add): Merge conflict in .gitignore
+Auto-merging .replit
+CONFLICT (add/add): Merge conflict in .replit
+Auto-merging README.md
+CONFLICT (add/add): Merge conflict in README.md
+Auto-merging index.html
+CONFLICT (add/add): Merge conflict in index.html
+Auto-merging package-lock.json
+CONFLICT (add/add): Merge conflict in package-lock.json
+Auto-merging package.json
+CONFLICT (add/add): Merge conflict in package.json
+Auto-merging src/App.tsx
+CONFLICT (add/add): Merge conflict in src/App.tsx
+Auto-merging src/components/layout/PublicHeader.tsx
+CONFLICT (add/add): Merge conflict in src/components/layout/PublicHeader.tsx
+Auto-merging src/components/layout/TopNavigation.tsx
+CONFLICT (add/add): Merge conflict in src/components/layout/TopNavigation.tsx
+Auto-merging src/components/premium/PremiumFooter.tsx
+CONFLICT (add/add): Merge conflict in src/components/premium/PremiumFooter.tsx
+Auto-merging src/components/premium/TechWellnessBundles.tsx
+CONFLICT (add/add): Merge conflict in src/components/premium/TechWellnessBundles.tsx
+Auto-merging src/components/public/PublicAbout.tsx
+CONFLICT (add/add): Merge conflict in src/components/public/PublicAbout.tsx
+Auto-merging src/components/public/PublicContact.tsx
+CONFLICT (add/add): Merge conflict in src/components/public/PublicContact.tsx
+Auto-merging src/components/public/PublicCredibility.tsx
+CONFLICT (add/add): Merge conflict in src/components/public/PublicCredibility.tsx
+Auto-merging src/components/public/PublicHero.tsx
+CONFLICT (add/add): Merge conflict in src/components/public/PublicHero.tsx
+Auto-merging src/components/public/PublicServices.tsx
+CONFLICT (add/add): Merge conflict in src/components/public/PublicServices.tsx
+Auto-merging src/components/ui/language-selector.tsx
+CONFLICT (add/add): Merge conflict in src/components/ui/language-selector.tsx
+Auto-merging src/i18n/locales/ar.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/ar.json
+Auto-merging src/i18n/locales/de.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/de.json
+Auto-merging src/i18n/locales/en.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/en.json
+Auto-merging src/i18n/locales/es-US.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/es-US.json
+Auto-merging src/i18n/locales/es.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/es.json
+Auto-merging src/i18n/locales/fr.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/fr.json
+Auto-merging src/i18n/locales/hi.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/hi.json
+Auto-merging src/i18n/locales/it.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/it.json
+Auto-merging src/i18n/locales/ja.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/ja.json
+Auto-merging src/i18n/locales/ko.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/ko.json
+Auto-merging src/i18n/locales/ms.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/ms.json
+Auto-merging src/i18n/locales/nl.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/nl.json
+Auto-merging src/i18n/locales/pt.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/pt.json
+Auto-merging src/i18n/locales/sv.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/sv.json
+Auto-merging src/i18n/locales/zh-TW.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/zh-TW.json
+Auto-merging src/i18n/locales/zh.json
+CONFLICT (add/add): Merge conflict in src/i18n/locales/zh.json
+Auto-merging src/index.css
+CONFLICT (add/add): Merge conflict in src/index.css
+Auto-merging src/pages/PublicSite.tsx
+CONFLICT (add/add): Merge conflict in src/pages/PublicSite.tsx
+Auto-merging vite.config.ts
+CONFLICT (add/add): Merge conflict in vite.config.ts
+Automatic merge failed; fix conflicts and then commit the result.

@@ -1,0 +1,263 @@
+{
+  "site": {
+    "title": "Global Supplements - Premium Wereldwijd Netwerk",
+    "description": "Wereldleider in voedingssupplementen die overheden, bedrijven en consumenten verbindt met premium leveranciers via geavanceerde AI-technologie.",
+    "tagline": "Premium Wereldwijd Netwerk"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "Over Ons",
+    "services": "Diensten",
+    "solutions": "Oplossingen",
+    "contact": "Contact",
+    "getQuote": "Offerte Aanvragen",
+    "partnerWithUs": "Partner Worden",
+    "beautySupplements": "Schoonheidssupplementen",
+    "quantumMaterials": "Quantum Materialen",
+    "medicalGrade": "Medische Kwaliteit",
+    "smartGadgets": "Slimme Gadgets",
+    "traditionalWellness": "Traditionele Wellness",
+    "b2bSolutions": "B2B Oplossingen",
+    "governmentContracts": "Overheidscontracten",
+    "manufacturing": "Productie",
+    "researchDevelopment": "Onderzoek & Ontwikkeling",
+    "marketIntelligence": "Marktinformatie",
+    "enterpriseSolutions": "Enterprise Oplossingen",
+    "tagline": "Schoonheid • Quantum • Medisch • Gadgets • Wellness",
+    "searchPlaceholder": "Zoek schoonheid, quantum materialen, medische verbindingen, gadgets...",
+    "account": "Account",
+    "cart": "Winkelwagen"
+  },
+  "hero": {
+    "title": "Wereldwijd Premium Supplementennetwerk",
+    "subtitle": "Verbinding van overheden, bedrijven en consumenten met 's werelds meest geavanceerde premium leveranciersnetwerk via revolutionaire AI-technologie",
+    "scroll": "Scrollen",
+    "stats": {
+      "countries": "Landen",
+      "annualVolume": "Jaarlijks Volume",
+      "globalSuppliers": "Wereldwijde Leveranciers",
+      "enterpriseClients": "Enterprise Klanten"
+    },
+    "videoCategories": {
+      "beautyEnhancement": "Schoonheidsverbetering",
+      "quantumProcessing": "Quantum Verwerking",
+      "medicalGrade": "Medische Kwaliteit",
+      "smartHealthGadgets": "Slimme Gezondheidsapparaten",
+      "traditionalWellness": "Traditionele Wellness",
+      "descriptions": {
+        "beautyEnhancement": "Revolutionaire schoonheidssupplementen met geavanceerde bioactieve verbindingen",
+        "quantumProcessing": "Geavanceerde materialen voor quantumcomputing en AI-verwerkingsverbetering",
+        "medicalGrade": "Farmaceutische supplementen voor klinische toepassingen",
+        "smartHealthGadgets": "Innovatieve gezondheidstechnologie-apparaten met IoT-mogelijkheden",
+        "traditionalWellness": "Premium traditionele supplementen voor algemene gezondheid en welzijn"
+      }
+    }
+  },
+  "products": {
+    "badge": "🚀 Geavanceerd Oplossingsportfolio",
+    "title": "Geavanceerde Wereldwijde Supplementcategorieën",
+    "description": "Ontdek onze revolutionaire collectie die 5 hoofdcategorieën omvat: schoonheidsverbeteringssupplementen, quantumverwerkingsmaterialen, medische verbindingen, slimme gezondheidsapparaten en traditionele wellnessproducten.",
+    "requestQuote": "Offerte Aanvragen",
+    "categories": {
+      "beauty": {
+        "title": "Schoonheidsverbetering Supplementen",
+        "description": "Revolutionaire schoonheidssupplementen met geavanceerde bioactieve verbindingen voor huidregeneratie, anti-veroudering en esthetische verbetering",
+        "features": ["Collageen Boosters", "Anti-Veroudering Formules", "Huiduitstraling", "Haar & Nagels"]
+      },
+      "quantum": {
+        "title": "Quantum Verwerkingsmaterialen",
+        "description": "Geavanceerde materialen en supplementen voor quantumcomputersystemen, AI-verwerkingsverbetering en machine-optimalisatie",
+        "features": ["Quantum Katalysatoren", "Verwerkingsversterkers", "Systeemoptimalisers", "AI Accelerators"]
+      },
+      "medical": {
+        "title": "Medische Kwaliteit Verbindingen",
+        "description": "Farmaceutische supplementen voor klinische toepassingen, therapeutische behandelingen en medisch onderzoek",
+        "features": ["Klinische Formules", "Therapeutische Verbindingen", "Onderzoeksmaterialen", "Precisiegeneeskunde"]
+      },
+      "gadgets": {
+        "title": "Slimme Gezondheidsapparaten",
+        "description": "Innovatieve gezondheidstechnologie-apparaten, draagbare apparaten en slimme supplementen geïntegreerd met IoT-mogelijkheden",
+        "features": ["Slimme Apparaten", "Gezondheid Wearables", "IoT Integratie", "Digitale Gezondheid"]
+      },
+      "wellness": {
+        "title": "Traditionele Wellness",
+        "description": "Premium traditionele supplementen voor algemene gezondheid, fitness, voeding en dagelijkse wellnessbehoeften",
+        "features": ["Vitaminen & Mineralen", "Fitness Ondersteuning", "Immuunsysteem", "Algemene Gezondheid"]
+      }
+    },
+    "businessModels": {
+      "b2b": "B2B",
+      "enterprise": "Enterprise",
+      "b2c": "B2C",
+      "consumer": "Consument",
+      "gov": "Overheid",
+      "procurement": "Inkoop"
+    }
+  },
+  "countries": {
+    "usa": "Verenigde Staten",
+    "germany": "Duitsland",
+    "japan": "Japan",
+    "uk": "Verenigd Koninkrijk",
+    "canada": "Canada",
+    "australia": "Australië",
+    "uae": "Verenigde Arabische Emiraten",
+    "saudi": "Saoedi-Arabië",
+    "qatar": "Qatar",
+    "kuwait": "Koeweit",
+    "bahrain": "Bahrein",
+    "oman": "Oman",
+    "switzerland": "Zwitserland",
+    "netherlands": "Nederland",
+    "sweden": "Zweden",
+    "italy": "Italië",
+    "spain": "Spanje",
+    "france": "Frankrijk",
+    "singapore": "Singapore",
+    "taiwan": "Taiwan",
+    "korea": "Zuid-Korea",
+    "brazil": "Brazilië",
+    "mexico": "Mexico",
+    "argentina": "Argentinië",
+    "china": "China",
+    "india": "India",
+    "malaysia": "Maleisië",
+    "chile": "Chili",
+    "colombia": "Colombia",
+    "peru": "Peru",
+    "portugal": "Portugal",
+    "panama": "Panama",
+    "paraguay": "Paraguay"
+  },
+  "testimonials": {
+    "badge": "Klant Succesverhalen",
+    "title": "Vertrouwd door Wereldwijde Marktleiders",
+    "subtitle": "Zie hoe industrieleiders in 32 landen hun supplement supply chains revolutioneren",
+    "verified": "Geverifieerde Enterprise Klant",
+    "stats": {
+      "enterpriseClients": "Enterprise Klanten",
+      "satisfaction": "Klanttevredenheid",
+      "revenueGenerated": "Gegenereerde Omzet",
+      "premiumSupport": "Premium Ondersteuning"
+    },
+    "joinLeaders": "Sluit je aan bij honderden wereldwijde leiders",
+    "requestDemo": "Vraag Executive Demo aan"
+  },
+  "partnerships": {
+    "badge": "Strategische Wereldwijde Partnerschappen",
+    "title": "Elite Wereldwijd Netwerk van Premium Leveranciers",
+    "subtitle": "Onze exclusieve partnerschappen bestrijken 32 landen over 6 continenten en verbinden overheden, bedrijven en zorgorganisaties met 's werelds meest vertrouwde supplementproducenten.",
+    "stats": {
+      "active": "Actieve Landen",
+      "market": "Wereldwijde Marktwaarde",
+      "suppliers": "Geverifieerde Leveranciers",
+      "verified": "Kwaliteit Gecertificeerd"
+    },
+    "cta": {
+      "title": "Geïnteresseerd in uitbreiding naar strategische markten? Neem contact op met ons wereldwijde team"
+    },
+    "contact": {
+      "international": "Neem Contact op met Internationaal Team",
+      "operations": "Wereldwijd Operatiecentrum"
+    }
+  },
+  "tech": {
+    "badge": "Geavanceerde Technologie",
+    "title": "Revolutionair Technologieplatform",
+    "subtitle": "Aangedreven door quantum computing, kunstmatige intelligentie en machine learning algoritmen om ongekende marktinzichten en geautomatiseerde uitvoeringscapaciteiten te leveren",
+    "features": {
+      "aiEngine": {
+        "title": "AI-Engine",
+        "description": "Geavanceerde machine learning algoritmen voor marktvoorspelling en analyse",
+        "stats": "94% Nauwkeurigheid"
+      },
+      "realTime": {
+        "title": "Real-Time Verwerking",
+        "description": "Directe marktdataverwerking en opportuniteitsdetectie",
+        "stats": "< 50ms Respons"
+      },
+      "security": {
+        "title": "Enterprise Beveiliging",
+        "description": "Bankwaardige encryptie en beveiligingsprotocollen",
+        "stats": "256-bit SSL"
+      },
+      "globalNetwork": {
+        "title": "Wereldwijd Netwerk",
+        "description": "Verbonden met leveranciers in 185+ landen",
+        "stats": "185+ Landen"
+      }
+    },
+    "tabs": {
+      "overview": "Technologie Overzicht",
+      "platforms": "AI Platforms",
+      "analytics": "Geavanceerde Analytics"
+    },
+    "aiQuantum": {
+      "title": "Quantum AI-Engine",
+      "description": "Revolutionire kunstmatige intelligentie aangedreven door quantum computing algoritmen voor ongekende marktanalyse en voorspellingsnauwkeurigheid.",
+      "badge": "Quantum Computing"
+    },
+    "bigData": {
+      "title": "Big Data Analytics",
+      "description": "Verwerk miljoenen datapunten in real-time om marktkansen te identificeren en prijsbewegingen met uitzonderlijke nauwkeurigheid te voorspellen.",
+      "badge": "Real-Time Verwerking"
+    },
+    "cloudInfra": {
+      "title": "Cloud Infrastructuur",
+      "description": "Schaalbare cloud architectuur die 99,9% uptime en bliksemsnelle responstijden op wereldwijde markten garandeert.",
+      "badge": "99,9% Uptime"
+    },
+    "dashboardIA": {
+      "title": "AI Dashboard",
+      "description": "Toegang tot alle kunstmatige intelligentie en real-time analytics"
+    }
+  },
+  "certifications": {
+    "badge": "Premium Kwaliteitscertificeringen",
+    "title": "Onze toewijding aan excellentie wordt gevalideerd door 's werelds meest erkende kwaliteits- en veiligheidsnormen",
+    "iso22000": {
+      "title": "ISO 22000",
+      "description": "Internationale voedselveiligheidsmanagementsysteemnorm die kwaliteit in elke fase garandeert"
+    },
+    "gmp": {
+      "title": "GMP Gecertificeerd",
+      "description": "Good Manufacturing Practice certificering die farmaceutische productie garandeert"
+    },
+    "fda": {
+      "title": "FDA Goedgekeurd",
+      "description": "Amerikaanse Food and Drug Administration goedkeuring voor veiligheid en werkzaamheid"
+    },
+    "haccp": {
+      "title": "HACCP",
+      "description": "Hazard Analysis Critical Control Points systeem voor voedselveiligheid"
+    },
+    "nsf": {
+      "title": "NSF International",
+      "description": "NSF International certificering voor volksgezondheid en veiligheidsnormen"
+    },
+    "euOrganic": {
+      "title": "EU Biologisch",
+      "description": "Europese Unie biologische certificering voor natuurlijke en duurzame producten"
+    },
+    "verified": "Alle certificeringen geverifieerd en actueel"
+  },
+  "footer": {
+    "description": "Wereldleider in voedingssupplementen die overheden, bedrijven en consumenten verbindt met premium leveranciers via geavanceerde AI-technologie.",
+    "businessSolutions": "Bedrijfsoplossingen",
+    "b2bGlobalTrading": "B2B Wereldwijde Handel",
+    "governmentContracts": "Overheidscontracten",
+    "b2cMarketplace": "B2C Marktplaats",
+    "technology": "Technologie",
+    "realTimeArbitrage": "Real-Time Arbitrage",
+    "autoExecution": "Automatische Uitvoering",
+    "globalCompliance": "Wereldwijde Compliance",
+    "advancedAI": "Geavanceerde AI",
+    "executiveDashboard": "Executive Dashboard",
+    "premiumContact": "Premium Contact",
+    "globalNetwork": "Wereldwijd Netwerk",
+    "copyright": "© 2024 Global Supplements. Alle rechten voorbehouden.",
+    "privacyPolicy": "Privacybeleid",
+    "termsOfUse": "Gebruiksvoorwaarden",
+    "compliance": "Compliance"
+  }
+}

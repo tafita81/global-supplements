@@ -1,0 +1,263 @@
+{
+  "site": {
+    "title": "Global Supplements - Premium Globalt Nätverk",
+    "description": "Världsledare inom kosttillskott som förbinder regeringar, företag och konsumenter med premium leverantörer genom avancerad AI-teknik.",
+    "tagline": "Premium Globalt Nätverk"
+  },
+  "navigation": {
+    "home": "Hem",
+    "about": "Om Oss",
+    "services": "Tjänster",
+    "solutions": "Lösningar",
+    "contact": "Kontakt",
+    "getQuote": "Få Offert",
+    "partnerWithUs": "Bli Partner",
+    "beautySupplements": "Skönhetstillskott",
+    "quantumMaterials": "Kvantmaterial",
+    "medicalGrade": "Medicinsk Kvalitet",
+    "smartGadgets": "Smarta Prylar",
+    "traditionalWellness": "Traditionell Välmående",
+    "b2bSolutions": "B2B Lösningar",
+    "governmentContracts": "Regeringskontrakt",
+    "manufacturing": "Tillverkning",
+    "researchDevelopment": "Forskning & Utveckling",
+    "marketIntelligence": "Marknadsinformation",
+    "enterpriseSolutions": "Enterprise Lösningar",
+    "tagline": "Skönhet • Kvant • Medicinsk • Prylar • Välmående",
+    "searchPlaceholder": "Sök skönhet, kvantmaterial, medicinska föreningar, prylar...",
+    "account": "Konto",
+    "cart": "Kundvagn"
+  },
+  "hero": {
+    "title": "Globalt Premium Kosttillskottsnätverk",
+    "subtitle": "Förbinder regeringar, företag och konsumenter med världens mest avancerade premium leverantörsnätverk genom revolutionerande AI-teknik",
+    "scroll": "Scrolla",
+    "stats": {
+      "countries": "Länder",
+      "annualVolume": "Årlig Volym",
+      "globalSuppliers": "Globala Leverantörer",
+      "enterpriseClients": "Enterprise Kunder"
+    },
+    "videoCategories": {
+      "beautyEnhancement": "Skönhetsförbättring",
+      "quantumProcessing": "Kvantbearbetning",
+      "medicalGrade": "Medicinsk Kvalitet",
+      "smartHealthGadgets": "Smarta Hälsoprylar",
+      "traditionalWellness": "Traditionell Välmående",
+      "descriptions": {
+        "beautyEnhancement": "Revolutionerande skönhetstillskott med avancerade bioaktiva föreningar",
+        "quantumProcessing": "Avancerade material för kvantdatorer och AI-bearbetningsförbättring",
+        "medicalGrade": "Farmaceutiska tillskott för kliniska tillämpningar",
+        "smartHealthGadgets": "Innovativa hälsoteknologienheter med IoT-kapacitet",
+        "traditionalWellness": "Premium traditionella tillskott för allmän hälsa och välbefinnande"
+      }
+    }
+  },
+  "products": {
+    "badge": "🚀 Avancerad Lösningsportfölj",
+    "title": "Avancerade Globala Kosttillskottskategorier",
+    "description": "Upptäck vår revolutionerande kollektion som omfattar 5 huvudkategorier: skönhetsförbättringskosttillskott, kvantbearbetningsmaterial, medicinska föreningar, smarta hälsoprylar och traditionella välmåendeprodukter.",
+    "requestQuote": "Begär Offert",
+    "categories": {
+      "beauty": {
+        "title": "Skönhetsförbättring Kosttillskott",
+        "description": "Revolutionerande skönhetstillskott med avancerade bioaktiva föreningar för hudförnyelse, anti-aging och estetisk förbättring",
+        "features": ["Kollagen Boosters", "Anti-Aging Formler", "Hudstrålning", "Hår & Naglar"]
+      },
+      "quantum": {
+        "title": "Kvantbearbetningsmaterial",
+        "description": "Avancerade material och tillskott för kvantdatorsystem, AI-bearbetningsförbättring och maskinoptimering",
+        "features": ["Kvantkatalysatorer", "Bearbetningsförstärkare", "Systemoptimerare", "AI Acceleratorer"]
+      },
+      "medical": {
+        "title": "Medicinska Föreningar",
+        "description": "Farmaceutiska tillskott för kliniska tillämpningar, terapeutiska behandlingar och medicinsk forskning",
+        "features": ["Kliniska Formler", "Terapeutiska Föreningar", "Forskningsmaterial", "Precisionsmedicin"]
+      },
+      "gadgets": {
+        "title": "Smarta Hälsoprylar",
+        "description": "Innovativa hälsoteknologienheter, bärbara enheter och smarta tillskott integrerade med IoT-kapacitet",
+        "features": ["Smarta Enheter", "Hälso Wearables", "IoT Integration", "Digital Hälsa"]
+      },
+      "wellness": {
+        "title": "Traditionell Välmående",
+        "description": "Premium traditionella tillskott för allmän hälsa, fitness, näring och dagliga välmåendebehov",
+        "features": ["Vitaminer & Mineraler", "Fitness Support", "Immunsystem", "Allmän Hälsa"]
+      }
+    },
+    "businessModels": {
+      "b2b": "B2B",
+      "enterprise": "Enterprise",
+      "b2c": "B2C",
+      "consumer": "Konsument",
+      "gov": "Regering",
+      "procurement": "Upphandling"
+    }
+  },
+  "countries": {
+    "usa": "USA",
+    "germany": "Tyskland",
+    "japan": "Japan",
+    "uk": "Storbritannien",
+    "canada": "Kanada",
+    "australia": "Australien",
+    "uae": "Förenade Arabemiraten",
+    "saudi": "Saudiarabien",
+    "qatar": "Qatar",
+    "kuwait": "Kuwait",
+    "bahrain": "Bahrain",
+    "oman": "Oman",
+    "switzerland": "Schweiz",
+    "netherlands": "Nederländerna",
+    "sweden": "Sverige",
+    "italy": "Italien",
+    "spain": "Spanien",
+    "france": "Frankrike",
+    "singapore": "Singapore",
+    "taiwan": "Taiwan",
+    "korea": "Sydkorea",
+    "brazil": "Brasilien",
+    "mexico": "Mexiko",
+    "argentina": "Argentina",
+    "china": "Kina",
+    "india": "Indien",
+    "malaysia": "Malaysia",
+    "chile": "Chile",
+    "colombia": "Colombia",
+    "peru": "Peru",
+    "portugal": "Portugal",
+    "panama": "Panama",
+    "paraguay": "Paraguay"
+  },
+  "testimonials": {
+    "badge": "Kundframgångshistorier",
+    "title": "Betrodd av Globala Marknadsledare",
+    "subtitle": "Se hur branschledare i 32 länder revolutionerar sina kosttillskott-leveranskedjor",
+    "verified": "Verifierad Företagsklient",
+    "stats": {
+      "enterpriseClients": "Företagsklienter",
+      "satisfaction": "Kundnöjdhet",
+      "revenueGenerated": "Genererad Omsättning",
+      "premiumSupport": "Premium Support"
+    },
+    "joinLeaders": "Gå med i hundratals globala ledare",
+    "requestDemo": "Begär Executive Demo"
+  },
+  "partnerships": {
+    "badge": "Strategiska Globala Partnerskap",
+    "title": "Elit Världsomspännande Nätverk av Premium Leverantörer",
+    "subtitle": "Våra exklusiva partnerskap sträcker sig över 32 länder på 6 kontinenter och förbinder regeringar, företag och vårdorganisationer med världens mest pålitliga kosttillskottstillverkare.",
+    "stats": {
+      "active": "Aktiva Länder",
+      "market": "Globalt Marknadsvärde",
+      "suppliers": "Verifierade Leverantörer",
+      "verified": "Kvalitetscertifierad"
+    },
+    "cta": {
+      "title": "Intresserad av att expandera till strategiska marknader? Kontakta vårt globala team"
+    },
+    "contact": {
+      "international": "Kontakta Internationella Teamet",
+      "operations": "Globalt Operationscenter"
+    }
+  },
+  "tech": {
+    "badge": "Avancerad Teknik",
+    "title": "Revolutionerande Teknikplattform",
+    "subtitle": "Driven av kvantdatorer, artificiell intelligens och maskininlärningsalgoritmer för att leverera oöverträffade marknadsinsikter och automatiserade exekveringsmöjligheter",
+    "features": {
+      "aiEngine": {
+        "title": "AI-Motor",
+        "description": "Avancerade maskininlärningsalgoritmer för marknadsförutsägelse och analys",
+        "stats": "94% Noggrannhet"
+      },
+      "realTime": {
+        "title": "Realtidsbearbetning",
+        "description": "Omedelbar marknadsdata-bearbetning och möjlighetsdetektering",
+        "stats": "< 50ms Respons"
+      },
+      "security": {
+        "title": "Företagssäkerhet",
+        "description": "Banknivå kryptering och säkerhetsprotokoll",
+        "stats": "256-bit SSL"
+      },
+      "globalNetwork": {
+        "title": "Globalt Nätverk",
+        "description": "Ansluten till leverantörer i 185+ länder",
+        "stats": "185+ Länder"
+      }
+    },
+    "tabs": {
+      "overview": "Tekniköversikt",
+      "platforms": "AI-Plattformar",
+      "analytics": "Avancerad Analys"
+    },
+    "aiQuantum": {
+      "title": "Kvant AI-Motor",
+      "description": "Revolutionerande artificiell intelligens driven av kvantdatoralgoritmer för oöverträffad marknadsanalys och förutsägelsenoggrannhet.",
+      "badge": "Kvantdatorer"
+    },
+    "bigData": {
+      "title": "Big Data Analys",
+      "description": "Bearbeta miljontals datapunkter i realtid för att identifiera marknadsmöjligheter och förutsäga prisrörelser med exceptionell noggrannhet.",
+      "badge": "Realtidsbearbetning"
+    },
+    "cloudInfra": {
+      "title": "Molninfrastruktur",
+      "description": "Skalbar molnarkitektur som säkerställer 99,9% drifttid och blixtsnabba svarstider på globala marknader.",
+      "badge": "99,9% Drifttid"
+    },
+    "dashboardIA": {
+      "title": "AI Dashboard",
+      "description": "Tillgång till all artificiell intelligens och realtidsanalys"
+    }
+  },
+  "certifications": {
+    "badge": "Premium Kvalitetscertifieringar",
+    "title": "Vårt engagemang för excellens valideras av världens mest erkända kvalitets- och säkerhetsstandarder",
+    "iso22000": {
+      "title": "ISO 22000",
+      "description": "Internationell standard för livsmedelssäkerhetshantering som säkerställer kvalitet i varje steg"
+    },
+    "gmp": {
+      "title": "GMP Certifierad",
+      "description": "God Tillverkningspraxis-certifiering som garanterar farmaceutisk produktion"
+    },
+    "fda": {
+      "title": "FDA Godkänd",
+      "description": "US Food and Drug Administration godkännande för säkerhet och effektivitet"
+    },
+    "haccp": {
+      "title": "HACCP",
+      "description": "Hazard Analysis Critical Control Points system för livsmedelssäkerhet"
+    },
+    "nsf": {
+      "title": "NSF International",
+      "description": "NSF International certifiering för folkhälsa och säkerhetsstandarder"
+    },
+    "euOrganic": {
+      "title": "EU Ekologisk",
+      "description": "Europeiska unionens ekologiska certifiering för naturliga och hållbara produkter"
+    },
+    "verified": "Alla certifieringar verifierade och aktuella"
+  },
+  "footer": {
+    "description": "Världsledare inom kosttillskott som förbinder regeringar, företag och konsumenter med premium leverantörer genom avancerad AI-teknik.",
+    "businessSolutions": "Affärslösningar",
+    "b2bGlobalTrading": "B2B Global Handel",
+    "governmentContracts": "Regeringskontrakt",
+    "b2cMarketplace": "B2C Marknadsplats",
+    "technology": "Teknik",
+    "realTimeArbitrage": "Realtidsarbitrage",
+    "autoExecution": "Automatisk Exekvering",
+    "globalCompliance": "Global Efterlevnad",
+    "advancedAI": "Avancerad AI",
+    "executiveDashboard": "Executive Dashboard",
+    "premiumContact": "Premium Kontakt",
+    "globalNetwork": "Globalt Nätverk",
+    "copyright": "© 2024 Global Supplements. Alla rättigheter förbehållna.",
+    "privacyPolicy": "Integritetspolicy",
+    "termsOfUse": "Användarvillkor",
+    "compliance": "Efterlevnad"
+  }
+}

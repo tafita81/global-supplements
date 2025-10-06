@@ -1,0 +1,40 @@
+═══════════════════════════════════════════════════════════════
+  🚀 ATUALIZAR GITHUB: global-supplements
+═══════════════════════════════════════════════════════════════
+
+📋 COPIE E COLE NO SHELL (uma linha só):
+
+cd projeto-copia && git remote set-url origin https://github.com/tafita81/global-supplements.git && git add . && git commit -m "feat: Global Supplements - Sistema completo com filtros inteligentes, 14 países, i18n e deploy" && git push -f origin main
+
+───────────────────────────────────────────────────────────────
+
+✅ O que isso faz:
+
+1. Entra na pasta projeto-copia
+2. Muda o remote de "hoje-lembrei-voc" → "global-supplements"
+3. Adiciona todos os arquivos
+4. Cria commit
+5. Faz push para: https://github.com/tafita81/global-supplements
+
+───────────────────────────────────────────────────────────────
+
+📦 Conteúdo que será enviado:
+
+✨ Sistema de filtros (29 subcategorias)
+🌍 14 marketplaces internacionais
+🗣️ i18n completo (15 idiomas)
+🎨 Interface estilo Amazon profissional
+🔗 Affiliate tag: globalsupleme-20
+📱 Responsivo e otimizado
+🚀 Deploy configurado (Autoscale)
+📦 Build: 640KB gzipped
+
+───────────────────────────────────────────────────────────────
+
+💡 IMPORTANTE:
+
+- O Replit "hoje-lembrei-voc" continua igual
+- Só o repositório git dentro de "projeto-copia" muda
+- Use -f (force) porque há arquivos config antigos no repo
+
+═══════════════════════════════════════════════════════════════

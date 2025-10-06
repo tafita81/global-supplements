@@ -1,0 +1,77 @@
+╔══════════════════════════════════════════════════════════════╗
+║   GLOBAL SUPPLEMENTS - INSTRUÇÕES DE INSTALAÇÃO HOSTINGER   ║
+╔══════════════════════════════════════════════════════════════╗
+
+📦 ARQUIVO DO SITE: global-supplements-site.tar.gz (4.8 MB)
+
+═══════════════════════════════════════════════════════════════
+
+📋 PASSO A PASSO PARA HOSTINGER:
+
+1️⃣ BAIXAR O ARQUIVO
+   • Clique com botão direito em "global-supplements-site.tar.gz"
+   • Selecione "Download"
+   • Salve no seu computador
+
+2️⃣ EXTRAIR OS ARQUIVOS
+   Windows: Clique com botão direito → "Extrair aqui" (use 7-Zip ou WinRAR)
+   Mac: Duplo clique no arquivo
+   
+   ⚠️ Dentro da pasta extraída você terá todos os arquivos do site
+
+3️⃣ ACESSAR HOSTINGER
+   • Entre no painel da Hostinger (hpanel.hostinger.com)
+   • Vá em "File Manager" (Gerenciador de Arquivos)
+   • Navegue até a pasta "public_html"
+
+4️⃣ LIMPAR PASTA (IMPORTANTE!)
+   • Selecione TODOS os arquivos antigos em public_html
+   • Delete tudo (isso remove o site antigo da Lovable)
+
+5️⃣ FAZER UPLOAD
+   • Clique em "Upload" no File Manager
+   • Selecione TODOS os arquivos que você extraiu
+   • Aguarde o upload completar (pode levar alguns minutos)
+
+6️⃣ VERIFICAR ESTRUTURA
+   A pasta public_html deve ficar assim:
+   public_html/
+   ├── index.html
+   ├── favicon.ico
+   ├── robots.txt
+   ├── assets/
+   ├── images/
+   └── documents/
+
+7️⃣ TESTAR
+   • Acesse: www.globalsupplements.site
+   • O site deve carregar normalmente
+   • Sem marcas da Lovable! ✅
+
+═══════════════════════════════════════════════════════════════
+
+⚡ DICAS IMPORTANTES:
+
+✅ Certifique-se de extrair o arquivo antes de fazer upload
+✅ Apague todos os arquivos antigos antes de subir os novos
+✅ Mantenha a estrutura de pastas exatamente como está
+✅ Se o site não carregar, limpe o cache do navegador (Ctrl+F5)
+
+═══════════════════════════════════════════════════════════════
+
+❓ PROBLEMAS COMUNS:
+
+Problema: Site mostra página em branco
+Solução: Verifique se o index.html está na raiz do public_html
+
+Problema: Imagens não aparecem
+Solução: Certifique-se que as pastas assets/ e images/ foram enviadas
+
+Problema: Ainda aparece site antigo
+Solução: Limpe o cache do navegador ou use modo anônimo
+
+═══════════════════════════════════════════════════════════════
+
+✨ SITE 100% SEU - SEM MARCAS DE TERCEIROS! ✨
+
+Global Supplements © 2024

@@ -1,0 +1,397 @@
+{
+  "site": {
+    "title": "Global Supplements - Advanced Solutions Worldwide",
+    "description": "Global leader in advanced supplements: beauty enhancers, medical-grade compounds, quantum processing materials, smart gadgets, and traditional wellness products. Serving B2B, B2C, and government procurement worldwide.",
+    "tagline": "Advanced Solutions Worldwide"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services", 
+    "solutions": "Solutions",
+    "contact": "Contact",
+    "getQuote": "Get Quote",
+    "partnerWithUs": "Partner With Us",
+    "beautySupplements": "Beauty Supplements",
+    "quantumMaterials": "Quantum Materials",
+    "medicalGrade": "Medical Grade",
+    "smartGadgets": "Smart Gadgets",
+    "traditionalWellness": "Traditional Wellness",
+    "b2bSolutions": "B2B Solutions",
+    "governmentContracts": "Government Contracts",
+    "manufacturing": "Manufacturing",
+    "researchDevelopment": "Research & Development",
+    "marketIntelligence": "Market Intelligence",
+    "enterpriseSolutions": "Enterprise Solutions",
+    "searchPlaceholder": "Search beauty, quantum materials, medical compounds, gadgets...",
+    "account": "Account",
+    "cart": "Cart",
+    "tagline": "Beauty • Quantum • Medical • Gadgets • Wellness",
+    "opportunities": "Opportunities",
+    "suppliers": "Suppliers",
+    "products": "Mycogenesis Products",
+    "globalAI": "Global AI",
+    "logistics": "Logistics",
+    "compliance": "Compliance",
+    "settings": "Settings"
+  },
+  "hero": {
+    "title": "Advanced Global Supplements Network",
+    "subtitle": "Connecting governments, businesses and consumers to revolutionary supplements: beauty enhancers, quantum processing materials, medical-grade compounds, smart gadgets and traditional wellness products through AI technology",
+    "premiumSupplements": "Advanced Supplements",
+    "executiveDashboard": "Executive Dashboard",
+    "scroll": "Scroll",
+    "stats": {
+      "countries": "Countries",
+      "market": "Global Market",
+      "suppliers": "Suppliers",
+      "verified": "Verified",
+      "contracts": "Contracts",
+      "annualRevenue": "Annual Revenue",
+      "annualVolume": "Annual Volume",
+      "globalSuppliers": "Global Suppliers",
+      "enterpriseClients": "Enterprise Clients"
+    },
+    "videoCategories": {
+      "beautyEnhancement": "Beauty Enhancement",
+      "quantumProcessing": "Quantum Processing", 
+      "medicalGrade": "Medical Grade",
+      "smartHealthGadgets": "Smart Health Gadgets",
+      "traditionalWellness": "Traditional Wellness",
+      "descriptions": {
+        "beautyEnhancement": "Revolutionary beauty supplements with advanced bioactive compounds",
+        "quantumProcessing": "Advanced materials for quantum computing and AI processing enhancement",
+        "medicalGrade": "Pharmaceutical-grade supplements for clinical applications",
+        "smartHealthGadgets": "Innovative health technology devices with IoT capabilities",
+        "traditionalWellness": "Premium traditional supplements for general health and wellness"
+      }
+    }
+  },
+  "countries": {
+    "badge": "Strategic Global Partnerships",
+    "title": "Elite Worldwide Network of Premium Suppliers",
+    "subtitle": "Our exclusive partnerships span 32 countries across 6 continents, connecting governments, enterprises, and healthcare organizations to the world's most trusted supplement manufacturers. Each partnership represents years of rigorous vetting, regulatory compliance, and proven track records in delivering pharmaceutical-grade products to global markets.",
+    "stats": {
+      "active": "Active Countries",
+      "market": "Global Market Value",
+      "suppliers": "Verified Suppliers",
+      "verified": "Quality Certified"
+    },
+    "contact": {
+      "international": "Contact International Team",
+      "operations": "Global Operations Center"
+    },
+    "usa": "United States",
+    "germany": "Germany",
+    "japan": "Japan",
+    "uk": "United Kingdom",
+    "canada": "Canada",
+    "australia": "Australia",
+    "uae": "United Arab Emirates",
+    "saudi": "Saudi Arabia",
+    "qatar": "Qatar",
+    "kuwait": "Kuwait",
+    "bahrain": "Bahrain",
+    "oman": "Oman",
+    "switzerland": "Switzerland",
+    "netherlands": "Netherlands",
+    "sweden": "Sweden",
+    "italy": "Italy",
+    "spain": "Spain",
+    "france": "France",
+    "singapore": "Singapore",
+    "taiwan": "Taiwan",
+    "korea": "South Korea",
+    "brazil": "Brazil",
+    "mexico": "Mexico",
+    "argentina": "Argentina",
+    "china": "China",
+    "india": "India",
+    "malaysia": "Malaysia",
+    "chile": "Chile",
+    "colombia": "Colombia",
+    "peru": "Peru",
+    "portugal": "Portugal",
+    "panama": "Panama",
+    "paraguay": "Paraguay"
+  },
+  "products": {
+    "badge": "🚀 Advanced Solutions Portfolio",
+    "title": "Advanced Global Supplement Categories",
+    "description": "Discover our revolutionary collection spanning 5 major categories: beauty enhancement supplements, quantum processing materials, medical-grade compounds, smart health gadgets, and traditional wellness products. Each category represents cutting-edge innovation for B2B, B2C, and government procurement.",
+    "reviews": "reviews",
+    "requestQuote": "Request Quote",
+    "categories": {
+      "beauty": {
+        "title": "Beauty Enhancement Supplements",
+        "description": "Revolutionary beauty supplements with advanced bioactive compounds for skin regeneration, anti-aging, and aesthetic enhancement",
+        "features": ["Collagen Boosters", "Anti-Aging Formulas", "Skin Radiance", "Hair & Nails"]
+      },
+      "quantum": {
+        "title": "Quantum Processing Materials",
+        "description": "Advanced materials and supplements for quantum computing systems, AI processing enhancement, and machine optimization",
+        "features": ["Quantum Catalysts", "Processing Enhancers", "System Optimizers", "AI Accelerators"]
+      },
+      "medical": {
+        "title": "Medical-Grade Compounds",
+        "description": "Pharmaceutical-grade supplements for clinical applications, therapeutic treatments, and medical research",
+        "features": ["Clinical Formulas", "Therapeutic Compounds", "Research Materials", "Precision Medicine"]
+      },
+      "gadgets": {
+        "title": "Smart Health Gadgets",
+        "description": "Innovative health technology devices, wearables, and smart supplements integrated with IoT capabilities",
+        "features": ["Smart Devices", "Health Wearables", "IoT Integration", "Digital Health"]
+      },
+      "wellness": {
+        "title": "Traditional Wellness",
+        "description": "Premium traditional supplements for general health, fitness, nutrition, and everyday wellness needs",
+        "features": ["Vitamins & Minerals", "Fitness Support", "Immune System", "General Health"]
+      }
+    },
+    "businessModels": {
+      "b2b": "B2B",
+      "enterprise": "Enterprise",
+      "b2c": "B2C", 
+      "consumer": "Consumer",
+      "gov": "Gov",
+      "procurement": "Procurement"
+    }
+  },
+  "marketIntelligence": {
+    "badge": "AI Market Intelligence",
+    "title": "Predictive Analytics",
+    "subtitle": "Leverage advanced AI to predict market movements with 94% accuracy, identifying $47M+ in opportunities across 185 global markets daily",
+    "stats": {
+      "accuracy": "Accuracy Rate",
+      "opportunities": "Daily Opportunities",
+      "markets": "Markets Tracked",
+      "speed": "Analysis Speed"
+    },
+    "dashboard": {
+      "title": "AI-Powered Market Intelligence",
+      "description": "Real-time analysis of global supplement markets using advanced machine learning and predictive algorithms to identify high-profit opportunities"
+    },
+    "tabs": {
+      "insights": "Market Insights",
+      "predictions": "Price Predictions", 
+      "trends": "Global Trends",
+      "analytics": "Deep Analytics"
+    },
+    "technology": {
+      "title": "Advanced AI Architecture",
+      "subtitle": "Cutting-edge technology stack powering predictive market intelligence"
+    },
+    "cta": {
+      "title": "Unlock Predictive Market Intelligence",
+      "description": "Join elite partners using our AI to predict market movements with 94% accuracy and identify millions in opportunities before competitors even notice.",
+      "primaryButton": "Access AI Intelligence",
+      "secondaryButton": "Explore Markets"
+    }
+  },
+  "tech": {
+    "badge": "Advanced Technology",
+    "title": "Revolutionary Tech Platform",
+    "subtitle": "Powered by quantum computing, artificial intelligence, and machine learning algorithms to deliver unprecedented market insights and automated execution capabilities",
+    "features": {
+      "aiEngine": {
+        "title": "AI Engine",
+        "description": "Advanced machine learning algorithms for market prediction and analysis",
+        "stats": "94% Accuracy"
+      },
+      "realTime": {
+        "title": "Real-Time Processing",
+        "description": "Instant market data processing and opportunity detection",
+        "stats": "< 50ms Response"
+      },
+      "security": {
+        "title": "Enterprise Security",
+        "description": "Bank-grade encryption and security protocols",
+        "stats": "256-bit SSL"
+      },
+      "globalNetwork": {
+        "title": "Global Network",
+        "description": "Connected to suppliers across 185+ countries worldwide",
+        "stats": "185+ Countries"
+      }
+    },
+    "tabs": {
+      "overview": "Technology Overview",
+      "platforms": "AI Platforms",
+      "analytics": "Advanced Analytics"
+    },
+    "aiQuantum": {
+      "title": "Quantum AI Engine",
+      "description": "Revolutionary artificial intelligence powered by quantum computing algorithms for unprecedented market analysis and prediction accuracy.",
+      "badge": "Quantum Computing"
+    },
+    "bigData": {
+      "title": "Big Data Analytics",
+      "description": "Process millions of data points in real-time to identify market opportunities and predict price movements with exceptional accuracy.",
+      "badge": "Real-Time Processing"
+    },
+    "cloudInfra": {
+      "title": "Cloud Infrastructure",
+      "description": "Scalable cloud architecture ensuring 99.9% uptime and lightning-fast response times across global markets.",
+      "badge": "99.9% Uptime"
+    },
+    "platforms": {
+      "quantum": {
+        "name": "Quantum Opportunity Engine",
+        "description": "AI-powered market opportunity detection and analysis platform"
+      },
+      "arbitrage": {
+        "name": "Real-Time Arbitrage Engine",
+        "description": "Automated price difference detection and execution system"
+      },
+      "zeroInvestment": {
+        "name": "Zero Investment Engine",
+        "description": "Risk-free trading and investment opportunity platform"
+      }
+    },
+    "analytics": {
+      "title": "Advanced Analytics Dashboard",
+      "vision360": {
+        "title": "360° Market Vision",
+        "description": "Complete market overview and analysis"
+      },
+      "predictions": {
+        "title": "AI Predictions",
+        "description": "Machine learning powered market forecasting"
+      },
+      "roiOptimized": {
+        "title": "ROI Optimization",
+        "description": "Maximize returns with intelligent algorithms"
+      }
+    },
+    "ctas": {
+      "accessAI": "Access AI System",
+      "explorePlatform": "Explore Platform",
+      "viewAnalytics": "View Live Analytics"
+    },
+    "dashboardIA": {
+      "title": "AI Dashboard",
+      "description": "Access all artificial intelligence and real-time analytics"
+    },
+    "platforms": {
+      "quantum": {
+        "name": "Quantum Opportunity Engine",
+        "description": "AI-powered market analysis and opportunity detection",
+        "features": {
+          "0": "Machine Learning",
+          "1": "Predictive Analytics", 
+          "2": "Market Intelligence"
+        }
+      },
+      "arbitrage": {
+        "name": "Real-Time Arbitrage Engine",
+        "description": "Automated price monitoring and execution system",
+        "features": {
+          "0": "Price Monitoring",
+          "1": "Auto-Execution",
+          "2": "Risk Management"
+        }
+      },
+      "zeroInvestment": {
+        "name": "Zero Investment Engine",
+        "description": "Capital-free trading and automated operations",
+        "features": {
+          "0": "Credit Facilitation",
+          "1": "Automated Trading",
+          "2": "Risk-Free Operations"
+        }
+      }
+    },
+    "analytics": {
+      "title": "Advanced Market Analytics",
+      "vision360": {
+        "title": "360° Market Vision",
+        "description": "Complete market overview with real-time insights"
+      },
+      "predictions": {
+        "title": "AI Predictions",
+        "description": "Market movement forecasting with 94% accuracy"
+      },
+      "roiOptimized": {
+        "title": "ROI Optimization",
+        "description": "Automated profit maximization algorithms"
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Client Success Stories",
+    "title": "Trusted by Global Market Leaders",
+    "subtitle": "See how industry leaders across 32 countries are revolutionizing their supplement supply chains with our AI-powered platform, achieving unprecedented ROI and market expansion.",
+    "verified": "Verified Enterprise Client",
+    "stats": {
+      "enterpriseClients": "Enterprise Clients",
+      "satisfaction": "Client Satisfaction",
+      "revenueGenerated": "Revenue Generated",
+      "premiumSupport": "Premium Support"
+    },
+    "joinLeaders": "Join hundreds of global leaders already transforming their supplement businesses",
+    "requestDemo": "Request Executive Demo"
+  },
+  "certifications": {
+    "title": "Premium Quality Certifications",
+    "subtitle": "Our commitment to excellence is validated by the world's most recognized quality and safety standards",
+    "items": {
+      "iso22000": "International food safety management system standard ensuring quality at every stage",
+      "gmp": "Good Manufacturing Practice certification guaranteeing pharmaceutical-grade production",
+      "fda": "US Food and Drug Administration approval for safety and efficacy",
+      "haccp": "Hazard Analysis Critical Control Points system for food safety",
+      "nsf": "NSF International certification for public health and safety standards",
+      "euOrganic": "European Union organic certification for natural and sustainable products"
+    },
+    "verified": "All certifications verified and current"
+  },
+  "footer": {
+    "description": "World leader in dietary supplements connecting governments, businesses and consumers to premium suppliers through advanced AI technology.",
+    "businessSolutions": "Business Solutions",
+    "governmentContracts": "Government Contracts",
+    "b2cMarketplace": "B2C Marketplace",
+    "technology": "Technology",
+    "realTimeArbitrage": "Real-Time Arbitrage",
+    "autoExecution": "Auto Execution",
+    "globalCompliance": "Global Compliance",
+    "advancedAI": "Advanced AI",
+    "executiveDashboard": "Executive Dashboard",
+    "premiumContact": "Premium Contact",
+    "globalNetwork": "Global Network",
+    "copyright": "© 2024 Global Supplements. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "compliance": "Compliance"
+  },
+  "countries": {
+    "badge": "Strategic Global Partnerships",
+    "title": "Elite Worldwide Network of Premium Suppliers",
+    "subtitle": "Our exclusive partnerships span 32 countries across 6 continents, connecting governments, enterprises, and healthcare organizations to the world's most trusted supplement manufacturers. Each partnership represents years of rigorous vetting, regulatory compliance, and proven track records in delivering pharmaceutical-grade products to global markets.",
+    "stats": {
+      "active": "Active Countries",
+      "market": "Global Market Value",
+      "suppliers": "Verified Suppliers",
+      "verified": "Quality Certified"
+    },
+    "contact": {
+      "international": "Contact International Team",
+      "operations": "Global Operations Center"
+    },
+    "statusLabels": {
+      "strategic": "strategic",
+      "premium": "premium", 
+      "innovation": "innovation",
+      "established": "established",
+      "growth": "growth",
+      "partner": "partner",
+      "hub": "hub",
+      "quality": "quality",
+      "luxury": "luxury",
+      "logistics": "logistics"
+    },
+    "cta": {
+      "title": "Interested in expanding to strategic markets? Contact our global team",
+      "international": "Contact International Team",
+      "operations": "Global Operations Center"
+    }
+  }
+}

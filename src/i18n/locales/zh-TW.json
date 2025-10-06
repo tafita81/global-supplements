@@ -1,0 +1,70 @@
+{
+  "navigation": {
+    "home": "首頁",
+    "about": "關於我們",
+    "services": "服務",
+    "solutions": "解決方案",
+    "contact": "聯絡",
+    "getQuote": "獲取報價",
+    "partnerWithUs": "與我們合作"
+  },
+  "hero": {
+    "title": "優質全球保健品網絡",
+    "subtitle": "通過量子套利技術和自動化執行，直接連接世界最佳供應商。無需初始投資即可擴展至185+國家。",
+    "stats": {
+      "countries": "活躍國家",
+      "market": "全球市場",
+      "suppliers": "已驗證供應商",
+      "verified": "已驗證"
+    }
+  },
+  "countries": {
+    "usa": "美國",
+    "germany": "德國",
+    "japan": "日本",
+    "uk": "英國",
+    "canada": "加拿大",
+    "australia": "澳洲",
+    "uae": "阿拉伯聯合大公國",
+    "saudi": "沙烏地阿拉伯",
+    "qatar": "卡塔爾",
+    "kuwait": "科威特",
+    "bahrain": "巴林",
+    "oman": "阿曼",
+    "switzerland": "瑞士",
+    "netherlands": "荷蘭",
+    "sweden": "瑞典",
+    "italy": "意大利",
+    "spain": "西班牙",
+    "france": "法國",
+    "singapore": "新加坡",
+    "taiwan": "台灣",
+    "korea": "韓國",
+    "brazil": "巴西",
+    "mexico": "墨西哥",
+    "argentina": "阿根廷",
+    "china": "中國",
+    "india": "印度",
+    "malaysia": "馬來西亞",
+    "chile": "智利",
+    "colombia": "哥倫比亞",
+    "peru": "秘魯",
+    "portugal": "葡萄牙",
+    "panama": "巴拿馬",
+    "paraguay": "巴拉圭"
+  },
+  "testimonials": {
+    "badge": "客戶成功故事",
+    "title": "受全球市場領袖信賴",
+    "subtitle": "了解32個國家的行業領袖如何革新他們的保健品供應鏈",
+    "verified": "經驗證企業客戶",
+    "stats": {
+      "enterpriseClients": "企業客戶",
+      "satisfaction": "客戶滿意度",
+      "revenueGenerated": "創造的收入",
+      "premiumSupport": "高端支援"
+    },
+    "joinLeaders": "加入數百位全球領袖",
+    "requestDemo": "申請企業演示"
+  }
+}

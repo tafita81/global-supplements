@@ -1,0 +1,280 @@
+{
+  "site": {
+    "title": "Global Supplements - プレミアム世界ネットワーク",
+    "description": "先進AI技術を通じて政府、企業、消費者をプレミアムサプライヤーに接続するサプリメント業界の世界的リーダー。",
+    "tagline": "プレミアム世界ネットワーク"
+  },
+  "navigation": {
+    "home": "ホーム",
+    "about": "会社概要",
+    "services": "サービス", 
+    "solutions": "ソリューション",
+    "contact": "お問い合わせ",
+    "getQuote": "見積もり依頼",
+    "partnerWithUs": "パートナー登録",
+    "beautySupplements": "美容サプリメント",
+    "quantumMaterials": "量子材料",
+    "medicalGrade": "医療グレード", 
+    "smartGadgets": "スマートガジェット",
+    "traditionalWellness": "伝統的ウェルネス",
+    "b2bSolutions": "B2Bソリューション",
+    "governmentContracts": "政府契約",
+    "manufacturing": "製造",
+    "researchDevelopment": "研究開発",
+    "marketIntelligence": "市場情報",
+    "enterpriseSolutions": "エンタープライズソリューション",
+    "tagline": "美容 • 量子 • 医療 • ガジェット • ウェルネス",
+    "searchPlaceholder": "美容、量子材料、医療化合物、ガジェットを検索...",
+    "account": "アカウント",
+    "cart": "カート"
+  },
+  "hero": {
+    "title": "グローバルプレミアムサプリメントネットワーク",
+    "subtitle": "革新的なAI技術により、政府、企業、消費者を世界最先端のプレミアムサプライヤーネットワークに接続",
+    "scroll": "スクロール",
+    "stats": {
+      "countries": "国",
+      "annualVolume": "年間取引量",
+      "globalSuppliers": "グローバルサプライヤー",
+      "enterpriseClients": "エンタープライズクライアント"
+    },
+    "videoCategories": {
+      "beautyEnhancement": "美容向上",
+      "quantumProcessing": "量子処理",
+      "medicalGrade": "医療グレード",
+      "smartHealthGadgets": "スマートヘルスガジェット",
+      "traditionalWellness": "伝統的ウェルネス",
+      "descriptions": {
+        "beautyEnhancement": "先進的なバイオアクティブ化合物を含む革新的美容サプリメント",
+        "quantumProcessing": "量子コンピューティングとAI処理向上のための先端材料",
+        "medicalGrade": "臨床応用のための医薬品グレードサプリメント",
+        "smartHealthGadgets": "IoT機能を持つ革新的ヘルステクノロジーデバイス",
+        "traditionalWellness": "一般的な健康とウェルネスのためのプレミアム伝統サプリメント"
+      }
+    }
+  },
+  "products": {
+    "badge": "🚀 先進ソリューションポートフォリオ",
+    "title": "先進グローバルサプリメントカテゴリー",
+    "description": "美容向上サプリメント、量子処理材料、医療グレード化合物、スマートヘルスガジェット、伝統的ウェルネス製品の5つの主要カテゴリーにわたる革新的コレクションをご覧ください。",
+    "requestQuote": "見積もり依頼",
+    "categories": {
+      "beauty": {
+        "title": "美容向上サプリメント",
+        "description": "皮膚再生、アンチエイジング、美的向上のための先進バイオアクティブ化合物を含む革新的美容サプリメント",
+        "features": ["コラーゲンブースター", "アンチエイジングフォーミュラ", "肌の輝き", "髪と爪"]
+      },
+      "quantum": {
+        "title": "量子処理材料",
+        "description": "量子コンピューティングシステム、AI処理向上、機械最適化のための先端材料とサプリメント",
+        "features": ["量子触媒", "処理エンハンサー", "システムオプティマイザー", "AIアクセラレーター"]
+      },
+      "medical": {
+        "title": "医療グレード化合物",
+        "description": "臨床応用、治療的治療、医療研究のための医薬品グレードサプリメント",
+        "features": ["臨床フォーミュラ", "治療化合物", "研究材料", "精密医療"]
+      },
+      "gadgets": {
+        "title": "スマートヘルスガジェット",
+        "description": "IoT機能を統合した革新的ヘルステクノロジーデバイス、ウェアラブル、スマートサプリメント",
+        "features": ["スマートデバイス", "ヘルスウェアラブル", "IoT統合", "デジタルヘルス"]
+      },
+      "wellness": {
+        "title": "伝統的ウェルネス",
+        "description": "一般的な健康、フィットネス、栄養、日常のウェルネスニーズのためのプレミアム伝統サプリメント",
+        "features": ["ビタミン・ミネラル", "フィットネスサポート", "免疫システム", "一般健康"]
+      }
+    },
+    "businessModels": {
+      "b2b": "B2B",
+      "enterprise": "エンタープライズ",
+      "b2c": "B2C", 
+      "consumer": "コンシューマー",
+      "gov": "政府",
+      "procurement": "調達"
+    }
+  },
+  "testimonials": {
+    "badge": "顧客成功事例",
+    "title": "グローバル市場リーダーから信頼",
+    "subtitle": "32カ国の業界リーダーがサプリメントサプライチェーンをどのように革新しているかをご覧ください",
+    "verified": "認証済みエンタープライズクライアント",
+    "joinLeaders": "何百ものグローバルリーダーに参加",
+    "requestDemo": "エグゼクティブデモ依頼"
+  },
+  "countries": {
+    "usa": "アメリカ合衆国",
+    "china": "中国",
+    "germany": "ドイツ",
+    "japan": "日本",
+    "taiwan": "台湾",
+    "india": "インド",
+    "korea": "韓国",
+    "uk": "イギリス",
+    "brazil": "ブラジル",
+    "australia": "オーストラリア",
+    "canada": "カナダ",
+    "mexico": "メキシコ",
+    "spain": "スペイン",
+    "argentina": "アルゼンチン",
+    "chile": "チリ",
+    "colombia": "コロンビア",
+    "peru": "ペルー",
+    "portugal": "ポルトガル",
+    "saudi": "サウジアラビア",
+    "singapore": "シンガポール",
+    "switzerland": "スイス",
+    "uae": "アラブ首長国連邦",
+    "france": "フランス",
+    "italy": "イタリア",
+    "netherlands": "オランダ",
+    "sweden": "スウェーデン",
+    "bahrain": "バーレーン",
+    "kuwait": "クウェート",
+    "malaysia": "マレーシア",
+    "oman": "オマーン",
+    "panama": "パナマ",
+    "paraguay": "パラグアイ",
+    "qatar": "カタール"
+  },
+  "search": {
+    "placeholder": "美容、量子材料、医療化合物、ガジェットを検索..."
+  },
+  "partnerships": {
+    "badge": "戦略的グローバルパートナーシップ",
+    "title": "エリート世界プレミアムサプライヤーネットワーク",
+    "description": "当社の独占パートナーシップは6大陸32ヶ国に及び、政府、企業、ヘルスケア組織を世界で最も信頼できるサプリメント製造業者に接続しています。",
+    "activeCountries": "活動国",
+    "globalMarketValue": "グローバル市場価値",
+    "verifiedSuppliers": "認証済みサプライヤー",
+    "qualityCertified": "品質認証",
+    "contactTeam": "国際チームに連絡",
+    "operationsCenter": "グローバルオペレーションセンター",
+    "interestedExpanding": "戦略的市場への拡大に興味がありますか？当社のグローバルチームにお問い合わせください"
+  },
+  "countries": {
+    "badge": "戦略的グローバルパートナーシップ",
+    "title": "エリート世界プレミアムサプライヤーネットワーク", 
+    "subtitle": "当社の独占パートナーシップは6大陸32ヶ国に及び、政府、企業、ヘルスケア組織を世界で最も信頼できるサプリメント製造業者に接続しています。",
+    "stats": {
+      "active": "活動国",
+      "market": "グローバル市場価値",
+      "suppliers": "認証済みサプライヤー",
+      "verified": "品質認証"
+    },
+    "cta": {
+      "title": "戦略的市場への拡大に興味がありますか？当社のグローバルチームにお問い合わせください"
+    },
+    "contact": {
+      "international": "国際チームに連絡",
+      "operations": "グローバルオペレーションセンター"
+    }
+  },
+  "tech": {
+    "badge": "先進技術",
+    "title": "革命的技術プラットフォーム",
+    "subtitle": "量子コンピューティング、人工知能、機械学習アルゴリズムによって駆動され、前例のない市場洞察と自動実行機能を提供",
+    "features": {
+      "aiEngine": {
+        "title": "AIエンジン",
+        "description": "市場予測と分析のための先進機械学習アルゴリズム",
+        "stats": "94%精度"
+      },
+      "realTime": {
+        "title": "リアルタイム処理",
+        "description": "即座の市場データ処理と機会検出",
+        "stats": "< 50ms応答"
+      },
+      "security": {
+        "title": "エンタープライズセキュリティ",
+        "description": "銀行グレードの暗号化とセキュリティプロトコル",
+        "stats": "256ビットSSL"
+      },
+      "globalNetwork": {
+        "title": "グローバルネットワーク",
+        "description": "185+ヶ国のサプライヤーに接続",
+        "stats": "185+ヶ国"
+      }
+    },
+    "tabs": {
+      "overview": "技術概要",
+      "platforms": "AIプラットフォーム",
+      "analytics": "高度分析"
+    },
+    "aiQuantum": {
+      "title": "量子AIエンジン",
+      "description": "量子コンピューティングアルゴリズムによって動力を得た革命的人工知能で、前例のない市場分析と予測精度を実現。",
+      "badge": "量子コンピューティング"
+    },
+    "bigData": {
+      "title": "ビッグデータ分析",
+      "description": "リアルタイムで数百万のデータポイントを処理し、市場機会を特定し、例外的な精度で価格変動を予測。",
+      "badge": "リアルタイム処理"
+    },
+    "cloudInfra": {
+      "title": "クラウドインフラストラクチャ",
+      "description": "99.9%のアップタイムと世界市場での超高速応答時間を保証するスケーラブルなクラウドアーキテクチャ。",
+      "badge": "99.9%アップタイム"
+    },
+    "dashboardIA": {
+      "title": "AIダッシュボード",
+      "description": "すべての人工知能とリアルタイム分析にアクセス"
+    }
+  },
+  "technology": {
+    "badge": "先進技術",
+    "title": "革命的技術プラットフォーム",
+    "description": "量子コンピューティング、人工知能、機械学習アルゴリズムによって駆動",
+    "aiEngine": "AIエンジン",
+    "aiEngineDesc": "市場予測と分析のための先進機械学習アルゴリズム",
+    "realTimeProcessing": "リアルタイム処理",
+    "realTimeDesc": "即座の市場データ処理と機会検出",
+    "enterpriseSecurity": "エンタープライズセキュリティ",
+    "enterpriseSecurityDesc": "銀行グレードの暗号化とセキュリティプロトコル",
+    "globalNetwork": "グローバルネットワーク",
+    "globalNetworkDesc": "185+ヶ国のサプライヤーに接続",
+    "overview": "技術概要",
+    "aiPlatforms": "AIプラットフォーム",
+    "advancedAnalytics": "高度分析",
+    "quantumAiEngine": "量子AIエンジン",
+    "quantumAiDesc": "量子コンピューティングアルゴリズムによって動力を得た革命的人工知能。",
+    "quantumComputing": "量子コンピューティング",
+    "bigDataAnalytics": "ビッグデータ分析",
+    "bigDataDesc": "リアルタイムで数百万のデータポイントを処理し、市場機会を特定。",
+    "cloudInfrastructure": "クラウドインフラストラクチャ",
+    "cloudDesc": "99.9%のアップタイムを保証するスケーラブルなクラウドアーキテクチャ。",
+    "uptime": "アップタイム",
+    "aiDashboard": "AIダッシュボード",
+    "aiDashboardDesc": "すべての人工知能とリアルタイム分析にアクセス"
+  },
+  "certifications": {
+    "badge": "プレミアム品質認証",
+    "title": "卓越性への当社のコミットメントは、世界で最も認知された品質と安全基準によって検証されています",
+    "iso22000": "各段階での品質を保証する国際食品安全管理システム標準",
+    "gmp": "医薬品グレードの生産を保証する適正製造規範認証",
+    "fda": "安全性と有効性に関する米国食品医薬品局承認",
+    "haccp": "食品安全のための危険分析重要管理点システム",
+    "nsf": "公衆衛生と安全基準のためのNSF国際認証",
+    "euOrganic": "天然で持続可能な製品のための欧州連合オーガニック認証",
+    "verified": "すべての認証が検証され現在有効"
+  },
+  "footer": {
+    "description": "先進AI技術を通じて政府、企業、消費者をプレミアムサプライヤーに接続するサプリメント業界の世界的リーダー。",
+    "businessSolutions": "ビジネスソリューション",
+    "b2bGlobalTrading": "B2Bグローバル貿易",
+    "governmentContracts": "政府契約",
+    "b2cMarketplace": "B2Cマーケットプレイス",
+    "technology": "技術",
+    "realTimeArbitrage": "リアルタイム裁定取引",
+    "autoExecution": "自動実行",
+    "globalCompliance": "グローバルコンプライアンス",
+    "advancedAi": "先進AI",
+    "executiveDashboard": "エグゼクティブダッシュボード",
+    "premiumContact": "プレミアムコンタクト",
+    "globalNetwork": "グローバルネットワーク",
+    "copyright": "© 2024 Global Supplements. 全著作権所有。",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfUse": "利用規約",
+    "compliance": "コンプライアンス"
+  }
+}

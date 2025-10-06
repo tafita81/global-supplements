@@ -1,0 +1,319 @@
+{
+  "site": {
+    "title": "Global Supplements - Red Premium Mundial",
+    "description": "Líder mundial en suplementos dietéticos conectando gobiernos, empresas y consumidores con proveedores premium a través de tecnología IA avanzada.",
+    "tagline": "Red Premium Mundial"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios", 
+    "solutions": "Soluciones",
+    "contact": "Contacto",
+    "getQuote": "Solicitar Cotización",
+    "partnerWithUs": "Asóciate con Nosotros",
+    "beautySupplements": "Suplementos de Belleza",
+    "quantumMaterials": "Materiales Cuánticos",
+    "medicalGrade": "Grado Médico",
+    "smartGadgets": "Dispositivos Inteligentes",
+    "traditionalWellness": "Bienestar Tradicional",
+    "b2bSolutions": "Soluciones B2B",
+    "governmentContracts": "Contratos Gubernamentales",
+    "manufacturing": "Manufactura",
+    "researchDevelopment": "Investigación y Desarrollo",
+    "marketIntelligence": "Inteligencia de Mercado",
+    "enterpriseSolutions": "Soluciones Empresariales",
+    "searchPlaceholder": "Buscar belleza, materiales cuánticos, compuestos médicos, dispositivos...",
+    "account": "Cuenta",
+    "cart": "Carrito",
+    "tagline": "Belleza • Cuántico • Médico • Dispositivos • Bienestar"
+  },
+  "hero": {
+    "title": "Red Global Premium de Suplementos",
+    "subtitle": "Conectamos gobiernos, empresas y consumidores a la red global más avanzada de proveedores premium a través de tecnología de IA revolucionaria",
+    "premiumSupplements": "Suplementos Premium",
+    "executiveDashboard": "Dashboard Ejecutivo", 
+    "scroll": "Desplazar",
+    "stats": {
+      "countries": "Países",
+      "market": "Mercado Global",
+      "suppliers": "Proveedores",
+      "verified": "Verificados",
+      "contracts": "Contratos",
+      "annualRevenue": "Ingresos Anuales",
+      "annualVolume": "Volumen Anual",
+      "globalSuppliers": "Proveedores Globales", 
+      "enterpriseClients": "Clientes Empresariales"
+    },
+    "videoCategories": {
+      "beautyEnhancement": "Mejora de Belleza",
+      "quantumProcessing": "Procesamiento Cuántico", 
+      "medicalGrade": "Grado Médico",
+      "smartHealthGadgets": "Dispositivos Inteligentes de Salud",
+      "traditionalWellness": "Bienestar Tradicional",
+      "descriptions": {
+        "beautyEnhancement": "Suplementos revolucionarios de belleza con compuestos bioactivos avanzados",
+        "quantumProcessing": "Materiales avanzados para computación cuántica y mejora del procesamiento de IA",
+        "medicalGrade": "Suplementos de grado farmacéutico para aplicaciones clínicas",
+        "smartHealthGadgets": "Dispositivos innovadores de tecnología de salud con capacidades IoT",
+        "traditionalWellness": "Suplementos tradicionales premium para salud general y bienestar"
+      }
+    }
+  },
+  "countries": {
+    "usa": "Estados Unidos",
+    "germany": "Alemania",
+    "japan": "Japón",
+    "uk": "Reino Unido",
+    "canada": "Canadá",
+    "australia": "Australia",
+    "uae": "Emiratos Árabes Unidos",
+    "saudi": "Arabia Saudí",
+    "qatar": "Catar",
+    "kuwait": "Kuwait",
+    "bahrain": "Baréin",
+    "oman": "Omán",
+    "switzerland": "Suiza",
+    "netherlands": "Países Bajos",
+    "sweden": "Suecia",
+    "italy": "Italia",
+    "spain": "España",
+    "france": "Francia",
+    "singapore": "Singapur",
+    "taiwan": "Taiwán",
+    "korea": "Corea del Sur",
+    "brazil": "Brasil",
+    "mexico": "México",
+    "argentina": "Argentina",
+    "china": "China",
+    "india": "India",
+    "malaysia": "Malasia",
+    "chile": "Chile",
+    "colombia": "Colombia",
+    "peru": "Perú",
+    "portugal": "Portugal",
+    "panama": "Panamá",
+    "paraguay": "Paraguay"
+  },
+  "products": {
+    "badge": "🚀 Portafolio de Soluciones Avanzadas",
+    "title": "Categorías Globales Avanzadas de Suplementos",
+    "description": "Descubre nuestra colección revolucionaria que abarca 5 categorías principales: suplementos de mejora de belleza, materiales de procesamiento cuántico, compuestos de grado médico, dispositivos inteligentes de salud y productos de bienestar tradicional. Cada categoría representa innovación de vanguardia para B2B, B2C y contratación gubernamental.",
+    "requestQuote": "Solicitar Cotización",
+    "categories": {
+      "beauty": {
+        "title": "Suplementos de Mejora de Belleza",
+        "description": "Suplementos revolucionarios de belleza con compuestos bioactivos avanzados para regeneración de la piel, anti-envejecimiento y mejora estética",
+        "features": ["Potenciadores de Colágeno", "Fórmulas Anti-Edad", "Radiancia de la Piel", "Cabello y Uñas"]
+      },
+      "quantum": {
+        "title": "Materiales de Procesamiento Cuántico", 
+        "description": "Materiales avanzados y suplementos para sistemas de computación cuántica, mejora del procesamiento de IA y optimización de máquinas",
+        "features": ["Catalizadores Cuánticos", "Potenciadores de Procesamiento", "Optimizadores de Sistema", "Aceleradores de IA"]
+      },
+      "medical": {
+        "title": "Compuestos de Grado Médico",
+        "description": "Suplementos de grado farmacéutico para aplicaciones clínicas, tratamientos terapéuticos e investigación médica",
+        "features": ["Fórmulas Clínicas", "Compuestos Terapéuticos", "Materiales de Investigación", "Medicina de Precisión"]
+      },
+      "gadgets": {
+        "title": "Dispositivos Inteligentes de Salud",
+        "description": "Dispositivos innovadores de tecnología de salud, wearables y suplementos inteligentes integrados con capacidades IoT",
+        "features": ["Dispositivos Inteligentes", "Wearables de Salud", "Integración IoT", "Salud Digital"]
+      },
+      "wellness": {
+        "title": "Bienestar Tradicional",
+        "description": "Suplementos tradicionales premium para salud general, fitness, nutrición y necesidades de bienestar cotidiano",
+        "features": ["Vitaminas y Minerales", "Soporte de Fitness", "Sistema Inmunológico", "Salud General"]
+      }
+    },
+    "businessModels": {
+      "b2b": "B2B",
+      "enterprise": "Empresarial",
+      "b2c": "B2C",
+      "consumer": "Consumidor", 
+      "gov": "Gob",
+      "procurement": "Contratación"
+    }
+  },
+  "countries": {
+    "badge": "Alianzas Estratégicas Globales",
+    "title": "Red Mundial Elite de Proveedores Premium",
+    "subtitle": "Nuestras alianzas exclusivas abarcan 32 países en 6 continentes, conectando gobiernos, empresas y organizaciones de salud con los fabricantes de suplementos más confiables del mundo. Cada alianza representa años de evaluación rigurosa, cumplimiento regulatorio y historiales probados en la entrega de productos de grado farmacéutico a mercados globales.",
+    "stats": {
+      "active": "Países Activos",
+      "market": "Valor del Mercado Global",
+      "suppliers": "Proveedores Verificados",
+      "verified": "Certificados de Calidad"
+    },
+    "statusLabels": {
+      "strategic": "estratégico",
+      "premium": "premium", 
+      "innovation": "innovación",
+      "established": "establecido",
+      "growth": "crecimiento",
+      "partner": "socio",
+      "hub": "centro",
+      "quality": "calidad",
+      "luxury": "lujo",
+      "logistics": "logística"
+    },
+    "statusLabels": {
+      "strategic": "estratégico",
+      "premium": "premium", 
+      "innovation": "innovación",
+      "established": "establecido",
+      "growth": "crecimiento",
+      "partner": "socio",
+      "hub": "centro",
+      "quality": "calidad",
+      "luxury": "lujo",
+      "logistics": "logística"
+    },
+    "cta": {
+      "title": "¿Interesado en expandir a mercados estratégicos? Contacta nuestro equipo global",
+      "international": "Contactar Equipo Internacional",
+      "operations": "Centro Global de Operaciones"
+    }
+  },
+  "tech": {
+    "badge": "Tecnología Avanzada",
+    "title": "Plataforma Tecnológica Revolucionaria",
+    "subtitle": "Impulsada por computación cuántica, inteligencia artificial y algoritmos de machine learning para ofrecer insights de mercado sin precedentes y capacidades de ejecución automatizada",
+    "features": {
+      "aiEngine": {
+        "title": "Motor de IA",
+        "description": "Algoritmos avanzados de machine learning para predicción y análisis de mercado",
+        "stats": "94% Precisión"
+      },
+      "realTime": {
+        "title": "Procesamiento en Tiempo Real",
+        "description": "Procesamiento instantáneo de datos de mercado y detección de oportunidades",
+        "stats": "< 50ms Respuesta"
+      },
+      "security": {
+        "title": "Seguridad Empresarial",
+        "description": "Encriptación y protocolos de seguridad de grado bancario",
+        "stats": "SSL 256-bit"
+      },
+      "globalNetwork": {
+        "title": "Red Global",
+        "description": "Conectado a proveedores en más de 185 países en todo el mundo",
+        "stats": "185+ Países"
+      }
+    },
+    "tabs": {
+      "overview": "Visión General de Tecnología",
+      "platforms": "Plataformas de IA",
+      "analytics": "Análisis Avanzado"
+    },
+    "aiQuantum": {
+      "title": "Motor de IA Cuántico",
+      "description": "Inteligencia artificial revolucionaria impulsada por algoritmos de computación cuántica para análisis y precisión de predicción de mercado sin precedentes.",
+      "badge": "Computación Cuántica"
+    },
+    "bigData": {
+      "title": "Análisis de Big Data",
+      "description": "Procesa millones de puntos de datos en tiempo real para identificar oportunidades de mercado y predecir movimientos de precios con precisión excepcional.",
+      "badge": "Procesamiento en Tiempo Real"
+    },
+    "cloudInfra": {
+      "title": "Infraestructura en la Nube",
+      "description": "Arquitectura en la nube escalable que asegura 99.9% de tiempo de actividad y tiempos de respuesta ultrarrápidos en mercados globales.",
+      "badge": "99.9% Tiempo Activo"
+    },
+    "ctas": {
+      "accessAI": "Acceder al Sistema de IA",
+      "explorePlatform": "Explorar Plataforma",
+      "viewAnalytics": "Ver Análisis en Vivo"
+    },
+    "dashboardIA": {
+      "title": "Dashboard de IA",
+      "description": "Acceder a toda la inteligencia artificial y análisis en tiempo real"
+    },
+    "platforms": {
+      "quantum": {
+        "name": "Motor de Oportunidades Cuántico",
+        "description": "Análisis de mercado impulsado por IA y detección de oportunidades",
+        "features": {
+          "0": "Aprendizaje Automático",
+          "1": "Análisis Predictivo",
+          "2": "Inteligencia de Mercado"
+        }
+      },
+      "arbitrage": {
+        "name": "Motor de Arbitraje en Tiempo Real",
+        "description": "Sistema automatizado de monitoreo de precios y ejecución",
+        "features": {
+          "0": "Monitoreo de Precios",
+          "1": "Auto-Ejecución",
+          "2": "Gestión de Riesgos"
+        }
+      },
+      "zeroInvestment": {
+        "name": "Motor de Inversión Cero",
+        "description": "Comercio sin capital y operaciones automatizadas",
+        "features": {
+          "0": "Facilitación de Crédito",
+          "1": "Comercio Automatizado",
+          "2": "Operaciones Sin Riesgo"
+        }
+      }
+    },
+    "analytics": {
+      "title": "Análisis de Mercado Avanzado",
+      "vision360": {
+        "title": "Visión de Mercado 360°",
+        "description": "Vista completa del mercado con insights en tiempo real"
+      },
+      "predictions": {
+        "title": "Predicciones de IA",
+        "description": "Pronóstico de movimientos del mercado con 94% de precisión"
+      },
+      "roiOptimized": {
+        "title": "Optimización de ROI",
+        "description": "Algoritmos automáticos de maximización de beneficios"
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Historias de Éxito de Clientes",
+    "title": "Confiado por Líderes del Mercado Global",
+    "subtitle": "Ve cómo los líderes de la industria en 32 países están revolucionando sus cadenas de suministro de suplementos con nuestra plataforma impulsada por IA, logrando ROI sin precedentes y expansión de mercado.",
+    "verified": "Cliente Empresarial Verificado",
+    "joinLeaders": "Únete a cientos de líderes globales que ya están transformando sus negocios de suplementos",
+    "requestDemo": "Solicitar Demo Ejecutivo"
+  },
+  "certifications": {
+    "title": "Certificaciones de Calidad Premium",
+    "subtitle": "Nuestro compromiso con la excelencia está validado por los estándares de calidad y seguridad más reconocidos del mundo",
+    "items": {
+      "iso22000": "Estándar internacional de sistema de gestión de seguridad alimentaria que asegura calidad en cada etapa",
+      "gmp": "Certificación de Buenas Prácticas de Manufactura que garantiza producción de grado farmacéutico",
+      "fda": "Aprobación de la Administración de Alimentos y Medicamentos de EE.UU. para seguridad y eficacia",
+      "haccp": "Sistema de Análisis de Peligros y Puntos Críticos de Control para seguridad alimentaria",
+      "nsf": "Certificación NSF International para estándares de salud pública y seguridad",
+      "euOrganic": "Certificación orgánica de la Unión Europea para productos naturales y sostenibles"
+    },
+    "verified": "Todas las certificaciones verificadas y vigentes"
+  },
+  "footer": {
+    "description": "Líder mundial en suplementos dietéticos conectando gobiernos, empresas y consumidores con proveedores premium a través de tecnología IA avanzada.",
+    "businessSolutions": "Soluciones de Negocio",
+    "b2bGlobalTrading": "Comercio Global B2B",
+    "governmentContracts": "Contratos Gubernamentales",
+    "b2cMarketplace": "Mercado B2C",
+    "technology": "Tecnología",
+    "realTimeArbitrage": "Arbitraje en Tiempo Real",
+    "autoExecution": "Ejecución Automática",
+    "globalCompliance": "Cumplimiento Global",
+    "advancedAI": "IA Avanzada",
+    "executiveDashboard": "Dashboard Ejecutivo",
+    "premiumContact": "Contacto Premium",
+    "globalNetwork": "Red Global",
+    "copyright": "© 2024 Global Supplements. Todos los derechos reservados.",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfUse": "Términos de Uso",
+    "compliance": "Cumplimiento"
+  }
+}

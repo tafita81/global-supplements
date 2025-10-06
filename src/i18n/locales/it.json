@@ -1,0 +1,280 @@
+{
+  "site": {
+    "title": "Global Supplements - Rete Premium Mondiale",
+    "description": "Leader mondiale negli integratori alimentari che collega governi, aziende e consumatori a fornitori premium attraverso tecnologia IA avanzata.",
+    "tagline": "Rete Premium Mondiale"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "Chi Siamo",
+    "services": "Servizi", 
+    "solutions": "Soluzioni",
+    "contact": "Contatto",
+    "getQuote": "Richiedi Preventivo",
+    "partnerWithUs": "Diventa Partner",
+    "beautySupplements": "Integratori Bellezza",
+    "quantumMaterials": "Materiali Quantici",
+    "medicalGrade": "Grado Medico",
+    "smartGadgets": "Dispositivi Intelligenti",
+    "traditionalWellness": "Benessere Tradizionale",
+    "b2bSolutions": "Soluzioni B2B",
+    "governmentContracts": "Contratti Governativi",
+    "manufacturing": "Produzione",
+    "researchDevelopment": "Ricerca & Sviluppo",
+    "marketIntelligence": "Intelligence di Mercato",
+    "enterpriseSolutions": "Soluzioni Enterprise",
+    "tagline": "Bellezza • Quantum • Medico • Dispositivi • Benessere",
+    "searchPlaceholder": "Cerca bellezza, materiali quantici, composti medici, dispositivi...",
+    "account": "Account",
+    "cart": "Carrello"
+  },
+  "hero": {
+    "title": "Rete Globale Premium di Integratori",
+    "subtitle": "Connettendo governi, aziende e consumatori alla rete globale più avanzata di fornitori premium attraverso tecnologia AI rivoluzionaria",
+    "scroll": "Scorri",
+    "stats": {
+      "countries": "Paesi",
+      "annualVolume": "Volume Annuale",
+      "globalSuppliers": "Fornitori Globali",
+      "enterpriseClients": "Clienti Enterprise"
+    },
+    "videoCategories": {
+      "beautyEnhancement": "Miglioramento Bellezza",
+      "quantumProcessing": "Elaborazione Quantica",
+      "medicalGrade": "Grado Medico",
+      "smartHealthGadgets": "Dispositivi Salute Intelligenti",
+      "traditionalWellness": "Benessere Tradizionale",
+      "descriptions": {
+        "beautyEnhancement": "Integratori rivoluzionari per la bellezza con composti bioattivi avanzati",
+        "quantumProcessing": "Materiali avanzati per il quantum computing e il miglioramento AI",
+        "medicalGrade": "Integratori di grado farmaceutico per applicazioni cliniche",
+        "smartHealthGadgets": "Dispositivi innovativi di tecnologia sanitaria con capacità IoT",
+        "traditionalWellness": "Integratori tradizionali premium per salute generale e benessere"
+      }
+    }
+  },
+  "products": {
+    "badge": "🚀 Portfolio Soluzioni Avanzate",
+    "title": "Categorie Globali Avanzate di Integratori",
+    "description": "Scopri la nostra collezione rivoluzionaria che abbraccia 5 categorie principali: integratori di miglioramento bellezza, materiali di elaborazione quantica, composti di grado medico, dispositivi sanitari intelligenti e prodotti di benessere tradizionale.",
+    "requestQuote": "Richiedi Preventivo",
+    "categories": {
+      "beauty": {
+        "title": "Integratori Miglioramento Bellezza",
+        "description": "Integratori rivoluzionari per la bellezza con composti bioattivi avanzati per rigenerazione cutanea, anti-aging e miglioramento estetico",
+        "features": ["Booster Collagene", "Formule Anti-Age", "Luminosità Pelle", "Capelli & Unghie"]
+      },
+      "quantum": {
+        "title": "Materiali Elaborazione Quantica",
+        "description": "Materiali avanzati e integratori per sistemi di quantum computing, miglioramento elaborazione AI e ottimizzazione macchine",
+        "features": ["Catalizzatori Quantici", "Potenziatori Elaborazione", "Ottimizzatori Sistema", "Acceleratori AI"]
+      },
+      "medical": {
+        "title": "Composti Grado Medico",
+        "description": "Integratori di grado farmaceutico per applicazioni cliniche, trattamenti terapeutici e ricerca medica",
+        "features": ["Formule Cliniche", "Composti Terapeutici", "Materiali Ricerca", "Medicina Precisione"]
+      },
+      "gadgets": {
+        "title": "Dispositivi Salute Intelligenti",
+        "description": "Dispositivi innovativi di tecnologia sanitaria, wearable e integratori intelligenti integrati con capacità IoT",
+        "features": ["Dispositivi Intelligenti", "Wearable Salute", "Integrazione IoT", "Salute Digitale"]
+      },
+      "wellness": {
+        "title": "Benessere Tradizionale",
+        "description": "Integratori tradizionali premium per salute generale, fitness, nutrizione e necessità quotidiane di benessere",
+        "features": ["Vitamine & Minerali", "Supporto Fitness", "Sistema Immunitario", "Salute Generale"]
+      }
+    },
+    "businessModels": {
+      "b2b": "B2B",
+      "enterprise": "Enterprise",
+      "b2c": "B2C",
+      "consumer": "Consumatore",
+      "gov": "Gov",
+      "procurement": "Appalti"
+    }
+  },
+  "testimonials": {
+    "badge": "Storie di Successo Clienti",
+    "title": "Di Fiducia dei Leader di Mercato Globali",
+    "subtitle": "Vedi come i leader del settore in 32 paesi stanno rivoluzionando le loro catene di fornitura di integratori",
+    "verified": "Cliente Enterprise Verificato",
+    "joinLeaders": "Unisciti a centinaia di leader globali",
+    "requestDemo": "Richiedi Demo Esecutiva"
+  },
+  "countries": {
+    "usa": "Stati Uniti",
+    "china": "Cina",
+    "germany": "Germania",
+    "japan": "Giappone",
+    "taiwan": "Taiwan",
+    "india": "India",
+    "korea": "Corea del Sud",
+    "uk": "Regno Unito",
+    "brazil": "Brasile",
+    "australia": "Australia",
+    "canada": "Canada",
+    "mexico": "Messico",
+    "spain": "Spagna",
+    "argentina": "Argentina",
+    "chile": "Cile",
+    "colombia": "Colombia",
+    "peru": "Perù",
+    "portugal": "Portogallo",
+    "saudi": "Arabia Saudita",
+    "singapore": "Singapore",
+    "switzerland": "Svizzera",
+    "uae": "Emirati Arabi Uniti",
+    "france": "Francia",
+    "italy": "Italia",
+    "netherlands": "Paesi Bassi",
+    "sweden": "Svezia",
+    "bahrain": "Bahrein",
+    "kuwait": "Kuwait",
+    "malaysia": "Malesia",
+    "oman": "Oman",
+    "panama": "Panama",
+    "paraguay": "Paraguay",
+    "qatar": "Qatar"
+  },
+  "search": {
+    "placeholder": "Cerca bellezza, materiali quantici, composti medici, dispositivi..."
+  },
+  "partnerships": {
+    "badge": "Partnership Strategiche Globali",
+    "title": "Rete Mondiale Elite di Fornitori Premium",
+    "description": "Le nostre partnership esclusive si estendono su 32 paesi attraverso 6 continenti, collegando governi, aziende e organizzazioni sanitarie ai produttori di integratori più affidabili al mondo.",
+    "activeCountries": "Paesi Attivi",
+    "globalMarketValue": "Valore del Mercato Globale",
+    "verifiedSuppliers": "Fornitori Verificati",
+    "qualityCertified": "Qualità Certificata",
+    "contactTeam": "Contatta il Team Internazionale",
+    "operationsCenter": "Centro Operazioni Globale",
+    "interestedExpanding": "Interessato ad espandere nei mercati strategici? Contatta il nostro team globale"
+  },
+  "countries": {
+    "badge": "Partnership Strategiche Globali",
+    "title": "Rete Mondiale Elite di Fornitori Premium",
+    "subtitle": "Le nostre partnership esclusive si estendono su 32 paesi attraverso 6 continenti, collegando governi, aziende e organizzazioni sanitarie ai produttori di integratori più affidabili al mondo.",
+    "stats": {
+      "active": "Paesi Attivi",
+      "market": "Valore del Mercato Globale",
+      "suppliers": "Fornitori Verificati",
+      "verified": "Qualità Certificata"
+    },
+    "cta": {
+      "title": "Interessato ad espandere nei mercati strategici? Contatta il nostro team globale"
+    },
+    "contact": {
+      "international": "Contatta il Team Internazionale",
+      "operations": "Centro Operazioni Globale"
+    }
+  },
+  "tech": {
+    "badge": "Tecnologia Avanzata",
+    "title": "Piattaforma Tecnologica Rivoluzionaria",
+    "subtitle": "Alimentata da quantum computing, intelligenza artificiale e algoritmi di machine learning per fornire intuizioni di mercato senza precedenti e capacità di esecuzione automatizzata",
+    "features": {
+      "aiEngine": {
+        "title": "Motore IA",
+        "description": "Algoritmi di machine learning avanzati per previsione e analisi di mercato",
+        "stats": "Precisione 94%"
+      },
+      "realTime": {
+        "title": "Elaborazione in Tempo Reale",
+        "description": "Elaborazione istantanea dei dati di mercato e rilevamento opportunità",
+        "stats": "Risposta < 50ms"
+      },
+      "security": {
+        "title": "Sicurezza Enterprise",
+        "description": "Crittografia e protocolli di sicurezza di livello bancario",
+        "stats": "256-bit SSL"
+      },
+      "globalNetwork": {
+        "title": "Rete Globale",
+        "description": "Connesso a fornitori in oltre 185 paesi",
+        "stats": "185+ Paesi"
+      }
+    },
+    "tabs": {
+      "overview": "Panoramica Tecnologica",
+      "platforms": "Piattaforme IA",
+      "analytics": "Analytics Avanzate"
+    },
+    "aiQuantum": {
+      "title": "Motore IA Quantico",
+      "description": "Intelligenza artificiale rivoluzionaria alimentata da algoritmi di quantum computing per analisi di mercato e precisione di previsione senza precedenti.",
+      "badge": "Quantum Computing"
+    },
+    "bigData": {
+      "title": "Analytics Big Data",
+      "description": "Elabora milioni di punti dati in tempo reale per identificare opportunità di mercato e prevedere movimenti di prezzo con precisione eccezionale.",
+      "badge": "Elaborazione in Tempo Reale"
+    },
+    "cloudInfra": {
+      "title": "Infrastruttura Cloud",
+      "description": "Architettura cloud scalabile che garantisce 99.9% di uptime e tempi di risposta ultra-veloci sui mercati globali.",
+      "badge": "99.9% Uptime"
+    },
+    "dashboardIA": {
+      "title": "Dashboard IA",
+      "description": "Accedi a tutta l'intelligenza artificiale e alle analytics in tempo reale"
+    }
+  },
+  "technology": {
+    "badge": "Tecnologia Avanzata",
+    "title": "Piattaforma Tecnologica Rivoluzionaria",
+    "description": "Alimentata da quantum computing, intelligenza artificiale e algoritmi di machine learning",
+    "aiEngine": "Motore IA",
+    "aiEngineDesc": "Algoritmi di machine learning avanzati per previsione e analisi di mercato",
+    "realTimeProcessing": "Elaborazione in Tempo Reale",
+    "realTimeDesc": "Elaborazione istantanea dei dati di mercato e rilevamento opportunità",
+    "enterpriseSecurity": "Sicurezza Enterprise",
+    "enterpriseSecurityDesc": "Crittografia e protocolli di sicurezza di livello bancario",
+    "globalNetwork": "Rete Globale",
+    "globalNetworkDesc": "Connesso a fornitori in oltre 185 paesi",
+    "overview": "Panoramica Tecnologica",
+    "aiPlatforms": "Piattaforme IA",
+    "advancedAnalytics": "Analytics Avanzate",
+    "quantumAiEngine": "Motore IA Quantico",
+    "quantumAiDesc": "Intelligenza artificiale rivoluzionaria alimentata da algoritmi di quantum computing.",
+    "quantumComputing": "Quantum Computing",
+    "bigDataAnalytics": "Analytics Big Data",
+    "bigDataDesc": "Elabora milioni di punti dati in tempo reale per identificare opportunità di mercato.",
+    "cloudInfrastructure": "Infrastruttura Cloud",
+    "cloudDesc": "Architettura cloud scalabile che garantisce 99.9% di uptime.",
+    "uptime": "Uptime",
+    "aiDashboard": "Dashboard IA",
+    "aiDashboardDesc": "Accedi a tutta l'intelligenza artificiale e alle analytics in tempo reale"
+  },
+  "certifications": {
+    "badge": "Certificazioni di Qualità Premium",
+    "title": "Il nostro impegno per l'eccellenza è validato dagli standard di qualità e sicurezza più riconosciuti al mondo",
+    "iso22000": "Standard internazionale del sistema di gestione della sicurezza alimentare che garantisce la qualità in ogni fase",
+    "gmp": "Certificazione Good Manufacturing Practice che garantisce la produzione di grado farmaceutico",
+    "fda": "Approvazione della Food and Drug Administration statunitense per sicurezza ed efficacia",
+    "haccp": "Sistema di Analisi dei Pericoli e Punti Critici di Controllo per la sicurezza alimentare",
+    "nsf": "Certificazione NSF International per standard di salute pubblica e sicurezza",
+    "euOrganic": "Certificazione biologica dell'Unione Europea per prodotti naturali e sostenibili",
+    "verified": "Tutte le certificazioni verificate e attuali"
+  },
+  "footer": {
+    "description": "Leader mondiale negli integratori alimentari che collega governi, aziende e consumatori a fornitori premium attraverso tecnologia IA avanzata.",
+    "businessSolutions": "Soluzioni Business",
+    "b2bGlobalTrading": "Trading Globale B2B",
+    "governmentContracts": "Contratti Governativi",
+    "b2cMarketplace": "Marketplace B2C",
+    "technology": "Tecnologia",
+    "realTimeArbitrage": "Arbitraggio in Tempo Reale",
+    "autoExecution": "Esecuzione Automatica",
+    "globalCompliance": "Conformità Globale",
+    "advancedAi": "IA Avanzata",
+    "executiveDashboard": "Dashboard Esecutiva",
+    "premiumContact": "Contatto Premium",
+    "globalNetwork": "Rete Globale",
+    "copyright": "© 2024 Global Supplements. Tutti i diritti riservati.",
+    "privacyPolicy": "Politica sulla Privacy",
+    "termsOfUse": "Termini di Utilizzo",
+    "compliance": "Conformità"
+  }
+}

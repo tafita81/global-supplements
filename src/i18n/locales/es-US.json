@@ -1,0 +1,98 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "solutions": "Soluciones",
+    "contact": "Contacto",
+    "getQuote": "Obtener Cotización",
+    "partnerWithUs": "Asociarse con Nosotros"
+  },
+  "hero": {
+    "title": "Red Global Premium de Suplementos",
+    "subtitle": "Conectamos gobiernos, empresas y consumidores a la red global más avanzada de proveedores premium a través de tecnología de IA revolucionaria",
+    "premiumSupplements": "Suplementos Premium",
+    "executiveDashboard": "Dashboard Ejecutivo",
+    "scroll": "Desplazar", 
+    "stats": {
+      "countries": "Países",
+      "market": "Mercado Global",
+      "suppliers": "Proveedores",
+      "verified": "Verificados",
+      "contracts": "Contratos",
+      "annualRevenue": "Ingresos Anuales"
+    }
+  },
+  "about": {
+    "title": "Sobre Global Supplements",
+    "subtitle": "Líder mundial en distribución de suplementos premium con tecnología avanzada de inteligencia artificial",
+    "description": "Somos la red global más avanzada de suplementos premium, conectando distribuidores con los mejores proveedores del mundo a través de tecnología de vanguardia y procesos completamente automatizados.",
+    "features": {
+      "global": "Red Global",
+      "globalDesc": "185+ países conectados",
+      "verified": "Proveedores Verificados",
+      "verifiedDesc": "100% auditados y certificados",
+      "automated": "Procesos Automatizados",
+      "automatedDesc": "IA y tecnología cuántica",
+      "support": "Soporte 24/7",
+      "supportDesc": "Equipo especializado global"
+    }
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones completas para expansión global en el mercado de suplementos"
+  },
+  "stats": {
+    "title": "Números que Impresionan",
+    "subtitle": "Resultados reales de nuestra red global de socios",
+    "activeCountries": "Países Activos",
+    "globalMarket": "Mercado Global",
+    "verifiedSuppliers": "Proveedores Verificados",
+    "successRate": "Tasa de Éxito"
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen Nuestros Socios",
+    "subtitle": "Historias reales de éxito de nuestra red global"
+  },
+  "contact": {
+    "title": "¿Listo para Expandirse a Mercados Estratégicos?",
+    "subtitle": "Únase a distribuidores de élite que ya generan millones a través de nuestra plataforma. Obtenga acceso instantáneo a 185+ países y más de $220B+ en oportunidades anuales.",
+    "cta": "Solicitar Acceso de Socio",
+    "demo": "Ver Demo en Vivo"
+  },
+  "countries": {
+    "usa": "Estados Unidos",
+    "germany": "Alemania",
+    "japan": "Japón",
+    "uk": "Reino Unido",
+    "canada": "Canadá",
+    "australia": "Australia",
+    "uae": "Emiratos Árabes Unidos",
+    "saudi": "Arabia Saudita",
+    "qatar": "Qatar",
+    "kuwait": "Kuwait",
+    "bahrain": "Baréin",
+    "oman": "Omán",
+    "switzerland": "Suiza",
+    "netherlands": "Países Bajos",
+    "sweden": "Suecia",
+    "italy": "Italia",
+    "spain": "España",
+    "france": "Francia",
+    "singapore": "Singapur",
+    "taiwan": "Taiwán",
+    "korea": "Corea del Sur",
+    "brazil": "Brasil",
+    "mexico": "México",
+    "argentina": "Argentina",
+    "china": "China",
+    "india": "India",
+    "malaysia": "Malasia",
+    "chile": "Chile",
+    "colombia": "Colombia",
+    "peru": "Perú",
+    "portugal": "Portugal",
+    "panama": "Panamá",
+    "paraguay": "Paraguay"
+  }
+}

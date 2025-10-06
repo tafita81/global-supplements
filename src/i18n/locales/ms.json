@@ -1,0 +1,216 @@
+{
+  "site": {
+    "title": "Global Supplements - Rangkaian Premium Global",
+    "description": "Pemimpin global dalam suplemen makanan yang menghubungkan kerajaan, perniagaan dan pengguna dengan pembekal premium melalui teknologi AI yang canggih.",
+    "tagline": "Rangkaian Premium Global"
+  },
+  "navigation": {
+    "home": "Utama",
+    "about": "Tentang Kami",
+    "services": "Perkhidmatan",
+    "solutions": "Penyelesaian",
+    "contact": "Hubungi",
+    "getQuote": "Dapatkan Sebut Harga",
+    "partnerWithUs": "Bekerjasama Dengan Kami",
+    "beautySupplements": "Suplemen Kecantikan",
+    "quantumMaterials": "Bahan Kuantum",
+    "medicalGrade": "Gred Perubatan",
+    "smartGadgets": "Gadget Pintar",
+    "traditionalWellness": "Kesihatan Tradisional",
+    "b2bSolutions": "Penyelesaian B2B",
+    "governmentContracts": "Kontrak Kerajaan",
+    "manufacturing": "Pembuatan",
+    "researchDevelopment": "Penyelidikan & Pembangunan",
+    "marketIntelligence": "Risikan Pasaran",
+    "enterpriseSolutions": "Penyelesaian Enterprise",
+    "tagline": "Kecantikan • Kuantum • Perubatan • Gadget • Kesihatan",
+    "searchPlaceholder": "Cari kecantikan, bahan kuantum, sebatian perubatan, gadget...",
+    "account": "Akaun",
+    "cart": "Troli"
+  },
+  "hero": {
+    "title": "Rangkaian Suplemen Premium Global",
+    "subtitle": "Menghubungkan kerajaan, perniagaan dan pengguna dengan rangkaian pembekal premium paling canggih di dunia melalui teknologi AI yang revolusioner",
+    "scroll": "Tatal",
+    "stats": {
+      "countries": "Negara",
+      "annualVolume": "Volume Tahunan",
+      "globalSuppliers": "Pembekal Global",
+      "enterpriseClients": "Klien Enterprise"
+    },
+    "videoCategories": {
+      "beautyEnhancement": "Peningkatan Kecantikan",
+      "quantumProcessing": "Pemprosesan Kuantum",
+      "medicalGrade": "Gred Perubatan",
+      "smartHealthGadgets": "Gadget Kesihatan Pintar",
+      "traditionalWellness": "Kesihatan Tradisional",
+      "descriptions": {
+        "beautyEnhancement": "Suplemen kecantikan revolusioner dengan sebatian bioaktif canggih",
+        "quantumProcessing": "Bahan canggih untuk pengkomputeran kuantum dan peningkatan pemprosesan AI",
+        "medicalGrade": "Suplemen gred farmaseutikal untuk aplikasi klinikal",
+        "smartHealthGadgets": "Peranti teknologi kesihatan inovatif dengan keupayaan IoT",
+        "traditionalWellness": "Suplemen tradisional premium untuk kesihatan umum dan kesejahteraan"
+      }
+    }
+  },
+  "products": {
+    "badge": "🚀 Portfolio Penyelesaian Canggih",
+    "title": "Kategori Suplemen Global Canggih",
+    "description": "Terokai koleksi revolusioner kami yang merangkumi 5 kategori utama: suplemen peningkatan kecantikan, bahan pemprosesan kuantum, sebatian gred perubatan, gadget kesihatan pintar, dan produk kesihatan tradisional.",
+    "requestQuote": "Minta Sebut Harga",
+    "categories": {
+      "beauty": {
+        "title": "Suplemen Peningkatan Kecantikan",
+        "description": "Suplemen kecantikan revolusioner dengan sebatian bioaktif canggih untuk regenerasi kulit, anti-penuaan, dan peningkatan estetik",
+        "features": ["Penggalak Kolagen", "Formula Anti-Penuaan", "Kilauan Kulit", "Rambut & Kuku"]
+      },
+      "quantum": {
+        "title": "Bahan Pemprosesan Kuantum",
+        "description": "Bahan canggih dan suplemen untuk sistem pengkomputeran kuantum, peningkatan pemprosesan AI, dan pengoptimuman mesin",
+        "features": ["Pemangkin Kuantum", "Penggalak Pemprosesan", "Pengoptimum Sistem", "Pemecut AI"]
+      },
+      "medical": {
+        "title": "Sebatian Gred Perubatan",
+        "description": "Suplemen gred farmaseutikal untuk aplikasi klinikal, rawatan terapeutik, dan penyelidikan perubatan",
+        "features": ["Formula Klinikal", "Sebatian Terapeutik", "Bahan Penyelidikan", "Perubatan Tepat"]
+      },
+      "gadgets": {
+        "title": "Gadget Kesihatan Pintar",
+        "description": "Peranti teknologi kesihatan inovatif, boleh pakai, dan suplemen pintar yang disepadukan dengan keupayaan IoT",
+        "features": ["Peranti Pintar", "Pakaian Kesihatan", "Integrasi IoT", "Kesihatan Digital"]
+      },
+      "wellness": {
+        "title": "Kesihatan Tradisional",
+        "description": "Suplemen tradisional premium untuk kesihatan umum, kecergasan, pemakanan, dan keperluan kesejahteraan harian",
+        "features": ["Vitamin & Mineral", "Sokongan Kecergasan", "Sistem Imun", "Kesihatan Umum"]
+      }
+    },
+    "businessModels": {
+      "b2b": "B2B",
+      "enterprise": "Enterprise",
+      "b2c": "B2C",
+      "consumer": "Pengguna",
+      "gov": "Kerajaan",
+      "procurement": "Perolehan"
+    }
+  },
+  "countries": {
+    "usa": "Amerika Syarikat",
+    "germany": "Jerman",
+    "japan": "Jepun",
+    "uk": "United Kingdom",
+    "canada": "Kanada",
+    "australia": "Australia",
+    "uae": "Emiriah Arab Bersatu",
+    "saudi": "Arab Saudi",
+    "qatar": "Qatar",
+    "kuwait": "Kuwait",
+    "bahrain": "Bahrain",
+    "oman": "Oman",
+    "switzerland": "Switzerland",
+    "netherlands": "Belanda",
+    "sweden": "Sweden",
+    "italy": "Itali",
+    "spain": "Sepanyol",
+    "france": "Perancis",
+    "singapore": "Singapura",
+    "taiwan": "Taiwan",
+    "korea": "Korea Selatan",
+    "brazil": "Brazil",
+    "mexico": "Mexico",
+    "argentina": "Argentina",
+    "china": "China",
+    "india": "India",
+    "malaysia": "Malaysia",
+    "chile": "Chile",
+    "colombia": "Colombia",
+    "peru": "Peru",
+    "portugal": "Portugal",
+    "panama": "Panama",
+    "paraguay": "Paraguay"
+  },
+  "testimonials": {
+    "badge": "Kisah Kejayaan Pelanggan",
+    "title": "Dipercayai oleh Pemimpin Pasaran Global",
+    "subtitle": "Lihat bagaimana pemimpin industri di 32 negara merevolusi rantaian bekalan makanan tambahan mereka",
+    "verified": "Pelanggan Perusahaan Disahkan",
+    "stats": {
+      "enterpriseClients": "Pelanggan Perusahaan",
+      "satisfaction": "Kepuasan Pelanggan",
+      "revenueGenerated": "Hasil Jana Pendapatan",
+      "premiumSupport": "Sokongan Premium"
+    },
+    "joinLeaders": "Sertai beratus-ratus pemimpin global",
+    "requestDemo": "Minta Demo Eksekutif"
+  },
+  "search": {
+    "placeholder": "Cari kecantikan, bahan kuantum, sebatian perubatan, gadget..."
+  },
+  "partnerships": {
+    "badge": "Perkongsian Strategik Global",
+    "title": "Rangkaian Elite Pembekal Premium Sedunia",
+    "description": "Perkongsian eksklusif kami merangkumi 32 negara merentasi 6 benua, menghubungkan kerajaan, perusahaan dan organisasi penjagaan kesihatan kepada pengilang makanan tambahan yang paling dipercayai di dunia.",
+    "activeCountries": "Negara Aktif",
+    "globalMarketValue": "Nilai Pasaran Global",
+    "verifiedSuppliers": "Pembekal Disahkan",
+    "qualityCertified": "Kualiti Diperakui",
+    "contactTeam": "Hubungi Pasukan Antarabangsa",
+    "operationsCenter": "Pusat Operasi Global",
+    "interestedExpanding": "Berminat untuk berkembang ke pasaran strategik? Hubungi pasukan global kami"
+  },
+  "technology": {
+    "badge": "Teknologi Canggih",
+    "title": "Platform Teknologi Revolusioner",
+    "description": "Dikuasakan oleh pengkomputeran kuantum, kecerdasan buatan dan algoritma pembelajaran mesin",
+    "aiEngine": "Enjin AI",
+    "aiEngineDesc": "Algoritma pembelajaran mesin canggih untuk ramalan dan analisis pasaran",
+    "realTimeProcessing": "Pemprosesan Masa Nyata",
+    "realTimeDesc": "Pemprosesan data pasaran segera dan pengesanan peluang",
+    "enterpriseSecurity": "Keselamatan Perusahaan",
+    "enterpriseSecurityDesc": "Penyulitan dan protokol keselamatan gred bank",
+    "globalNetwork": "Rangkaian Global",
+    "globalNetworkDesc": "Berhubung dengan pembekal di lebih 185 negara",
+    "overview": "Gambaran Keseluruhan Teknologi",
+    "aiPlatforms": "Platform AI",
+    "advancedAnalytics": "Analitik Canggih",
+    "quantumAiEngine": "Enjin AI Kuantum",
+    "quantumAiDesc": "Kecerdasan buatan revolusioner yang dikuasakan oleh algoritma pengkomputeran kuantum.",
+    "quantumComputing": "Pengkomputeran Kuantum",
+    "bigDataAnalytics": "Analitik Data Besar",
+    "bigDataDesc": "Memproses jutaan titik data dalam masa nyata untuk mengenal pasti peluang pasaran.",
+    "cloudInfrastructure": "Infrastruktur Awan",
+    "cloudDesc": "Seni bina awan berskala yang memastikan 99.9% masa operasi.",
+    "uptime": "Masa Operasi",
+    "aiDashboard": "Papan Pemuka AI",
+    "aiDashboardDesc": "Akses semua kecerdasan buatan dan analitik masa nyata"
+  },
+  "certifications": {
+    "badge": "Pensijilan Kualiti Premium",
+    "title": "Komitmen kami terhadap kecemerlangan disahkan oleh piawaian kualiti dan keselamatan yang paling diiktiraf di dunia",
+    "iso22000": "Piawaian sistem pengurusan keselamatan makanan antarabangsa yang memastikan kualiti di setiap peringkat",
+    "gmp": "Pensijilan Amalan Pembuatan yang Baik yang menjamin pengeluaran gred farmaseutikal",
+    "fda": "Kelulusan Pentadbiran Makanan dan Ubat AS untuk keselamatan dan keberkesanan",
+    "haccp": "Sistem Analisis Bahaya Titik Kawalan Kritikal untuk keselamatan makanan",
+    "nsf": "Pensijilan NSF International untuk piawaian kesihatan awam dan keselamatan",
+    "euOrganic": "Pensijilan organik Kesatuan Eropah untuk produk semula jadi dan mampan",
+    "verified": "Semua pensijilan disahkan dan terkini"
+  },
+  "footer": {
+    "businessSolutions": "Penyelesaian Perniagaan",
+    "b2bGlobalTrading": "Perdagangan Global B2B",
+    "governmentContracts": "Kontrak Kerajaan",
+    "b2cMarketplace": "Pasaran B2C",
+    "technology": "Teknologi",
+    "realTimeArbitrage": "Arbitraj Masa Nyata",
+    "autoExecution": "Pelaksanaan Auto",
+    "globalCompliance": "Pematuhan Global",
+    "advancedAi": "AI Canggih",
+    "executiveDashboard": "Papan Pemuka Eksekutif",
+    "premiumContact": "Perhubungan Premium",
+    "globalNetwork": "Rangkaian Global",
+    "allRightsReserved": "Hak cipta terpelihara.",
+    "privacyPolicy": "Dasar Privasi",
+    "termsOfUse": "Syarat Penggunaan",
+    "compliance": "Pematuhan"
+  }
+}

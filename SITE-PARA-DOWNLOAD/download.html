@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Download - Global Supplements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 { color: #667eea; margin-bottom: 20px; }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+        }
+        .btn:hover { background: #5568d3; }
+        .info { margin: 20px 0; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📦 Download do Site</h1>
+        <p class="info">Arquivo: <strong>global-supplements-site.zip</strong></p>
+        <p class="info">Tamanho: <strong>4.8 MB</strong></p>
+        <button class="btn" onclick="downloadZip()">⬇️ BAIXAR AGORA</button>
+        <p style="margin-top:30px; font-size:14px; color:#999;">
+            Depois de baixar, extraia o arquivo e faça upload na Hostinger
+        </p>
+    </div>
+    
+    <script>
+        async function downloadZip() {
+            try {
+                const response = await fetch('/global-supplements-site.zip');
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'global-supplements-site.zip';
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+                document.body.removeChild(a);
+            } catch(e) {
+                alert('Erro ao baixar. Tente usar o painel de arquivos do Replit.');
+            }
+        }
+    </script>
+</body>
+</html>
