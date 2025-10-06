@@ -13,6 +13,7 @@ import {
   Building2
 } from "lucide-react";
 import premiumProductsImage from "@/assets/premium-products-showcase-4k.jpg";
+import amazonLogo from "@/assets/amazon-logo.png";
 import { useTranslation } from "react-i18next";
 
 export function PublicHero() {
@@ -119,11 +120,10 @@ export function PublicHero() {
               <Button 
                 size="lg" 
                 onClick={scrollToContact}
-                className="bg-gradient-to-r from-green-500 to-blue-500 text-white text-lg px-8 py-6 rounded-full hover:shadow-2xl hover:shadow-green-500/25 transition-all duration-300 transform hover:scale-105"
+                className="bg-gradient-to-r from-yellow-400 to-orange-400 text-black text-lg px-8 py-6 rounded-full hover:shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 transform hover:scale-105 font-bold"
               >
-                <TrendingUp className="h-5 w-5 mr-2" />
                 {t("hero.startPartnership")}
-                <ArrowRight className="h-5 w-5 ml-2" />
+                <img src={amazonLogo} alt="Amazon" className="h-5 ml-2 inline-block" />
               </Button>
               <Button 
                 size="lg" 
