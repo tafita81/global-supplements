@@ -182,10 +182,10 @@ export default function Products() {
                 </p>
                 <Button 
                   size="lg"
-                  className="gold-accent text-primary font-bold"
+                  className="bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-bold"
                   onClick={() => window.location.href = "/b2b"}
                 >
-                  🤝 Partner With Us
+                  Buy on Amazon
                 </Button>
               </CardContent>
             </Card>

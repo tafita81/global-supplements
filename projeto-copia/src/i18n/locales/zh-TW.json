@@ -11,7 +11,7 @@
     "solutions": "Solutions",
     "contact": "Contact",
     "getQuote": "Get Quote",
-    "partnerWithUs": "Partner With Us",
+    "partnerWithUs": "Buy on Amazon",
     "beautySupplements": "Beauty Supplements",
     "quantumMaterials": "Quantum Materials",
     "medicalGrade": "Medical Grade",
@@ -460,7 +460,7 @@
         "partnership": {
           "title": "Partnership Inquiry",
           "description": "Explore supplier or distributor partnerships",
-          "action": "Partner With Us"
+          "action": "Buy on Amazon"
         },
         "government": {
           "title": "Government Contracts",
