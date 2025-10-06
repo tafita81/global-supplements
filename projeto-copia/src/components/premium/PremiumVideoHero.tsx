@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Play, Pause, Volume2, VolumeX, Maximize } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import corporateHqImage from "@/assets/corporate-headquarters-4k.jpg";
+import amazonLogo from "@/assets/amazon-logo.png";
 
 export function PremiumVideoHero() {
   const { t } = useTranslation();
@@ -135,7 +136,8 @@ export function PremiumVideoHero() {
                 size="lg" 
                 className="text-xl px-10 py-6 gold-accent hover:opacity-90 text-primary font-bold"
               >
-                🚀 {t("navigation.partnerWithUs")}
+                <img src={amazonLogo} alt="Amazon" className="h-5 mr-2 inline-block" />
+                {t("navigation.partnerWithUs")}
               </Button>
               <Button 
                 size="lg" 

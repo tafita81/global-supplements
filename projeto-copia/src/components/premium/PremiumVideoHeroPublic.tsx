@@ -9,6 +9,7 @@ import quantumProcessingImage from "@/assets/quantum-processing-4k.jpg";
 import medicalGradeImage from "@/assets/medical-grade-4k.jpg";
 import smartGadgetsImage from "@/assets/smart-health-gadgets-4k.jpg";
 import traditionalWellnessImage from "@/assets/traditional-wellness-4k.jpg";
+import amazonLogo from "@/assets/amazon-logo.png";
 
 const videoSources = [
   {
@@ -266,7 +267,8 @@ export function PremiumVideoHeroPublic() {
                   size="lg" 
                   className="text-xl px-10 py-6 gold-accent hover:opacity-90 text-primary font-bold"
                 >
-                  🚀 {t('navigation.partnerWithUs')}
+                  <img src={amazonLogo} alt="Amazon" className="h-5 mr-2 inline-block" />
+                  {t('navigation.partnerWithUs')}
                 </Button>
               </a>
             </div>
