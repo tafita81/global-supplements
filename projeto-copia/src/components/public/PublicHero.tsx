@@ -123,7 +123,7 @@ export function PublicHero() {
                 className="bg-gradient-to-r from-yellow-400 to-orange-400 text-black text-lg px-8 py-6 rounded-full hover:shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 transform hover:scale-105 font-bold"
               >
                 {t("hero.startPartnership")}
-                <img src={amazonLogo} alt="Amazon" className="h-6 ml-2 inline-block" />
+                <img src={amazonLogo} alt="Amazon" className="h-8 ml-2 inline-block" />
               </Button>
               <Button 
                 size="lg" 

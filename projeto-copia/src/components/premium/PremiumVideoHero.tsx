@@ -136,7 +136,7 @@ export function PremiumVideoHero() {
                 size="lg" 
                 className="text-xl px-10 py-6 gold-accent hover:opacity-90 text-primary font-bold"
               >
-                <img src={amazonLogo} alt="Amazon" className="h-5 mr-2 inline-block" />
+                <img src={amazonLogo} alt="Amazon" className="h-7 mr-2 inline-block" />
                 {t("navigation.partnerWithUs")}
               </Button>
               <Button 
