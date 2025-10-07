@@ -88,9 +88,9 @@ export function TopNavigation() {
                   </div>
                 </div>
                 <div>
-                  <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                    {t('site.title').split(' - ')[0]}
-                  </h1>
+                  <p className="text-sm text-muted-foreground font-medium">
+                    {t('navigation.tagline')}
+                  </p>
                 </div>
               </button>
             </div>
