@@ -98,15 +98,7 @@ export function TopNavigation() {
                     <div className="absolute inset-0 flex items-center">
                       <div className="hypnotic-marquee flex gap-8">
                         <span className="text-xs font-medium text-gray-500">{t('navigation.tagline')}</span>
-                        <span className="text-xs font-medium text-gray-500">{t('navigation.credentials.premiumQuality')}</span>
-                        <span className="text-xs font-medium text-gray-500">{t('navigation.credentials.certifiedPartners')}</span>
-                        <span className="text-xs font-medium text-gray-500">{t('navigation.credentials.globalNetwork')}</span>
-                        <span className="text-xs font-medium text-gray-500">{t('navigation.credentials.aiTechnology')}</span>
                         <span className="text-xs font-medium text-gray-500">{t('navigation.tagline')}</span>
-                        <span className="text-xs font-medium text-gray-500">{t('navigation.credentials.premiumQuality')}</span>
-                        <span className="text-xs font-medium text-gray-500">{t('navigation.credentials.certifiedPartners')}</span>
-                        <span className="text-xs font-medium text-gray-500">{t('navigation.credentials.globalNetwork')}</span>
-                        <span className="text-xs font-medium text-gray-500">{t('navigation.credentials.aiTechnology')}</span>
                       </div>
                     </div>
                   </div>
