@@ -69,35 +69,33 @@
     }
   },
   "countries": {
-    "badge": "Strategic Global Partnerships",
-    "title": "Elite Worldwide Network of Premium Suppliers",
-    "subtitle": "Our exclusive partnerships span 32 countries across 6 continents, connecting governments, enterprises, and healthcare organizations to the world's most trusted supplement manufacturers. Each partnership represents years of rigorous vetting, regulatory compliance, and proven track records in delivering pharmaceutical-grade products to global markets.",
+    "badge": "Strategiska Globala Partnerskap",
+    "title": "Elit Globalt Nätverk av Premium Leverantörer",
+    "subtitle": "Våra exklusiva partnerskap spänner över 32 länder på 6 kontinenter och förbinder regeringar, företag och hälsoorganisationer med världens mest pålitliga tillskottstillverkare.",
     "stats": {
-      "active": "Active Countries",
-      "market": "Global Market Value",
-      "suppliers": "Verified Suppliers",
-      "verified": "Quality Certified"
+      "active": "Aktiva Länder",
+      "market": "Globalt Marknadsvärde",
+      "suppliers": "Verifierade Leverantörer",
+      "verified": "Kvalitetscertifierad"
     },
     "contact": {
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "international": "Kontakta Internationellt Team",
+      "operations": "Globalt Driftcenter"
     },
     "statusLabels": {
-      "strategic": "strategic",
+      "strategic": "strategisk",
       "premium": "premium",
       "innovation": "innovation",
-      "established": "established",
-      "growth": "growth",
+      "established": "etablerad",
+      "growth": "tillväxt",
       "partner": "partner",
-      "hub": "hub",
-      "quality": "quality",
-      "luxury": "luxury",
-      "logistics": "logistics"
+      "hub": "nav",
+      "quality": "kvalitet",
+      "luxury": "lyxig",
+      "logistics": "logistik"
     },
     "cta": {
-      "title": "Interested in expanding to strategic markets? Contact our global team",
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "title": "Intresserad av expansion till strategiska marknader? Kontakta vårt globala team"
     }
   },
   "products": {
@@ -299,31 +297,68 @@
     }
   },
   "testimonials": {
-    "badge": "Client Success Stories",
-    "title": "Trusted by Global Market Leaders",
-    "subtitle": "See how industry leaders across 32 countries are revolutionizing their supplement supply chains with our AI-powered platform, achieving unprecedented ROI and market expansion.",
-    "verified": "Verified Enterprise Client",
+    "badge": "Kundens Framgångshistorier",
+    "title": "Betrodd av Globala Marknadsledare",
+    "subtitle": "Se hur branschledare i 32 länder revolutionerar sina tillskottsförsörjningskedjor med vår AI-drivna plattform, och uppnår oöverträffad ROI och marknadsexpansion.",
+    "verified": "Verifierad Företagsklient",
     "stats": {
-      "enterpriseClients": "Enterprise Clients",
-      "satisfaction": "Client Satisfaction",
-      "revenueGenerated": "Revenue Generated",
+      "enterpriseClients": "Företagsklienter",
+      "satisfaction": "Kundnöjdhet",
+      "revenueGenerated": "Genererade Intäkter",
       "premiumSupport": "Premium Support"
     },
-    "joinLeaders": "Join hundreds of global leaders already transforming their supplement businesses",
-    "requestDemo": "Request Executive Demo"
+    "joinLeaders": "Gå med hundratals globala ledare som redan förvandlar sina tillskottsföretag",
+    "requestDemo": "Begär Executive Demo",
+    "clients": {
+      "1": {
+        "name": "Dr. Sarah Chen",
+        "position": "VD, MedTech Global",
+        "company": "Fortune 500 Healthcare",
+        "content": "Global Supplements revolutionerade vår försörjningskedja. AI:n identifierar möjligheter vi aldrig skulle se manuellt. 340% ROI första året.",
+        "revenue": "$2.3M saved"
+      },
+      "2": {
+        "name": "Marcus Schmidt",
+        "position": "Upphandlingschef",
+        "company": "European Health Alliance",
+        "content": "Den statliga anbudsplattformen är imponerande. Vi vann 15 kontrakt på 6 månader, alla med marginaler över 25%. Automatisk efterlevnad är perfekt.",
+        "revenue": "$5.7M in contracts"
+      },
+      "3": {
+        "name": "Isabella Rodriguez",
+        "position": "Internationell Handelschef",
+        "company": "LatAm Supplements Corp",
+        "content": "Realtidsarbitragesystemet gjorde det möjligt för oss att expandera till 12 nya länder. Fullständig automation frigör vårt team för strategi. Fantastiskt!",
+        "revenue": "$1.8M profit increase"
+      },
+      "4": {
+        "name": "James Wilson",
+        "position": "Chief Supply Officer",
+        "company": "Pacific Nutrition Ltd",
+        "content": "Zero Investment Engine är revolutionerande. Vi lyckades driva utan eget kapital och ändå uppnå 30%+ marginaler. Premium 24/7 support är exceptionell.",
+        "revenue": "$4.2M revenue generated"
+      },
+      "5": {
+        "name": "Liu Wei",
+        "position": "Direktör Strategiska Partnerskap",
+        "company": "Asia Health Network",
+        "content": "Integrationen med asiatiska leverantörer är perfekt. Automatisk efterlevnad för alla marknader sparade oss miljoner i konsultation. Oberäknelig ROI.",
+        "revenue": "$3.1M compliance savings"
+      }
+    }
   },
   "certifications": {
-    "title": "Premium Quality Certifications",
-    "subtitle": "Our commitment to excellence is validated by the world's most recognized quality and safety standards",
+    "title": "Premium Kvalitetscertifieringar",
+    "subtitle": "Vårt engagemang för excellens valideras av världens mest erkända kvalitets- och säkerhetsstandarder",
     "items": {
-      "iso22000": "International food safety management system standard ensuring quality at every stage",
-      "gmp": "Good Manufacturing Practice certification guaranteeing pharmaceutical-grade production",
-      "fda": "US Food and Drug Administration approval for safety and efficacy",
-      "haccp": "Hazard Analysis Critical Control Points system for food safety",
-      "nsf": "NSF International certification for public health and safety standards",
-      "euOrganic": "European Union organic certification for natural and sustainable products"
+      "iso22000": "Internationell livsmedelssäkerhetshanteringsstandard som säkerställer kvalitet i varje steg",
+      "gmp": "God Tillverkningssed certifiering som garanterar farmaceutisk produktion",
+      "fda": "FDA-godkännande i USA för säkerhet och effektivitet",
+      "haccp": "Riskanalys och Kritiska Kontrollpunkter system för livsmedelssäkerhet",
+      "nsf": "NSF International certifiering för folkhälso- och säkerhetsstandarder",
+      "euOrganic": "Europeiska unionens ekologiska certifiering för naturliga och hållbara produkter"
     },
-    "verified": "All certifications verified and current"
+    "verified": "Alla certifieringar verifierade och aktuella"
   },
   "footer": {
     "description": "Världsledande inom kosttillskott som kopplar samman regeringar, företag och konsumenter med premiumleverantörer genom avancerad AI-teknologi.",

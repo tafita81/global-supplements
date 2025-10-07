@@ -68,35 +68,33 @@
     }
   },
   "countries": {
-    "badge": "Strategic Global Partnerships",
-    "title": "Elite Worldwide Network of Premium Suppliers",
-    "subtitle": "Our exclusive partnerships span 32 countries across 6 continents, connecting governments, enterprises, and healthcare organizations to the world's most trusted supplement manufacturers. Each partnership represents years of rigorous vetting, regulatory compliance, and proven track records in delivering pharmaceutical-grade products to global markets.",
+    "badge": "شراكات عالمية استراتيجية",
+    "title": "شبكة عالمية نخبوية من الموردين المميزين",
+    "subtitle": "تمتد شراكاتنا الحصرية إلى 32 دولة عبر 6 قارات، وتربط الحكومات والمؤسسات ومنظمات الرعاية الصحية بأكثر مصنعي المكملات الغذائية موثوقية في العالم.",
     "stats": {
-      "active": "Active Countries",
-      "market": "Global Market Value",
-      "suppliers": "Verified Suppliers",
-      "verified": "Quality Certified"
+      "active": "الدول النشطة",
+      "market": "قيمة السوق العالمية",
+      "suppliers": "الموردون المعتمدون",
+      "verified": "معتمد الجودة"
     },
     "contact": {
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "international": "الاتصال بالفريق الدولي",
+      "operations": "مركز العمليات العالمي"
     },
     "statusLabels": {
-      "strategic": "strategic",
-      "premium": "premium",
-      "innovation": "innovation",
-      "established": "established",
-      "growth": "growth",
-      "partner": "partner",
-      "hub": "hub",
-      "quality": "quality",
-      "luxury": "luxury",
-      "logistics": "logistics"
+      "strategic": "استراتيجي",
+      "premium": "مميز",
+      "innovation": "ابتكار",
+      "established": "راسخ",
+      "growth": "نمو",
+      "partner": "شريك",
+      "hub": "مركز",
+      "quality": "جودة",
+      "luxury": "فاخر",
+      "logistics": "لوجستيات"
     },
     "cta": {
-      "title": "Interested in expanding to strategic markets? Contact our global team",
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "title": "هل أنت مهتم بالتوسع في الأسواق الاستراتيجية؟ اتصل بفريقنا العالمي"
     }
   },
   "products": {
@@ -298,31 +296,68 @@
     }
   },
   "testimonials": {
-    "badge": "Client Success Stories",
-    "title": "Trusted by Global Market Leaders",
-    "subtitle": "See how industry leaders across 32 countries are revolutionizing their supplement supply chains with our AI-powered platform, achieving unprecedented ROI and market expansion.",
-    "verified": "Verified Enterprise Client",
+    "badge": "قصص نجاح العملاء",
+    "title": "موثوق به من قبل قادة السوق العالمي",
+    "subtitle": "شاهد كيف يقوم قادة الصناعة في 32 دولة بإحداث ثورة في سلاسل التوريد الخاصة بهم بالمكملات الغذائية باستخدام منصتنا المدعومة بالذكاء الاصطناعي، محققين عائد استثمار غير مسبوق وتوسع في السوق.",
+    "verified": "عميل مؤسسي تم التحقق منه",
     "stats": {
-      "enterpriseClients": "Enterprise Clients",
-      "satisfaction": "Client Satisfaction",
-      "revenueGenerated": "Revenue Generated",
-      "premiumSupport": "Premium Support"
+      "enterpriseClients": "عملاء المؤسسات",
+      "satisfaction": "رضا العملاء",
+      "revenueGenerated": "الإيرادات المولدة",
+      "premiumSupport": "الدعم المميز"
     },
-    "joinLeaders": "Join hundreds of global leaders already transforming their supplement businesses",
-    "requestDemo": "Request Executive Demo"
+    "joinLeaders": "انضم إلى مئات القادة العالميين الذين يحولون بالفعل أعمال المكملات الغذائية الخاصة بهم",
+    "requestDemo": "طلب عرض تنفيذي",
+    "clients": {
+      "1": {
+        "name": "Dr. Sarah Chen",
+        "position": "الرئيس التنفيذي, MedTech Global",
+        "company": "Fortune 500 Healthcare",
+        "content": "أحدثت Global Supplements ثورة في سلسلة التوريد الخاصة بنا. يحدد الذكاء الاصطناعي الفرص التي لن نراها أبدًا يدويًا. 340٪ عائد استثمار في السنة الأولى.",
+        "revenue": "$2.3M saved"
+      },
+      "2": {
+        "name": "Marcus Schmidt",
+        "position": "مدير المشتريات",
+        "company": "European Health Alliance",
+        "content": "منصة العطاءات الحكومية مثيرة للإعجاب. فزنا بـ 15 عقدًا في 6 أشهر، جميعها بهوامش أكثر من 25٪. الامتثال التلقائي مثالي.",
+        "revenue": "$5.7M in contracts"
+      },
+      "3": {
+        "name": "Isabella Rodriguez",
+        "position": "مدير التجارة الدولية",
+        "company": "LatAm Supplements Corp",
+        "content": "سمح لنا نظام المراجحة في الوقت الفعلي بالتوسع إلى 12 دولة جديدة. الأتمتة الكاملة تحرر فريقنا للاستراتيجية. رائع!",
+        "revenue": "$1.8M profit increase"
+      },
+      "4": {
+        "name": "James Wilson",
+        "position": "مسؤول التوريد الرئيسي",
+        "company": "Pacific Nutrition Ltd",
+        "content": "محرك الاستثمار الصفري ثوري. تمكنا من العمل بدون رأس مال خاص وما زلنا نحقق هوامش 30٪+. الدعم المميز 24/7 استثنائي.",
+        "revenue": "$4.2M revenue generated"
+      },
+      "5": {
+        "name": "Liu Wei",
+        "position": "مدير الشراكات الاستراتيجية",
+        "company": "Asia Health Network",
+        "content": "التكامل مع الموردين الآسيويين مثالي. وفر الامتثال التلقائي لجميع الأسواق ملايين الدولارات في الاستشارات. عائد استثمار لا يُحصى.",
+        "revenue": "$3.1M compliance savings"
+      }
+    }
   },
   "certifications": {
-    "title": "Premium Quality Certifications",
-    "subtitle": "Our commitment to excellence is validated by the world's most recognized quality and safety standards",
+    "title": "شهادات الجودة المميزة",
+    "subtitle": "يتم التحقق من التزامنا بالتميز من خلال معايير الجودة والسلامة الأكثر شهرة في العالم",
     "items": {
-      "iso22000": "International food safety management system standard ensuring quality at every stage",
-      "gmp": "Good Manufacturing Practice certification guaranteeing pharmaceutical-grade production",
-      "fda": "US Food and Drug Administration approval for safety and efficacy",
-      "haccp": "Hazard Analysis Critical Control Points system for food safety",
-      "nsf": "NSF International certification for public health and safety standards",
-      "euOrganic": "European Union organic certification for natural and sustainable products"
+      "iso22000": "معيار نظام إدارة سلامة الأغذية الدولي يضمن الجودة في كل مرحلة",
+      "gmp": "شهادة ممارسات التصنيع الجيدة تضمن إنتاج درجة صيدلانية",
+      "fda": "موافقة إدارة الغذاء والدواء الأمريكية على السلامة والفعالية",
+      "haccp": "نظام تحليل المخاطر ونقاط التحكم الحرجة لسلامة الأغذية",
+      "nsf": "شهادة NSF International لمعايير الصحة العامة والسلامة",
+      "euOrganic": "شهادة الاتحاد الأوروبي العضوية للمنتجات الطبيعية والمستدامة"
     },
-    "verified": "All certifications verified and current"
+    "verified": "جميع الشهادات تم التحقق منها وحديثة"
   },
   "footer": {
     "description": "الرائد العالمي في المكملات الغذائية يربط الحكومات والشركات والمستهلكين بالموردين المميزين من خلال تقنية الذكاء الاصطناعي المتقدمة.",

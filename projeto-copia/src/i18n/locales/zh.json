@@ -69,12 +69,12 @@
   },
   "countries": {
     "badge": "战略全球合作伙伴关系",
-    "title": "优质供应商的精英全球网络",
-    "subtitle": "我们的独家合作伙伴关系遍及6大洲32个国家，将政府、企业和医疗保健组织与世界上最值得信赖的补充剂制造商联系起来。每个合作伙伴关系都代表了多年严格的审查、监管合规和向全球市场提供药品级产品的经过验证的记录。",
+    "title": "高端供应商的精英全球网络",
+    "subtitle": "我们的独家合作伙伴关系遍及6大洲的32个国家，将政府、企业和医疗机构与世界上最值得信赖的补充剂制造商连接起来。",
     "stats": {
       "active": "活跃国家",
       "market": "全球市场价值",
-      "suppliers": "经过验证的供应商",
+      "suppliers": "已验证供应商",
       "verified": "质量认证"
     },
     "contact": {
@@ -82,21 +82,19 @@
       "operations": "全球运营中心"
     },
     "statusLabels": {
-      "strategic": "strategic",
-      "premium": "premium",
-      "innovation": "innovation",
-      "established": "established",
-      "growth": "growth",
-      "partner": "partner",
-      "hub": "hub",
-      "quality": "quality",
-      "luxury": "luxury",
-      "logistics": "logistics"
+      "strategic": "战略",
+      "premium": "高级",
+      "innovation": "创新",
+      "established": "成熟",
+      "growth": "增长",
+      "partner": "合作伙伴",
+      "hub": "枢纽",
+      "quality": "质量",
+      "luxury": "奢华",
+      "logistics": "物流"
     },
     "cta": {
-      "title": "有兴趣扩展到战略市场？联系我们的全球团队",
-      "international": "联系国际团队",
-      "operations": "全球运营中心"
+      "title": "有兴趣扩展到战略市场？联系我们的全球团队"
     }
   },
   "products": {
@@ -298,31 +296,68 @@
     }
   },
   "testimonials": {
-    "badge": "Client Success Stories",
-    "title": "Trusted by Global Market Leaders",
-    "subtitle": "See how industry leaders across 32 countries are revolutionizing their supplement supply chains with our AI-powered platform, achieving unprecedented ROI and market expansion.",
-    "verified": "Verified Enterprise Client",
+    "badge": "客户成功案例",
+    "title": "受到全球市场领导者的信赖",
+    "subtitle": "了解32个国家的行业领导者如何利用我们的AI驱动平台革新补充剂供应链，实现前所未有的投资回报率和市场扩张。",
+    "verified": "已验证企业客户",
     "stats": {
-      "enterpriseClients": "Enterprise Clients",
-      "satisfaction": "Client Satisfaction",
-      "revenueGenerated": "Revenue Generated",
-      "premiumSupport": "Premium Support"
+      "enterpriseClients": "企业客户",
+      "satisfaction": "客户满意度",
+      "revenueGenerated": "创造的收入",
+      "premiumSupport": "高级支持"
     },
-    "joinLeaders": "Join hundreds of global leaders already transforming their supplement businesses",
-    "requestDemo": "Request Executive Demo"
+    "joinLeaders": "加入数百位已经在转型补充剂业务的全球领导者",
+    "requestDemo": "申请高管演示",
+    "clients": {
+      "1": {
+        "name": "Dr. Sarah Chen",
+        "position": "首席执行官, MedTech Global",
+        "company": "Fortune 500 Healthcare",
+        "content": "Global Supplements彻底改变了我们的供应链。AI识别出我们手动永远看不到的机会。第一年就实现了340%的投资回报率。",
+        "revenue": "$2.3M saved"
+      },
+      "2": {
+        "name": "Marcus Schmidt",
+        "position": "采购总监",
+        "company": "European Health Alliance",
+        "content": "政府招标平台令人印象深刻。我们在6个月内赢得了15份合同，所有合同的利润率都超过25%。自动合规性完美无缺。",
+        "revenue": "$5.7M in contracts"
+      },
+      "3": {
+        "name": "Isabella Rodriguez",
+        "position": "国际贸易经理",
+        "company": "LatAm Supplements Corp",
+        "content": "实时套利系统使我们能够扩展到12个新国家。完全自动化解放了我们的团队专注于战略。太棒了！",
+        "revenue": "$1.8M profit increase"
+      },
+      "4": {
+        "name": "James Wilson",
+        "position": "首席供应官",
+        "company": "Pacific Nutrition Ltd",
+        "content": "零投资引擎是革命性的。我们在没有自有资本的情况下运营，仍然实现了30%以上的利润率。24/7高级支持非常出色。",
+        "revenue": "$4.2M revenue generated"
+      },
+      "5": {
+        "name": "Liu Wei",
+        "position": "战略合作伙伴关系总监",
+        "company": "Asia Health Network",
+        "content": "与亚洲供应商的整合非常完美。所有市场的自动合规为我们节省了数百万的咨询费用。无法估量的投资回报率。",
+        "revenue": "$3.1M compliance savings"
+      }
+    }
   },
   "certifications": {
-    "title": "Premium Quality Certifications",
-    "subtitle": "Our commitment to excellence is validated by the world's most recognized quality and safety standards",
+    "title": "高级质量认证",
+    "subtitle": "我们对卓越的承诺得到世界上最受认可的质量和安全标准的验证",
     "items": {
-      "iso22000": "International food safety management system standard ensuring quality at every stage",
-      "gmp": "Good Manufacturing Practice certification guaranteeing pharmaceutical-grade production",
-      "fda": "US Food and Drug Administration approval for safety and efficacy",
-      "haccp": "Hazard Analysis Critical Control Points system for food safety",
-      "nsf": "NSF International certification for public health and safety standards",
-      "euOrganic": "European Union organic certification for natural and sustainable products"
+      "iso22000": "国际食品安全管理体系标准，确保每个阶段的质量",
+      "gmp": "良好生产规范认证，保证制药级生产",
+      "fda": "美国食品药品监督管理局安全性和有效性批准",
+      "haccp": "食品安全危害分析和关键控制点系统",
+      "nsf": "NSF国际公共卫生和安全标准认证",
+      "euOrganic": "欧盟天然和可持续产品有机认证"
     },
-    "verified": "All certifications verified and current"
+    "verified": "所有认证均已验证且为最新"
   },
   "footer": {
     "description": "通过先进的AI技术将政府、企业和消费者连接到优质供应商的膳食补充剂世界领导者。",

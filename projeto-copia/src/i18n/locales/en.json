@@ -71,7 +71,7 @@
   "countries": {
     "badge": "Strategic Global Partnerships",
     "title": "Elite Worldwide Network of Premium Suppliers",
-    "subtitle": "Our exclusive partnerships span 32 countries across 6 continents, connecting governments, enterprises, and healthcare organizations to the world's most trusted supplement manufacturers. Each partnership represents years of rigorous vetting, regulatory compliance, and proven track records in delivering pharmaceutical-grade products to global markets.",
+    "subtitle": "Our exclusive partnerships span 32 countries across 6 continents, connecting governments, enterprises, and healthcare organizations to the world's most trusted supplement manufacturers.",
     "stats": {
       "active": "Active Countries",
       "market": "Global Market Value",
@@ -95,9 +95,7 @@
       "logistics": "logistics"
     },
     "cta": {
-      "title": "Interested in expanding to strategic markets? Contact our global team",
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "title": "Interested in expanding to strategic markets? Contact our global team"
     }
   },
   "products": {
@@ -310,7 +308,44 @@
       "premiumSupport": "Premium Support"
     },
     "joinLeaders": "Join hundreds of global leaders already transforming their supplement businesses",
-    "requestDemo": "Request Executive Demo"
+    "requestDemo": "Request Executive Demo",
+    "clients": {
+      "1": {
+        "name": "Dr. Sarah Chen",
+        "position": "CEO, MedTech Global",
+        "company": "Fortune 500 Healthcare",
+        "content": "Global Supplements revolutionized our supply chain. The AI identifies opportunities we would never see manually. 340% ROI in the first year.",
+        "revenue": "$2.3M saved"
+      },
+      "2": {
+        "name": "Marcus Schmidt",
+        "position": "Procurement Director",
+        "company": "European Health Alliance",
+        "content": "The government bidding platform is impressive. We won 15 contracts in 6 months, all with margins above 25%. Automatic compliance is perfect.",
+        "revenue": "$5.7M in contracts"
+      },
+      "3": {
+        "name": "Isabella Rodriguez",
+        "position": "International Trade Manager",
+        "company": "LatAm Supplements Corp",
+        "content": "The real-time arbitrage system allowed us to expand to 12 new countries. Complete automation frees our team for strategy. Fantastic!",
+        "revenue": "$1.8M profit increase"
+      },
+      "4": {
+        "name": "James Wilson",
+        "position": "Chief Supply Officer",
+        "company": "Pacific Nutrition Ltd",
+        "content": "Zero Investment Engine is revolutionary. We managed to operate without our own capital and still achieve 30%+ margins. Premium 24/7 support is exceptional.",
+        "revenue": "$4.2M revenue generated"
+      },
+      "5": {
+        "name": "Liu Wei",
+        "position": "Strategic Partnerships Director",
+        "company": "Asia Health Network",
+        "content": "The integration with Asian suppliers is perfect. Automatic compliance for all markets saved us millions in consulting. Incalculable ROI.",
+        "revenue": "$3.1M compliance savings"
+      }
+    }
   },
   "certifications": {
     "title": "Premium Quality Certifications",

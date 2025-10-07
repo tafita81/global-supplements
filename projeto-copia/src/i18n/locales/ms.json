@@ -70,33 +70,31 @@
   "countries": {
     "badge": "Perkongsian Global Strategik",
     "title": "Rangkaian Global Elit Pembekal Premium",
-    "subtitle": "Perkongsian eksklusif kami merangkumi 32 negara merentasi 6 benua, menghubungkan kerajaan, perusahaan dan organisasi penjagaan kesihatan kepada pengeluar makanan tambahan yang paling dipercayai di dunia. Setiap perkongsian mewakili tahun pemeriksaan yang ketat, pematuhan peraturan dan rekod prestasi yang terbukti dalam menyampaikan produk gred farmaseutikal ke pasaran global.",
+    "subtitle": "Perkongsian eksklusif kami merangkumi 32 negara merentasi 6 benua, menghubungkan kerajaan, perusahaan dan organisasi kesihatan kepada pengeluar makanan tambahan paling dipercayai di dunia.",
     "stats": {
       "active": "Negara Aktif",
       "market": "Nilai Pasaran Global",
       "suppliers": "Pembekal Disahkan",
-      "verified": "Pensijilan Kualiti"
+      "verified": "Kualiti Diperakui"
     },
     "contact": {
       "international": "Hubungi Pasukan Antarabangsa",
       "operations": "Pusat Operasi Global"
     },
     "statusLabels": {
-      "strategic": "strategic",
+      "strategic": "strategik",
       "premium": "premium",
-      "innovation": "innovation",
-      "established": "established",
-      "growth": "growth",
-      "partner": "partner",
-      "hub": "hub",
-      "quality": "quality",
-      "luxury": "luxury",
-      "logistics": "logistics"
+      "innovation": "inovasi",
+      "established": "ditubuhkan",
+      "growth": "pertumbuhan",
+      "partner": "rakan kongsi",
+      "hub": "hab",
+      "quality": "kualiti",
+      "luxury": "mewah",
+      "logistics": "logistik"
     },
     "cta": {
-      "title": "Berminat untuk berkembang ke pasaran strategik? Hubungi pasukan global kami",
-      "international": "Hubungi Pasukan Antarabangsa",
-      "operations": "Pusat Operasi Global"
+      "title": "Berminat untuk berkembang ke pasaran strategik? Hubungi pasukan global kami"
     }
   },
   "products": {
@@ -298,31 +296,68 @@
     }
   },
   "testimonials": {
-    "badge": "Client Success Stories",
-    "title": "Trusted by Global Market Leaders",
-    "subtitle": "See how industry leaders across 32 countries are revolutionizing their supplement supply chains with our AI-powered platform, achieving unprecedented ROI and market expansion.",
-    "verified": "Verified Enterprise Client",
+    "badge": "Kisah Kejayaan Pelanggan",
+    "title": "Dipercayai oleh Pemimpin Pasaran Global",
+    "subtitle": "Lihat bagaimana pemimpin industri di 32 negara merevolusikan rantaian bekalan makanan tambahan mereka dengan platform berkuasa AI kami, mencapai ROI yang tidak pernah berlaku sebelum ini dan pengembangan pasaran.",
+    "verified": "Klien Perusahaan Disahkan",
     "stats": {
-      "enterpriseClients": "Enterprise Clients",
-      "satisfaction": "Client Satisfaction",
-      "revenueGenerated": "Revenue Generated",
-      "premiumSupport": "Premium Support"
+      "enterpriseClients": "Klien Perusahaan",
+      "satisfaction": "Kepuasan Pelanggan",
+      "revenueGenerated": "Pendapatan Dijana",
+      "premiumSupport": "Sokongan Premium"
     },
-    "joinLeaders": "Join hundreds of global leaders already transforming their supplement businesses",
-    "requestDemo": "Request Executive Demo"
+    "joinLeaders": "Sertai beratus-ratus pemimpin global yang sudah mengubah perniagaan makanan tambahan mereka",
+    "requestDemo": "Minta Demo Eksekutif",
+    "clients": {
+      "1": {
+        "name": "Dr. Sarah Chen",
+        "position": "Ketua Pegawai Eksekutif, MedTech Global",
+        "company": "Fortune 500 Healthcare",
+        "content": "Global Supplements merevolusikan rantaian bekalan kami. AI mengenal pasti peluang yang tidak akan kami lihat secara manual. 340% ROI pada tahun pertama.",
+        "revenue": "$2.3M saved"
+      },
+      "2": {
+        "name": "Marcus Schmidt",
+        "position": "Pengarah Perolehan",
+        "company": "European Health Alliance",
+        "content": "Platform bidaan kerajaan mengagumkan. Kami memenangi 15 kontrak dalam 6 bulan, semua dengan margin melebihi 25%. Pematuhan automatik sempurna.",
+        "revenue": "$5.7M in contracts"
+      },
+      "3": {
+        "name": "Isabella Rodriguez",
+        "position": "Pengurus Perdagangan Antarabangsa",
+        "company": "LatAm Supplements Corp",
+        "content": "Sistem arbitraj masa nyata membolehkan kami berkembang ke 12 negara baharu. Automasi lengkap membebaskan pasukan kami untuk strategi. Hebat!",
+        "revenue": "$1.8M profit increase"
+      },
+      "4": {
+        "name": "James Wilson",
+        "position": "Ketua Pegawai Bekalan",
+        "company": "Pacific Nutrition Ltd",
+        "content": "Enjin Pelaburan Sifar adalah revolusioner. Kami berjaya beroperasi tanpa modal sendiri dan masih mencapai margin 30%+. Sokongan premium 24/7 luar biasa.",
+        "revenue": "$4.2M revenue generated"
+      },
+      "5": {
+        "name": "Liu Wei",
+        "position": "Pengarah Perkongsian Strategik",
+        "company": "Asia Health Network",
+        "content": "Integrasi dengan pembekal Asia sempurna. Pematuhan automatik untuk semua pasaran menjimatkan jutaan dalam perundingan. ROI tidak terkira.",
+        "revenue": "$3.1M compliance savings"
+      }
+    }
   },
   "certifications": {
-    "title": "Premium Quality Certifications",
-    "subtitle": "Our commitment to excellence is validated by the world's most recognized quality and safety standards",
+    "title": "Pensijilan Kualiti Premium",
+    "subtitle": "Komitmen kami terhadap kecemerlangan disahkan oleh piawaian kualiti dan keselamatan yang paling diiktiraf di dunia",
     "items": {
-      "iso22000": "International food safety management system standard ensuring quality at every stage",
-      "gmp": "Good Manufacturing Practice certification guaranteeing pharmaceutical-grade production",
-      "fda": "US Food and Drug Administration approval for safety and efficacy",
-      "haccp": "Hazard Analysis Critical Control Points system for food safety",
-      "nsf": "NSF International certification for public health and safety standards",
-      "euOrganic": "European Union organic certification for natural and sustainable products"
+      "iso22000": "Piawaian sistem pengurusan keselamatan makanan antarabangsa memastikan kualiti di setiap peringkat",
+      "gmp": "Pensijilan Amalan Pembuatan Baik menjamin pengeluaran gred farmaseutikal",
+      "fda": "Kelulusan Pentadbiran Makanan dan Ubat AS untuk keselamatan dan keberkesanan",
+      "haccp": "Sistem Analisis Bahaya dan Kawalan Titik Kritikal untuk keselamatan makanan",
+      "nsf": "Pensijilan NSF International untuk piawaian kesihatan awam dan keselamatan",
+      "euOrganic": "Pensijilan organik Kesatuan Eropah untuk produk semula jadi dan mampan"
     },
-    "verified": "All certifications verified and current"
+    "verified": "Semua pensijilan disahkan dan terkini"
   },
   "footer": {
     "description": "Pemimpin dunia dalam makanan tambahan yang menghubungkan kerajaan, perniagaan dan pengguna kepada pembekal premium melalui teknologi AI canggih.",

@@ -69,35 +69,33 @@
     }
   },
   "countries": {
-    "badge": "Strategic Global Partnerships",
-    "title": "Elite Worldwide Network of Premium Suppliers",
-    "subtitle": "Our exclusive partnerships span 32 countries across 6 continents, connecting governments, enterprises, and healthcare organizations to the world's most trusted supplement manufacturers. Each partnership represents years of rigorous vetting, regulatory compliance, and proven track records in delivering pharmaceutical-grade products to global markets.",
+    "badge": "Parcerias Globais Estratégicas",
+    "title": "Rede Mundial Elite de Fornecedores Premium",
+    "subtitle": "Nossas parcerias exclusivas abrangem 32 países em 6 continentes, conectando governos, empresas e organizações de saúde aos fabricantes de suplementos mais confiáveis do mundo. Cada parceria representa anos de verificação rigorosa, conformidade regulatória e históricos comprovados na entrega de produtos de grau farmacêutico para mercados globais.",
     "stats": {
-      "active": "Active Countries",
-      "market": "Global Market Value",
-      "suppliers": "Verified Suppliers",
-      "verified": "Quality Certified"
+      "active": "Países Ativos",
+      "market": "Valor de Mercado Global",
+      "suppliers": "Fornecedores Verificados",
+      "verified": "Certificado de Qualidade"
     },
     "contact": {
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "international": "Contatar Equipe Internacional",
+      "operations": "Centro de Operações Globais"
     },
     "statusLabels": {
-      "strategic": "strategic",
+      "strategic": "estratégico",
       "premium": "premium",
-      "innovation": "innovation",
-      "established": "established",
-      "growth": "growth",
-      "partner": "partner",
-      "hub": "hub",
-      "quality": "quality",
-      "luxury": "luxury",
-      "logistics": "logistics"
+      "innovation": "inovação",
+      "established": "estabelecido",
+      "growth": "crescimento",
+      "partner": "parceiro",
+      "hub": "centro",
+      "quality": "qualidade",
+      "luxury": "luxo",
+      "logistics": "logística"
     },
     "cta": {
-      "title": "Interested in expanding to strategic markets? Contact our global team",
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "title": "Interessado em expandir para mercados estratégicos? Entre em contato com nossa equipe global"
     }
   },
   "products": {
@@ -299,31 +297,68 @@
     }
   },
   "testimonials": {
-    "badge": "Client Success Stories",
-    "title": "Trusted by Global Market Leaders",
-    "subtitle": "See how industry leaders across 32 countries are revolutionizing their supplement supply chains with our AI-powered platform, achieving unprecedented ROI and market expansion.",
-    "verified": "Verified Enterprise Client",
+    "badge": "Histórias de Sucesso de Clientes",
+    "title": "Confiado por Líderes do Mercado Global",
+    "subtitle": "Veja como líderes da indústria em 32 países estão revolucionando suas cadeias de suprimentos de suplementos com nossa plataforma alimentada por IA, alcançando ROI sem precedentes e expansão de mercado.",
+    "verified": "Cliente Empresarial Verificado",
     "stats": {
-      "enterpriseClients": "Enterprise Clients",
-      "satisfaction": "Client Satisfaction",
-      "revenueGenerated": "Revenue Generated",
-      "premiumSupport": "Premium Support"
+      "enterpriseClients": "Clientes Empresariais",
+      "satisfaction": "Satisfação do Cliente",
+      "revenueGenerated": "Receita Gerada",
+      "premiumSupport": "Suporte Premium"
     },
-    "joinLeaders": "Join hundreds of global leaders already transforming their supplement businesses",
-    "requestDemo": "Request Executive Demo"
+    "joinLeaders": "Junte-se a centenas de líderes globais já transformando seus negócios de suplementos",
+    "requestDemo": "Solicitar Demo Executivo",
+    "clients": {
+      "1": {
+        "name": "Dra. Sarah Chen",
+        "position": "CEO, MedTech Global",
+        "company": "Fortune 500 Healthcare",
+        "content": "Global Supplements revolucionou nossa cadeia de suprimentos. A IA identifica oportunidades que nunca veríamos manualmente. 340% de ROI no primeiro ano.",
+        "revenue": "$2.3M economizados"
+      },
+      "2": {
+        "name": "Marcus Schmidt",
+        "position": "Diretor de Compras",
+        "company": "Aliança Europeia de Saúde",
+        "content": "A plataforma de licitação governamental é impressionante. Ganhamos 15 contratos em 6 meses, todos com margens acima de 25%. Conformidade automática é perfeita.",
+        "revenue": "$5.7M em contratos"
+      },
+      "3": {
+        "name": "Isabella Rodriguez",
+        "position": "Gerente de Comércio Internacional",
+        "company": "LatAm Supplements Corp",
+        "content": "O sistema de arbitragem em tempo real nos permitiu expandir para 12 novos países. Automação completa libera nossa equipe para estratégia. Fantástico!",
+        "revenue": "$1.8M de aumento de lucro"
+      },
+      "4": {
+        "name": "James Wilson",
+        "position": "Diretor de Suprimentos",
+        "company": "Pacific Nutrition Ltd",
+        "content": "O Motor de Investimento Zero é revolucionário. Conseguimos operar sem capital próprio e ainda alcançar margens de 30%+. Suporte premium 24/7 é excepcional.",
+        "revenue": "$4.2M de receita gerada"
+      },
+      "5": {
+        "name": "Liu Wei",
+        "position": "Diretor de Parcerias Estratégicas",
+        "company": "Asia Health Network",
+        "content": "A integração com fornecedores asiáticos é perfeita. Conformidade automática para todos os mercados nos economizou milhões em consultoria. ROI incalculável.",
+        "revenue": "$3.1M de economia em conformidade"
+      }
+    }
   },
   "certifications": {
-    "title": "Premium Quality Certifications",
-    "subtitle": "Our commitment to excellence is validated by the world's most recognized quality and safety standards",
+    "title": "Certificações de Qualidade Premium",
+    "subtitle": "Nosso compromisso com a excelência é validado pelos padrões de qualidade e segurança mais reconhecidos do mundo",
     "items": {
-      "iso22000": "International food safety management system standard ensuring quality at every stage",
-      "gmp": "Good Manufacturing Practice certification guaranteeing pharmaceutical-grade production",
-      "fda": "US Food and Drug Administration approval for safety and efficacy",
-      "haccp": "Hazard Analysis Critical Control Points system for food safety",
-      "nsf": "NSF International certification for public health and safety standards",
-      "euOrganic": "European Union organic certification for natural and sustainable products"
+      "iso22000": "Padrão internacional de sistema de gestão de segurança alimentar garantindo qualidade em todas as etapas",
+      "gmp": "Certificação de Boas Práticas de Fabricação garantindo produção de grau farmacêutico",
+      "fda": "Aprovação da Food and Drug Administration dos EUA para segurança e eficácia",
+      "haccp": "Sistema de Análise de Perigos e Pontos Críticos de Controle para segurança alimentar",
+      "nsf": "Certificação NSF International para padrões de saúde pública e segurança",
+      "euOrganic": "Certificação orgânica da União Europeia para produtos naturais e sustentáveis"
     },
-    "verified": "All certifications verified and current"
+    "verified": "Todas as certificações verificadas e atualizadas"
   },
   "footer": {
     "description": "Líder mundial em suplementos dietéticos conectando governos, empresas e consumidores a fornecedores premium através de tecnologia IA avançada.",

@@ -68,9 +68,9 @@
     }
   },
   "countries": {
-    "badge": "रणनीतिक वैश्विक साझेदारी",
-    "title": "प्रीमियम आपूर्तिकर्ताओं का अभिजात वैश्विक नेटवर्क",
-    "subtitle": "6 महाद्वीपों में 32 देशों में हमारी विशेष साझेदारी, सरकारों, उद्यमों और स्वास्थ्य सेवा संगठनों को दुनिया के सबसे विश्वसनीय पूरक निर्माताओं से जोड़ती है। प्रत्येक साझेदारी वर्षों की कठोर जांच, नियामक अनुपालन और वैश्विक बाजारों में फार्मास्युटिकल-ग्रेड उत्पादों को वितरित करने के सिद्ध ट्रैक रिकॉर्ड का प्रतिनिधित्व करती है।",
+    "badge": "रणनीतिक वैश्विक भागीदारी",
+    "title": "प्रीमियम आपूर्तिकर्ताओं का अभिजात वर्ग वैश्विक नेटवर्क",
+    "subtitle": "हमारी विशेष भागीदारी 6 महाद्वीपों में 32 देशों में फैली है, सरकारों, उद्यमों और स्वास्थ्य संगठनों को दुनिया के सबसे विश्वसनीय सप्लीमेंट निर्माताओं से जोड़ती है।",
     "stats": {
       "active": "सक्रिय देश",
       "market": "वैश्विक बाजार मूल्य",
@@ -82,21 +82,19 @@
       "operations": "वैश्विक संचालन केंद्र"
     },
     "statusLabels": {
-      "strategic": "strategic",
-      "premium": "premium",
-      "innovation": "innovation",
-      "established": "established",
-      "growth": "growth",
-      "partner": "partner",
-      "hub": "hub",
-      "quality": "quality",
-      "luxury": "luxury",
-      "logistics": "logistics"
+      "strategic": "रणनीतिक",
+      "premium": "प्रीमियम",
+      "innovation": "नवाचार",
+      "established": "स्थापित",
+      "growth": "वृद्धि",
+      "partner": "भागीदार",
+      "hub": "हब",
+      "quality": "गुणवत्ता",
+      "luxury": "लग्जरी",
+      "logistics": "रसद"
     },
     "cta": {
-      "title": "रणनीतिक बाजारों में विस्तार में रुचि? हमारी वैश्विक टीम से संपर्क करें",
-      "international": "अंतर्राष्ट्रीय टीम से संपर्क करें",
-      "operations": "वैश्विक संचालन केंद्र"
+      "title": "रणनीतिक बाजारों में विस्तार करने में रुचि है? हमारी वैश्विक टीम से संपर्क करें"
     }
   },
   "products": {
@@ -298,31 +296,68 @@
     }
   },
   "testimonials": {
-    "badge": "Client Success Stories",
-    "title": "Trusted by Global Market Leaders",
-    "subtitle": "See how industry leaders across 32 countries are revolutionizing their supplement supply chains with our AI-powered platform, achieving unprecedented ROI and market expansion.",
-    "verified": "Verified Enterprise Client",
+    "badge": "ग्राहक सफलता की कहानियाँ",
+    "title": "वैश्विक बाजार के नेताओं द्वारा विश्वसनीय",
+    "subtitle": "देखें कि कैसे 32 देशों में उद्योग के नेता हमारे AI-संचालित प्लेटफॉर्म के साथ अपनी सप्लीमेंट आपूर्ति श्रृंखलाओं में क्रांति ला रहे हैं, अभूतपूर्व ROI और बाजार विस्तार प्राप्त कर रहे हैं।",
+    "verified": "सत्यापित एंटरप्राइज़ क्लाइंट",
     "stats": {
-      "enterpriseClients": "Enterprise Clients",
-      "satisfaction": "Client Satisfaction",
-      "revenueGenerated": "Revenue Generated",
-      "premiumSupport": "Premium Support"
+      "enterpriseClients": "एंटरप्राइज़ क्लाइंट",
+      "satisfaction": "ग्राहक संतुष्टि",
+      "revenueGenerated": "उत्पन्न राजस्व",
+      "premiumSupport": "प्रीमियम सपोर्ट"
     },
-    "joinLeaders": "Join hundreds of global leaders already transforming their supplement businesses",
-    "requestDemo": "Request Executive Demo"
+    "joinLeaders": "सैकड़ों वैश्विक नेताओं में शामिल हों जो पहले से ही अपने सप्लीमेंट व्यवसायों को बदल रहे हैं",
+    "requestDemo": "कार्यकारी डेमो का अनुरोध करें",
+    "clients": {
+      "1": {
+        "name": "Dr. Sarah Chen",
+        "position": "सीईओ, मेडटेक ग्लोबल",
+        "company": "Fortune 500 Healthcare",
+        "content": "Global Supplements ने हमारी आपूर्ति श्रृंखला में क्रांति ला दी। AI ऐसे अवसरों की पहचान करता है जो हम मैन्युअल रूप से कभी नहीं देख पाएंगे। पहले वर्ष में 340% ROI।",
+        "revenue": "$2.3M saved"
+      },
+      "2": {
+        "name": "Marcus Schmidt",
+        "position": "खरीद निदेशक",
+        "company": "European Health Alliance",
+        "content": "सरकारी बोली मंच प्रभावशाली है। हमने 6 महीनों में 15 अनुबंध जीते, सभी 25% से अधिक मार्जिन के साथ। स्वचालित अनुपालन सही है।",
+        "revenue": "$5.7M in contracts"
+      },
+      "3": {
+        "name": "Isabella Rodriguez",
+        "position": "अंतर्राष्ट्रीय व्यापार प्रबंधक",
+        "company": "LatAm Supplements Corp",
+        "content": "रीयल-टाइम आर्बिट्रेज सिस्टम ने हमें 12 नए देशों में विस्तार करने की अनुमति दी। पूर्ण स्वचालन हमारी टीम को रणनीति के लिए मुक्त करता है। शानदार!",
+        "revenue": "$1.8M profit increase"
+      },
+      "4": {
+        "name": "James Wilson",
+        "position": "मुख्य आपूर्ति अधिकारी",
+        "company": "Pacific Nutrition Ltd",
+        "content": "शून्य निवेश इंजन क्रांतिकारी है। हम अपनी पूंजी के बिना संचालित करने और फिर भी 30%+ मार्जिन प्राप्त करने में सक्षम थे। प्रीमियम 24/7 सपोर्ट असाधारण है।",
+        "revenue": "$4.2M revenue generated"
+      },
+      "5": {
+        "name": "Liu Wei",
+        "position": "रणनीतिक भागीदारी निदेशक",
+        "company": "Asia Health Network",
+        "content": "एशियाई आपूर्तिकर्ताओं के साथ एकीकरण सही है। सभी बाजारों के लिए स्वचालित अनुपालन ने हमें परामर्श में लाखों बचाए। अनगिनत ROI।",
+        "revenue": "$3.1M compliance savings"
+      }
+    }
   },
   "certifications": {
-    "title": "Premium Quality Certifications",
-    "subtitle": "Our commitment to excellence is validated by the world's most recognized quality and safety standards",
+    "title": "प्रीमियम गुणवत्ता प्रमाणपत्र",
+    "subtitle": "उत्कृष्टता के प्रति हमारी प्रतिबद्धता दुनिया के सबसे मान्यता प्राप्त गुणवत्ता और सुरक्षा मानकों द्वारा मान्य है",
     "items": {
-      "iso22000": "International food safety management system standard ensuring quality at every stage",
-      "gmp": "Good Manufacturing Practice certification guaranteeing pharmaceutical-grade production",
-      "fda": "US Food and Drug Administration approval for safety and efficacy",
-      "haccp": "Hazard Analysis Critical Control Points system for food safety",
-      "nsf": "NSF International certification for public health and safety standards",
-      "euOrganic": "European Union organic certification for natural and sustainable products"
+      "iso22000": "अंतर्राष्ट्रीय खाद्य सुरक्षा प्रबंधन प्रणाली मानक हर चरण में गुणवत्ता सुनिश्चित करता है",
+      "gmp": "अच्छा विनिर्माण अभ्यास प्रमाणन फार्मास्युटिकल-ग्रेड उत्पादन की गारंटी देता है",
+      "fda": "सुरक्षा और प्रभावकारिता के लिए अमेरिकी खाद्य एवं औषधि प्रशासन अनुमोदन",
+      "haccp": "खाद्य सुरक्षा के लिए खतरा विश्लेषण महत्वपूर्ण नियंत्रण बिंदु प्रणाली",
+      "nsf": "सार्वजनिक स्वास्थ्य और सुरक्षा मानकों के लिए NSF अंतर्राष्ट्रीय प्रमाणन",
+      "euOrganic": "प्राकृतिक और टिकाऊ उत्पादों के लिए यूरोपीय संघ जैविक प्रमाणन"
     },
-    "verified": "All certifications verified and current"
+    "verified": "सभी प्रमाणपत्र सत्यापित और वर्तमान हैं"
   },
   "footer": {
     "description": "उन्नत AI तकनीक के माध्यम से सरकारों, व्यवसायों और उपभोक्ताओं को प्रीमियम आपूर्तिकर्ताओं से जोड़ने वाले आहार पूरक में विश्व नेता।",

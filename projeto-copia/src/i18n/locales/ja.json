@@ -70,34 +70,32 @@
   },
   "countries": {
     "badge": "戦略的グローバルパートナーシップ",
-    "title": "プレミアムサプライヤーのエリートワールドワイドネットワーク",
-    "subtitle": "6大陸32カ国にわたる独占的パートナーシップにより、政府、企業、医療機関を世界で最も信頼されるサプリメントメーカーに接続します。各パートナーシップは、厳格な審査、規制遵守、および医薬品グレードの製品をグローバル市場に提供する実績を表しています。",
+    "title": "プレミアムサプライヤーのエリートグローバルネットワーク",
+    "subtitle": "当社の独占パートナーシップは、6大陸の32か国にまたがり、政府、企業、医療機関を世界で最も信頼できるサプリメントメーカーと結びつけています。",
     "stats": {
-      "active": "アクティブな国",
+      "active": "アクティブ国",
       "market": "グローバル市場価値",
       "suppliers": "検証済みサプライヤー",
-      "verified": "品質認定"
+      "verified": "品質認証"
     },
     "contact": {
       "international": "国際チームに連絡",
       "operations": "グローバルオペレーションセンター"
     },
     "statusLabels": {
-      "strategic": "strategic",
-      "premium": "premium",
-      "innovation": "innovation",
-      "established": "established",
-      "growth": "growth",
-      "partner": "partner",
-      "hub": "hub",
-      "quality": "quality",
-      "luxury": "luxury",
-      "logistics": "logistics"
+      "strategic": "戦略的",
+      "premium": "プレミアム",
+      "innovation": "イノベーション",
+      "established": "確立",
+      "growth": "成長",
+      "partner": "パートナー",
+      "hub": "ハブ",
+      "quality": "品質",
+      "luxury": "ラグジュアリー",
+      "logistics": "ロジスティクス"
     },
     "cta": {
-      "title": "戦略的市場への拡大に関心がありますか？グローバルチームにお問い合わせください",
-      "international": "国際チームに連絡",
-      "operations": "グローバルオペレーションセンター"
+      "title": "戦略的市場への拡大に興味がありますか？グローバルチームにお問い合わせください"
     }
   },
   "products": {
@@ -299,31 +297,68 @@
     }
   },
   "testimonials": {
-    "badge": "Client Success Stories",
-    "title": "Trusted by Global Market Leaders",
-    "subtitle": "See how industry leaders across 32 countries are revolutionizing their supplement supply chains with our AI-powered platform, achieving unprecedented ROI and market expansion.",
-    "verified": "Verified Enterprise Client",
+    "badge": "顧客成功事例",
+    "title": "グローバル市場リーダーから信頼されています",
+    "subtitle": "32か国の業界リーダーが、当社のAI駆動プラットフォームでサプリメントサプライチェーンを革新し、前例のないROIと市場拡大を達成している様子をご覧ください。",
+    "verified": "検証済みエンタープライズクライアント",
     "stats": {
-      "enterpriseClients": "Enterprise Clients",
-      "satisfaction": "Client Satisfaction",
-      "revenueGenerated": "Revenue Generated",
-      "premiumSupport": "Premium Support"
+      "enterpriseClients": "エンタープライズクライアント",
+      "satisfaction": "顧客満足度",
+      "revenueGenerated": "生成された収益",
+      "premiumSupport": "プレミアムサポート"
     },
-    "joinLeaders": "Join hundreds of global leaders already transforming their supplement businesses",
-    "requestDemo": "Request Executive Demo"
+    "joinLeaders": "すでにサプリメントビジネスを変革している何百人ものグローバルリーダーに参加してください",
+    "requestDemo": "エグゼクティブデモをリクエスト",
+    "clients": {
+      "1": {
+        "name": "Dr. Sarah Chen",
+        "position": "CEO, MedTech Global",
+        "company": "Fortune 500 Healthcare",
+        "content": "Global Supplementsは当社のサプライチェーンに革命をもたらしました。AIは手動では決して見つけられない機会を特定します。初年度に340%のROI。",
+        "revenue": "$2.3M saved"
+      },
+      "2": {
+        "name": "Marcus Schmidt",
+        "position": "調達ディレクター",
+        "company": "European Health Alliance",
+        "content": "政府入札プラットフォームは印象的です。6か月で15件の契約を獲得し、すべて25%以上のマージンでした。自動コンプライアンスは完璧です。",
+        "revenue": "$5.7M in contracts"
+      },
+      "3": {
+        "name": "Isabella Rodriguez",
+        "position": "国際貿易マネージャー",
+        "company": "LatAm Supplements Corp",
+        "content": "リアルタイムアービトラージシステムにより、12の新しい国に拡大できました。完全な自動化により、当社チームは戦略に集中できます。素晴らしい！",
+        "revenue": "$1.8M profit increase"
+      },
+      "4": {
+        "name": "James Wilson",
+        "position": "最高供給責任者",
+        "company": "Pacific Nutrition Ltd",
+        "content": "ゼロ投資エンジンは革命的です。自己資本なしで運営し、30%以上のマージンを達成できました。24/7プレミアムサポートは素晴らしいです。",
+        "revenue": "$4.2M revenue generated"
+      },
+      "5": {
+        "name": "Liu Wei",
+        "position": "戦略的パートナーシップディレクター",
+        "company": "Asia Health Network",
+        "content": "アジアのサプライヤーとの統合は完璧です。すべての市場の自動コンプライアンスにより、コンサルティングで数百万ドル節約できました。計り知れないROI。",
+        "revenue": "$3.1M compliance savings"
+      }
+    }
   },
   "certifications": {
-    "title": "Premium Quality Certifications",
-    "subtitle": "Our commitment to excellence is validated by the world's most recognized quality and safety standards",
+    "title": "プレミアム品質認証",
+    "subtitle": "当社の卓越性への取り組みは、世界で最も認められた品質と安全基準によって検証されています",
     "items": {
-      "iso22000": "International food safety management system standard ensuring quality at every stage",
-      "gmp": "Good Manufacturing Practice certification guaranteeing pharmaceutical-grade production",
-      "fda": "US Food and Drug Administration approval for safety and efficacy",
-      "haccp": "Hazard Analysis Critical Control Points system for food safety",
-      "nsf": "NSF International certification for public health and safety standards",
-      "euOrganic": "European Union organic certification for natural and sustainable products"
+      "iso22000": "すべての段階で品質を保証する国際食品安全管理システム規格",
+      "gmp": "医薬品グレードの生産を保証する適正製造規範認証",
+      "fda": "安全性と有効性に対する米国食品医薬品局の承認",
+      "haccp": "食品安全のための危害分析重要管理点システム",
+      "nsf": "公衆衛生と安全基準のためのNSF International認証",
+      "euOrganic": "天然で持続可能な製品のための欧州連合オーガニック認証"
     },
-    "verified": "All certifications verified and current"
+    "verified": "すべての認証が検証され、最新です"
   },
   "footer": {
     "description": "先進的なAI技術を通じて政府、企業、消費者をプレミアムサプライヤーに接続する栄養補助食品の世界的リーダー。",

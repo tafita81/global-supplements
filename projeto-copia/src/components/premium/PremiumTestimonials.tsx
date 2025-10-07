@@ -5,62 +5,13 @@ import { Button } from "@/components/ui/button";
 import { Star, Quote, ChevronLeft, ChevronRight, Award, Building } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
+// Testimonials metadata (non-translatable data)
 const testimonials = [
-  {
-    id: 1,
-    name: "Dr. Sarah Chen",
-    position: "CEO, MedTech Global",
-    company: "Fortune 500 Healthcare",
-    rating: 5,
-    content: "Global Supplements revolutionized our supply chain. The AI identifies opportunities we would never see manually. 340% ROI in the first year.",
-    avatar: "👩‍💼",
-    revenue: "$2.3M saved",
-    country: "🇺🇸"
-  },
-  {
-    id: 2,
-    name: "Marcus Schmidt",
-    position: "Procurement Director",
-    company: "European Health Alliance",
-    rating: 5,
-    content: "The government bidding platform is impressive. We won 15 contracts in 6 months, all with margins above 25%. Automatic compliance is perfect.",
-    avatar: "👨‍💼",
-    revenue: "$5.7M in contracts",
-    country: "🇩🇪"
-  },
-  {
-    id: 3,
-    name: "Isabella Rodriguez",
-    position: "International Trade Manager",
-    company: "LatAm Supplements Corp",
-    rating: 5,
-    content: "The real-time arbitrage system allowed us to expand to 12 new countries. Complete automation frees our team for strategy. Fantastic!",
-    avatar: "👩‍💻",
-    revenue: "$1.8M profit increase",
-    country: "🇧🇷"
-  },
-  {
-    id: 4,
-    name: "James Wilson",
-    position: "Chief Supply Officer",
-    company: "Pacific Nutrition Ltd",
-    rating: 5,
-    content: "Zero Investment Engine is revolutionary. We managed to operate without our own capital and still achieve 30%+ margins. Premium 24/7 support is exceptional.",
-    avatar: "👨‍💻",
-    revenue: "$4.2M revenue generated",
-    country: "🇦🇺"
-  },
-  {
-    id: 5,
-    name: "Liu Wei",
-    position: "Strategic Partnerships Director",
-    company: "Asia Health Network",
-    rating: 5,
-    content: "The integration with Asian suppliers is perfect. Automatic compliance for all markets saved us millions in consulting. Incalculable ROI.",
-    avatar: "👨‍🏫",
-    revenue: "$3.1M compliance savings",
-    country: "🇨🇳"
-  }
+  { id: 1, avatar: "👩‍💼", country: "🇺🇸", rating: 5 },
+  { id: 2, avatar: "👨‍💼", country: "🇩🇪", rating: 5 },
+  { id: 3, avatar: "👩‍💻", country: "🇧🇷", rating: 5 },
+  { id: 4, avatar: "👨‍💻", country: "🇦🇺", rating: 5 },
+  { id: 5, avatar: "👨‍🏫", country: "🇨🇳", rating: 5 }
 ];
 
 export function PremiumTestimonials() {
@@ -89,6 +40,15 @@ export function PremiumTestimonials() {
   };
 
   const currentTestimonial = testimonials[currentIndex];
+  
+  // Get translated client data
+  const clientData = t(`testimonials.clients.${currentTestimonial.id}`, { returnObjects: true }) as {
+    name: string;
+    position: string;
+    company: string;
+    content: string;
+    revenue: string;
+  };
 
   return (
     <div className="py-20 bg-gradient-to-b from-white to-gray-50/50">
@@ -120,9 +80,9 @@ export function PremiumTestimonials() {
                       {currentTestimonial.country}
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">{currentTestimonial.name}</h3>
-                  <p className="text-secondary font-semibold mb-1">{currentTestimonial.position}</p>
-                  <p className="text-sm text-muted-foreground mb-4">{currentTestimonial.company}</p>
+                  <h3 className="text-2xl font-bold mb-2">{clientData.name}</h3>
+                  <p className="text-secondary font-semibold mb-1">{clientData.position}</p>
+                  <p className="text-sm text-muted-foreground mb-4">{clientData.company}</p>
                   
                   {/* Rating */}
                   <div className="flex justify-center md:justify-start gap-1 mb-4">
@@ -133,7 +93,7 @@ export function PremiumTestimonials() {
 
                   <Badge variant="outline" className="gold-accent text-primary border-0">
                     <Award className="h-3 w-3 mr-1" />
-                    {currentTestimonial.revenue}
+                    {clientData.revenue}
                   </Badge>
                 </div>
 
@@ -142,7 +102,7 @@ export function PremiumTestimonials() {
                   <div className="relative">
                     <Quote className="h-12 w-12 text-secondary/30 absolute -top-4 -left-2" />
                     <blockquote className="text-xl leading-relaxed text-muted-foreground relative z-10 pl-8">
-                      "{currentTestimonial.content}"
+                      "{clientData.content}"
                     </blockquote>
                   </div>
                   

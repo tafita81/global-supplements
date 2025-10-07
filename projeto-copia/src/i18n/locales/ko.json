@@ -70,7 +70,7 @@
   "countries": {
     "badge": "전략적 글로벌 파트너십",
     "title": "프리미엄 공급업체의 엘리트 글로벌 네트워크",
-    "subtitle": "6개 대륙 32개국에 걸친 독점 파트너십으로 정부, 기업 및 의료 기관을 세계에서 가장 신뢰할 수 있는 보충제 제조업체에 연결합니다. 각 파트너십은 엄격한 검증, 규제 준수 및 글로벌 시장에 제약 등급 제품을 제공하는 입증된 실적을 나타냅니다.",
+    "subtitle": "우리의 독점 파트너십은 6개 대륙의 32개국에 걸쳐 있으며, 정부, 기업 및 의료 기관을 세계에서 가장 신뢰할 수 있는 보충제 제조업체와 연결합니다.",
     "stats": {
       "active": "활성 국가",
       "market": "글로벌 시장 가치",
@@ -82,21 +82,19 @@
       "operations": "글로벌 운영 센터"
     },
     "statusLabels": {
-      "strategic": "strategic",
-      "premium": "premium",
-      "innovation": "innovation",
-      "established": "established",
-      "growth": "growth",
-      "partner": "partner",
-      "hub": "hub",
-      "quality": "quality",
-      "luxury": "luxury",
-      "logistics": "logistics"
+      "strategic": "전략적",
+      "premium": "프리미엄",
+      "innovation": "혁신",
+      "established": "확립된",
+      "growth": "성장",
+      "partner": "파트너",
+      "hub": "허브",
+      "quality": "품질",
+      "luxury": "럭셔리",
+      "logistics": "물류"
     },
     "cta": {
-      "title": "전략적 시장으로의 확장에 관심이 있으십니까? 글로벌 팀에 문의하세요",
-      "international": "국제 팀에 문의",
-      "operations": "글로벌 운영 센터"
+      "title": "전략적 시장으로의 확장에 관심이 있으신가요? 글로벌 팀에 문의하세요"
     }
   },
   "products": {
@@ -298,31 +296,68 @@
     }
   },
   "testimonials": {
-    "badge": "Client Success Stories",
-    "title": "Trusted by Global Market Leaders",
-    "subtitle": "See how industry leaders across 32 countries are revolutionizing their supplement supply chains with our AI-powered platform, achieving unprecedented ROI and market expansion.",
-    "verified": "Verified Enterprise Client",
+    "badge": "고객 성공 사례",
+    "title": "글로벌 시장 리더들의 신뢰",
+    "subtitle": "32개국의 업계 리더들이 AI 기반 플랫폼으로 보충제 공급망을 혁신하여 전례 없는 ROI와 시장 확장을 달성하는 방법을 확인하세요.",
+    "verified": "검증된 기업 고객",
     "stats": {
-      "enterpriseClients": "Enterprise Clients",
-      "satisfaction": "Client Satisfaction",
-      "revenueGenerated": "Revenue Generated",
-      "premiumSupport": "Premium Support"
+      "enterpriseClients": "기업 고객",
+      "satisfaction": "고객 만족도",
+      "revenueGenerated": "생성된 수익",
+      "premiumSupport": "프리미엄 지원"
     },
-    "joinLeaders": "Join hundreds of global leaders already transforming their supplement businesses",
-    "requestDemo": "Request Executive Demo"
+    "joinLeaders": "이미 보충제 비즈니스를 변화시키고 있는 수백 명의 글로벌 리더들과 함께하세요",
+    "requestDemo": "임원 데모 요청",
+    "clients": {
+      "1": {
+        "name": "Dr. Sarah Chen",
+        "position": "CEO, MedTech Global",
+        "company": "Fortune 500 Healthcare",
+        "content": "Global Supplements가 우리의 공급망을 혁신했습니다. AI는 수동으로는 절대 볼 수 없는 기회를 식별합니다. 첫 해에 340% ROI.",
+        "revenue": "$2.3M saved"
+      },
+      "2": {
+        "name": "Marcus Schmidt",
+        "position": "조달 이사",
+        "company": "European Health Alliance",
+        "content": "정부 입찰 플랫폼이 인상적입니다. 6개월 만에 15개 계약을 체결했으며 모두 25% 이상의 마진을 기록했습니다. 자동 규정 준수가 완벽합니다.",
+        "revenue": "$5.7M in contracts"
+      },
+      "3": {
+        "name": "Isabella Rodriguez",
+        "position": "국제 무역 관리자",
+        "company": "LatAm Supplements Corp",
+        "content": "실시간 차익거래 시스템 덕분에 12개 신규 국가로 확장할 수 있었습니다. 완전한 자동화로 우리 팀이 전략에 집중할 수 있습니다. 환상적입니다!",
+        "revenue": "$1.8M profit increase"
+      },
+      "4": {
+        "name": "James Wilson",
+        "position": "최고 공급 책임자",
+        "company": "Pacific Nutrition Ltd",
+        "content": "제로 투자 엔진은 혁명적입니다. 자체 자본 없이 운영하면서도 30% 이상의 마진을 달성했습니다. 프리미엄 24/7 지원이 탁월합니다.",
+        "revenue": "$4.2M revenue generated"
+      },
+      "5": {
+        "name": "Liu Wei",
+        "position": "전략적 파트너십 이사",
+        "company": "Asia Health Network",
+        "content": "아시아 공급업체와의 통합이 완벽합니다. 모든 시장에 대한 자동 규정 준수로 컨설팅 비용에서 수백만 달러를 절약했습니다. 측정할 수 없는 ROI.",
+        "revenue": "$3.1M compliance savings"
+      }
+    }
   },
   "certifications": {
-    "title": "Premium Quality Certifications",
-    "subtitle": "Our commitment to excellence is validated by the world's most recognized quality and safety standards",
+    "title": "프리미엄 품질 인증",
+    "subtitle": "우리의 우수성에 대한 헌신은 세계에서 가장 인정받는 품질 및 안전 기준에 의해 검증됩니다",
     "items": {
-      "iso22000": "International food safety management system standard ensuring quality at every stage",
-      "gmp": "Good Manufacturing Practice certification guaranteeing pharmaceutical-grade production",
-      "fda": "US Food and Drug Administration approval for safety and efficacy",
-      "haccp": "Hazard Analysis Critical Control Points system for food safety",
-      "nsf": "NSF International certification for public health and safety standards",
-      "euOrganic": "European Union organic certification for natural and sustainable products"
+      "iso22000": "모든 단계에서 품질을 보장하는 국제 식품 안전 관리 시스템 표준",
+      "gmp": "제약 등급 생산을 보장하는 우수 제조 관리 기준 인증",
+      "fda": "안전성 및 효능에 대한 미국 식품의약국 승인",
+      "haccp": "식품 안전을 위한 위해요소 중점 관리 기준 시스템",
+      "nsf": "공중 보건 및 안전 표준에 대한 NSF International 인증",
+      "euOrganic": "천연 및 지속 가능한 제품에 대한 유럽 연합 유기농 인증"
     },
-    "verified": "All certifications verified and current"
+    "verified": "모든 인증이 확인되고 최신 상태입니다"
   },
   "footer": {
     "description": "첨단 AI 기술을 통해 정부, 기업 및 소비자를 프리미엄 공급업체에 연결하는 건강 보조식품의 세계적 리더.",
