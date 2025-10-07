@@ -438,4 +438,53 @@ All colors MUST be HSL.
       transform: translateY(-2px);
     }
   }
+
+  /* Professional Button Animations - Amazon Style */
+  @keyframes professional-pulse {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 10px 40px -15px rgba(255, 153, 0, 0.6), 
+                  0 0 0 0 rgba(255, 153, 0, 0.4),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+    50% {
+      transform: scale(1.03);
+      box-shadow: 0 20px 60px -15px rgba(255, 153, 0, 0.9), 
+                  0 0 0 8px rgba(255, 153, 0, 0.15),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  @keyframes professional-shimmer {
+    0% {
+      background-position: -200% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+
+  @keyframes professional-glow {
+    0%, 100% {
+      filter: brightness(1) drop-shadow(0 0 10px rgba(255, 153, 0, 0.4));
+    }
+    50% {
+      filter: brightness(1.15) drop-shadow(0 0 25px rgba(255, 153, 0, 0.7));
+    }
+  }
+
+  .professional-cta-animation {
+    animation: professional-pulse 2.5s ease-in-out infinite, 
+               professional-glow 3s ease-in-out infinite;
+    background-image: linear-gradient(
+      90deg, 
+      rgba(255, 255, 255, 0) 0%, 
+      rgba(255, 255, 255, 0.3) 50%, 
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: professional-pulse 2.5s ease-in-out infinite, 
+               professional-glow 3s ease-in-out infinite,
+               professional-shimmer 3s linear infinite;
+  }
 }
