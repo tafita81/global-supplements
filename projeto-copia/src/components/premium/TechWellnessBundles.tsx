@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Scan, Star, ShoppingCart, ChevronLeft, ChevronRight } from "lucide-react";
+import { Scan, Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import skinAnalysis1 from "@/assets/skin-analysis-1.jpg";
 import skinAnalysis2 from "@/assets/skin-analysis-2.png";
 import skinAnalysis3 from "@/assets/skin-analysis-3.png";
+import amazonLogo from "@/assets/amazon-logo.png";
 
 export function TechWellnessBundles() {
   const { t } = useTranslation();
@@ -120,14 +121,18 @@ export function TechWellnessBundles() {
                 href="https://amzn.to/4mU7qT4" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="block"
+                className="inline-block"
               >
                 <Button 
-                  className="w-full md:w-auto gold-accent text-primary font-bold text-lg px-12 py-6 hover:scale-105 transition-transform" 
+                  className="bg-gradient-to-r from-[#FF9900] via-[#FFB84D] to-[#FF9900] hover:from-[#F08804] hover:to-[#F08804] text-black font-bold text-base px-8 py-6 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300" 
                   size="lg"
                 >
-                  <ShoppingCart className="h-5 w-5 mr-2" />
-                  {t('bundles.preOrderNow')}
+                  <img 
+                    src={amazonLogo} 
+                    alt="Amazon" 
+                    className="h-6 mr-3" 
+                  />
+                  Shop Premium Supplements →
                 </Button>
               </a>
               
