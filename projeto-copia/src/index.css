@@ -2,6 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 🧠 NEUROMARKETING - Animações Hipnóticas Avançadas */
+
+/* Marquee Infinito - Scroll da Esquerda para Direita */
+@keyframes hypnotic-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Brilho Pulsante Premium - Engenharia de Atenção */
+@keyframes attention-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.4)) 
+            drop-shadow(0 0 16px rgba(251, 191, 36, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.6)) 
+            drop-shadow(0 0 24px rgba(251, 191, 36, 0.3))
+            drop-shadow(0 0 36px rgba(251, 191, 36, 0.1));
+  }
+}
+
+/* Gradiente Animado - Hipnose Visual */
+@keyframes hypnotic-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Pulsação Premium - Ritmo Hipnótico */
+@keyframes hypnotic-pulse {
+  0%, 100% {
+    opacity: 0.85;
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+    filter: brightness(1.15);
+  }
+}
+
+.hypnotic-marquee {
+  animation: hypnotic-marquee 40s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.hypnotic-marquee-fast {
+  animation: hypnotic-marquee 25s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.attention-glow {
+  animation: attention-glow 3s ease-in-out infinite;
+}
+
+.hypnotic-gradient-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(251, 191, 36, 0.1),
+    rgba(251, 191, 36, 0.2),
+    rgba(251, 191, 36, 0.1)
+  );
+  background-size: 200% 100%;
+  animation: hypnotic-gradient 5s ease infinite;
+}
+
+.hypnotic-pulse {
+  animation: hypnotic-pulse 4s ease-in-out infinite;
+}
+
 /* Barra de Rolagem Horizontal - Só aparece quando necessário */
 .scrollbar-visible::-webkit-scrollbar {
   height: 6px;
