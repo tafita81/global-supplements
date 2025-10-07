@@ -1,0 +1,912 @@
+{
+  "site": {
+    "title": "Global Supplements - Penyelesaian Canggih Seluruh Dunia",
+    "description": "Pemimpin global dalam makanan tambahan canggih: penambah kecantikan, sebatian gred perubatan, bahan pemprosesan kuantum, alat pintar dan produk kesihatan tradisional. Melayani B2B, B2C dan perolehan kerajaan di seluruh dunia.",
+    "tagline": "Penyelesaian Canggih Seluruh Dunia"
+  },
+  "navigation": {
+    "home": "Utama",
+    "about": "Tentang Kami",
+    "services": "Perkhidmatan",
+    "solutions": "Penyelesaian",
+    "contact": "Hubungi",
+    "getQuote": "Dapatkan Sebut Harga",
+    "partnerWithUs": "Beli Produk Premium →",
+    "beautySupplements": "Makanan Tambahan Kecantikan",
+    "quantumMaterials": "Bahan Kuantum",
+    "medicalGrade": "Gred Perubatan",
+    "smartGadgets": "Alat Pintar",
+    "traditionalWellness": "Kesihatan Tradisional",
+    "b2bSolutions": "Penyelesaian B2B",
+    "governmentContracts": "Kontrak Kerajaan",
+    "manufacturing": "Pengilangan",
+    "researchDevelopment": "Penyelidikan & Pembangunan",
+    "marketIntelligence": "Perisikan Pasaran",
+    "enterpriseSolutions": "Penyelesaian Perusahaan",
+    "searchPlaceholder": "Cari kecantikan, bahan kuantum, sebatian perubatan, alat...",
+    "account": "Akaun",
+    "cart": "Troli",
+    "tagline": "Kecantikan • Kuantum • Perubatan • Alat • Kesihatan",
+    "opportunities": "Peluang Perniagaan",
+    "suppliers": "Pembekal",
+    "products": "Produk Mycogenesis",
+    "globalAI": "AI Global",
+    "logistics": "Logistik",
+    "compliance": "Pematuhan",
+    "settings": "Tetapan"
+  },
+  "hero": {
+    "title": "Rangkaian Global Supplements Canggih",
+    "subtitle": "Menghubungkan kerajaan, perniagaan dan pengguna kepada makanan tambahan revolusioner: penambah kecantikan, bahan pemprosesan kuantum, sebatian gred perubatan, alat pintar dan produk kesihatan tradisional melalui teknologi AI",
+    "premiumSupplements": "Makanan Tambahan Canggih",
+    "executiveDashboard": "Papan Pemuka Eksekutif",
+    "scroll": "Tatal",
+    "stats": {
+      "countries": "Negara",
+      "market": "Pasaran Global",
+      "suppliers": "Pembekal",
+      "verified": "Disahkan",
+      "contracts": "Kontrak",
+      "annualRevenue": "Pendapatan Tahunan",
+      "annualVolume": "Jumlah Transaksi Tahunan",
+      "globalSuppliers": "Pembekal Global",
+      "enterpriseClients": "Pelanggan Perusahaan"
+    },
+    "videoCategories": {
+      "beautyEnhancement": "Peningkatan Kecantikan",
+      "quantumProcessing": "Pemprosesan Kuantum",
+      "medicalGrade": "Gred Perubatan",
+      "smartHealthGadgets": "Alat Kesihatan Pintar",
+      "traditionalWellness": "Kesihatan Tradisional",
+      "descriptions": {
+        "beautyEnhancement": "Makanan tambahan kecantikan revolusioner dengan sebatian bioaktif canggih",
+        "quantumProcessing": "Bahan canggih untuk pengkomputeran kuantum dan peningkatan pemprosesan AI",
+        "medicalGrade": "Makanan tambahan gred farmaseutikal untuk aplikasi klinikal",
+        "smartHealthGadgets": "Peranti teknologi kesihatan inovatif dengan keupayaan IoT",
+        "traditionalWellness": "Makanan tambahan tradisional premium untuk kesihatan dan kesihatan am"
+      }
+    }
+  },
+  "countries": {
+    "badge": "Perkongsian Global Strategik",
+    "title": "Rangkaian Global Elit Pembekal Premium",
+    "subtitle": "Perkongsian eksklusif kami merangkumi 32 negara merentasi 6 benua, menghubungkan kerajaan, perusahaan dan organisasi kesihatan kepada pengeluar makanan tambahan paling dipercayai di dunia.",
+    "stats": {
+      "active": "Negara Aktif",
+      "market": "Nilai Pasaran Global",
+      "suppliers": "Pembekal Disahkan",
+      "verified": "Kualiti Diperakui"
+    },
+    "contact": {
+      "international": "Hubungi Pasukan Antarabangsa",
+      "operations": "Pusat Operasi Global"
+    },
+    "statusLabels": {
+      "strategic": "strategik",
+      "premium": "premium",
+      "innovation": "inovasi",
+      "established": "ditubuhkan",
+      "growth": "pertumbuhan",
+      "partner": "rakan kongsi",
+      "hub": "hab",
+      "quality": "kualiti",
+      "luxury": "mewah",
+      "logistics": "logistik"
+    },
+    "cta": {
+      "title": "Berminat untuk berkembang ke pasaran strategik? Hubungi pasukan global kami"
+    }
+  },
+  "products": {
+    "badge": "🚀 Advanced Solutions Portfolio",
+    "title": "Advanced Global Supplement Categories",
+    "description": "Discover our revolutionary collection spanning 5 major categories: beauty enhancement supplements, quantum processing materials, medical-grade compounds, smart health gadgets, and traditional wellness products. Each category represents cutting-edge innovation for B2B, B2C, and government procurement.",
+    "reviews": "reviews",
+    "requestQuote": "Request Quote",
+    "categories": {
+      "beauty": {
+        "title": "Beauty Enhancement Supplements",
+        "description": "Revolutionary beauty supplements with advanced bioactive compounds for skin regeneration, anti-aging, and aesthetic enhancement",
+        "features": [
+          "Collagen Boosters",
+          "Anti-Aging Formulas",
+          "Skin Radiance",
+          "Hair & Nails"
+        ]
+      },
+      "quantum": {
+        "title": "Quantum Processing Materials",
+        "description": "Advanced materials and supplements for quantum computing systems, AI processing enhancement, and machine optimization",
+        "features": [
+          "Quantum Catalysts",
+          "Processing Enhancers",
+          "System Optimizers",
+          "AI Accelerators"
+        ]
+      },
+      "medical": {
+        "title": "Medical-Grade Compounds",
+        "description": "Pharmaceutical-grade supplements for clinical applications, therapeutic treatments, and medical research",
+        "features": [
+          "Clinical Formulas",
+          "Therapeutic Compounds",
+          "Research Materials",
+          "Precision Medicine"
+        ]
+      },
+      "gadgets": {
+        "title": "Smart Health Gadgets",
+        "description": "Innovative health technology devices, wearables, and smart supplements integrated with IoT capabilities",
+        "features": [
+          "Smart Devices",
+          "Health Wearables",
+          "IoT Integration",
+          "Digital Health"
+        ]
+      },
+      "wellness": {
+        "title": "Traditional Wellness",
+        "description": "Premium traditional supplements for general health, fitness, nutrition, and everyday wellness needs",
+        "features": [
+          "Vitamins & Minerals",
+          "Fitness Support",
+          "Immune System",
+          "General Health"
+        ]
+      }
+    },
+    "businessModels": {
+      "b2b": "B2B",
+      "enterprise": "Enterprise",
+      "b2c": "B2C",
+      "consumer": "Consumer",
+      "gov": "Gov",
+      "procurement": "Procurement"
+    }
+  },
+  "marketIntelligence": {
+    "badge": "AI Market Intelligence",
+    "title": "Predictive Analytics",
+    "subtitle": "Leverage advanced AI to predict market movements with 94% accuracy, identifying $47M+ in opportunities across 185 global markets daily",
+    "stats": {
+      "accuracy": "Accuracy Rate",
+      "opportunities": "Daily Opportunities",
+      "markets": "Markets Tracked",
+      "speed": "Analysis Speed"
+    },
+    "dashboard": {
+      "title": "AI-Powered Market Intelligence",
+      "description": "Real-time analysis of global supplement markets using advanced machine learning and predictive algorithms to identify high-profit opportunities"
+    },
+    "tabs": {
+      "insights": "Market Insights",
+      "predictions": "Price Predictions",
+      "trends": "Global Trends",
+      "analytics": "Deep Analytics"
+    },
+    "technology": {
+      "title": "Advanced AI Architecture",
+      "subtitle": "Cutting-edge technology stack powering predictive market intelligence"
+    },
+    "cta": {
+      "title": "Unlock Predictive Market Intelligence",
+      "description": "Join elite partners using our AI to predict market movements with 94% accuracy and identify millions in opportunities before competitors even notice.",
+      "primaryButton": "Access AI Intelligence",
+      "secondaryButton": "Explore Markets"
+    }
+  },
+  "tech": {
+    "badge": "Advanced Technology",
+    "title": "Revolutionary Tech Platform",
+    "subtitle": "Powered by quantum computing, artificial intelligence, and machine learning algorithms to deliver unprecedented market insights and automated execution capabilities",
+    "features": {
+      "aiEngine": {
+        "title": "AI Engine",
+        "description": "Advanced machine learning algorithms for market prediction and analysis",
+        "stats": "94% Accuracy"
+      },
+      "realTime": {
+        "title": "Real-Time Processing",
+        "description": "Instant market data processing and opportunity detection",
+        "stats": "< 50ms Response"
+      },
+      "security": {
+        "title": "Enterprise Security",
+        "description": "Bank-grade encryption and security protocols",
+        "stats": "256-bit SSL"
+      },
+      "globalNetwork": {
+        "title": "Global Network",
+        "description": "Connected to suppliers across 185+ countries worldwide",
+        "stats": "185+ Countries"
+      }
+    },
+    "tabs": {
+      "overview": "Technology Overview",
+      "platforms": "AI Platforms",
+      "analytics": "Advanced Analytics"
+    },
+    "aiQuantum": {
+      "title": "Quantum AI Engine",
+      "description": "Revolutionary artificial intelligence powered by quantum computing algorithms for unprecedented market analysis and prediction accuracy.",
+      "badge": "Quantum Computing"
+    },
+    "bigData": {
+      "title": "Big Data Analytics",
+      "description": "Process millions of data points in real-time to identify market opportunities and predict price movements with exceptional accuracy.",
+      "badge": "Real-Time Processing"
+    },
+    "cloudInfra": {
+      "title": "Cloud Infrastructure",
+      "description": "Scalable cloud architecture ensuring 99.9% uptime and lightning-fast response times across global markets.",
+      "badge": "99.9% Uptime"
+    },
+    "platforms": {
+      "quantum": {
+        "name": "Quantum Opportunity Engine",
+        "description": "AI-powered market analysis and opportunity detection",
+        "features": {
+          "0": "Machine Learning",
+          "1": "Predictive Analytics",
+          "2": "Market Intelligence"
+        }
+      },
+      "arbitrage": {
+        "name": "Real-Time Arbitrage Engine",
+        "description": "Automated price monitoring and execution system",
+        "features": {
+          "0": "Price Monitoring",
+          "1": "Auto-Execution",
+          "2": "Risk Management"
+        }
+      },
+      "zeroInvestment": {
+        "name": "Zero Investment Engine",
+        "description": "Capital-free trading and automated operations",
+        "features": {
+          "0": "Credit Facilitation",
+          "1": "Automated Trading",
+          "2": "Risk-Free Operations"
+        }
+      }
+    },
+    "analytics": {
+      "title": "Advanced Market Analytics",
+      "vision360": {
+        "title": "360° Market Vision",
+        "description": "Complete market overview with real-time insights"
+      },
+      "predictions": {
+        "title": "AI Predictions",
+        "description": "Market movement forecasting with 94% accuracy"
+      },
+      "roiOptimized": {
+        "title": "ROI Optimization",
+        "description": "Automated profit maximization algorithms"
+      }
+    },
+    "ctas": {
+      "accessAI": "Access AI System",
+      "explorePlatform": "Explore Platform",
+      "viewAnalytics": "View Live Analytics"
+    },
+    "dashboardIA": {
+      "title": "AI Dashboard",
+      "description": "Access all artificial intelligence and real-time analytics"
+    }
+  },
+  "testimonials": {
+    "badge": "Kisah Kejayaan Pelanggan",
+    "title": "Dipercayai oleh Pemimpin Pasaran Global",
+    "subtitle": "Lihat bagaimana pemimpin industri di 32 negara merevolusikan rantaian bekalan makanan tambahan mereka dengan platform berkuasa AI kami, mencapai ROI yang tidak pernah berlaku sebelum ini dan pengembangan pasaran.",
+    "verified": "Klien Perusahaan Disahkan",
+    "stats": {
+      "enterpriseClients": "Klien Perusahaan",
+      "satisfaction": "Kepuasan Pelanggan",
+      "revenueGenerated": "Pendapatan Dijana",
+      "premiumSupport": "Sokongan Premium"
+    },
+    "joinLeaders": "Sertai beratus-ratus pemimpin global yang sudah mengubah perniagaan makanan tambahan mereka",
+    "requestDemo": "Minta Demo Eksekutif",
+    "clients": {
+      "1": {
+        "name": "Dr. Sarah Chen",
+        "position": "Ketua Pegawai Eksekutif, MedTech Global",
+        "company": "Fortune 500 Healthcare",
+        "content": "Global Supplements merevolusikan rantaian bekalan kami. AI mengenal pasti peluang yang tidak akan kami lihat secara manual. 340% ROI pada tahun pertama.",
+        "revenue": "$2.3M saved"
+      },
+      "2": {
+        "name": "Marcus Schmidt",
+        "position": "Pengarah Perolehan",
+        "company": "European Health Alliance",
+        "content": "Platform bidaan kerajaan mengagumkan. Kami memenangi 15 kontrak dalam 6 bulan, semua dengan margin melebihi 25%. Pematuhan automatik sempurna.",
+        "revenue": "$5.7M in contracts"
+      },
+      "3": {
+        "name": "Isabella Rodriguez",
+        "position": "Pengurus Perdagangan Antarabangsa",
+        "company": "LatAm Supplements Corp",
+        "content": "Sistem arbitraj masa nyata membolehkan kami berkembang ke 12 negara baharu. Automasi lengkap membebaskan pasukan kami untuk strategi. Hebat!",
+        "revenue": "$1.8M profit increase"
+      },
+      "4": {
+        "name": "James Wilson",
+        "position": "Ketua Pegawai Bekalan",
+        "company": "Pacific Nutrition Ltd",
+        "content": "Enjin Pelaburan Sifar adalah revolusioner. Kami berjaya beroperasi tanpa modal sendiri dan masih mencapai margin 30%+. Sokongan premium 24/7 luar biasa.",
+        "revenue": "$4.2M revenue generated"
+      },
+      "5": {
+        "name": "Liu Wei",
+        "position": "Pengarah Perkongsian Strategik",
+        "company": "Asia Health Network",
+        "content": "Integrasi dengan pembekal Asia sempurna. Pematuhan automatik untuk semua pasaran menjimatkan jutaan dalam perundingan. ROI tidak terkira.",
+        "revenue": "$3.1M compliance savings"
+      }
+    }
+  },
+  "certifications": {
+    "title": "Pensijilan Kualiti Premium",
+    "subtitle": "Komitmen kami terhadap kecemerlangan disahkan oleh piawaian kualiti dan keselamatan yang paling diiktiraf di dunia",
+    "items": {
+      "iso22000": "Piawaian sistem pengurusan keselamatan makanan antarabangsa memastikan kualiti di setiap peringkat",
+      "gmp": "Pensijilan Amalan Pembuatan Baik menjamin pengeluaran gred farmaseutikal",
+      "fda": "Kelulusan Pentadbiran Makanan dan Ubat AS untuk keselamatan dan keberkesanan",
+      "haccp": "Sistem Analisis Bahaya dan Kawalan Titik Kritikal untuk keselamatan makanan",
+      "nsf": "Pensijilan NSF International untuk piawaian kesihatan awam dan keselamatan",
+      "euOrganic": "Pensijilan organik Kesatuan Eropah untuk produk semula jadi dan mampan"
+    },
+    "verified": "Semua pensijilan disahkan dan terkini"
+  },
+  "footer": {
+    "description": "Pemimpin dunia dalam makanan tambahan yang menghubungkan kerajaan, perniagaan dan pengguna kepada pembekal premium melalui teknologi AI canggih.",
+    "companyName": "Global Supplements",
+    "premiumNetwork": "Rangkaian Premium",
+    "businessSolutions": "Penyelesaian Perniagaan",
+    "b2bGlobalTrading": "Perdagangan Global B2B",
+    "governmentContracts": "Kontrak Kerajaan",
+    "b2cMarketplace": "Pasaran B2C",
+    "technology": "Teknologi",
+    "realTimeArbitrage": "Arbitraj Masa Nyata",
+    "autoExecution": "Pelaksanaan Auto",
+    "globalCompliance": "Pematuhan Global",
+    "advancedAI": "AI Canggih",
+    "executiveDashboard": "Papan Pemuka Eksekutif",
+    "premiumContact": "Hubungan Premium",
+    "globalNetwork": "Rangkaian Global",
+    "copyright": "© 2024 Global Supplements. Hak cipta terpelihara.",
+    "privacyPolicy": "Dasar Privasi",
+    "termsOfUse": "Terma Penggunaan",
+    "compliance": "Pematuhan"
+  },
+  "public": {
+    "hero": {
+      "badges": {
+        "bbbRated": "A+ BBB Rated",
+        "fdaRegistered": "FDA Registered",
+        "isoSystem": "ISO 9001 Certified"
+      },
+      "startPartnership": "Start Partnership",
+      "viewSolutions": "View Solutions"
+    },
+    "about": {
+      "badge": "ABOUT GLOBAL SUPPLEMENTS",
+      "title": "America's Premier Global Supplement Network",
+      "values": {
+        "qualityFirst": {
+          "title": "Quality First",
+          "description": "Every supplier in our network meets the highest international quality standards"
+        },
+        "globalReach": {
+          "title": "Global Reach",
+          "description": "Connecting businesses across 52 countries with seamless cross-border solutions"
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "AI-powered technology delivering smarter business solutions and faster results"
+        },
+        "integrity": {
+          "title": "Integrity",
+          "description": "Transparent operations with full compliance and ethical business practices"
+        }
+      },
+      "description": "Founded in Orlando in 2008, we've grown from a local distributor to the world's most trusted supplement supply network, connecting premium manufacturers with businesses and governments worldwide.",
+      "ourStory": "Our Story",
+      "story": {
+        "paragraph1": "What started as a vision to bridge the gap between premium supplement manufacturers and global buyers has evolved into the industry's most comprehensive supply network. Based in Orlando, Florida, we leverage America's strategic position to serve as the gateway between the Americas, Europe, and Asia-Pacific markets.",
+        "paragraph2": "Our Orlando headquarters serves as the command center for a global operation spanning 52 countries, managing over 10,000 verified suppliers, and processing billions in annual transactions. We've earned the trust of Fortune 500 companies, government agencies, and emerging businesses alike.",
+        "paragraph3": "Through advanced AI technology and deep industry expertise, we've revolutionized how supplement businesses discover suppliers, ensure compliance, and scale globally. Our commitment to quality, transparency, and results has made us the preferred partner for organizations seeking reliable, premium supplement solutions."
+      },
+      "achievements": {
+        "yearsExperience": "Years Experience",
+        "countriesServed": "Countries Served",
+        "verifiedSuppliers": "Verified Suppliers",
+        "annualVolume": "Annual Volume"
+      },
+      "coreValues": "Our Core Values",
+      "ourJourney": "Our Journey",
+      "timeline": {
+        "2008": {
+          "year": "2008",
+          "title": "Company Founded",
+          "description": "Established in Orlando as a premium supplement distributor"
+        },
+        "2012": {
+          "year": "2012",
+          "title": "Global Expansion",
+          "description": "Extended operations to 15 countries across Americas and Europe"
+        },
+        "2016": {
+          "year": "2016",
+          "title": "Government Contracts",
+          "description": "Secured first major government procurement contracts"
+        },
+        "2019": {
+          "year": "2019",
+          "title": "AI Integration",
+          "description": "Launched AI-powered supplier matching and compliance systems"
+        },
+        "2021": {
+          "year": "2021",
+          "title": "Fortune 500 Partnerships",
+          "description": "Became preferred supplier network for major corporations"
+        },
+        "2024": {
+          "year": "2024",
+          "title": "Market Leadership",
+          "description": "Achieved $2.8B annual transaction volume across 52 countries"
+        }
+      },
+      "locations": {
+        "orlandoHq": "Orlando Headquarters",
+        "orlandoAddress": "6200 Metrowest, Orlando, FL",
+        "globalPartnerships": "Global Partnerships",
+        "connectingBusinesses": "Connecting businesses worldwide"
+      },
+      "cta": {
+        "title": "Partner with America's Most Trusted Supplement Network",
+        "description": "Join Fortune 500 companies and government agencies who rely on our Orlando-based global network for premium supplement solutions with guaranteed quality and compliance.",
+        "button": "Start Partnership"
+      }
+    },
+    "contact": {
+      "badge": "CONTACT US NOW",
+      "title": "Ready to Transform Your Supplement Business?",
+      "subtitle": "Send Us a Message",
+      "businessLine": "24/7 Business Line",
+      "businessInquiries": "Business Inquiries",
+      "globalHeadquarters": "Global Headquarters",
+      "businessHours": "Business Hours",
+      "description": "Connect with our Orlando-based team of global supplement experts. We're available 24/7 to discuss your business needs and provide immediate solutions.",
+      "contactMethods": {
+        "immediateResponse": "Immediate Response Guaranteed",
+        "enterpriseSolutions": "Enterprise Solutions Team",
+        "orlandoAddress": "Orlando, FL 32835, USA",
+        "allTimezones": "All Time Zones Covered",
+        "operations247": "24/7 Operations"
+      },
+      "quickActions": {
+        "requestQuote": {
+          "title": "Request Quote",
+          "description": "Get pricing for your supplement needs",
+          "action": "Get Quote"
+        },
+        "partnership": {
+          "title": "Partnership Inquiry",
+          "description": "Explore supplier or distributor partnerships",
+          "action": "Shop Premium Products →"
+        },
+        "government": {
+          "title": "Government Contracts",
+          "description": "SAM.gov registered procurement support",
+          "action": "Government Solutions"
+        },
+        "emergency": {
+          "title": "Emergency Support",
+          "description": "Urgent supply chain issues",
+          "action": "Immediate Help"
+        },
+        "priorityResponse": "Priority Response"
+      },
+      "form": {
+        "responseTime": "Get a personalized response from our expert team within 1 hour",
+        "fullName": "Full Name",
+        "emailAddress": "Email Address",
+        "companyName": "Company Name",
+        "phoneNumber": "Phone Number",
+        "inquiryType": "Inquiry Type",
+        "message": "Message",
+        "placeholders": {
+          "name": "Your full name",
+          "email": "your@email.com",
+          "company": "Your company",
+          "phone": "+1 2029498397",
+          "message": "Tell us about your supplement business needs, target markets, volume requirements, or any specific questions..."
+        },
+        "inquiryTypes": {
+          "general": "General Inquiry",
+          "partnership": "Partnership Opportunity",
+          "government": "Government Contracts",
+          "supplier": "Become a Supplier",
+          "buyer": "Find Suppliers",
+          "support": "Technical Support"
+        },
+        "sendMessage": "Send Message",
+        "guarantees": {
+          "response": "Guaranteed response within 1 hour",
+          "security": "Your information is secure and confidential"
+        },
+        "success": {
+          "title": "Message Sent Successfully!",
+          "description": "Our team will contact you within 1 hour during business hours."
+        }
+      },
+      "trustIndicators": {
+        "title": "Why Choose Global Supplements?",
+        "bbbRating": {
+          "title": "A+ BBB Rating",
+          "subtitle": "Trusted since 2008"
+        },
+        "fdaRegistered": {
+          "title": "FDA Registered",
+          "subtitle": "Full compliance guaranteed"
+        },
+        "fortune500": {
+          "title": "Fortune 500 Trusted",
+          "subtitle": "2,400+ enterprise clients"
+        },
+        "globalNetwork": {
+          "title": "Global Network",
+          "subtitle": "52 countries, 10K+ suppliers"
+        }
+      },
+      "emergency": {
+        "title": "Emergency Support",
+        "description": "Urgent supply chain issues? Call our 24/7 emergency line:",
+        "disclaimer": "Available for existing clients with active contracts"
+      }
+    },
+    "services": {
+      "badge": "COMPREHENSIVE SOLUTIONS",
+      "title": "End-to-End Supplement Business Solutions",
+      "learnMore": "Learn More",
+      "startPartnership": "Start Partnership",
+      "downloadBrochure": "Download Brochure",
+      "description": "From sourcing to delivery, our Orlando-based team provides complete business solutions backed by advanced AI technology and 15+ years of global market expertise.",
+      "services": {
+        "b2bTrading": {
+          "title": "B2B Global Trading",
+          "description": "Connect with verified premium supplement manufacturers worldwide through our AI-powered network.",
+          "category": "Trading",
+          "features": {
+            "0": "10,000+ Verified Suppliers",
+            "1": "Real-time Pricing & Availability",
+            "2": "Automated Contract Management",
+            "3": "Quality Assurance Guarantee"
+          },
+          "benefits": "200-500% Profit Margins"
+        },
+        "governmentContracts": {
+          "title": "Government Contracts",
+          "description": "Access exclusive government procurement opportunities in health and supplement sectors globally.",
+          "category": "Government",
+          "features": {
+            "0": "SAM.gov Integration",
+            "1": "Compliance Automation",
+            "2": "Bid Preparation Support",
+            "3": "Contract Execution"
+          },
+          "benefits": "$100K - $2M per Contract"
+        },
+        "privateLabel": {
+          "title": "Private Label Solutions",
+          "description": "Custom supplement manufacturing and branding services with full regulatory compliance.",
+          "category": "Manufacturing",
+          "features": {
+            "0": "Custom Formulations",
+            "1": "FDA/CE Compliance",
+            "2": "Brand Development",
+            "3": "Global Distribution"
+          },
+          "benefits": "Complete Turnkey Solution"
+        },
+        "globalLogistics": {
+          "title": "Global Logistics",
+          "description": "End-to-end supply chain management with AI-optimized routing and real-time tracking.",
+          "category": "Logistics",
+          "features": {
+            "0": "Worldwide Shipping",
+            "1": "Customs Clearance",
+            "2": "Real-time Tracking",
+            "3": "Insurance Coverage"
+          },
+          "benefits": "40% Cost Reduction"
+        },
+        "compliance": {
+          "title": "Regulatory Compliance",
+          "description": "Complete compliance management for all international markets and regulatory bodies.",
+          "category": "Compliance",
+          "features": {
+            "0": "FDA Registration",
+            "1": "CE Marking",
+            "2": "GMP Certification",
+            "3": "Documentation Support"
+          },
+          "benefits": "100% Compliance Rate"
+        },
+        "marketIntelligence": {
+          "title": "Market Intelligence",
+          "description": "AI-powered market analysis and opportunity identification for maximum profitability.",
+          "category": "Analytics",
+          "features": {
+            "0": "Real-time Market Data",
+            "1": "Competitor Analysis",
+            "2": "Price Optimization",
+            "3": "Trend Forecasting"
+          },
+          "benefits": "94.7% Accuracy Rate"
+        }
+      },
+      "bottomCta": {
+        "title": "Ready to Scale Your Supplement Business?",
+        "description": "Join Fortune 500 companies and government agencies who trust our global network for their supplement procurement and distribution needs."
+      }
+    },
+    "stats": {
+      "title": "Trusted by Industry Leaders Worldwide",
+      "globalSuppliers": "Global Suppliers",
+      "countries": "Countries",
+      "annualVolume": "Annual Volume",
+      "successRate": "Success Rate",
+      "enterpriseClients": "Enterprise Clients",
+      "compliance": "Compliance",
+      "bbbRating": "BBB Rating",
+      "avgRoi": "Avg ROI"
+    },
+    "testimonials": {
+      "badge": "CLIENT SUCCESS STORIES",
+      "title": "Trusted by Global Industry Leaders",
+      "cta": "Start Your Success Story"
+    },
+    "credibility": {
+      "badge": "TRUSTED & VERIFIED",
+      "title": "Industry-Leading Certifications & Compliance",
+      "companyInfo": "Company Information",
+      "industryMemberships": "Industry Memberships",
+      "transparencyGuarantee": "100% Transparency Guarantee",
+      "description": "Our Orlando-based operations maintain the highest industry standards with full transparency and regulatory compliance across all international markets.",
+      "certifications": {
+        "fdaRegistered": {
+          "title": "FDA Registered",
+          "description": "Facility Registration Number: 12345678"
+        },
+        "iso9001": {
+          "title": "ISO 9001:2015",
+          "description": "Quality Management System Certified"
+        },
+        "gmpCertified": {
+          "title": "GMP Certified",
+          "description": "Good Manufacturing Practice Standards"
+        },
+        "bbbRating": {
+          "title": "Better Business Bureau",
+          "description": "A+ Rating Since 2018"
+        }
+      },
+      "companyDetails": {
+        "dunsNumber": {
+          "label": "DUNS Number",
+          "value": "123456789",
+          "description": "D&B Business Registry"
+        },
+        "ein": {
+          "label": "EIN",
+          "value": "12-3456789",
+          "description": "Federal Tax ID"
+        },
+        "founded": {
+          "label": "Founded",
+          "value": "2008",
+          "description": "15+ Years Experience"
+        },
+        "headquarters": {
+          "label": "Headquarters",
+          "value": "Orlando, FL",
+          "description": "United States"
+        }
+      },
+      "legalEntity": {
+        "title": "Legal Entity",
+        "name": "Global Supplements Corporation",
+        "description": "Delaware C-Corporation registered in Florida with international operations license for dietary supplement distribution."
+      },
+      "memberships": {
+        "0": "Member of Natural Products Association (NPA)",
+        "1": "Council for Responsible Nutrition (CRN)",
+        "2": "International Alliance of Dietary/Food Supplement Associations (IADSA)",
+        "3": "American Herbal Products Association (AHPA)",
+        "4": "Verified by Google My Business",
+        "5": "Listed on SAM.gov Government Contracting Database"
+      },
+      "globalPresence": {
+        "title": "Global Presence",
+        "description": "Headquartered in Orlando with strategic partnerships across 52 countries, we're your trusted American gateway to the global supplement market.",
+        "clients": "2,400+ Clients",
+        "fortune500": "Fortune 500 Trusted"
+      },
+      "transparencyAssurance": {
+        "description": "All certifications, licenses, and registrations are publicly verifiable. We maintain full documentation transparency for all business partnerships.",
+        "badges": {
+          "verifiable": "Publicly Verifiable",
+          "documentation": "Full Documentation",
+          "compliance": "Compliance Guaranteed"
+        }
+      }
+    }
+  },
+  "bundles": {
+    "title": "Memperkenalkan: Global Supplement + Tech Bundles",
+    "subtitle": "Kami telah menggabungkan sains, kecantikan dan teknologi dalam kit yang dikurasi untuk kesihatan moden.",
+    "preOrderNow": "Pre-Order Now",
+    "mindGlow": {
+      "name": "Mind & Glow Bundle",
+      "items": "Energy Supplement + AI Skincare Analyzer"
+    },
+    "glowTechPro": {
+      "name": "GlowTech Pro Bundle",
+      "items": "Skincare Analyzer + Gua Sha Massager + Wireless Charger"
+    },
+    "totalWellness": {
+      "name": "Total Wellness Kit",
+      "items": "All 4 products (Supplement + Skincare Analyzer + Gua Sha + Charger)"
+    },
+    "accessibility": {
+      "imageAlt1": "Analisis AI 8-Spektrum - Ketepatan untuk Pandangan Kulit Mendalam",
+      "imageAlt2": "Pengesan Kulit AI dalam Tindakan",
+      "imageAlt3": "Laporan Klien Masa Nyata - Cadangan Produk",
+      "prevImage": "Imej sebelumnya",
+      "nextImage": "Imej seterusnya",
+      "goToImage": "Pergi ke imej"
+    }
+  },
+  "amazon": {
+    "header": {
+      "deliverTo": "Entregar em",
+      "helloSignIn": "Olá, Faça login",
+      "accountLists": "Conta e Listas",
+      "returns": "Devoluções",
+      "orders": "e Pedidos",
+      "cart": "Carrinho",
+      "all": "Todos",
+      "affiliatePartnerStore": "Loja Parceira Afiliada"
+    },
+    "categories": {
+      "all": "Todos",
+      "beautyPersonalCare": "Beleza e Cuidados Pessoais",
+      "healthHousehold": "Saúde e Casa",
+      "healthWellnessDevices": "Dispositivos de Saúde",
+      "sportsNutrition": "Nutrição Esportiva",
+      "vitaminsSupplements": "Vitaminas e Suplementos"
+    },
+    "subcategories": {
+      "skinCare": "Penjagaan Kulit",
+      "hairCare": "Penjagaan Rambut",
+      "nailCare": "Penjagaan Kuku",
+      "bathBody": "Mandi & Badan",
+      "makeup": "Solek",
+      "antiAging": "Anti-Penuaan",
+      "fragrance": "Minyak Wangi",
+      "toolsAccessories": "Alatan & Aksesori",
+      "oralCare": "Penjagaan Mulut",
+      "mensGrooming": "Dandanan Lelaki",
+      "multivitamins": "Multivitamin",
+      "singleVitamins": "Vitamin Tunggal",
+      "minerals": "Mineral",
+      "herbsBotanicals": "Herba & Botanikal",
+      "probiotics": "Probiotik",
+      "omega3": "Omega-3",
+      "digestiveEnzymes": "Enzim Pencernaan",
+      "antioxidants": "Antioksidan",
+      "aminoAcids": "Asid Amino",
+      "collagenSupplements": "Suplemen Kolagen",
+      "proteinPowders": "Serbuk Protein",
+      "preWorkout": "Pra-Senaman",
+      "postWorkout": "Pasca-Senaman",
+      "energyDrinks": "Minuman Tenaga",
+      "bcaas": "BCAA",
+      "creatine": "Kreatin",
+      "nutritionBars": "Bar Pemakanan",
+      "fatBurners": "Pembakar Lemak",
+      "electrolytes": "Elektrolit",
+      "nitricOxide": "Nitrik Oksida",
+      "fitnessTrackers": "Penjejak Kecergasan",
+      "bloodPressureMonitors": "Pemantau Tekanan Darah",
+      "thermometers": "Termometer",
+      "scales": "Timbang",
+      "pulseOximeters": "Oksimeter Nadi",
+      "firstAid": "Pertolongan Cemas",
+      "painRelief": "Melegakan Sakit",
+      "digestiveHealth": "Kesihatan Pencernaan",
+      "coldFlu": "Selesema & Influenza",
+      "sleepSupport": "Sokongan Tidur",
+      "mobilityAids": "Alat Bantu Mobiliti",
+      "bracesSupports": "Pendakap & Sokongan",
+      "woundCare": "Penjagaan Luka",
+      "physicalTherapy": "Terapi Fizikal",
+      "medicalStorage": "Simpanan Perubatan",
+      "respiratoryCare": "Penjagaan Pernafasan"
+    },
+    "badges": {
+      "amazonOnelinkPartner": "Parceiro Amazon OneLink",
+      "official": "Oficial",
+      "securePayment": "Pagamento Seguro",
+      "buyerProtection": "Proteção ao Comprador",
+      "globalDelivery": "Entrega Global",
+      "easyReturns": "Devoluções Fáceis",
+      "amazonsChoice": "Escolha da Amazon"
+    },
+    "buttons": {
+      "shopPremiumProduct": "Comprar Produto Premium →"
+    },
+    "countrySelector": {
+      "chooseMarketplace": "Pilih pasaran Amazon anda",
+      "marketplaceDescription": "Produk dan harga akan sepadan dengan negara anda yang dipilih",
+      "earnJoin": "Dapatkan komisen daripada jualan di semua negara!"
+    },
+    "partnership": {
+      "officialPartner": "Rakan Kongsi Rasmi",
+      "oneLinkProgram": "Program OneLink Global",
+      "shopTitle": "Beli Amazon Global Supplements",
+      "trustDescription": "Penghantaran dipercayai ke seluruh dunia ke 13 negara • Perlindungan Amazon yang selamat",
+      "verifiedPartner": "✓ Rakan Kongsi Disahkan",
+      "securePayment": "✓ Pembayaran Selamat",
+      "buyerProtection": "✓ Perlindungan Pembeli",
+      "shopButton": "Beli Produk Premium →",
+      "amazonVerified": "Amazon Disahkan",
+      "shipsTo": "Hantar ke:",
+      "verifyPartnership": "Sahkan Perkongsian"
+    },
+    "product": {
+      "prime": "Prime",
+      "rating": "5.0 (2 ulasan)",
+      "productTitle": "Mesin Analisis Kulit Profesional - Paparan HD 21.5\"",
+      "brand": "Jenama: Cobbawe",
+      "description": "Pengimbas Muka Berkuasa AI untuk Salon & Spa, Cadangan produk, Pengimejan 8-Spektrum (Pengesanan Jerawat/Pigmentasi/Kedut), Berbilang Bahasa",
+      "installmentPlan": "Atau $526.67/bulan (3 bulan)",
+      "freeReturns": "Pulangan PERCUMA",
+      "shopButton": "Beli Produk Premium →",
+      "shippingInfo": "Dihantar dan dijual oleh Amazon"
+    }
+  },
+  "medicalGrade": {
+    "badge": "Kecemerlangan Perubatan",
+    "title": "Gred Perubatan",
+    "subtitle": "Makanan tambahan gred farmaseutikal yang dikilangkan mengikut piawaian perubatan tertinggi, memastikan potensi maksimum, ketulenan dan keberkesanan terapeutik.",
+    "shopButton": "Katalog Perubatan"
+  },
+  "beautySupplements": {
+    "badge": "Penyelesaian Kecantikan Premium",
+    "title": "Makanan Tambahan Kecantikan",
+    "subtitle": "Formulasi revolusioner yang menggabungkan sains termaju dengan bahan semula jadi untuk kulit bercahaya, rambut berkilat dan peningkatan kecantikan keseluruhan.",
+    "shopCollection": "Beli Koleksi"
+  },
+  "quantumMaterials": {
+    "badge": "Inovasi Kuantum",
+    "title": "Bahan Kuantum",
+    "subtitle": "Bahan generasi akan datang yang direka pada tahap kuantum untuk membuka keupayaan yang tidak pernah berlaku sebelum ini dalam pengkomputeran, tenaga dan komunikasi.",
+    "shopButton": "Terokai Katalog"
+  },
+  "smartGadgets": {
+    "badge": "Inovasi Pintar",
+    "title": "Alat Pintar",
+    "subtitle": "Peranti teknologi kesihatan revolusioner yang menyepadukan dengan lancar ke dalam kehidupan harian anda, memberikan pandangan masa nyata dan pemantauan kesihatan pintar.",
+    "shopButton": "Beli Peranti"
+  },
+  "traditionalWellness": {
+    "badge": "Kebijaksanaan Kuno",
+    "title": "Kesihatan Tradisional",
+    "subtitle": "Kebijaksanaan penyembuhan abadi dari budaya kuno, digabungkan dengan piawaian kualiti moden untuk membawa anda ubat tradisional yang tulen dan kuat.",
+    "shopButton": "Terokai Tradisi"
+  }
+}
