@@ -121,14 +121,28 @@ export function PublicHero() {
                 href="https://www.globalsupplements.site/amazon"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block"
+                className="inline-block group"
+                aria-label="Buy products on Amazon - opens in new tab"
               >
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-yellow-400 to-orange-400 text-black text-lg px-8 py-6 rounded-full hover:shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 transform hover:scale-105 font-bold"
+                  className="relative overflow-hidden bg-gradient-to-r from-[#FF9900] via-[#FFB84D] to-[#FF9900] bg-[length:200%_100%] text-black text-lg px-10 py-7 rounded-full font-bold shadow-[0_10px_40px_-15px_rgba(255,153,0,0.6)] hover:shadow-[0_20px_60px_-15px_rgba(255,153,0,0.8)] transition-all duration-500 hover:bg-[position:100%_0] hover:scale-110 hover:-translate-y-1 active:scale-105 active:translate-y-0 focus:outline-none focus:ring-4 focus:ring-yellow-400/50 focus:ring-offset-2 focus:ring-offset-blue-900 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:-translate-x-full group-hover:before:translate-x-full before:transition-transform before:duration-1000 after:absolute after:inset-0 after:rounded-full after:bg-white/0 group-hover:after:bg-white/10 after:transition-colors after:duration-300"
+                  style={{
+                    transformStyle: 'preserve-3d',
+                    backfaceVisibility: 'hidden'
+                  }}
                 >
-                  {t("hero.startPartnership")}
-                  <img src={amazonLogo} alt="Amazon" className="h-8 ml-2 inline-block" />
+                  <span className="relative z-10 flex items-center gap-3">
+                    <img 
+                      src={amazonLogo} 
+                      alt="" 
+                      className="h-7 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[-5deg]" 
+                      aria-hidden="true"
+                    />
+                    <span className="transition-all duration-300 group-hover:tracking-wide">
+                      {t("hero.startPartnership")}
+                    </span>
+                  </span>
                 </Button>
               </a>
               <Button 
