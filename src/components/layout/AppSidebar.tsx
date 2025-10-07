@@ -202,9 +202,6 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarHeader>
         <div className="px-4 py-2">
-          <h1 className="text-xl font-bold text-primary cursor-pointer hover:text-primary/80" onClick={() => navigate("/")}>
-            Global Supplements
-          </h1>
         </div>
       </SidebarHeader>
       <SidebarContent className="pb-20">

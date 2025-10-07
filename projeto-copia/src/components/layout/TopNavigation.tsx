@@ -88,13 +88,8 @@ export function TopNavigation() {
                   </div>
                 </div>
                 <div className="relative overflow-hidden max-w-xs">
-                  <h1 className="text-2xl font-bold gentle-pulse">
-                    <span className="text-muted-foreground">Global</span>{' '}
-                    <span className="text-[#FBBF24]">Supplements</span>
-                  </h1>
-                  
                   {/* Marquee Hipnótico Infinito - MANTÉM 100% ORIGINAL (direita→esquerda) */}
-                  <div className="relative -mt-1 h-6 overflow-hidden">
+                  <div className="relative h-6 overflow-hidden">
                     <div className="absolute inset-0 flex items-center">
                       <div className="hypnotic-marquee flex gap-8">
                         <span className="text-sm font-medium text-gray-500">{t('navigation.tagline')}</span>
