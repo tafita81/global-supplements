@@ -84,7 +84,7 @@ export function PublicHeader() {
               <Globe className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-base sm:text-xl font-bold">
+              <h1 className="text-sm sm:text-lg font-bold">
                 <span className="text-gray-900">Global </span>
                 <span className="text-yellow-500">Supplements</span>
               </h1>
