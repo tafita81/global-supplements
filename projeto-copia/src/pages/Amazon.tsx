@@ -1186,9 +1186,9 @@ const Amazon = () => {
                     <img 
                       src={amazonIcon} 
                       alt="Amazon" 
-                      className="h-5 w-5 mr-2" 
+                      className="h-7 w-7 mr-1" 
                     />
-                    Shop Premium Supplements →
+                    Shop Premium Product →
                   </Button>
                 </CardFooter>
               </Card>

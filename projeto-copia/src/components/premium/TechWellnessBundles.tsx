@@ -130,9 +130,9 @@ export function TechWellnessBundles() {
                   <img 
                     src={amazonIcon} 
                     alt="Amazon" 
-                    className="h-6 w-6 mr-3" 
+                    className="h-8 w-8 mr-1" 
                   />
-                  Shop Premium Supplements →
+                  Shop Premium Product →
                 </Button>
               </a>
               
