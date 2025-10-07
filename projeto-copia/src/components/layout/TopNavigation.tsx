@@ -97,10 +97,10 @@ export function TopNavigation() {
                           <span className="text-[#FBBF24]">Supplements</span>
                         </h1>
                         <span className="inline-block w-8"></span>
-                        <h1 className="text-2xl font-bold whitespace-nowrap">
+                        <div className="text-2xl font-bold whitespace-nowrap" aria-hidden="true">
                           <span className="text-muted-foreground">Global</span>{' '}
                           <span className="text-[#FBBF24]">Supplements</span>
-                        </h1>
+                        </div>
                         <span className="inline-block w-8"></span>
                       </div>
                     </div>
