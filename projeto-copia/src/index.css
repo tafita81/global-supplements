@@ -297,4 +297,45 @@ All colors MUST be HSL.
     0% { width: 0%; }
     100% { width: 100%; }
   }
+
+  /* Hypnotic Attention Engineering Animations */
+  @keyframes subtle-pulse {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 10px 40px -15px rgba(255, 153, 0, 0.6), 0 0 80px -20px rgba(255, 153, 0, 0.4);
+    }
+    50% {
+      transform: scale(1.02);
+      box-shadow: 0 15px 50px -15px rgba(255, 153, 0, 0.8), 0 0 100px -15px rgba(255, 153, 0, 0.6);
+    }
+  }
+
+  @keyframes magnetic-glow {
+    0% {
+      filter: brightness(1) drop-shadow(0 0 20px rgba(255, 153, 0, 0.5));
+    }
+    100% {
+      filter: brightness(1.1) drop-shadow(0 0 30px rgba(255, 153, 0, 0.8));
+    }
+  }
+
+  @keyframes heartbeat {
+    0%, 40%, 60%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes attention-breath {
+    0%, 100% {
+      opacity: 0.9;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-2px);
+    }
+  }
 }

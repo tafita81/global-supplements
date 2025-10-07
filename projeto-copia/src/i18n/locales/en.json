@@ -353,7 +353,9 @@
         "fdaRegistered": "FDA Registered",
         "isoSystem": "ISO 9001 Certified"
       },
-      "startPartnership": "Buy on Amazon",
+      "startPartnership": "Shop Premium Supplements →",
+      "amazonBadge": "🔥 2,847 sold today",
+      "amazonSubtext": "Join 10,000+ happy customers",
       "viewSolutions": "View Solutions"
     },
     "about": {

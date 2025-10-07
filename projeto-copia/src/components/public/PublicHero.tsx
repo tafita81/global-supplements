@@ -117,34 +117,47 @@ export function PublicHero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="https://www.globalsupplements.site/amazon"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block group"
-                aria-label="Buy products on Amazon - opens in new tab"
-              >
-                <Button 
-                  size="lg" 
-                  className="relative overflow-hidden bg-gradient-to-r from-[#FF9900] via-[#FFB84D] to-[#FF9900] bg-[length:200%_100%] text-black text-lg px-10 py-7 rounded-full font-bold shadow-[0_10px_40px_-15px_rgba(255,153,0,0.6)] hover:shadow-[0_20px_60px_-15px_rgba(255,153,0,0.8)] transition-all duration-500 hover:bg-[position:100%_0] hover:scale-110 hover:-translate-y-1 active:scale-105 active:translate-y-0 focus:outline-none focus:ring-4 focus:ring-yellow-400/50 focus:ring-offset-2 focus:ring-offset-blue-900 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:-translate-x-full group-hover:before:translate-x-full before:transition-transform before:duration-1000 after:absolute after:inset-0 after:rounded-full after:bg-white/0 group-hover:after:bg-white/10 after:transition-colors after:duration-300"
-                  style={{
-                    transformStyle: 'preserve-3d',
-                    backfaceVisibility: 'hidden'
-                  }}
+              <div className="relative inline-block group">
+                {/* Urgency Badge */}
+                <div className="absolute -top-3 -right-3 z-20 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse">
+                  {t("public.hero.amazonBadge")}
+                </div>
+                
+                <a 
+                  href="https://www.globalsupplements.site/amazon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                  aria-label="Shop premium supplements on Amazon - opens in new tab"
                 >
-                  <span className="relative z-10 flex items-center gap-3">
-                    <img 
-                      src={amazonLogo} 
-                      alt="" 
-                      className="h-7 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[-5deg]" 
-                      aria-hidden="true"
-                    />
-                    <span className="transition-all duration-300 group-hover:tracking-wide">
-                      {t("hero.startPartnership")}
+                  <Button 
+                    size="lg" 
+                    className="relative overflow-hidden bg-gradient-to-r from-[#FF9900] via-[#FFB84D] to-[#FF9900] bg-[length:200%_100%] text-black text-lg px-10 py-7 rounded-full font-bold shadow-[0_10px_40px_-15px_rgba(255,153,0,0.6),0_0_80px_-20px_rgba(255,153,0,0.4)] hover:shadow-[0_20px_60px_-15px_rgba(255,153,0,0.9),0_0_100px_-10px_rgba(255,153,0,0.6)] transition-all duration-500 hover:bg-[position:100%_0] hover:scale-110 hover:-translate-y-1 active:scale-105 active:translate-y-0 focus:outline-none focus:ring-4 focus:ring-yellow-400/50 focus:ring-offset-2 focus:ring-offset-blue-900 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/40 before:to-transparent before:-translate-x-full group-hover:before:translate-x-full before:transition-transform before:duration-700 after:absolute after:inset-0 after:rounded-full after:bg-white/0 group-hover:after:bg-white/10 after:transition-colors after:duration-300 animate-[subtle-pulse_3s_ease-in-out_infinite]"
+                    style={{
+                      transformStyle: 'preserve-3d',
+                      backfaceVisibility: 'hidden',
+                      animation: 'subtle-pulse 3s ease-in-out infinite, magnetic-glow 2s ease-in-out infinite alternate'
+                    }}
+                  >
+                    <span className="relative z-10 flex items-center gap-3">
+                      <img 
+                        src={amazonLogo} 
+                        alt="" 
+                        className="h-8 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-[-8deg]" 
+                        aria-hidden="true"
+                      />
+                      <span className="transition-all duration-300 group-hover:tracking-wider font-extrabold">
+                        {t("public.hero.startPartnership")}
+                      </span>
                     </span>
-                  </span>
-                </Button>
-              </a>
+                  </Button>
+                </a>
+                
+                {/* Social Proof */}
+                <div className="text-center mt-2 text-sm text-white/80 font-medium">
+                  {t("public.hero.amazonSubtext")}
+                </div>
+              </div>
               <Button 
                 size="lg" 
                 variant="outline"
