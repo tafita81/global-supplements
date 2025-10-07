@@ -84,7 +84,10 @@ export function PublicHeader() {
               <Globe className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-base sm:text-xl font-bold text-gray-900">Global Supplements</h1>
+              <h1 className="text-base sm:text-xl font-bold">
+                <span className="text-gray-900">Global </span>
+                <span className="text-yellow-500 attention-glow">Supplements</span>
+              </h1>
               <p className="text-xs text-gray-600 hidden sm:block">Premium Worldwide Network</p>
             </div>
           </div>

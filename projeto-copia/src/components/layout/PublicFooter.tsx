@@ -29,7 +29,10 @@ export function PublicFooter() {
                 <Globe className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Global Supplements</h3>
+                <h3 className="text-xl font-bold">
+                  <span className="text-white">Global </span>
+                  <span className="text-yellow-500 attention-glow">Supplements</span>
+                </h3>
                 <p className="text-sm text-gray-400">Premium Worldwide Network</p>
               </div>
             </div>
