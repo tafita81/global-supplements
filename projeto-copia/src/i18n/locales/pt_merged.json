@@ -126,43 +126,43 @@
         ]
       },
       "medical": {
-        "title": "Compostos de Grau Médico",
-        "description": "Suplementos de grau farmacêutico para aplicações clínicas, tratamentos terapêuticos e pesquisa médica",
+        "title": "Medical-Grade Compounds",
+        "description": "Pharmaceutical-grade supplements for clinical applications, therapeutic treatments, and medical research",
         "features": [
-          "Fórmulas Clínicas",
-          "Compostos Terapêuticos",
-          "Materiais de Pesquisa",
-          "Medicina de Precisão"
+          "Clinical Formulas",
+          "Therapeutic Compounds",
+          "Research Materials",
+          "Precision Medicine"
         ]
       },
       "gadgets": {
-        "title": "Gadgets de Saúde Inteligentes",
-        "description": "Dispositivos inovadores de tecnologia de saúde, wearables e suplementos inteligentes integrados com capacidades IoT",
+        "title": "Smart Health Gadgets",
+        "description": "Innovative health technology devices, wearables, and smart supplements integrated with IoT capabilities",
         "features": [
-          "Dispositivos Inteligentes",
-          "Wearables de Saúde",
-          "Integração IoT",
-          "Saúde Digital"
+          "Smart Devices",
+          "Health Wearables",
+          "IoT Integration",
+          "Digital Health"
         ]
       },
       "wellness": {
-        "title": "Bem-Estar Tradicional",
-        "description": "Suplementos tradicionais premium para saúde geral, fitness, nutrição e necessidades de bem-estar do dia a dia",
+        "title": "Traditional Wellness",
+        "description": "Premium traditional supplements for general health, fitness, nutrition, and everyday wellness needs",
         "features": [
-          "Vitaminas e Minerais",
-          "Suporte Fitness",
-          "Sistema Imunológico",
-          "Saúde Geral"
+          "Vitamins & Minerals",
+          "Fitness Support",
+          "Immune System",
+          "General Health"
         ]
       }
     },
     "businessModels": {
       "b2b": "B2B",
-      "enterprise": "Empresarial",
+      "enterprise": "Enterprise",
       "b2c": "B2C",
-      "consumer": "Consumidor",
+      "consumer": "Consumer",
       "gov": "Gov",
-      "procurement": "Compras"
+      "procurement": "Procurement"
     }
   },
   "marketIntelligence": {
@@ -170,31 +170,26 @@
     "title": "Inteligência de Mercado Impulsionada por IA",
     "subtitle": "Nossa IA proprietária monitora 50+ APIs de mercado 24/7, identificando oportunidades de arbitragem em tempo real e executando negócios automaticamente com margens de 25-40%.",
     "stats": {
-      "accuracy": "Taxa de Precisão",
-      "opportunities": "Oportunidades Diárias",
-      "markets": "Mercados Rastreados",
-      "speed": "Velocidade de Análise"
+      "accuracy": "Accuracy Rate",
+      "opportunities": "Daily Opportunities",
+      "markets": "Markets Tracked",
+      "speed": "Analysis Speed"
     },
     "dashboard": {
-      "title": "Inteligência de Mercado Alimentada por IA",
-      "description": "Análise em tempo real de mercados globais de suplementos usando aprendizado de máquina avançado e algoritmos preditivos para identificar oportunidades de alto lucro"
+      "title": "AI-Powered Market Intelligence",
+      "description": "Real-time analysis of global supplement markets using advanced machine learning and predictive algorithms to identify high-profit opportunities"
     },
     "tabs": {
-      "insights": "Insights de Mercado",
-      "predictions": "Previsões de Preços",
-      "trends": "Tendências Globais",
-      "analytics": "Análises Profundas"
+      "insights": "Market Insights",
+      "predictions": "Price Predictions",
+      "trends": "Global Trends",
+      "analytics": "Deep Analytics"
     },
     "technology": {
-      "title": "Arquitetura de IA Avançada",
-      "subtitle": "Pilha de tecnologia de ponta alimentando inteligência de mercado preditiva"
+      "title": "Advanced AI Architecture",
+      "subtitle": "Cutting-edge technology stack powering predictive market intelligence"
     },
-    "cta": {
-      "title": "Desbloqueie Inteligência de Mercado Preditiva",
-      "description": "Junte-se a parceiros de elite usando nossa IA para prever movimentos de mercado com 94% de precisão e identificar milhões em oportunidades antes que os concorrentes percebam.",
-      "primaryButton": "Acessar Inteligência de IA",
-      "secondaryButton": "Explorar Mercados"
-    },
+    "cta": "Solicitar Demo do Sistema de IA",
     "features": {
       "realTimeArbitrage": {
         "title": "Arbitragem em Tempo Real",
@@ -731,14 +726,14 @@
           "description": "Número de Identificação de Empregador"
         },
         "founded": {
-          "label": "Fundada",
+          "label": "Founded",
           "value": "2008",
-          "description": "Mais de 15 Anos de Experiência"
+          "description": "15+ Years Experience"
         },
         "headquarters": {
-          "label": "Sede",
+          "label": "Headquarters",
           "value": "Orlando, FL",
-          "description": "Estados Unidos"
+          "description": "United States"
         },
         "samRegistration": {
           "label": "Registro SAM.gov",
@@ -752,62 +747,78 @@
         }
       },
       "legalEntity": {
-        "title": "Entidade Legal",
+        "title": "Legal Entity",
         "name": "Global Supplements Corporation",
-        "description": "Corporação C de Delaware registrada na Flórida com licença de operações internacionais para distribuição de suplementos alimentares."
+        "description": "Delaware C-Corporation registered in Florida with international operations license for dietary supplement distribution."
       },
-      "memberships": [
-        "Membro da Natural Products Association (NPA)",
-        "Council for Responsible Nutrition (CRN)",
-        "International Alliance of Dietary/Food Supplement Associations (IADSA)",
-        "American Herbal Products Association (AHPA)",
-        "Verificado pelo Google Meu Negócio",
-        "Listado no Banco de Dados de Contratos Governamentais SAM.gov"
-      ],
-      "globalPresence": {
-        "title": "Presença Global",
-        "description": "Sediada em Orlando com parcerias estratégicas em 52 países, somos sua porta de entrada americana confiável para o mercado global de suplementos.",
-        "clients": "Mais de 2.400 Clientes",
-        "fortune500": "Confiado pela Fortune 500"
-      },
-      "transparencyAssurance": {
-        "description": "Todas as certificações, licenças e registros são publicamente verificáveis. Mantemos total transparência de documentação para todas as parcerias comerciais.",
-        "badges": {
-          "verifiable": "Publicamente Verificável",
-          "documentation": "Documentação Completa",
-          "compliance": "Conformidade Garantida"
+      "memberships": {
+        "0": "Member of Natural Products Association (NPA)",
+        "1": "Council for Responsible Nutrition (CRN)",
+        "2": "International Alliance of Dietary/Food Supplement Associations (IADSA)",
+        "3": "American Herbal Products Association (AHPA)",
+        "4": "Verified by Google My Business",
+        "5": "Listed on SAM.gov Government Contracting Database",
+        "crnUsa": {
+          "name": "Council for Responsible Nutrition",
+          "description": "Leading industry association"
+        },
+        "nhpa": {
+          "name": "Natural Health Products Alliance",
+          "description": "Global advocacy organization"
+        },
+        "goed": {
+          "name": "Global Organization for EPA & DHA",
+          "description": "Omega-3 quality standards"
+        },
+        "iffhs": {
+          "name": "International Foundation for Functional Health Sciences",
+          "description": "Research and innovation leader"
         }
       },
-      "viewCertifications": "Ver Todas as Certificações",
-      "requestVerification": "Solicitar Verificação"
+      "globalPresence": {
+        "title": "Global Presence",
+        "description": "Headquartered in Orlando with strategic partnerships across 52 countries, we're your trusted American gateway to the global supplement market.",
+        "clients": "2,400+ Clients",
+        "fortune500": "Fortune 500 Trusted"
+      },
+      "transparencyAssurance": {
+        "description": "All certifications, licenses, and registrations are publicly verifiable. We maintain full documentation transparency for all business partnerships.",
+        "badges": {
+          "verifiable": "Publicly Verifiable",
+          "documentation": "Full Documentation",
+          "compliance": "Compliance Guaranteed"
+        }
+      },
+      "viewCertifications": "View All Certifications",
+      "requestVerification": "Request Verification"
     },
     "faq": {
-      "badge": "PERGUNTAS FREQUENTES",
-      "title": "Tudo que Você Precisa Saber",
-      "cta": "Contatar Nossa Equipe",
+      "badge": "FREQUENTLY ASKED QUESTIONS",
+      "title": "Everything You Need to Know",
+      "cta": "Contact Our Team",
       "categories": {
-        "general": "Geral",
-        "services": "Serviços",
-        "pricing": "Preços",
-        "technical": "Técnico"
+        "general": "General",
+        "services": "Services",
+        "pricing": "Pricing",
+        "technical": "Technical"
       }
     }
   },
   "bundles": {
     "title": "Pacotes Exclusivos de Tecnologia e Bem-Estar",
     "subtitle": "Descoberta pela IA - Avaliações Reais da Amazon - Confiado Mundialmente",
-    "preOrderNow": "Pré-Encomendar Agora",
+    "preOrderNow": "Pre-Order Now",
     "mindGlow": {
-      "name": "Pacote Mente & Brilho",
-      "items": "Suplemento Energético + Analisador de Pele com IA"
+      "name": "Mind & Glow Bundle",
+      "items": "Energy Supplement + AI Skincare Analyzer"
     },
     "glowTechPro": {
-      "name": "Pacote GlowTech Pro",
-      "items": "Analisador de Pele + Massageador Gua Sha + Carregador Sem Fio"
+      "name": "GlowTech Pro Bundle",
+      "items": "Skincare Analyzer + Gua Sha Massager + Wireless Charger"
     },
     "totalWellness": {
-      "name": "Kit Bem-Estar Total",
-      "items": "Todos os 4 produtos (Suplemento + Analisador de Pele + Gua Sha + Carregador)"
+      "name": "Total Wellness Kit",
+      "items": "All 4 products (Supplement + Skincare Analyzer + Gua Sha + Charger)"
     },
     "accessibility": {
       "imageAlt1": "Análise profissional de pele com IA para saúde personalizada",
@@ -897,51 +908,51 @@
     "subtitle": "Soluções de Beleza com IA",
     "stats": {
       "fda": "FDA",
-      "approved": "Aprovado",
+      "approved": "Approved",
       "natural": "100% Natural",
       "gmp": "GMP",
-      "certified": "Certificado"
+      "certified": "Certified"
     },
     "shopCollection": "Comprar Coleção",
-    "featuredProducts": "Produtos em Destaque",
-    "featuredDescription": "Suplementos formulados cientificamente projetados para realçar sua beleza natural de dentro para fora",
-    "bestseller": "Mais Vendido",
-    "keyBenefits": "Benefícios Principais:",
-    "requestQuote": "Solicitar Cotação",
-    "ctaTitle": "Transforme sua Rotina de Beleza Hoje",
-    "ctaDescription": "Junte-se a milhares de clientes satisfeitos que descobriram o poder dos suplementos de beleza apoiados pela ciência",
-    "startJourney": "Comece sua Jornada",
+    "featuredProducts": "Featured Products",
+    "featuredDescription": "Scientifically formulated supplements designed to enhance your natural beauty from within",
+    "bestseller": "Bestseller",
+    "keyBenefits": "Key Benefits:",
+    "requestQuote": "Request Quote",
+    "ctaTitle": "Transform Your Beauty Routine Today",
+    "ctaDescription": "Join thousands of satisfied customers who have discovered the power of science-backed beauty supplements",
+    "startJourney": "Start Your Journey",
     "certifications": {
-      "fdaApproved": "Aprovado pela FDA",
-      "gmpCertified": "Certificado GMP",
-      "organicCertified": "Certificado Orgânico"
+      "fdaApproved": "FDA Approved",
+      "gmpCertified": "GMP Certified",
+      "organicCertified": "Organic Certified"
     },
     "products": {
       "collagenMatrixPro": {
-        "name": "Colágeno Matrix Pro",
-        "description": "Peptídeos avançados de colágeno marinho com ácido hialurônico",
+        "name": "Collagen Matrix Pro",
+        "description": "Advanced marine collagen peptides with hyaluronic acid",
         "benefits": {
-          "skinElasticity": "Elasticidade da pele",
-          "wrinkleReduction": "Redução de rugas",
-          "jointHealth": "Saúde das articulações"
+          "skinElasticity": "Skin elasticity",
+          "wrinkleReduction": "Wrinkle reduction",
+          "jointHealth": "Joint health"
         }
       },
       "vitaminCSerum": {
-        "name": "Complexo de Soro de Vitamina C",
-        "description": "20% de ácido L-Ascórbico com vitamina E e ácido ferúlico",
+        "name": "Vitamin C Serum Complex",
+        "description": "20% L-Ascorbic acid with vitamin E and ferulic acid",
         "benefits": {
-          "brightening": "Iluminação",
-          "antioxidant": "Proteção antioxidante",
-          "evenTone": "Tom uniforme"
+          "brightening": "Brightening",
+          "antioxidant": "Antioxidant protection",
+          "evenTone": "Even tone"
         }
       },
       "biotinHairBoost": {
         "name": "Biotin Hair Boost",
-        "description": "10.000mcg de biotina com queratina e extrato de bambu",
+        "description": "10,000mcg biotin with keratin and bamboo extract",
         "benefits": {
-          "hairGrowth": "Crescimento capilar",
-          "nailStrength": "Força das unhas",
-          "scalpHealth": "Saúde do couro cabeludo"
+          "hairGrowth": "Hair growth",
+          "nailStrength": "Nail strength",
+          "scalpHealth": "Scalp health"
         }
       }
     },
