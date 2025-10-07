@@ -11,7 +11,7 @@
     "solutions": "Solutions",
     "contact": "Contact",
     "getQuote": "Get Quote",
-    "partnerWithUs": "Shop Premium Supplements →",
+    "partnerWithUs": "Shop Premium Products →",
     "beautySupplements": "Beauty Supplements",
     "quantumMaterials": "Quantum Materials",
     "medicalGrade": "Medical Grade",
@@ -460,7 +460,7 @@
         "partnership": {
           "title": "Partnership Inquiry",
           "description": "Explore supplier or distributor partnerships",
-          "action": "Shop Premium Supplements →"
+          "action": "Shop Premium Products →"
         },
         "government": {
           "title": "Government Contracts",
