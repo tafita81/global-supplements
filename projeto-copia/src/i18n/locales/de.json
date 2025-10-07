@@ -727,5 +727,49 @@
       "name": "Total Wellness Kit",
       "items": "All 4 products (Supplement + Skincare Analyzer + Gua Sha + Charger)"
     }
+  },
+  "amazon": {
+    "header": {
+      "deliverTo": "Liefern an",
+      "helloSignIn": "Hallo, Anmelden",
+      "accountLists": "Konto und Listen",
+      "returns": "Rücksendungen",
+      "orders": "und Bestellungen",
+      "cart": "Einkaufswagen",
+      "all": "Alle",
+      "affiliatePartnerStore": "Partner-Shop"
+    },
+    "categories": {
+      "all": "Alle",
+      "beautyPersonalCare": "Beauty & Körperpflege",
+      "healthHousehold": "Gesundheit & Haushalt",
+      "healthWellnessDevices": "Gesundheits- und Wellness-Geräte",
+      "sportsNutrition": "Sporternährung",
+      "vitaminsSupplements": "Vitamine & Nahrungsergänzung"
+    },
+    "subcategories": {
+      "skinCare": "Hautpflege",
+      "hairCare": "Haarpflege",
+      "nailCare": "Nagelpflege",
+      "bathBody": "Bad & Körper",
+      "makeup": "Make-up",
+      "antiAging": "Anti-Aging",
+      "fragrance": "Parfüm",
+      "toolsAccessories": "Werkzeuge & Zubehör",
+      "oralCare": "Mundpflege",
+      "mensGrooming": "Herrenpflege"
+    },
+    "badges": {
+      "amazonOnelinkPartner": "Amazon OneLink Partner",
+      "official": "Offiziell",
+      "securePayment": "Sichere Zahlung",
+      "buyerProtection": "Käuferschutz",
+      "globalDelivery": "Weltweite Lieferung",
+      "easyReturns": "Einfache Rücksendung",
+      "amazonsChoice": "Amazon's Choice"
+    },
+    "buttons": {
+      "shopPremiumProduct": "Premium-Produkt kaufen →"
+    }
   }
 }

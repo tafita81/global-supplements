@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 import { AmazonStrategyAI } from "@/services/amazonStrategy";
 import { MultiAPIClient } from "@/services/rapidAPIClient";
 import { aiValidator } from "@/services/aiProductValidator";
@@ -152,21 +153,34 @@ const Amazon = () => {
     fetchGlobalTopProducts();
   }, [isDetectingLocation, currentMarketplace.id, currentMarketplace.domain]);
 
+  const { t } = useTranslation();
+  
   const categories = [
-    { id: "all", label: "All", keywords: "supplements vitamins health wellness" },
-    { id: "beauty", label: "Beauty & Personal Care", keywords: "beauty supplements biotin collagen hair skin nails vitamins keratin" },
-    { id: "wellness", label: "Health & Household", keywords: "health care medical monitor device first aid" },
-    { id: "devices", label: "Health & Wellness Devices", keywords: "fitness tracker smart watch blood pressure monitor thermometer scale" },
-    { id: "sports", label: "Sports Nutrition", keywords: "protein powder whey creatine pre-workout bcaa" },
-    { id: "vitamins", label: "Vitamins & Supplements", keywords: "vitamin supplement mineral multivitamin probiotic omega" },
+    { id: "all", label: t('amazon.categories.all'), keywords: "supplements vitamins health wellness" },
+    { id: "beauty", label: t('amazon.categories.beautyPersonalCare'), keywords: "beauty supplements biotin collagen hair skin nails vitamins keratin" },
+    { id: "wellness", label: t('amazon.categories.healthHousehold'), keywords: "health care medical monitor device first aid" },
+    { id: "devices", label: t('amazon.categories.healthWellnessDevices'), keywords: "fitness tracker smart watch blood pressure monitor thermometer scale" },
+    { id: "sports", label: t('amazon.categories.sportsNutrition'), keywords: "protein powder whey creatine pre-workout bcaa" },
+    { id: "vitamins", label: t('amazon.categories.vitaminsSupplements'), keywords: "vitamin supplement mineral multivitamin probiotic omega" },
   ];
 
-  const subcategories: Record<string, string[]> = {
-    'vitamins': ['Multivitamins', 'Single Vitamins', 'Minerals', 'Herbs & Botanicals', 'Probiotics', 'Omega-3', 'Digestive Enzymes', 'Antioxidants', 'Amino Acids', 'Collagen Supplements'],
-    'sports': ['Protein Powders', 'Pre-Workout', 'Post-Workout', 'Energy Drinks', 'BCAAs', 'Creatine', 'Amino Acids', 'Nutrition Bars', 'Fat Burners', 'Electrolytes', 'Nitric Oxide'],
-    'beauty': ['Skin Care', 'Hair Care', 'Nail Care', 'Bath & Body', 'Makeup', 'Anti-Aging', 'Fragrance', 'Tools & Accessories', 'Oral Care', 'Men\'s Grooming'],
-    'devices': ['Fitness Trackers', 'Blood Pressure Monitors', 'Thermometers', 'Scales', 'Pulse Oximeters'],
-    'wellness': ['First Aid', 'Pain Relief', 'Digestive Health', 'Cold & Flu', 'Sleep Support', 'Mobility Aids', 'Braces & Supports', 'Wound Care', 'Physical Therapy', 'Medical Storage', 'Respiratory Care']
+  const subcategories: Record<string, Array<{key: string, label: string}>> = {
+    'vitamins': ['Multivitamins', 'Single Vitamins', 'Minerals', 'Herbs & Botanicals', 'Probiotics', 'Omega-3', 'Digestive Enzymes', 'Antioxidants', 'Amino Acids', 'Collagen Supplements'].map(s => ({key: s, label: s})),
+    'sports': ['Protein Powders', 'Pre-Workout', 'Post-Workout', 'Energy Drinks', 'BCAAs', 'Creatine', 'Amino Acids', 'Nutrition Bars', 'Fat Burners', 'Electrolytes', 'Nitric Oxide'].map(s => ({key: s, label: s})),
+    'beauty': [
+      {key: 'Skin Care', label: t('amazon.subcategories.skinCare')},
+      {key: 'Hair Care', label: t('amazon.subcategories.hairCare')},
+      {key: 'Nail Care', label: t('amazon.subcategories.nailCare')},
+      {key: 'Bath & Body', label: t('amazon.subcategories.bathBody')},
+      {key: 'Makeup', label: t('amazon.subcategories.makeup')},
+      {key: 'Anti-Aging', label: t('amazon.subcategories.antiAging')},
+      {key: 'Fragrance', label: t('amazon.subcategories.fragrance')},
+      {key: 'Tools & Accessories', label: t('amazon.subcategories.toolsAccessories')},
+      {key: 'Oral Care', label: t('amazon.subcategories.oralCare')},
+      {key: 'Men\'s Grooming', label: t('amazon.subcategories.mensGrooming')}
+    ],
+    'devices': ['Fitness Trackers', 'Blood Pressure Monitors', 'Thermometers', 'Scales', 'Pulse Oximeters'].map(s => ({key: s, label: s})),
+    'wellness': ['First Aid', 'Pain Relief', 'Digestive Health', 'Cold & Flu', 'Sleep Support', 'Mobility Aids', 'Braces & Supports', 'Wound Care', 'Physical Therapy', 'Medical Storage', 'Respiratory Care'].map(s => ({key: s, label: s}))
   };
 
   // Mapping de subcategorias para queries específicas de busca
@@ -589,11 +603,12 @@ const Amazon = () => {
           const subcatsToFetch = categorySubcategories.slice(0, 5);
           
           for (const subcat of subcatsToFetch) {
-            const subcategoryKey = subcat.toLowerCase().trim();
-            const subcatQuery = subcategorySearchTerms[subcategoryKey] || subcat;
+            const subcatKey = typeof subcat === 'string' ? subcat : subcat.key;
+            const subcategoryKey = subcatKey.toLowerCase().trim();
+            const subcatQuery = subcategorySearchTerms[subcategoryKey] || subcatKey;
             
             try {
-              console.log(`  🔍 Buscando: ${subcat} → "${subcatQuery}"`);
+              console.log(`  🔍 Buscando: ${subcatKey} → "${subcatQuery}"`);
               
               const subcatResults = await apiClient.searchProducts(
                 subcatQuery,
@@ -619,9 +634,9 @@ const Amazon = () => {
                 }
               });
               
-              console.log(`  ✅ ${subcat}: ${newProducts} produtos novos (${filtered.passed.length - newProducts} duplicados ignorados)`);
+              console.log(`  ✅ ${subcatKey}: ${newProducts} produtos novos (${filtered.passed.length - newProducts} duplicados ignorados)`);
             } catch (error) {
-              console.error(`  ❌ Erro ao buscar ${subcat}:`, error);
+              console.error(`  ❌ Erro ao buscar ${subcatKey}:`, error);
             }
           }
           
@@ -974,15 +989,15 @@ const Amazon = () => {
           <div className="flex items-center gap-6 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent hover:scrollbar-thumb-gray-500">
             {subcategories[selectedCategory].map((sub) => (
               <button 
-                key={sub}
-                onClick={() => setSelectedSubcategory(sub.toLowerCase())}
+                key={sub.key}
+                onClick={() => setSelectedSubcategory(sub.key.toLowerCase())}
                 className={`text-xs hover:text-[#C7511F] hover:underline whitespace-nowrap transition-colors ${
-                  selectedSubcategory?.toLowerCase() === sub.toLowerCase() 
+                  selectedSubcategory?.toLowerCase() === sub.key.toLowerCase() 
                     ? 'text-[#C7511F] font-semibold underline' 
                     : 'text-gray-800'
                 }`}
               >
-                {sub}
+                {sub.label}
               </button>
             ))}
           </div>
@@ -996,20 +1011,20 @@ const Amazon = () => {
           <div className="w-full px-4 flex items-center justify-between gap-6">
             {/* Left: Compact Info */}
             <div className="flex items-center gap-3">
-              <Badge className="bg-[#FF9900] text-black font-bold text-xs px-2 py-0.5 whitespace-nowrap">Amazon OneLink Partner</Badge>
-              <Badge variant="outline" className="border-green-600 text-green-700 text-xs px-2 py-0.5">✓ Official</Badge>
+              <Badge className="bg-[#FF9900] text-black font-bold text-xs px-2 py-0.5 whitespace-nowrap">{t('amazon.badges.amazonOnelinkPartner')}</Badge>
+              <Badge variant="outline" className="border-green-600 text-green-700 text-xs px-2 py-0.5">✓ {t('amazon.badges.official')}</Badge>
               <div className="h-5 w-px bg-gray-300"></div>
               <div className="flex items-center gap-2 text-xs">
                 <svg className="h-3.5 w-3.5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                 </svg>
-                <span className="font-semibold text-gray-700">Secure Payment</span>
+                <span className="font-semibold text-gray-700">{t('amazon.badges.securePayment')}</span>
                 <span className="text-gray-400">•</span>
-                <span className="font-semibold text-gray-700">Buyer Protection</span>
+                <span className="font-semibold text-gray-700">{t('amazon.badges.buyerProtection')}</span>
                 <span className="text-gray-400">•</span>
-                <span className="font-semibold text-gray-700">Global Delivery</span>
+                <span className="font-semibold text-gray-700">{t('amazon.badges.globalDelivery')}</span>
                 <span className="text-gray-400">•</span>
-                <span className="font-semibold text-gray-700">Easy Returns</span>
+                <span className="font-semibold text-gray-700">{t('amazon.badges.easyReturns')}</span>
               </div>
             </div>
             
@@ -1099,7 +1114,7 @@ const Amazon = () => {
                     />
                     {product.rating >= 4.5 && product.reviews >= 500 && (
                       <Badge className="absolute top-3 left-3 bg-[#232F3E] text-white font-bold px-2 py-1 text-xs">
-                        Amazon's Choice
+                        {t('amazon.badges.amazonsChoice')}
                       </Badge>
                     )}
                     {product.prime && (
@@ -1147,7 +1162,7 @@ const Amazon = () => {
                       alt="Amazon" 
                       className="h-7 w-7 mr-1" 
                     />
-                    Shop Premium Product →
+                    {t('amazon.buttons.shopPremiumProduct')}
                   </Button>
                 </CardFooter>
               </Card>

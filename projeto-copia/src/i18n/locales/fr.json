@@ -727,5 +727,49 @@
       "name": "Total Wellness Kit",
       "items": "All 4 products (Supplement + Skincare Analyzer + Gua Sha + Charger)"
     }
+  },
+  "amazon": {
+    "header": {
+      "deliverTo": "Livrer à",
+      "helloSignIn": "Bonjour, Identifiez-vous",
+      "accountLists": "Compte et Listes",
+      "returns": "Retours",
+      "orders": "et Commandes",
+      "cart": "Panier",
+      "all": "Tous",
+      "affiliatePartnerStore": "Boutique Partenaire Affilié"
+    },
+    "categories": {
+      "all": "Tous",
+      "beautyPersonalCare": "Beauté et Soins Personnels",
+      "healthHousehold": "Santé et Maison",
+      "healthWellnessDevices": "Appareils de Santé et Bien-être",
+      "sportsNutrition": "Nutrition Sportive",
+      "vitaminsSupplements": "Vitamines et Suppléments"
+    },
+    "subcategories": {
+      "skinCare": "Soins de la Peau",
+      "hairCare": "Soins des Cheveux",
+      "nailCare": "Soins des Ongles",
+      "bathBody": "Bain et Corps",
+      "makeup": "Maquillage",
+      "antiAging": "Anti-âge",
+      "fragrance": "Parfums",
+      "toolsAccessories": "Outils et Accessoires",
+      "oralCare": "Soins Buccodentaires",
+      "mensGrooming": "Soins pour Hommes"
+    },
+    "badges": {
+      "amazonOnelinkPartner": "Partenaire Amazon OneLink",
+      "official": "Officiel",
+      "securePayment": "Paiement Sécurisé",
+      "buyerProtection": "Protection de l'Acheteur",
+      "globalDelivery": "Livraison Mondiale",
+      "easyReturns": "Retours Faciles",
+      "amazonsChoice": "Choix d'Amazon"
+    },
+    "buttons": {
+      "shopPremiumProduct": "Acheter Produit Premium →"
+    }
   }
 }

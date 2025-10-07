@@ -2,11 +2,31 @@ import { MapPin, ChevronDown, Check } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { useMarketplace } from "@/hooks/useMarketplace";
 import { AMAZON_MARKETPLACES } from "@/config/amazonMarketplaces";
+import { useTranslation } from "react-i18next";
+
+// Mapeamento de países para idiomas
+const COUNTRY_TO_LANGUAGE: Record<string, string> = {
+  'US': 'en',
+  'CA': 'en',
+  'UK': 'en',
+  'AU': 'en',
+  'DE': 'de',
+  'FR': 'fr',
+  'IT': 'it',
+  'ES': 'es',
+  'JP': 'ja',
+  'NL': 'nl',
+  'SE': 'sv',
+  'SG': 'en',
+  'PL': 'pt', // Temporário - adicionar polonês depois
+  'SA': 'ar'
+};
 
 export const CountrySelector = () => {
   const { currentMarketplace, setMarketplace } = useMarketplace();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const { i18n, t } = useTranslation();
 
   // Fecha dropdown ao clicar fora
   useEffect(() => {
@@ -22,6 +42,11 @@ export const CountrySelector = () => {
 
   const handleSelectMarketplace = (marketplace: typeof AMAZON_MARKETPLACES[0]) => {
     setMarketplace(marketplace);
+    
+    // Muda o idioma automaticamente baseado no país
+    const language = COUNTRY_TO_LANGUAGE[marketplace.id] || 'en';
+    i18n.changeLanguage(language);
+    
     setIsOpen(false);
   };
 
@@ -33,7 +58,7 @@ export const CountrySelector = () => {
       >
         <MapPin className="h-4 w-4" />
         <div className="text-left">
-          <div className="text-xs text-gray-300">Deliver to</div>
+          <div className="text-xs text-gray-300">{t('amazon.header.deliverTo')}</div>
           <div className="font-bold text-sm flex items-center gap-1">
             {currentMarketplace.name}
             <ChevronDown className={`h-3 w-3 transition-transform ${isOpen ? 'rotate-180' : ''}`} />

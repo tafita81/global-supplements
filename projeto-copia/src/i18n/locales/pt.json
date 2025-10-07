@@ -713,6 +713,50 @@
       }
     }
   },
+  "amazon": {
+    "header": {
+      "deliverTo": "Entregar em",
+      "helloSignIn": "Olá, Faça login",
+      "accountLists": "Conta e Listas",
+      "returns": "Devoluções",
+      "orders": "e Pedidos",
+      "cart": "Carrinho",
+      "all": "Todos",
+      "affiliatePartnerStore": "Loja Parceira Afiliada"
+    },
+    "categories": {
+      "all": "Todos",
+      "beautyPersonalCare": "Beleza e Cuidados Pessoais",
+      "healthHousehold": "Saúde e Casa",
+      "healthWellnessDevices": "Dispositivos de Saúde e Bem-Estar",
+      "sportsNutrition": "Nutrição Esportiva",
+      "vitaminsSupplements": "Vitaminas e Suplementos"
+    },
+    "subcategories": {
+      "skinCare": "Cuidados com a Pele",
+      "hairCare": "Cuidados com o Cabelo",
+      "nailCare": "Cuidados com as Unhas",
+      "bathBody": "Banho e Corpo",
+      "makeup": "Maquiagem",
+      "antiAging": "Anti-Envelhecimento",
+      "fragrance": "Fragrâncias",
+      "toolsAccessories": "Ferramentas e Acessórios",
+      "oralCare": "Cuidados Orais",
+      "mensGrooming": "Cuidados Masculinos"
+    },
+    "badges": {
+      "amazonOnelinkPartner": "Parceiro Amazon OneLink",
+      "official": "Oficial",
+      "securePayment": "Pagamento Seguro",
+      "buyerProtection": "Proteção ao Comprador",
+      "globalDelivery": "Entrega Global",
+      "easyReturns": "Devoluções Fáceis",
+      "amazonsChoice": "Escolha da Amazon"
+    },
+    "buttons": {
+      "shopPremiumProduct": "Comprar Produto Premium →"
+    }
+  },
   "bundles": {
     "title": "Introducing: Global Supplement + Tech Bundles",
     "subtitle": "We've combined science, beauty, and technology into curated kits for modern wellness.",

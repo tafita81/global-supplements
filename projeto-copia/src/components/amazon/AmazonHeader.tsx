@@ -70,17 +70,17 @@ export const AmazonHeader = ({
         <div className="flex items-center gap-6">
           <button className="flex items-center gap-1 hover:border hover:border-white rounded px-2 py-1">
             <div className="text-left">
-              <div className="text-xs text-gray-300">Hello, Sign in</div>
+              <div className="text-xs text-gray-300">{t('amazon.header.helloSignIn')}</div>
               <div className="font-bold text-sm flex items-center gap-1">
-                Account & Lists
+                {t('amazon.header.accountLists')}
               </div>
             </div>
           </button>
 
           <button className="flex items-center gap-1 hover:border hover:border-white rounded px-2 py-1">
             <div className="text-left">
-              <div className="text-xs text-gray-300">Returns</div>
-              <div className="font-bold text-sm">& Orders</div>
+              <div className="text-xs text-gray-300">{t('amazon.header.returns')}</div>
+              <div className="font-bold text-sm">{t('amazon.header.orders')}</div>
             </div>
           </button>
 
@@ -91,7 +91,7 @@ export const AmazonHeader = ({
                 {cartCount}
               </span>
             )}
-            <span className="font-bold text-sm">Cart</span>
+            <span className="font-bold text-sm">{t('amazon.header.cart')}</span>
           </button>
         </div>
       </div>
@@ -103,7 +103,7 @@ export const AmazonHeader = ({
             className={`flex items-center gap-2 hover:border hover:border-white rounded px-2 py-1 font-bold ${selectedCategory === 'all' ? 'border border-white' : ''}`}
           >
             <Menu className="h-5 w-5" />
-            All
+            {t('amazon.header.all')}
           </button>
           
           {categories.filter(cat => cat.id !== 'all').slice(0, 6).map(cat => (
@@ -117,7 +117,7 @@ export const AmazonHeader = ({
           ))}
           
           <div className="ml-auto text-[#FF9900] font-bold">
-            Affiliate Partner Store
+            {t('amazon.header.affiliatePartnerStore')}
           </div>
         </div>
       </div>
