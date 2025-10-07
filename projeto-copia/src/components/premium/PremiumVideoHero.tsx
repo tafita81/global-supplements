@@ -132,13 +132,20 @@ export function PremiumVideoHero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 clean-fade-in">
-              <Button 
-                size="lg" 
-                className="text-xl px-10 py-6 gold-accent hover:opacity-90 text-primary font-bold"
+              <a 
+                href="https://www.globalsupplements.site/amazon"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
               >
-                <img src={amazonLogo} alt="Amazon" className="h-7 mr-2 inline-block" />
-                {t("navigation.partnerWithUs")}
-              </Button>
+                <Button 
+                  size="lg" 
+                  className="text-xl px-10 py-6 gold-accent hover:opacity-90 text-primary font-bold"
+                >
+                  <img src={amazonLogo} alt="Amazon" className="h-7 mr-2 inline-block" />
+                  {t("navigation.partnerWithUs")}
+                </Button>
+              </a>
               <Button 
                 size="lg" 
                 variant="outline" 

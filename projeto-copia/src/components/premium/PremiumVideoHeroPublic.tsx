@@ -260,7 +260,9 @@ export function PremiumVideoHeroPublic() {
             
             <div className="flex justify-center mb-22 clean-fade-in">
               <a 
-                href="mailto:contact@globalsupplements.site"
+                href="https://www.globalsupplements.site/amazon"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block"
               >
                 <Button 

@@ -117,14 +117,20 @@ export function PublicHero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                onClick={scrollToContact}
-                className="bg-gradient-to-r from-yellow-400 to-orange-400 text-black text-lg px-8 py-6 rounded-full hover:shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 transform hover:scale-105 font-bold"
+              <a 
+                href="https://www.globalsupplements.site/amazon"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
               >
-                {t("hero.startPartnership")}
-                <img src={amazonLogo} alt="Amazon" className="h-8 ml-2 inline-block" />
-              </Button>
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-yellow-400 to-orange-400 text-black text-lg px-8 py-6 rounded-full hover:shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 transform hover:scale-105 font-bold"
+                >
+                  {t("hero.startPartnership")}
+                  <img src={amazonLogo} alt="Amazon" className="h-8 ml-2 inline-block" />
+                </Button>
+              </a>
               <Button 
                 size="lg" 
                 variant="outline"
