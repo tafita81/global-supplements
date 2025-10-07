@@ -87,9 +87,9 @@ export function TopNavigation() {
                     <Crown className="h-2 w-2 text-primary" />
                   </div>
                 </div>
-                <div className="relative overflow-hidden" style={{width: '400px'}}>
+                <div className="relative overflow-hidden" style={{width: '500px'}}>
                   {/* Marquee Hipnótico Infinito - MANTÉM 100% ORIGINAL (direita→esquerda) */}
-                  <div className="relative h-6 overflow-hidden">
+                  <div className="relative h-10 overflow-hidden">
                     <div className="absolute inset-0 flex items-center">
                       <div className="hypnotic-marquee flex gap-8 whitespace-nowrap">
                         <span className="text-lg font-semibold text-gray-600">{t('navigation.tagline')}</span>
