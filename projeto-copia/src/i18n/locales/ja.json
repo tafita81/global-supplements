@@ -102,14 +102,14 @@
   },
   "products": {
     "badge": "🚀 先進ソリューションポートフォリオ",
-    "title": "先進サプリメントカテゴリー",
-    "description": "5つの主要カテゴリーにわたる革新的なコレクションをご覧ください：美容強化サプリメント、量子処理材料、医療グレード化合物、スマート健康ガジェット、伝統的ウェルネス製品。各カテゴリーは、B2B、B2C、政府調達のための最先端イノベーションを表しています。",
+    "title": "先進 Global Supplements カテゴリー",
+    "description": "5つの主要カテゴリーにわたる革新的なコレクションを発見してください：美容強化サプリメント、量子処理材料、医療グレード化合物、スマートヘルスガジェット、伝統的なウェルネス製品。各カテゴリーはB2B、B2C、政府調達のための最先端イノベーションを表しています。",
     "reviews": "レビュー",
-    "requestQuote": "見積もりリクエスト",
+    "requestQuote": "見積もり依頼",
     "categories": {
       "beauty": {
         "title": "美容強化サプリメント",
-        "description": "肌の再生、アンチエイジング、美的強化のための先進的生物活性化合物を含む革新的な美容サプリメント",
+        "description": "肌の再生、アンチエイジング、美的向上のための先進的なバイオアクティブ化合物を含む革新的な美容サプリメント",
         "features": [
           "コラーゲンブースター",
           "アンチエイジングフォーミュラ",
@@ -119,42 +119,42 @@
       },
       "quantum": {
         "title": "量子処理材料",
-        "description": "量子コンピューティングシステム、AI処理強化、機械最適化のための先進材料とサプリメント",
+        "description": "量子コンピューティングシステム、AI処理向上、機械最適化のための先進材料とサプリメント",
         "features": [
           "量子触媒",
           "処理強化剤",
-          "システム最適化剤",
+          "システム最適化装置",
           "AIアクセラレーター"
         ]
       },
       "medical": {
         "title": "医療グレード化合物",
-        "description": "臨床用途、治療処置、医学研究のための医薬品グレードサプリメント",
+        "description": "臨床応用、治療、医学研究のための医薬品グレードのサプリメント",
         "features": [
-          "臨床フォーミュラ",
+          "臨床処方",
           "治療化合物",
           "研究材料",
           "精密医療"
         ]
       },
       "gadgets": {
-        "title": "スマート健康ガジェット",
+        "title": "スマートヘルスガジェット",
         "description": "IoT機能を統合した革新的な健康技術デバイス、ウェアラブル、スマートサプリメント",
         "features": [
           "スマートデバイス",
-          "健康ウェアラブル",
+          "ヘルスウェアラブル",
           "IoT統合",
           "デジタルヘルス"
         ]
       },
       "wellness": {
-        "title": "伝統的ウェルネス",
+        "title": "伝統的なウェルネス",
         "description": "一般的な健康、フィットネス、栄養、日常のウェルネスニーズのためのプレミアム伝統的サプリメント",
         "features": [
-          "ビタミン＆ミネラル",
+          "ビタミンとミネラル",
           "フィットネスサポート",
           "免疫システム",
-          "一般健康"
+          "一般的な健康"
         ]
       }
     },
@@ -326,25 +326,25 @@
     "verified": "All certifications verified and current"
   },
   "footer": {
-    "description": "World leader in dietary supplements connecting governments, businesses and consumers to premium suppliers through advanced AI technology.",
+    "description": "先進的なAI技術を通じて政府、企業、消費者をプレミアムサプライヤーに接続する栄養補助食品の世界的リーダー。",
     "companyName": "Global Supplements",
-    "premiumNetwork": "Premium Network",
-    "businessSolutions": "Business Solutions",
-    "b2bGlobalTrading": "B2B Global Trading",
-    "governmentContracts": "Government Contracts",
-    "b2cMarketplace": "B2C Marketplace",
-    "technology": "Technology",
-    "realTimeArbitrage": "Real-Time Arbitrage",
-    "autoExecution": "Auto Execution",
-    "globalCompliance": "Global Compliance",
-    "advancedAI": "Advanced AI",
-    "executiveDashboard": "Executive Dashboard",
-    "premiumContact": "Premium Contact",
-    "globalNetwork": "Global Network",
-    "copyright": "© 2024 Global Supplements. All rights reserved.",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfUse": "Terms of Use",
-    "compliance": "Compliance"
+    "premiumNetwork": "プレミアムネットワーク",
+    "businessSolutions": "ビジネスソリューション",
+    "b2bGlobalTrading": "B2Bグローバルトレーディング",
+    "governmentContracts": "政府契約",
+    "b2cMarketplace": "B2Cマーケットプレイス",
+    "technology": "テクノロジー",
+    "realTimeArbitrage": "リアルタイムアービトラージ",
+    "autoExecution": "自動実行",
+    "globalCompliance": "グローバルコンプライアンス",
+    "advancedAI": "先進AI",
+    "executiveDashboard": "エグゼクティブダッシュボード",
+    "premiumContact": "プレミアムコンタクト",
+    "globalNetwork": "グローバルネットワーク",
+    "copyright": "© 2024 Global Supplements. 全著作権所有。",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfUse": "利用規約",
+    "compliance": "コンプライアンス"
   },
   "public": {
     "hero": {

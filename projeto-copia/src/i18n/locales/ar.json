@@ -5,66 +5,65 @@
     "tagline": "Advanced Solutions Worldwide"
   },
   "navigation": {
-    "home": "Home",
-    "about": "About Us",
-    "services": "Services",
-    "solutions": "Solutions",
-    "contact": "Contact",
-    "getQuote": "Get Quote",
-    "partnerWithUs": "Shop Premium Products →",
-    "beautySupplements": "Beauty Supplements",
-    "quantumMaterials": "Quantum Materials",
-    "medicalGrade": "Medical Grade",
-    "smartGadgets": "Smart Gadgets",
-    "traditionalWellness": "Traditional Wellness",
-    "b2bSolutions": "B2B Solutions",
-    "governmentContracts": "Government Contracts",
-    "manufacturing": "Manufacturing",
-    "researchDevelopment": "Research & Development",
-    "marketIntelligence": "Market Intelligence",
-    "enterpriseSolutions": "Enterprise Solutions",
-    "searchPlaceholder": "Search beauty, quantum materials, medical compounds, gadgets...",
-    "amazonSearchPlaceholder": "البحث عن المكملات الغذائية والفيتامينات والمنتجات الصحية...",
-    "account": "Account",
-    "cart": "Cart",
-    "tagline": "Beauty • Quantum • Medical • Gadgets • Wellness",
-    "opportunities": "Opportunities",
-    "suppliers": "Suppliers",
-    "products": "Mycogenesis Products",
-    "globalAI": "Global AI",
-    "logistics": "Logistics",
-    "compliance": "Compliance",
-    "settings": "Settings"
+    "home": "الصفحة الرئيسية",
+    "about": "من نحن",
+    "services": "الخدمات",
+    "solutions": "الحلول",
+    "contact": "اتصل بنا",
+    "getQuote": "احصل على عرض سعر",
+    "partnerWithUs": "تسوق المنتجات المميزة →",
+    "beautySupplements": "مكملات التجميل",
+    "quantumMaterials": "مواد الكم",
+    "medicalGrade": "الدرجة الطبية",
+    "smartGadgets": "أدوات ذكية",
+    "traditionalWellness": "العافية التقليدية",
+    "b2bSolutions": "حلول B2B",
+    "governmentContracts": "عقود حكومية",
+    "manufacturing": "التصنيع",
+    "researchDevelopment": "البحث والتطوير",
+    "marketIntelligence": "ذكاء السوق",
+    "enterpriseSolutions": "حلول المؤسسات",
+    "searchPlaceholder": "ابحث عن الجمال، مواد الكم، مركبات طبية، أدوات...",
+    "account": "الحساب",
+    "cart": "عربة التسوق",
+    "tagline": "الجمال • الكم • الطبي • الأدوات • العافية",
+    "opportunities": "فرص الأعمال",
+    "suppliers": "الموردين",
+    "products": "منتجات Mycogenesis",
+    "globalAI": "الذكاء الاصطناعي العالمي",
+    "logistics": "اللوجستيات",
+    "compliance": "الامتثال",
+    "settings": "الإعدادات"
   },
   "hero": {
-    "title": "Advanced Global Supplements Network",
-    "subtitle": "Connecting governments, businesses and consumers to revolutionary supplements: beauty enhancers, quantum processing materials, medical-grade compounds, smart gadgets and traditional wellness products through AI technology",
-    "premiumSupplements": "Advanced Supplements",
-    "executiveDashboard": "Executive Dashboard",
-    "scroll": "Scroll",
+    "title": "شبكة Global Supplements المتقدمة",
+    "subtitle": "ربط الحكومات والشركات والمستهلكين بالمكملات الثورية: معززات الجمال، مواد معالجة الكم، مركبات الدرجة الطبية، الأدوات الذكية ومنتجات العافية التقليدية من خلال تقنية الذكاء الاصطناعي",
+    "premiumSupplements": "المكملات المتقدمة",
+    "executiveDashboard": "لوحة المعلومات التنفيذية",
+    "scroll": "تمرير",
     "stats": {
-      "countries": "Countries",
-      "market": "Global Market",
-      "suppliers": "Suppliers",
-      "verified": "Verified",
-      "contracts": "Contracts",
-      "annualRevenue": "Annual Revenue",
-      "annualVolume": "Annual Volume",
-      "globalSuppliers": "Global Suppliers",
-      "enterpriseClients": "Enterprise Clients"
+      "countries": "دولة",
+      "market": "السوق العالمي",
+      "suppliers": "الموردين",
+      "verified": "التحقق",
+      "contracts": "العقود",
+      "annualRevenue": "الإيرادات السنوية",
+      "annualVolume": "الحجم السنوي",
+      "globalSuppliers": "الموردين العالميين",
+      "enterpriseClients": "عملاء المؤسسات"
     },
     "videoCategories": {
-      "beautyEnhancement": "Beauty Enhancement",
-      "quantumProcessing": "Quantum Processing",
-      "medicalGrade": "Medical Grade",
-      "smartHealthGadgets": "Smart Health Gadgets",
-      "traditionalWellness": "Traditional Wellness",
+      "beautyEnhancement": "تعزيز الجمال",
+      "quantumProcessing": "معالجة الكم",
+      "medicalGrade": "الدرجة الطبية",
+      "smartHealthGadgets": "أدوات صحية ذكية",
+      "traditionalWellness": "العافية التقليدية",
       "descriptions": {
-        "beautyEnhancement": "Revolutionary beauty supplements with advanced bioactive compounds",
-        "quantumProcessing": "Advanced materials for quantum computing and AI processing enhancement",
-        "medicalGrade": "Pharmaceutical-grade supplements for clinical applications",
-        "smartHealthGadgets": "Innovative health technology devices with IoT capabilities",
-        "traditionalWellness": "Premium traditional supplements for general health and wellness"
+        "beautyEnhancement": "مكملات جمال ثورية مع مركبات بيولوجية نشطة متقدمة",
+        "quantumProcessing": "مواد متقدمة للحوسبة الكمية وتحسين معالجة الذكاء الاصطناعي",
+        "medicalGrade": "مكملات صيدلانية للتطبيقات السريرية",
+        "smartHealthGadgets": "أجهزة تقنية صحية مبتكرة مع قدرات إنترنت الأشياء",
+        "traditionalWellness": "مكملات تقليدية ممتازة للصحة العامة والعافية"
       }
     }
   },
@@ -101,70 +100,70 @@
     }
   },
   "products": {
-    "badge": "🚀 Advanced Solutions Portfolio",
-    "title": "Advanced Global Supplement Categories",
-    "description": "Discover our revolutionary collection spanning 5 major categories: beauty enhancement supplements, quantum processing materials, medical-grade compounds, smart health gadgets, and traditional wellness products. Each category represents cutting-edge innovation for B2B, B2C, and government procurement.",
-    "reviews": "reviews",
-    "requestQuote": "Request Quote",
+    "badge": "🚀 محفظة الحلول المتقدمة",
+    "title": "فئات Global Supplements المتقدمة",
+    "description": "اكتشف مجموعتنا الثورية التي تمتد عبر 5 فئات رئيسية: مكملات تعزيز الجمال، مواد معالجة الكم، مركبات الدرجة الطبية، أدوات صحية ذكية ومنتجات العافية التقليدية. تمثل كل فئة ابتكاراً متطوراً لـ B2B و B2C والمشتريات الحكومية.",
+    "reviews": "مراجعات",
+    "requestQuote": "طلب عرض سعر",
     "categories": {
       "beauty": {
-        "title": "Beauty Enhancement Supplements",
-        "description": "Revolutionary beauty supplements with advanced bioactive compounds for skin regeneration, anti-aging, and aesthetic enhancement",
+        "title": "مكملات تعزيز الجمال",
+        "description": "مكملات جمال ثورية مع مركبات بيولوجية نشطة متقدمة لتجديد البشرة ومكافحة الشيخوخة والتحسين الجمالي",
         "features": [
-          "Collagen Boosters",
-          "Anti-Aging Formulas",
-          "Skin Radiance",
-          "Hair & Nails"
+          "معززات الكولاجين",
+          "صيغ مكافحة الشيخوخة",
+          "إشراق البشرة",
+          "الشعر والأظافر"
         ]
       },
       "quantum": {
-        "title": "Quantum Processing Materials",
-        "description": "Advanced materials and supplements for quantum computing systems, AI processing enhancement, and machine optimization",
+        "title": "مواد معالجة الكم",
+        "description": "مواد ومكملات متقدمة لأنظمة الحوسبة الكمية وتحسين معالجة الذكاء الاصطناعي وتحسين الآلات",
         "features": [
-          "Quantum Catalysts",
-          "Processing Enhancers",
-          "System Optimizers",
-          "AI Accelerators"
+          "محفزات كمية",
+          "معززات المعالجة",
+          "محسنات النظام",
+          "مسرعات الذكاء الاصطناعي"
         ]
       },
       "medical": {
-        "title": "Medical-Grade Compounds",
-        "description": "Pharmaceutical-grade supplements for clinical applications, therapeutic treatments, and medical research",
+        "title": "مركبات الدرجة الطبية",
+        "description": "مكملات صيدلانية للتطبيقات السريرية والعلاجات والأبحاث الطبية",
         "features": [
-          "Clinical Formulas",
-          "Therapeutic Compounds",
-          "Research Materials",
-          "Precision Medicine"
+          "صيغ سريرية",
+          "مركبات علاجية",
+          "مواد البحث",
+          "الطب الدقيق"
         ]
       },
       "gadgets": {
-        "title": "Smart Health Gadgets",
-        "description": "Innovative health technology devices, wearables, and smart supplements integrated with IoT capabilities",
+        "title": "أدوات صحية ذكية",
+        "description": "أجهزة تقنية صحية مبتكرة وأجهزة قابلة للارتداء ومكملات ذكية متكاملة مع قدرات إنترنت الأشياء",
         "features": [
-          "Smart Devices",
-          "Health Wearables",
-          "IoT Integration",
-          "Digital Health"
+          "أجهزة ذكية",
+          "أجهزة قابلة للارتداء",
+          "تكامل إنترنت الأشياء",
+          "الصحة الرقمية"
         ]
       },
       "wellness": {
-        "title": "Traditional Wellness",
-        "description": "Premium traditional supplements for general health, fitness, nutrition, and everyday wellness needs",
+        "title": "العافية التقليدية",
+        "description": "مكملات تقليدية ممتازة للصحة العامة واللياقة والتغذية واحتياجات العافية اليومية",
         "features": [
-          "Vitamins & Minerals",
-          "Fitness Support",
-          "Immune System",
-          "General Health"
+          "الفيتامينات والمعادن",
+          "دعم اللياقة",
+          "جهاز المناعة",
+          "الصحة العامة"
         ]
       }
     },
     "businessModels": {
       "b2b": "B2B",
-      "enterprise": "Enterprise",
+      "enterprise": "المؤسسات",
       "b2c": "B2C",
-      "consumer": "Consumer",
-      "gov": "Gov",
-      "procurement": "Procurement"
+      "consumer": "المستهلك",
+      "gov": "الحكومة",
+      "procurement": "المشتريات"
     }
   },
   "marketIntelligence": {
@@ -326,25 +325,25 @@
     "verified": "All certifications verified and current"
   },
   "footer": {
-    "description": "World leader in dietary supplements connecting governments, businesses and consumers to premium suppliers through advanced AI technology.",
+    "description": "الرائد العالمي في المكملات الغذائية يربط الحكومات والشركات والمستهلكين بالموردين المميزين من خلال تقنية الذكاء الاصطناعي المتقدمة.",
     "companyName": "Global Supplements",
-    "premiumNetwork": "Premium Network",
-    "businessSolutions": "Business Solutions",
-    "b2bGlobalTrading": "B2B Global Trading",
-    "governmentContracts": "Government Contracts",
-    "b2cMarketplace": "B2C Marketplace",
-    "technology": "Technology",
-    "realTimeArbitrage": "Real-Time Arbitrage",
-    "autoExecution": "Auto Execution",
-    "globalCompliance": "Global Compliance",
-    "advancedAI": "Advanced AI",
-    "executiveDashboard": "Executive Dashboard",
-    "premiumContact": "Premium Contact",
-    "globalNetwork": "Global Network",
-    "copyright": "© 2024 Global Supplements. All rights reserved.",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfUse": "Terms of Use",
-    "compliance": "Compliance"
+    "premiumNetwork": "شبكة مميزة",
+    "businessSolutions": "حلول الأعمال",
+    "b2bGlobalTrading": "التجارة العالمية B2B",
+    "governmentContracts": "عقود حكومية",
+    "b2cMarketplace": "سوق B2C",
+    "technology": "التكنولوجيا",
+    "realTimeArbitrage": "المراجحة في الوقت الحقيقي",
+    "autoExecution": "التنفيذ التلقائي",
+    "globalCompliance": "الامتثال العالمي",
+    "advancedAI": "الذكاء الاصطناعي المتقدم",
+    "executiveDashboard": "لوحة المعلومات التنفيذية",
+    "premiumContact": "اتصال مميز",
+    "globalNetwork": "الشبكة العالمية",
+    "copyright": "© 2024 Global Supplements. جميع الحقوق محفوظة.",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfUse": "شروط الاستخدام",
+    "compliance": "الامتثال"
   },
   "public": {
     "hero": {

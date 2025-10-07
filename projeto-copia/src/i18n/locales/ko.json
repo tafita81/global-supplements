@@ -24,7 +24,6 @@
     "marketIntelligence": "시장 인텔리전스",
     "enterpriseSolutions": "기업 솔루션",
     "searchPlaceholder": "뷰티, 양자 재료, 의료 화합물, 가젯 검색...",
-    "amazonSearchPlaceholder": "보충제, 비타민, 건강 제품 검색...",
     "account": "계정",
     "cart": "장바구니",
     "tagline": "뷰티 • 양자 • 의료 • 가젯 • 웰니스",
@@ -101,70 +100,70 @@
     }
   },
   "products": {
-    "badge": "🚀 Advanced Solutions Portfolio",
-    "title": "Advanced Global Supplement Categories",
-    "description": "Discover our revolutionary collection spanning 5 major categories: beauty enhancement supplements, quantum processing materials, medical-grade compounds, smart health gadgets, and traditional wellness products. Each category represents cutting-edge innovation for B2B, B2C, and government procurement.",
-    "reviews": "reviews",
-    "requestQuote": "Request Quote",
+    "badge": "🚀 첨단 솔루션 포트폴리오",
+    "title": "첨단 Global Supplements 카테고리",
+    "description": "5개 주요 카테고리에 걸친 혁신적인 컬렉션을 발견하세요: 뷰티 강화 보충제, 양자 처리 재료, 의료 등급 화합물, 스마트 건강 가젯 및 전통적인 웰니스 제품. 각 카테고리는 B2B, B2C 및 정부 조달을 위한 최첨단 혁신을 나타냅니다.",
+    "reviews": "리뷰",
+    "requestQuote": "견적 요청",
     "categories": {
       "beauty": {
-        "title": "Beauty Enhancement Supplements",
-        "description": "Revolutionary beauty supplements with advanced bioactive compounds for skin regeneration, anti-aging, and aesthetic enhancement",
+        "title": "뷰티 강화 보충제",
+        "description": "피부 재생, 노화 방지 및 미적 개선을 위한 첨단 생체 활성 화합물이 함유된 혁신적인 뷰티 보충제",
         "features": [
-          "Collagen Boosters",
-          "Anti-Aging Formulas",
-          "Skin Radiance",
-          "Hair & Nails"
+          "콜라겐 부스터",
+          "노화 방지 포뮬러",
+          "피부 광채",
+          "모발 및 손톱"
         ]
       },
       "quantum": {
-        "title": "Quantum Processing Materials",
-        "description": "Advanced materials and supplements for quantum computing systems, AI processing enhancement, and machine optimization",
+        "title": "양자 처리 재료",
+        "description": "양자 컴퓨팅 시스템, AI 처리 향상 및 기계 최적화를 위한 첨단 재료 및 보충제",
         "features": [
-          "Quantum Catalysts",
-          "Processing Enhancers",
-          "System Optimizers",
-          "AI Accelerators"
+          "양자 촉매",
+          "처리 강화제",
+          "시스템 최적화기",
+          "AI 가속기"
         ]
       },
       "medical": {
-        "title": "Medical-Grade Compounds",
-        "description": "Pharmaceutical-grade supplements for clinical applications, therapeutic treatments, and medical research",
+        "title": "의료 등급 화합물",
+        "description": "임상 응용, 치료 및 의학 연구를 위한 제약 등급 보충제",
         "features": [
-          "Clinical Formulas",
-          "Therapeutic Compounds",
-          "Research Materials",
-          "Precision Medicine"
+          "임상 포뮬러",
+          "치료 화합물",
+          "연구 재료",
+          "정밀 의학"
         ]
       },
       "gadgets": {
-        "title": "Smart Health Gadgets",
-        "description": "Innovative health technology devices, wearables, and smart supplements integrated with IoT capabilities",
+        "title": "스마트 건강 가젯",
+        "description": "IoT 기능과 통합된 혁신적인 건강 기술 장치, 웨어러블 및 스마트 보충제",
         "features": [
-          "Smart Devices",
-          "Health Wearables",
-          "IoT Integration",
-          "Digital Health"
+          "스마트 장치",
+          "건강 웨어러블",
+          "IoT 통합",
+          "디지털 건강"
         ]
       },
       "wellness": {
-        "title": "Traditional Wellness",
-        "description": "Premium traditional supplements for general health, fitness, nutrition, and everyday wellness needs",
+        "title": "전통 웰니스",
+        "description": "일반 건강, 피트니스, 영양 및 일상 웰니스 요구를 위한 프리미엄 전통 보충제",
         "features": [
-          "Vitamins & Minerals",
-          "Fitness Support",
-          "Immune System",
-          "General Health"
+          "비타민 및 미네랄",
+          "피트니스 지원",
+          "면역 시스템",
+          "일반 건강"
         ]
       }
     },
     "businessModels": {
       "b2b": "B2B",
-      "enterprise": "Enterprise",
+      "enterprise": "기업",
       "b2c": "B2C",
-      "consumer": "Consumer",
-      "gov": "Gov",
-      "procurement": "Procurement"
+      "consumer": "소비자",
+      "gov": "정부",
+      "procurement": "조달"
     }
   },
   "marketIntelligence": {
@@ -326,25 +325,25 @@
     "verified": "All certifications verified and current"
   },
   "footer": {
-    "description": "World leader in dietary supplements connecting governments, businesses and consumers to premium suppliers through advanced AI technology.",
+    "description": "첨단 AI 기술을 통해 정부, 기업 및 소비자를 프리미엄 공급업체에 연결하는 건강 보조식품의 세계적 리더.",
     "companyName": "Global Supplements",
-    "premiumNetwork": "Premium Network",
-    "businessSolutions": "Business Solutions",
-    "b2bGlobalTrading": "B2B Global Trading",
-    "governmentContracts": "Government Contracts",
-    "b2cMarketplace": "B2C Marketplace",
-    "technology": "Technology",
-    "realTimeArbitrage": "Real-Time Arbitrage",
-    "autoExecution": "Auto Execution",
-    "globalCompliance": "Global Compliance",
-    "advancedAI": "Advanced AI",
-    "executiveDashboard": "Executive Dashboard",
-    "premiumContact": "Premium Contact",
-    "globalNetwork": "Global Network",
-    "copyright": "© 2024 Global Supplements. All rights reserved.",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfUse": "Terms of Use",
-    "compliance": "Compliance"
+    "premiumNetwork": "프리미엄 네트워크",
+    "businessSolutions": "비즈니스 솔루션",
+    "b2bGlobalTrading": "B2B 글로벌 거래",
+    "governmentContracts": "정부 계약",
+    "b2cMarketplace": "B2C 마켓플레이스",
+    "technology": "기술",
+    "realTimeArbitrage": "실시간 차익거래",
+    "autoExecution": "자동 실행",
+    "globalCompliance": "글로벌 규정 준수",
+    "advancedAI": "첨단 AI",
+    "executiveDashboard": "임원 대시보드",
+    "premiumContact": "프리미엄 연락처",
+    "globalNetwork": "글로벌 네트워크",
+    "copyright": "© 2024 Global Supplements. 모든 권리 보유.",
+    "privacyPolicy": "개인정보 보호정책",
+    "termsOfUse": "이용약관",
+    "compliance": "규정 준수"
   },
   "public": {
     "hero": {

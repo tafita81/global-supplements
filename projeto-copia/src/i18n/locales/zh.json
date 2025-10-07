@@ -24,7 +24,6 @@
     "marketIntelligence": "市场情报",
     "enterpriseSolutions": "企业解决方案",
     "searchPlaceholder": "搜索美容、量子材料、医疗化合物、小工具...",
-    "amazonSearchPlaceholder": "搜索补充剂、维生素、健康产品...",
     "account": "账户",
     "cart": "购物车",
     "tagline": "美容 • 量子 • 医疗 • 小工具 • 健康",
@@ -101,70 +100,70 @@
     }
   },
   "products": {
-    "badge": "🚀 Advanced Solutions Portfolio",
-    "title": "Advanced Global Supplement Categories",
-    "description": "Discover our revolutionary collection spanning 5 major categories: beauty enhancement supplements, quantum processing materials, medical-grade compounds, smart health gadgets, and traditional wellness products. Each category represents cutting-edge innovation for B2B, B2C, and government procurement.",
-    "reviews": "reviews",
-    "requestQuote": "Request Quote",
+    "badge": "🚀 先进解决方案组合",
+    "title": "先进 Global Supplements 类别",
+    "description": "发现我们涵盖5大类别的革命性系列：美容增强补充剂、量子处理材料、医疗级化合物、智能健康小工具和传统健康产品。每个类别代表B2B、B2C和政府采购的尖端创新。",
+    "reviews": "评论",
+    "requestQuote": "请求报价",
     "categories": {
       "beauty": {
-        "title": "Beauty Enhancement Supplements",
-        "description": "Revolutionary beauty supplements with advanced bioactive compounds for skin regeneration, anti-aging, and aesthetic enhancement",
+        "title": "美容增强补充剂",
+        "description": "含有先进生物活性化合物的革命性美容补充剂，用于皮肤再生、抗衰老和美学增强",
         "features": [
-          "Collagen Boosters",
-          "Anti-Aging Formulas",
-          "Skin Radiance",
-          "Hair & Nails"
+          "胶原蛋白增强剂",
+          "抗衰老配方",
+          "肌肤光彩",
+          "头发和指甲"
         ]
       },
       "quantum": {
-        "title": "Quantum Processing Materials",
-        "description": "Advanced materials and supplements for quantum computing systems, AI processing enhancement, and machine optimization",
+        "title": "量子处理材料",
+        "description": "用于量子计算系统、AI处理增强和机器优化的先进材料和补充剂",
         "features": [
-          "Quantum Catalysts",
-          "Processing Enhancers",
-          "System Optimizers",
-          "AI Accelerators"
+          "量子催化剂",
+          "处理增强剂",
+          "系统优化器",
+          "AI加速器"
         ]
       },
       "medical": {
-        "title": "Medical-Grade Compounds",
-        "description": "Pharmaceutical-grade supplements for clinical applications, therapeutic treatments, and medical research",
+        "title": "医疗级化合物",
+        "description": "用于临床应用、治疗和医学研究的药品级补充剂",
         "features": [
-          "Clinical Formulas",
-          "Therapeutic Compounds",
-          "Research Materials",
-          "Precision Medicine"
+          "临床配方",
+          "治疗化合物",
+          "研究材料",
+          "精准医学"
         ]
       },
       "gadgets": {
-        "title": "Smart Health Gadgets",
-        "description": "Innovative health technology devices, wearables, and smart supplements integrated with IoT capabilities",
+        "title": "智能健康小工具",
+        "description": "具有IoT功能的创新健康技术设备、可穿戴设备和智能补充剂",
         "features": [
-          "Smart Devices",
-          "Health Wearables",
-          "IoT Integration",
-          "Digital Health"
+          "智能设备",
+          "健康可穿戴设备",
+          "物联网集成",
+          "数字健康"
         ]
       },
       "wellness": {
-        "title": "Traditional Wellness",
-        "description": "Premium traditional supplements for general health, fitness, nutrition, and everyday wellness needs",
+        "title": "传统健康",
+        "description": "用于一般健康、健身、营养和日常健康需求的优质传统补充剂",
         "features": [
-          "Vitamins & Minerals",
-          "Fitness Support",
-          "Immune System",
-          "General Health"
+          "维生素和矿物质",
+          "健身支持",
+          "免疫系统",
+          "一般健康"
         ]
       }
     },
     "businessModels": {
       "b2b": "B2B",
-      "enterprise": "Enterprise",
+      "enterprise": "企业",
       "b2c": "B2C",
-      "consumer": "Consumer",
-      "gov": "Gov",
-      "procurement": "Procurement"
+      "consumer": "消费者",
+      "gov": "政府",
+      "procurement": "采购"
     }
   },
   "marketIntelligence": {
@@ -326,25 +325,25 @@
     "verified": "All certifications verified and current"
   },
   "footer": {
-    "description": "World leader in dietary supplements connecting governments, businesses and consumers to premium suppliers through advanced AI technology.",
+    "description": "通过先进的AI技术将政府、企业和消费者连接到优质供应商的膳食补充剂世界领导者。",
     "companyName": "Global Supplements",
-    "premiumNetwork": "Premium Network",
-    "businessSolutions": "Business Solutions",
-    "b2bGlobalTrading": "B2B Global Trading",
-    "governmentContracts": "Government Contracts",
-    "b2cMarketplace": "B2C Marketplace",
-    "technology": "Technology",
-    "realTimeArbitrage": "Real-Time Arbitrage",
-    "autoExecution": "Auto Execution",
-    "globalCompliance": "Global Compliance",
-    "advancedAI": "Advanced AI",
-    "executiveDashboard": "Executive Dashboard",
-    "premiumContact": "Premium Contact",
-    "globalNetwork": "Global Network",
-    "copyright": "© 2024 Global Supplements. All rights reserved.",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfUse": "Terms of Use",
-    "compliance": "Compliance"
+    "premiumNetwork": "优质网络",
+    "businessSolutions": "商业解决方案",
+    "b2bGlobalTrading": "B2B全球贸易",
+    "governmentContracts": "政府合同",
+    "b2cMarketplace": "B2C市场",
+    "technology": "技术",
+    "realTimeArbitrage": "实时套利",
+    "autoExecution": "自动执行",
+    "globalCompliance": "全球合规",
+    "advancedAI": "先进AI",
+    "executiveDashboard": "执行仪表板",
+    "premiumContact": "优质联系",
+    "globalNetwork": "全球网络",
+    "copyright": "© 2024 Global Supplements. 保留所有权利。",
+    "privacyPolicy": "隐私政策",
+    "termsOfUse": "使用条款",
+    "compliance": "合规"
   },
   "public": {
     "hero": {
