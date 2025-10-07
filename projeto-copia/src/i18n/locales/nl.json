@@ -730,46 +730,46 @@
   },
   "amazon": {
     "header": {
-      "deliverTo": "Entregar em",
-      "helloSignIn": "Olá, Faça login",
-      "accountLists": "Conta e Listas",
-      "returns": "Devoluções",
-      "orders": "e Pedidos",
-      "cart": "Carrinho",
-      "all": "Todos",
-      "affiliatePartnerStore": "Loja Parceira Afiliada"
+      "deliverTo": "Leveren naar",
+      "helloSignIn": "Hallo, Inloggen",
+      "accountLists": "Account & Lijsten",
+      "returns": "Retourneren",
+      "orders": "& Bestellingen",
+      "cart": "Winkelwagen",
+      "all": "Alles",
+      "affiliatePartnerStore": "Partner Affiliate Winkel"
     },
     "categories": {
-      "all": "Todos",
-      "beautyPersonalCare": "Beleza e Cuidados Pessoais",
-      "healthHousehold": "Saúde e Casa",
-      "healthWellnessDevices": "Dispositivos de Saúde",
-      "sportsNutrition": "Nutrição Esportiva",
-      "vitaminsSupplements": "Vitaminas e Suplementos"
+      "all": "Alles",
+      "beautyPersonalCare": "Schoonheid & Persoonlijke Verzorging",
+      "healthHousehold": "Gezondheid & Huishouden",
+      "healthWellnessDevices": "Gezondheids- & Wellnessapparaten",
+      "sportsNutrition": "Sportvoeding",
+      "vitaminsSupplements": "Vitamines & Supplementen"
     },
     "subcategories": {
-      "skinCare": "Cuidados com a Pele",
-      "hairCare": "Cuidados com o Cabelo",
-      "nailCare": "Cuidados com as Unhas",
-      "bathBody": "Banho e Corpo",
-      "makeup": "Maquiagem",
-      "antiAging": "Anti-Envelhecimento",
-      "fragrance": "Fragrâncias",
-      "toolsAccessories": "Ferramentas e Acessórios",
-      "oralCare": "Cuidados Orais",
-      "mensGrooming": "Cuidados Masculinos"
+      "skinCare": "Huidverzorging",
+      "hairCare": "Haarverzorging",
+      "nailCare": "Nagelverzorging",
+      "bathBody": "Bad & Lichaam",
+      "makeup": "Make-up",
+      "antiAging": "Anti-Veroudering",
+      "fragrance": "Parfum",
+      "toolsAccessories": "Gereedschap & Accessoires",
+      "oralCare": "Mondverzorging",
+      "mensGrooming": "Mannen Verzorging"
     },
     "badges": {
-      "amazonOnelinkPartner": "Parceiro Amazon OneLink",
-      "official": "Oficial",
-      "securePayment": "Pagamento Seguro",
-      "buyerProtection": "Proteção ao Comprador",
-      "globalDelivery": "Entrega Global",
-      "easyReturns": "Devoluções Fáceis",
-      "amazonsChoice": "Escolha da Amazon"
+      "amazonOnelinkPartner": "Amazon OneLink Partner",
+      "official": "Officieel",
+      "securePayment": "Veilige Betaling",
+      "buyerProtection": "Kopersbescherming",
+      "globalDelivery": "Wereldwijde Levering",
+      "easyReturns": "Eenvoudig Retourneren",
+      "amazonsChoice": "Amazon's Keuze"
     },
     "buttons": {
-      "shopPremiumProduct": "Comprar Produto Premium →"
+      "shopPremiumProduct": "Koop Premium Product →"
     }
   }
 }

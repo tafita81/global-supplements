@@ -1012,7 +1012,10 @@ const Amazon = () => {
             {/* Left: Compact Info */}
             <div className="flex items-center gap-3">
               <Badge className="bg-[#FF9900] text-black font-bold text-xs px-2 py-0.5 whitespace-nowrap">{t('amazon.badges.amazonOnelinkPartner')}</Badge>
-              <Badge variant="outline" className="border-green-600 text-green-700 text-xs px-2 py-0.5">✓ {t('amazon.badges.official')}</Badge>
+              <Badge variant="outline" className="border-green-600 text-green-700 text-xs px-2 py-0.5 whitespace-nowrap flex items-center gap-1">
+                <span>✓</span>
+                <span>{t('amazon.badges.official')}</span>
+              </Badge>
               <div className="h-5 w-px bg-gray-300"></div>
               <div className="flex items-center gap-2 text-xs">
                 <svg className="h-3.5 w-3.5 text-green-600" fill="currentColor" viewBox="0 0 20 20">

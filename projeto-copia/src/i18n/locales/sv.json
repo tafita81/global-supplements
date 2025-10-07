@@ -730,46 +730,46 @@
   },
   "amazon": {
     "header": {
-      "deliverTo": "Entregar em",
-      "helloSignIn": "Olá, Faça login",
-      "accountLists": "Conta e Listas",
-      "returns": "Devoluções",
-      "orders": "e Pedidos",
-      "cart": "Carrinho",
-      "all": "Todos",
-      "affiliatePartnerStore": "Loja Parceira Afiliada"
+      "deliverTo": "Leverera till",
+      "helloSignIn": "Hej, Logga in",
+      "accountLists": "Konto & Listor",
+      "returns": "Returer",
+      "orders": "& Beställningar",
+      "cart": "Varukorg",
+      "all": "Alla",
+      "affiliatePartnerStore": "Partner Affiliate-butik"
     },
     "categories": {
-      "all": "Todos",
-      "beautyPersonalCare": "Beleza e Cuidados Pessoais",
-      "healthHousehold": "Saúde e Casa",
-      "healthWellnessDevices": "Dispositivos de Saúde",
-      "sportsNutrition": "Nutrição Esportiva",
-      "vitaminsSupplements": "Vitaminas e Suplementos"
+      "all": "Alla",
+      "beautyPersonalCare": "Skönhet & Personlig vård",
+      "healthHousehold": "Hälsa & Hushåll",
+      "healthWellnessDevices": "Hälso- & Wellnessenheter",
+      "sportsNutrition": "Idrottsnutrition",
+      "vitaminsSupplements": "Vitaminer & Kosttillskott"
     },
     "subcategories": {
-      "skinCare": "Cuidados com a Pele",
-      "hairCare": "Cuidados com o Cabelo",
-      "nailCare": "Cuidados com as Unhas",
-      "bathBody": "Banho e Corpo",
-      "makeup": "Maquiagem",
-      "antiAging": "Anti-Envelhecimento",
-      "fragrance": "Fragrâncias",
-      "toolsAccessories": "Ferramentas e Acessórios",
-      "oralCare": "Cuidados Orais",
-      "mensGrooming": "Cuidados Masculinos"
+      "skinCare": "Hudvård",
+      "hairCare": "Hårvård",
+      "nailCare": "Nagelvård",
+      "bathBody": "Bad & Kropp",
+      "makeup": "Smink",
+      "antiAging": "Anti-Aging",
+      "fragrance": "Parfym",
+      "toolsAccessories": "Verktyg & Tillbehör",
+      "oralCare": "Munvård",
+      "mensGrooming": "Herrgrooming"
     },
     "badges": {
-      "amazonOnelinkPartner": "Parceiro Amazon OneLink",
-      "official": "Oficial",
-      "securePayment": "Pagamento Seguro",
-      "buyerProtection": "Proteção ao Comprador",
-      "globalDelivery": "Entrega Global",
-      "easyReturns": "Devoluções Fáceis",
-      "amazonsChoice": "Escolha da Amazon"
+      "amazonOnelinkPartner": "Amazon OneLink Partner",
+      "official": "Officiell",
+      "securePayment": "Säker Betalning",
+      "buyerProtection": "Köparskydd",
+      "globalDelivery": "Global Leverans",
+      "easyReturns": "Enkla Returer",
+      "amazonsChoice": "Amazons Val"
     },
     "buttons": {
-      "shopPremiumProduct": "Comprar Produto Premium →"
+      "shopPremiumProduct": "Handla Premiumprodukter →"
     }
   }
 }
