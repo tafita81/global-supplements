@@ -77,13 +77,6 @@ export function PublicHeader() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <Globe className="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-gray-900">Global Supplements</h1>
-              <p className="text-xs text-gray-600">Premium Worldwide Network</p>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
