@@ -16,6 +16,7 @@ import { PremiumTestimonials } from "@/components/premium/PremiumTestimonials";
 import { TechWellnessBundles } from "@/components/premium/TechWellnessBundles";
 import { CertificationBadges } from "@/components/premium/CertificationBadges";
 import amazonLogo from "@/assets/amazon-logo-black.png";
+import amazonIcon from "@/assets/amazon-icon.png";
 
 export default function PublicSite() {
   const { t } = useTranslation();
@@ -60,10 +61,14 @@ export default function PublicSite() {
                 <div className="flex-shrink-0">
                   <Button 
                     onClick={() => navigate('/amazon')}
-                    className="bg-[#FF9900] hover:bg-[#F08804] text-black font-bold text-lg px-8 py-6 rounded-lg shadow-lg hover:shadow-xl transition-all"
+                    className="bg-gradient-to-r from-[#FF9900] via-[#FFB84D] to-[#FF9900] hover:from-[#F08804] hover:to-[#F08804] text-black font-bold text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                   >
-                    <ShoppingCart className="mr-2 h-6 w-6" />
-                    Browse Products
+                    <img 
+                      src={amazonIcon} 
+                      alt="Amazon" 
+                      className="h-7 w-7 mr-1" 
+                    />
+                    Shop Premium Supplements →
                   </Button>
                 </div>
               </div>
