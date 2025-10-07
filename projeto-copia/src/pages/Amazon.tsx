@@ -9,6 +9,7 @@ import { AmazonStrategyAI } from "@/services/amazonStrategy";
 import { MultiAPIClient } from "@/services/rapidAPIClient";
 import { aiValidator } from "@/services/aiProductValidator";
 import { productMonitor } from "@/services/productMonitor";
+import { instantCache } from "@/services/instantCache";
 import { AmazonHeader } from "@/components/amazon/AmazonHeader";
 import { useMarketplace } from "@/hooks/useMarketplace";
 import { getAffiliateLink } from "@/config/amazonMarketplaces";
@@ -555,6 +556,24 @@ const Amazon = () => {
     const searchProductsEffect = async () => {
       console.log(`🎬 [${searchId}] Request #${thisRequestId} - Category: ${selectedCategory}, Subcategory: ${selectedSubcategory}`);
       
+      // ⚡ INSTANT CACHE: Mostra cache IMEDIATAMENTE (0ms)
+      const cachedProducts = instantCache.getInstant(currentMarketplace.id, selectedCategory, selectedSubcategory);
+      if (cachedProducts && cachedProducts.length > 0) {
+        console.log(`⚡ MOSTRANDO CACHE INSTANTÂNEO: ${cachedProducts.length} produtos`);
+        setProducts(cachedProducts);
+        
+        // Se cache está fresco (< 1 hora), NÃO busca novos dados
+        if (instantCache.isFresh(currentMarketplace.id, selectedCategory, selectedSubcategory)) {
+          console.log(`✅ Cache fresco! Não busca novos dados.`);
+          setLoading(false);
+          isSearching.current = false;
+          return;
+        }
+        
+        // Cache velho: continua buscando em background (usuário já vê produtos)
+        console.log(`🔄 Cache expirado. Buscando novos dados em background...`);
+      }
+      
       // 🔄 Ativa loading MANTENDO produtos existentes (não limpa até ter novos dados)
       if (thisRequestId === searchFetchRequestId.current) {
         setLoading(true);
@@ -691,6 +710,7 @@ const Amazon = () => {
           if (thisRequestId === searchFetchRequestId.current) {
             console.log(`📊 Definindo ${topProducts.length} produtos no estado (Req #${thisRequestId})...`);
             setProducts([...topProducts]); // Força um novo array
+            instantCache.save(currentMarketplace.id, selectedCategory, selectedSubcategory, topProducts);
             setLoading(false);
             setApiStats(apiClient.getUsageStats());
             console.log(`✅ Categoria agregada completa: ${topProducts.length} produtos (${topProducts[0]?.reviews || 0} reviews no topo)`);
@@ -738,6 +758,7 @@ const Amazon = () => {
             if (thisRequestId === searchFetchRequestId.current) {
               setLoading(false);
               setProducts([...final]);
+              instantCache.save(currentMarketplace.id, selectedCategory, selectedSubcategory, final);
               setApiStats(apiClient.getUsageStats());
               console.log(`✅ Usando cache inteligente: ${final.length} produtos ordenados por reviews`);
             }
@@ -983,6 +1004,7 @@ const Amazon = () => {
         if (thisRequestId === searchFetchRequestId.current) {
           setLoading(false);
           setProducts([...finalProducts]);
+          instantCache.save(currentMarketplace.id, selectedCategory, selectedSubcategory, finalProducts);
           setApiStats(apiClient.getUsageStats());
           isSearching.current = false;
           console.log(`✅ Loading set to FALSE, ${finalProducts.length} produtos finais`);
