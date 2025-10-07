@@ -19,7 +19,7 @@ const stats = [
   },
   {
     icon: Globe,
-    value: "33",
+    value: "52",
     label: "Countries",
     description: "Active market presence",
     color: "text-green-500"

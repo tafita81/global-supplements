@@ -122,7 +122,7 @@ export function PublicAbout() {
                 <div className="text-sm text-gray-600">{t('public.about.achievements.yearsExperience')}</div>
               </div>
               <div className="text-center p-4 bg-green-50 rounded-lg">
-                <div className="text-2xl font-bold text-green-600">33</div>
+                <div className="text-2xl font-bold text-green-600">52</div>
                 <div className="text-sm text-gray-600">{t('public.about.achievements.countriesServed')}</div>
               </div>
               <div className="text-center p-4 bg-purple-50 rounded-lg">
