@@ -8,13 +8,12 @@ export default defineConfig(() => ({
     host: "0.0.0.0",
     port: 5000,
     strictPort: true,
-    allowedHosts: true as const,
+    hmr: false,
   },
   preview: {
     host: "0.0.0.0",
     port: 5000,
     strictPort: true,
-    allowedHosts: true as const,
   },
   plugins: [react()],
   resolve: {
