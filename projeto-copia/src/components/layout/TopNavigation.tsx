@@ -88,12 +88,25 @@ export function TopNavigation() {
                   </div>
                 </div>
                 <div className="relative overflow-hidden max-w-xs">
-                  <h1 className="text-2xl font-bold">
-                    <span className="text-muted-foreground">Global</span>{' '}
-                    <span className="text-[#FBBF24]">Supplements</span>
-                  </h1>
+                  {/* Marquee Reverso em Global Supplements */}
+                  <div className="relative h-8 overflow-hidden">
+                    <div className="absolute inset-0 flex items-center">
+                      <div className="hypnotic-marquee-reverse flex gap-8">
+                        <h1 className="text-2xl font-bold whitespace-nowrap">
+                          <span className="text-muted-foreground">Global</span>{' '}
+                          <span className="text-[#FBBF24]">Supplements</span>
+                        </h1>
+                        <span className="inline-block w-8"></span>
+                        <h1 className="text-2xl font-bold whitespace-nowrap">
+                          <span className="text-muted-foreground">Global</span>{' '}
+                          <span className="text-[#FBBF24]">Supplements</span>
+                        </h1>
+                        <span className="inline-block w-8"></span>
+                      </div>
+                    </div>
+                  </div>
                   
-                  {/* Marquee Hipnótico Infinito */}
+                  {/* Marquee Hipnótico Infinito - Tagline */}
                   <div className="relative -mt-1 h-6 overflow-hidden">
                     <div className="absolute inset-0 flex items-center">
                       <div className="hypnotic-marquee flex gap-8">
