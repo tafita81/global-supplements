@@ -85,11 +85,27 @@ Automated company registration across government and B2B platforms:
 
 **Internationalization Architecture:**
 Full i18n support with browser language detection:
-- 15 language files covering major markets (EN, ES, PT, FR, DE, IT, JA, KO, ZH, AR, HI, MS, NL, SV)
+- 14 language files covering major markets (EN, ES, PT, FR, DE, IT, JA, KO, ZH, AR, HI, MS, NL, SV)
 - Context-based translation provider wrapping the application
 - Fallback to English for missing translations
+- **Complete translation coverage**: 392 total translations for Amazon Partnership section
+  - amazon.partnership (11 keys): officialPartner, oneLinkProgram, shopTitle, trustDescription, verifiedPartner, securePayment, buyerProtection, shopButton, amazonVerified, shipsTo, verifyPartnership
+  - amazon.product (9 keys): prime, rating, productTitle, brand, description, installmentPlan, freeReturns, shopButton, shippingInfo
+  - bundles (2 keys): title, subtitle
+  - bundles.accessibility (6 keys): imageAlt1, imageAlt2, imageAlt3, prevImage, nextImage, goToImage
+- **Critical rule**: Brand name "Global Supplements" is NEVER translated, always remains in English across all languages
 
-**Rationale**: Enables global reach for both supplier and buyer sides of the marketplace.
+**Rationale**: Enables global reach for both supplier and buyer sides of the marketplace while maintaining brand consistency.
+
+**Amazon OneLink Integration:**
+Universal affiliate link system for global product promotion:
+- **OneLink URL**: https://amzn.to/4mU7qT4 (Skin Analysis Machine Professional)
+- **Automatic geo-redirection**: Single link redirects visitors to their country-specific Amazon store
+- **Affiliate tracking**: Automatically applies correct affiliate tag for each region ensuring commission attribution
+- **Supported regions**: US, CA, UK, DE, FR, IT, ES, JP, AU, NL, SE, SG, PL, SA (13 countries)
+- **Implementation**: Fixed OneLink URL in TechWellnessBundles.tsx, no dynamic link generation needed
+
+**Rationale**: Simplifies affiliate link management by using Amazon's intelligent geo-redirection technology, ensuring proper commission tracking across all 13 global Amazon marketplaces without maintaining separate affiliate links.
 
 **3-Layer Product Aggregation System:**
 Marketplace-aware product discovery architecture ensuring high-review products always surface:
