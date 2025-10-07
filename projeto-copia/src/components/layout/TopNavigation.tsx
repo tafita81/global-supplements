@@ -97,9 +97,9 @@ export function TopNavigation() {
                   <div className="relative -mt-1 h-6 overflow-hidden">
                     <div className="absolute inset-0 flex items-center">
                       <div className="hypnotic-marquee flex gap-8">
-                        <span className="text-xs font-medium text-gray-500">{t('navigation.tagline')}</span>
+                        <span className="text-sm font-medium text-gray-500">{t('navigation.tagline')}</span>
                         <span className="inline-block w-8"></span>
-                        <span className="text-xs font-medium text-gray-500">{t('navigation.tagline')}</span>
+                        <span className="text-sm font-medium text-gray-500">{t('navigation.tagline')}</span>
                         <span className="inline-block w-8"></span>
                       </div>
                     </div>
