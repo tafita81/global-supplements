@@ -188,7 +188,7 @@ export function PublicHero() {
                   <div className="text-sm text-gray-300">{t("hero.activeSuppliers")}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-1">52</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-1">33</div>
                   <div className="text-sm text-gray-300">{t("hero.countries")}</div>
                 </div>
                 <div className="text-center">
