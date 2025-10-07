@@ -242,7 +242,7 @@ export function PremiumVideoHeroPublic() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-5xl mx-auto">
             {/* Brand Name - Centered */}
-            <h1 className="text-6xl md:text-8xl font-bold mb-12 text-white clean-fade-in">
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-white clean-fade-in">
               <span className="block">{t('site.title').split(' ')[0]}</span>
               <span className="block subtle-gold">
                 {t('site.title').split(' ')[1]}
@@ -250,11 +250,11 @@ export function PremiumVideoHeroPublic() {
             </h1>
             
             {/* Centered Text Content */}
-            <p className="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed clean-fade-in">
+            <p className="text-xl md:text-2xl text-white/90 mb-5 leading-relaxed clean-fade-in">
               {t(`hero.videoCategories.descriptions.${currentVideo.descriptionKey}`)}
             </p>
             
-            <p className="text-lg text-white/80 mb-16 leading-relaxed clean-fade-in max-w-3xl mx-auto">
+            <p className="text-lg text-white/80 mb-10 leading-relaxed clean-fade-in max-w-3xl mx-auto">
               {t('hero.subtitle')}
             </p>
             
@@ -268,7 +268,7 @@ export function PremiumVideoHeroPublic() {
               >
                 <Button 
                   size="lg" 
-                  className="relative overflow-hidden bg-gradient-to-r from-[#FF9900] via-[#FFB84D] to-[#FF9900] bg-[length:200%_100%] text-black text-xl px-12 py-7 rounded-full font-bold shadow-[0_10px_40px_-15px_rgba(255,153,0,0.6)] hover:shadow-[0_20px_60px_-15px_rgba(255,153,0,0.8)] transition-all duration-500 hover:bg-[position:100%_0] hover:scale-110 hover:-translate-y-1 active:scale-105 active:translate-y-0 focus:outline-none focus:ring-4 focus:ring-yellow-400/50 focus:ring-offset-2 focus:ring-offset-black before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:-translate-x-full group-hover:before:translate-x-full before:transition-transform before:duration-1000 after:absolute after:inset-0 after:rounded-full after:bg-white/0 group-hover:after:bg-white/10 after:transition-colors after:duration-300"
+                  className="relative overflow-hidden bg-gradient-to-r from-[#FF9900] via-[#FFB84D] to-[#FF9900] bg-[length:200%_100%] text-black text-base px-10 py-6 rounded-full font-bold shadow-[0_10px_40px_-15px_rgba(255,153,0,0.6)] hover:shadow-[0_20px_60px_-15px_rgba(255,153,0,0.8)] transition-all duration-500 hover:bg-[position:100%_0] hover:scale-110 hover:-translate-y-1 active:scale-105 active:translate-y-0 focus:outline-none focus:ring-4 focus:ring-yellow-400/50 focus:ring-offset-2 focus:ring-offset-black before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:-translate-x-full group-hover:before:translate-x-full before:transition-transform before:duration-1000 after:absolute after:inset-0 after:rounded-full after:bg-white/0 group-hover:after:bg-white/10 after:transition-colors after:duration-300"
                   style={{
                     transformStyle: 'preserve-3d',
                     backfaceVisibility: 'hidden'
@@ -278,7 +278,7 @@ export function PremiumVideoHeroPublic() {
                     <img 
                       src={amazonLogo} 
                       alt="" 
-                      className="h-7 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[-5deg]" 
+                      className="h-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[-5deg]" 
                       aria-hidden="true"
                     />
                     <span className="transition-all duration-300 group-hover:tracking-wide">
