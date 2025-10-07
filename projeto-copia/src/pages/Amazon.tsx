@@ -1198,15 +1198,17 @@ const Amazon = () => {
                 </CardContent>
                 <CardFooter className="p-5 pt-0">
                   <Button 
-                    className="w-full bg-gradient-to-r from-[#FF9900] via-[#FFB84D] to-[#FF9900] hover:from-[#F08804] hover:to-[#F08804] text-black font-bold text-sm rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 h-12"
+                    className="professional-cta-animation w-full relative overflow-hidden bg-[#EFEFEF] text-[#FF9900] text-xs font-bold px-6 py-3 rounded-full border-[3px] border-[#FF9900] hover:shadow-[0_20px_60px_-15px_rgba(255,153,0,0.8)] transition-all duration-500 hover:scale-105 h-12 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:-translate-x-full hover:before:translate-x-full before:transition-transform before:duration-1000"
                     onClick={() => window.open(product.affiliateLink, '_blank')}
                   >
-                    <img 
-                      src={amazonIcon} 
-                      alt="Amazon" 
-                      className="h-6 w-6 mr-1" 
-                    />
-                    {t('amazon.buttons.shopPremiumProduct')}
+                    <span className="relative z-10 flex items-center justify-center gap-2">
+                      <img 
+                        src={amazonIcon} 
+                        alt="Amazon" 
+                        className="h-5 w-5" 
+                      />
+                      {t('amazon.buttons.shopPremiumProduct')}
+                    </span>
                   </Button>
                 </CardFooter>
               </Card>
