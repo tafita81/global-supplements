@@ -56,7 +56,12 @@ class InstantCache {
   // Salva produtos no cache
   save(marketplace: string, category: string, subcategory: string | null, products: any[]): void {
     try {
+      console.log(`[INSTANT CACHE] Tentando salvar ${products.length} produtos...`);
+      console.log(`[INSTANT CACHE] Marketplace: ${marketplace}, Category: ${category}, Subcategory: ${subcategory}`);
+      
       const key = this.getCacheKey(marketplace, category, subcategory);
+      console.log(`[INSTANT CACHE] Cache key: ${key}`);
+      
       const data: CachedProducts = {
         products,
         timestamp: Date.now(),
@@ -65,12 +70,31 @@ class InstantCache {
         subcategory
       };
       
-      localStorage.setItem(key, JSON.stringify(data));
-      console.log(`💾 Cache salvo: ${products.length} produtos para ${key}`);
+      const dataStr = JSON.stringify(data);
+      console.log(`[INSTANT CACHE] Data size: ${dataStr.length} chars`);
+      
+      localStorage.setItem(key, dataStr);
+      console.log(`💾 CACHE SALVO COM SUCESSO: ${products.length} produtos para ${key}`);
     } catch (error) {
-      console.error('❌ Erro ao salvar cache:', error);
+      console.error('❌ ERRO AO SALVAR CACHE:', error);
       // Se localStorage está cheio, limpa caches antigos
       this.cleanup();
+      
+      // Tenta salvar novamente após cleanup
+      try {
+        const key = this.getCacheKey(marketplace, category, subcategory);
+        const data: CachedProducts = {
+          products,
+          timestamp: Date.now(),
+          marketplace,
+          category,
+          subcategory
+        };
+        localStorage.setItem(key, JSON.stringify(data));
+        console.log(`💾 CACHE SALVO (após cleanup): ${products.length} produtos`);
+      } catch (retryError) {
+        console.error('❌ FALHA TOTAL AO SALVAR CACHE:', retryError);
+      }
     }
   }
 
