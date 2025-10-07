@@ -160,7 +160,7 @@ const Amazon = () => {
     { id: "beauty", label: t('amazon.categories.beautyPersonalCare'), keywords: "beauty supplements biotin collagen hair skin nails vitamins keratin" },
     { id: "wellness", label: t('amazon.categories.healthHousehold'), keywords: "health care medical monitor device first aid" },
     { id: "devices", label: t('amazon.categories.healthWellnessDevices'), keywords: "fitness tracker smart watch blood pressure monitor thermometer scale" },
-    { id: "sports", label: t('amazon.categories.sportsNutrition'), keywords: "protein powder whey creatine pre-workout bcaa" },
+    { id: "sports", label: t('amazon.categories.sportsNutrition'), keywords: "creatine monohydrate protein powder whey pre-workout bcaa supplement" },
     { id: "vitamins", label: t('amazon.categories.vitaminsSupplements'), keywords: "vitamin supplement mineral multivitamin probiotic omega" },
   ];
 
