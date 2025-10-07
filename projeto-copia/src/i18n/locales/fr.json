@@ -726,6 +726,14 @@
     "totalWellness": {
       "name": "Total Wellness Kit",
       "items": "All 4 products (Supplement + Skincare Analyzer + Gua Sha + Charger)"
+    },
+    "accessibility": {
+      "imageAlt1": "Analyse IA 8-Spectrale - Précision pour des Aperçus Cutanés Approfondis",
+      "imageAlt2": "Détecteur de Peau IA en Action",
+      "imageAlt3": "Rapports Clients en Temps Réel - Recommandations de Produits",
+      "prevImage": "Image précédente",
+      "nextImage": "Image suivante",
+      "goToImage": "Aller à l'image"
     }
   },
   "amazon": {

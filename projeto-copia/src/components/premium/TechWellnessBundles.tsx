@@ -18,9 +18,9 @@ export function TechWellnessBundles() {
   const oneLinkUrl = "https://amzn.to/4mU7qT4"; // Skin Analysis Machine
   
   const images = [
-    { src: skinAnalysis1, alt: "8-Spectral AI Analysis - Precision for In-Depth Skin Insights" },
-    { src: skinAnalysis2, alt: "AI Skin Detector in Action" },
-    { src: skinAnalysis3, alt: "Real-Time Client Reports - Product Recommendations" }
+    { src: skinAnalysis1, alt: t('bundles.accessibility.imageAlt1') },
+    { src: skinAnalysis2, alt: t('bundles.accessibility.imageAlt2') },
+    { src: skinAnalysis3, alt: t('bundles.accessibility.imageAlt3') }
   ];
 
   const nextImage = () => {
@@ -58,14 +58,14 @@ export function TechWellnessBundles() {
               <button
                 onClick={prevImage}
                 className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-all"
-                aria-label="Previous image"
+                aria-label={t('bundles.accessibility.prevImage')}
               >
                 <ChevronLeft className="h-6 w-6" />
               </button>
               <button
                 onClick={nextImage}
                 className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-all"
-                aria-label="Next image"
+                aria-label={t('bundles.accessibility.nextImage')}
               >
                 <ChevronRight className="h-6 w-6" />
               </button>
@@ -81,7 +81,7 @@ export function TechWellnessBundles() {
                         ? 'bg-white w-8' 
                         : 'bg-white/50 hover:bg-white/75'
                     }`}
-                    aria-label={`Go to image ${index + 1}`}
+                    aria-label={`${t('bundles.accessibility.goToImage')} ${index + 1}`}
                   />
                 ))}
               </div>

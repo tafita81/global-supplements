@@ -725,6 +725,14 @@
     "totalWellness": {
       "name": "Total Wellness Kit",
       "items": "All 4 products (Supplement + Skincare Analyzer + Gua Sha + Charger)"
+    },
+    "accessibility": {
+      "imageAlt1": "تحليل AI 8-أطياف - دقة للحصول على رؤى عميقة للبشرة",
+      "imageAlt2": "كاشف البشرة AI أثناء العمل",
+      "imageAlt3": "تقارير العملاء في الوقت الفعلي - توصيات المنتجات",
+      "prevImage": "الصورة السابقة",
+      "nextImage": "الصورة التالية",
+      "goToImage": "الانتقال إلى الصورة"
     }
   },
   "amazon": {

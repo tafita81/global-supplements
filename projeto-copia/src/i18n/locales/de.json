@@ -726,6 +726,14 @@
     "totalWellness": {
       "name": "Total Wellness Kit",
       "items": "All 4 products (Supplement + Skincare Analyzer + Gua Sha + Charger)"
+    },
+    "accessibility": {
+      "imageAlt1": "8-Spektral-KI-Analyse - Präzision für tiefgehende Hauteinblicke",
+      "imageAlt2": "KI-Hautdetektor in Aktion",
+      "imageAlt3": "Echtzeit-Kundenberichte - Produktempfehlungen",
+      "prevImage": "Vorheriges Bild",
+      "nextImage": "Nächstes Bild",
+      "goToImage": "Zum Bild gehen"
     }
   },
   "amazon": {
