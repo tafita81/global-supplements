@@ -13,6 +13,7 @@ import { useMarketplace } from "@/hooks/useMarketplace";
 import { getAffiliateLink } from "@/config/amazonMarketplaces";
 import { geolocationService } from "@/services/geolocation";
 import { currencyService } from "@/services/currency";
+import amazonLogo from "@/assets/amazon-logo-black.png";
 
 // Import high-quality flags from assets
 import usFlag from "@/assets/flags/us.png";
@@ -1179,10 +1180,15 @@ const Amazon = () => {
                 </CardContent>
                 <CardFooter className="p-5 pt-0">
                   <Button 
-                    className="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-[#0F1111] font-medium rounded-lg shadow-sm border border-[#FCD200] h-10"
+                    className="w-full bg-gradient-to-r from-[#FF9900] via-[#FFB84D] to-[#FF9900] hover:from-[#F08804] hover:to-[#F08804] text-black font-bold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 h-12"
                     onClick={() => window.open(product.affiliateLink, '_blank')}
                   >
-                    Buy on Amazon
+                    <img 
+                      src={amazonLogo} 
+                      alt="Amazon" 
+                      className="h-5 mr-2" 
+                    />
+                    Shop Premium Supplements →
                   </Button>
                 </CardFooter>
               </Card>
