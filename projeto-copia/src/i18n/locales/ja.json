@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "グローバルサプリメント - 世界的な先進ソリューション",
+    "title": "Global Supplements - 世界的な先進ソリューション",
     "description": "美容強化剤、医療グレード化合物、量子処理材料、スマートガジェット、伝統的ウェルネス製品における世界的リーダー。世界中のB2B、B2C、政府調達にサービスを提供。",
     "tagline": "世界的な先進ソリューション"
   },
@@ -37,7 +37,7 @@
     "settings": "設定"
   },
   "hero": {
-    "title": "先進グローバルサプリメントネットワーク",
+    "title": "先進 Global Supplements ネットワーク",
     "subtitle": "政府、企業、消費者を革新的なサプリメントに接続：美容強化剤、量子処理材料、医療グレード化合物、スマートガジェット、伝統的ウェルネス製品をAI技術で提供",
     "premiumSupplements": "先進サプリメント",
     "executiveDashboard": "エグゼクティブダッシュボード",
@@ -101,70 +101,70 @@
     }
   },
   "products": {
-    "badge": "🚀 Advanced Solutions Portfolio",
-    "title": "Advanced Global Supplement Categories",
-    "description": "Discover our revolutionary collection spanning 5 major categories: beauty enhancement supplements, quantum processing materials, medical-grade compounds, smart health gadgets, and traditional wellness products. Each category represents cutting-edge innovation for B2B, B2C, and government procurement.",
-    "reviews": "reviews",
-    "requestQuote": "Request Quote",
+    "badge": "🚀 先進ソリューションポートフォリオ",
+    "title": "先進サプリメントカテゴリー",
+    "description": "5つの主要カテゴリーにわたる革新的なコレクションをご覧ください：美容強化サプリメント、量子処理材料、医療グレード化合物、スマート健康ガジェット、伝統的ウェルネス製品。各カテゴリーは、B2B、B2C、政府調達のための最先端イノベーションを表しています。",
+    "reviews": "レビュー",
+    "requestQuote": "見積もりリクエスト",
     "categories": {
       "beauty": {
-        "title": "Beauty Enhancement Supplements",
-        "description": "Revolutionary beauty supplements with advanced bioactive compounds for skin regeneration, anti-aging, and aesthetic enhancement",
+        "title": "美容強化サプリメント",
+        "description": "肌の再生、アンチエイジング、美的強化のための先進的生物活性化合物を含む革新的な美容サプリメント",
         "features": [
-          "Collagen Boosters",
-          "Anti-Aging Formulas",
-          "Skin Radiance",
-          "Hair & Nails"
+          "コラーゲンブースター",
+          "アンチエイジングフォーミュラ",
+          "肌の輝き",
+          "髪と爪"
         ]
       },
       "quantum": {
-        "title": "Quantum Processing Materials",
-        "description": "Advanced materials and supplements for quantum computing systems, AI processing enhancement, and machine optimization",
+        "title": "量子処理材料",
+        "description": "量子コンピューティングシステム、AI処理強化、機械最適化のための先進材料とサプリメント",
         "features": [
-          "Quantum Catalysts",
-          "Processing Enhancers",
-          "System Optimizers",
-          "AI Accelerators"
+          "量子触媒",
+          "処理強化剤",
+          "システム最適化剤",
+          "AIアクセラレーター"
         ]
       },
       "medical": {
-        "title": "Medical-Grade Compounds",
-        "description": "Pharmaceutical-grade supplements for clinical applications, therapeutic treatments, and medical research",
+        "title": "医療グレード化合物",
+        "description": "臨床用途、治療処置、医学研究のための医薬品グレードサプリメント",
         "features": [
-          "Clinical Formulas",
-          "Therapeutic Compounds",
-          "Research Materials",
-          "Precision Medicine"
+          "臨床フォーミュラ",
+          "治療化合物",
+          "研究材料",
+          "精密医療"
         ]
       },
       "gadgets": {
-        "title": "Smart Health Gadgets",
-        "description": "Innovative health technology devices, wearables, and smart supplements integrated with IoT capabilities",
+        "title": "スマート健康ガジェット",
+        "description": "IoT機能を統合した革新的な健康技術デバイス、ウェアラブル、スマートサプリメント",
         "features": [
-          "Smart Devices",
-          "Health Wearables",
-          "IoT Integration",
-          "Digital Health"
+          "スマートデバイス",
+          "健康ウェアラブル",
+          "IoT統合",
+          "デジタルヘルス"
         ]
       },
       "wellness": {
-        "title": "Traditional Wellness",
-        "description": "Premium traditional supplements for general health, fitness, nutrition, and everyday wellness needs",
+        "title": "伝統的ウェルネス",
+        "description": "一般的な健康、フィットネス、栄養、日常のウェルネスニーズのためのプレミアム伝統的サプリメント",
         "features": [
-          "Vitamins & Minerals",
-          "Fitness Support",
-          "Immune System",
-          "General Health"
+          "ビタミン＆ミネラル",
+          "フィットネスサポート",
+          "免疫システム",
+          "一般健康"
         ]
       }
     },
     "businessModels": {
       "b2b": "B2B",
-      "enterprise": "Enterprise",
+      "enterprise": "エンタープライズ",
       "b2c": "B2C",
-      "consumer": "Consumer",
-      "gov": "Gov",
-      "procurement": "Procurement"
+      "consumer": "消費者",
+      "gov": "政府",
+      "procurement": "調達"
     }
   },
   "marketIntelligence": {
