@@ -22,8 +22,8 @@ interface CategoryCache {
 class ProductMonitor {
   private cache = new Map<string, CategoryCache>();
   private readonly MIN_PRODUCTS = 20;
-  private readonly CACHE_DURATION = 6 * 60 * 60 * 1000; // 6 horas (4x ao dia: 6AM, 12PM, 6PM, 12AM)
-  private readonly CHECK_INTERVAL = 1 * 60 * 60 * 1000; // 1 hora
+  private readonly CACHE_DURATION = 1 * 60 * 60 * 1000; // 1 hora (24x ao dia - atualização a cada hora)
+  private readonly CHECK_INTERVAL = 15 * 60 * 1000; // 15 minutos
   
   getCacheKey(category: string, subcategory: string | null, marketplace: string): string {
     return `${marketplace}-${category}${subcategory ? '-' + subcategory : ''}`;
