@@ -15,6 +15,7 @@ import { PremiumTechShowcase } from "@/components/premium/PremiumTechShowcase";
 import { PremiumTestimonials } from "@/components/premium/PremiumTestimonials";
 import { TechWellnessBundles } from "@/components/premium/TechWellnessBundles";
 import { CertificationBadges } from "@/components/premium/CertificationBadges";
+import amazonLogo from "@/assets/amazon-logo-black.png";
 
 export default function PublicSite() {
   const { t } = useTranslation();
@@ -38,12 +39,8 @@ export default function PublicSite() {
               <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="bg-white px-4 py-2 rounded">
-                      <svg className="h-8" viewBox="0 0 103 30" fill="none">
-                        <path d="M63.3 24.2c-6.7 4.9-16.4 7.5-24.8 7.5-11.7 0-22.3-4.3-30.3-11.5-.6-.6-.1-1.4.7-.9 8.6 5 19.2 8 30.2 8 7.4 0 15.5-1.5 23-4.7 1.1-.5 2 .7.9 1.6z" fill="#FF9900"/>
-                        <path d="M66 21.6c-.9-1.1-5.7-.5-7.8-.3-.7.1-.8-.5-.2-.9 3.8-2.7 10.1-1.9 10.8-1 .7.9-.2 7.2-3.8 10.2-.5.5-1.1.2-.8-.4.8-1.9 2.6-6.2 1.8-7.6z" fill="#FF9900"/>
-                        <path d="M59.3 3.3V1.5c0-.3.2-.5.5-.5h9.3c.3 0 .5.2.5.5v1.5c0 .3-.2.6-.5.9l-4.8 6.9c1.8-.1 3.7.2 5.3 1 .4.2.5.4.5.7v1.9c0 .3-.4.7-.8.5-2.1-1.1-4.9-1.2-7.2.1-.4.2-.8-.2-.8-.5v-1.8c0-.4 0-.9.4-1.5l5.5-7.9h-4.8c-.3 0-.5-.2-.5-.5zM21.3 14.8h-2.4c-.2 0-.5-.2-.5-.4V1.6c0-.3.2-.5.5-.5h2.2c.2 0 .5.2.5.4v1.7h0c.6-1.7 1.8-2.5 3.4-2.5 1.6 0 2.6.8 3.3 2.5.6-1.7 2.1-2.5 3.6-2.5 1.1 0 2.3.5 3 1.4.8 1 .6 2.5.6 3.8v8c0 .3-.2.5-.5.5h-2.4c-.2 0-.5-.2-.5-.5V6.8c0-.8.1-2.7-.1-3.4-.3-1.2-1.2-1-2.3-1-1 0-2 .7-2.4 1.7-.4 1-.4 2.7-.4 3.8v6.4c0 .3-.2.5-.5.5h-2.4c-.2 0-.5-.2-.5-.5l0-7.9c0-1.7.3-4.1-2.4-4.1-2.7 0-2.6 3.1-2.6 4.1v7.9c0 .3-.2.5-.5.5zM78.9 .7c3.6 0 5.5 3.1 5.5 7 0 3.8-2.1 6.8-5.5 6.8-3.5 0-5.4-3.1-5.4-6.9 0-3.8 2-6.9 5.4-6.9zm0 2.5c-1.8 0-1.9 2.4-1.9 3.9 0 1.5 0 4.7 1.9 4.7 1.8 0 2-2.6 2-4.2 0-1-.1-2.3-.4-3.3-.3-.9-.8-1.2-1.6-1.2zm10.1 11.6h-2.4c-.2 0-.5-.2-.5-.5l0-12.7c0-.3.2-.5.5-.5h2.2c.2 0 .4.1.5.4v2h0c.8-1.8 1.9-2.7 3.7-2.7 1.2 0 2.4.4 3.2 1.6.7 1.1.7 2.9.7 4.2v8.3c0 .3-.2.5-.5.5h-2.4c-.2 0-.5-.2-.5-.5V6.6c0-1.7.2-4.1-1.9-4.1-.7 0-1.4.5-1.7 1.2-.4 1-.5 1.9-.5 2.9v7.7c0 .3-.2.5-.5.5z" fill="currentColor"/>
-                      </svg>
+                    <div className="px-4 py-2 rounded">
+                      <img src={amazonLogo} alt="Amazon" className="h-8" />
                     </div>
                     <div className="h-8 w-px bg-white/30"></div>
                     <div>

@@ -7,7 +7,7 @@ import { useState } from "react";
 import skinAnalysis1 from "@/assets/skin-analysis-1.jpg";
 import skinAnalysis2 from "@/assets/skin-analysis-2.png";
 import skinAnalysis3 from "@/assets/skin-analysis-3.png";
-import amazonLogo from "@/assets/amazon-logo.png";
+import amazonLogo from "@/assets/amazon-logo-black.png";
 
 export function TechWellnessBundles() {
   const { t } = useTranslation();
