@@ -778,5 +778,84 @@
       "marketplaceDescription": "Products and prices will match your selected country",
       "earnJoin": "💰 Earn commissions from sales in all countries!"
     }
+  },
+  "beautySupplements": {
+    "badge": "Premium Beauty Solutions",
+    "title": "Beauty Supplements",
+    "subtitle": "Revolutionary formulations combining cutting-edge science with natural ingredients for radiant skin, lustrous hair, and overall beauty enhancement.",
+    "stats": {
+      "fda": "FDA",
+      "approved": "Approved",
+      "natural": "100% Natural",
+      "gmp": "GMP",
+      "certified": "Certified"
+    },
+    "shopCollection": "Shop Collection",
+    "featuredProducts": "Featured Products",
+    "featuredDescription": "Scientifically formulated supplements designed to enhance your natural beauty from within",
+    "bestseller": "Bestseller",
+    "keyBenefits": "Key Benefits:",
+    "requestQuote": "Request Quote",
+    "ctaTitle": "Transform Your Beauty Routine Today",
+    "ctaDescription": "Join thousands of satisfied customers who have discovered the power of science-backed beauty supplements",
+    "startJourney": "Start Your Journey",
+    "certifications": {
+      "fdaApproved": "FDA Approved",
+      "gmpCertified": "GMP Certified",
+      "organicCertified": "Organic Certified"
+    },
+    "products": {
+      "collagenMatrixPro": {
+        "name": "Collagen Matrix Pro",
+        "description": "Advanced marine collagen peptides with hyaluronic acid",
+        "benefits": {
+          "skinElasticity": "Skin elasticity",
+          "wrinkleReduction": "Wrinkle reduction",
+          "jointHealth": "Joint health"
+        }
+      },
+      "vitaminCSerum": {
+        "name": "Vitamin C Serum Complex",
+        "description": "20% L-Ascorbic acid with vitamin E and ferulic acid",
+        "benefits": {
+          "brightening": "Brightening",
+          "antioxidant": "Antioxidant protection",
+          "evenTone": "Even tone"
+        }
+      },
+      "biotinHairBoost": {
+        "name": "Biotin Hair Boost",
+        "description": "10,000mcg biotin with keratin and bamboo extract",
+        "benefits": {
+          "hairGrowth": "Hair growth",
+          "nailStrength": "Nail strength",
+          "scalpHealth": "Scalp health"
+        }
+      }
+    }
+  },
+  "medicalGrade": {
+    "badge": "Medical Excellence",
+    "title": "Medical Grade",
+    "subtitle": "Pharmaceutical-grade supplements manufactured to the highest medical standards, ensuring maximum potency, purity, and therapeutic efficacy.",
+    "shopButton": "Medical Catalog"
+  },
+  "quantumMaterials": {
+    "badge": "Quantum Innovation",
+    "title": "Quantum Materials",
+    "subtitle": "Next-generation materials engineered at the quantum level to unlock unprecedented capabilities in computing, energy, and communications.",
+    "shopButton": "Explore Catalog"
+  },
+  "smartGadgets": {
+    "badge": "Smart Innovation",
+    "title": "Smart Gadgets",
+    "subtitle": "Revolutionary health technology devices that seamlessly integrate into your daily life, providing real-time insights and intelligent health monitoring.",
+    "shopButton": "Shop Devices"
+  },
+  "traditionalWellness": {
+    "badge": "Ancient Wisdom",
+    "title": "Traditional Wellness",
+    "subtitle": "Timeless healing wisdom from ancient cultures, combined with modern quality standards to bring you pure, potent traditional remedies.",
+    "shopButton": "Explore Traditions"
   }
 }

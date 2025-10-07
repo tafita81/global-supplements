@@ -778,5 +778,35 @@
       "name": "Total Wellness Kit",
       "items": "All 4 products (Supplement + Skincare Analyzer + Gua Sha + Charger)"
     }
+  },
+  "medicalGrade": {
+    "badge": "Excelência Médica",
+    "title": "Grau Médico",
+    "subtitle": "Suplementos de grau farmacêutico fabricados de acordo com os mais altos padrões médicos, garantindo máxima potência, pureza e eficácia terapêutica.",
+    "shopButton": "Catálogo Médico"
+  },
+  "quantumMaterials": {
+    "badge": "Inovação Quântica",
+    "title": "Materiais Quânticos",
+    "subtitle": "Materiais de próxima geração projetados em nível quântico para desbloquear capacidades sem precedentes em computação, energia e comunicações.",
+    "shopButton": "Explorar Catálogo"
+  },
+  "smartGadgets": {
+    "badge": "Inovação Inteligente",
+    "title": "Gadgets Inteligentes",
+    "subtitle": "Dispositivos revolucionários de tecnologia de saúde que se integram perfeitamente à sua vida diária, fornecendo insights em tempo real e monitoramento inteligente de saúde.",
+    "shopButton": "Comprar Dispositivos"
+  },
+  "traditionalWellness": {
+    "badge": "Sabedoria Antiga",
+    "title": "Bem-Estar Tradicional",
+    "subtitle": "Sabedoria de cura atemporal de culturas antigas, combinada com padrões modernos de qualidade para trazer remédios tradicionais puros e potentes.",
+    "shopButton": "Explorar Tradições"
+  },
+  "beautySupplements": {
+    "badge": "Soluções de Beleza Premium",
+    "title": "Suplementos de Beleza",
+    "subtitle": "Formulações revolucionárias combinando ciência de ponta com ingredientes naturais para pele radiante, cabelo lustroso e melhoria geral da beleza.",
+    "shopCollection": "Comprar Coleção"
   }
 }

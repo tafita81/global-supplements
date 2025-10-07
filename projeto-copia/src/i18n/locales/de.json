@@ -776,5 +776,35 @@
       "marketplaceDescription": "Produkte und Preise entsprechen Ihrem ausgewählten Land",
       "earnJoin": "Verdienen Sie Provisionen aus Verkäufen in allen Ländern!"
     }
+  },
+  "medicalGrade": {
+    "badge": "Medizinische Exzellenz",
+    "title": "Medizinische Qualität",
+    "subtitle": "Pharmazeutische Nahrungsergänzungsmittel, hergestellt nach höchsten medizinischen Standards, die maximale Potenz, Reinheit und therapeutische Wirksamkeit gewährleisten.",
+    "shopButton": "Medizinischer Katalog"
+  },
+  "beautySupplements": {
+    "badge": "Premium Schönheitslösungen",
+    "title": "Schönheitsergänzungen",
+    "subtitle": "Revolutionäre Formulierungen, die modernste Wissenschaft mit natürlichen Inhaltsstoffen für strahlende Haut, glänzendes Haar und allgemeine Schönheitsverbesserung kombinieren.",
+    "shopCollection": "Kollektion Kaufen"
+  },
+  "quantumMaterials": {
+    "badge": "Quanteninnovation",
+    "title": "Quantenmaterialien",
+    "subtitle": "Materialien der nächsten Generation, die auf Quantenebene entwickelt wurden, um beispiellose Fähigkeiten in Computing, Energie und Kommunikation freizusetzen.",
+    "shopButton": "Katalog Erkunden"
+  },
+  "smartGadgets": {
+    "badge": "Intelligente Innovation",
+    "title": "Intelligente Geräte",
+    "subtitle": "Revolutionäre Gesundheitstechnologiegeräte, die sich nahtlos in Ihr tägliches Leben integrieren und Echtzeit-Einblicke und intelligente Gesundheitsüberwachung bieten.",
+    "shopButton": "Geräte Kaufen"
+  },
+  "traditionalWellness": {
+    "badge": "Alte Weisheit",
+    "title": "Traditionelles Wohlbefinden",
+    "subtitle": "Zeitlose Heilweisheit aus alten Kulturen, kombiniert mit modernen Qualitätsstandards, um Ihnen reine, potente traditionelle Heilmittel zu bringen.",
+    "shopButton": "Traditionen Erkunden"
   }
 }

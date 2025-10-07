@@ -776,5 +776,35 @@
       "marketplaceDescription": "Producten en prijzen komen overeen met je geselecteerde land",
       "earnJoin": "Verdien commissies op verkopen in alle landen!"
     }
+  },
+  "medicalGrade": {
+    "badge": "Medische Excellentie",
+    "title": "Medische Kwaliteit",
+    "subtitle": "Farmaceutische supplementen vervaardigd volgens de hoogste medische normen, die maximale potentie, zuiverheid en therapeutische werkzaamheid garanderen.",
+    "shopButton": "Medische Catalogus"
+  },
+  "beautySupplements": {
+    "badge": "Premium Schoonheidsoplossingen",
+    "title": "Schoonheidssupplementen",
+    "subtitle": "Revolutionaire formuleringen die geavanceerde wetenschap combineren met natuurlijke ingrediënten voor een stralende huid, glanzend haar en algemene schoonheidsverbetering.",
+    "shopCollection": "Collectie Winkelen"
+  },
+  "quantumMaterials": {
+    "badge": "Kwantuminnovatie",
+    "title": "Kwantummaterialen",
+    "subtitle": "Materialen van de volgende generatie ontwikkeld op kwantumniveau om ongekende mogelijkheden in computing, energie en communicatie te ontsluiten.",
+    "shopButton": "Catalogus Verkennen"
+  },
+  "smartGadgets": {
+    "badge": "Slimme Innovatie",
+    "title": "Slimme Gadgets",
+    "subtitle": "Revolutionaire gezondheidstechnologieapparaten die naadloos integreren in je dagelijks leven en realtime inzichten en intelligente gezondheidsmonitoring bieden.",
+    "shopButton": "Apparaten Kopen"
+  },
+  "traditionalWellness": {
+    "badge": "Oude Wijsheid",
+    "title": "Traditioneel Welzijn",
+    "subtitle": "Tijdloze genezingswijsheid uit oude culturen, gecombineerd met moderne kwaliteitsnormen om u pure, krachtige traditionele remedies te brengen.",
+    "shopButton": "Tradities Verkennen"
   }
 }

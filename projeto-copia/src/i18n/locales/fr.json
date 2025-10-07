@@ -776,5 +776,35 @@
       "marketplaceDescription": "Les produits et prix correspondront à votre pays sélectionné",
       "earnJoin": "Gagnez des commissions sur les ventes dans tous les pays !"
     }
+  },
+  "medicalGrade": {
+    "badge": "Excellence Médicale",
+    "title": "Qualité Médicale",
+    "subtitle": "Compléments de qualité pharmaceutique fabriqués selon les normes médicales les plus élevées, garantissant une puissance, une pureté et une efficacité thérapeutique maximales.",
+    "shopButton": "Catalogue Médical"
+  },
+  "beautySupplements": {
+    "badge": "Solutions de Beauté Premium",
+    "title": "Compléments de Beauté",
+    "subtitle": "Formulations révolutionnaires combinant science de pointe et ingrédients naturels pour une peau radieuse, des cheveux lustrés et une amélioration globale de la beauté.",
+    "shopCollection": "Acheter la Collection"
+  },
+  "quantumMaterials": {
+    "badge": "Innovation Quantique",
+    "title": "Matériaux Quantiques",
+    "subtitle": "Matériaux de nouvelle génération conçus au niveau quantique pour débloquer des capacités sans précédent en informatique, énergie et communications.",
+    "shopButton": "Explorer le Catalogue"
+  },
+  "smartGadgets": {
+    "badge": "Innovation Intelligente",
+    "title": "Gadgets Intelligents",
+    "subtitle": "Dispositifs de technologie de santé révolutionnaires qui s'intègrent parfaitement dans votre vie quotidienne, fournissant des informations en temps réel et une surveillance intelligente de la santé.",
+    "shopButton": "Acheter des Appareils"
+  },
+  "traditionalWellness": {
+    "badge": "Sagesse Ancienne",
+    "title": "Bien-être Traditionnel",
+    "subtitle": "Sagesse de guérison intemporelle des cultures anciennes, combinée avec des standards de qualité modernes pour vous apporter des remèdes traditionnels purs et puissants.",
+    "shopButton": "Explorer les Traditions"
   }
 }

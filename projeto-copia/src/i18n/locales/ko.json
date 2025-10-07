@@ -775,5 +775,84 @@
       "marketplaceDescription": "제품과 가격이 선택한 국가와 일치합니다",
       "earnjoin": "모든 국가의 판매로 수수료를 받으세요!"
     }
+  },
+  "beautySupplements": {
+    "badge": "프리미엄 뷰티 솔루션",
+    "title": "뷰티 보충제",
+    "subtitle": "빛나는 피부, 윤기나는 머리카락, 전반적인 미용 개선을 위해 첨단 과학과 천연 성분을 결합한 혁신적인 포뮬러.",
+    "stats": {
+      "fda": "FDA",
+      "approved": "승인됨",
+      "natural": "100% 천연",
+      "gmp": "GMP",
+      "certified": "인증"
+    },
+    "shopCollection": "컬렉션 쇼핑",
+    "featuredProducts": "추천 제품",
+    "featuredDescription": "내면에서부터 자연스러운 아름다움을 향상시키도록 과학적으로 설계된 보충제",
+    "bestseller": "베스트셀러",
+    "keyBenefits": "주요 효능:",
+    "requestQuote": "견적 요청",
+    "ctaTitle": "오늘 뷰티 루틴을 변화시키세요",
+    "ctaDescription": "과학 기반 뷰티 보충제의 힘을 발견한 수천 명의 만족한 고객과 함께하세요",
+    "startJourney": "여정 시작하기",
+    "certifications": {
+      "fdaApproved": "FDA 승인",
+      "gmpCertified": "GMP 인증",
+      "organicCertified": "유기농 인증"
+    },
+    "products": {
+      "collagenMatrixPro": {
+        "name": "콜라겐 매트릭스 프로",
+        "description": "히알루론산이 함유된 첨단 해양 콜라겐 펩타이드",
+        "benefits": {
+          "skinElasticity": "피부 탄력",
+          "wrinkleReduction": "주름 감소",
+          "jointHealth": "관절 건강"
+        }
+      },
+      "vitaminCSerum": {
+        "name": "비타민 C 세럼 컴플렉스",
+        "description": "비타민 E 및 페룰산이 함유된 20% L-아스코르브산",
+        "benefits": {
+          "brightening": "브라이트닝",
+          "antioxidant": "항산화 보호",
+          "evenTone": "균일한 톤"
+        }
+      },
+      "biotinHairBoost": {
+        "name": "비오틴 헤어 부스트",
+        "description": "케라틴 및 대나무 추출물이 함유된 10,000mcg 비오틴",
+        "benefits": {
+          "hairGrowth": "모발 성장",
+          "nailStrength": "손톱 강화",
+          "scalpHealth": "두피 건강"
+        }
+      }
+    }
+  },
+  "medicalGrade": {
+    "badge": "의료 우수성",
+    "title": "의료 등급",
+    "subtitle": "최고의 의료 기준으로 제조된 제약 등급 보충제로 최대 효능, 순도 및 치료 효능을 보장합니다.",
+    "shopButton": "의료 카탈로그"
+  },
+  "quantumMaterials": {
+    "badge": "양자 혁신",
+    "title": "양자 재료",
+    "subtitle": "양자 수준에서 설계된 차세대 재료로 컴퓨팅, 에너지 및 통신 분야에서 전례 없는 기능을 제공합니다.",
+    "shopButton": "카탈로그 탐색"
+  },
+  "smartGadgets": {
+    "badge": "스마트 혁신",
+    "title": "스마트 가젯",
+    "subtitle": "일상 생활에 완벽하게 통합되어 실시간 인사이트와 지능형 건강 모니터링을 제공하는 혁신적인 건강 기술 장치.",
+    "shopButton": "장치 쇼핑"
+  },
+  "traditionalWellness": {
+    "badge": "고대 지혜",
+    "title": "전통 웰니스",
+    "subtitle": "고대 문화의 시대를 초월한 치유 지혜를 현대 품질 기준과 결합하여 순수하고 강력한 전통 치료법을 제공합니다.",
+    "shopButton": "전통 탐색"
   }
 }

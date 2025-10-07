@@ -775,5 +775,35 @@
       "marketplaceDescription": "Produk dan harga akan sepadan dengan negara anda yang dipilih",
       "earnJoin": "Dapatkan komisen daripada jualan di semua negara!"
     }
+  },
+  "medicalGrade": {
+    "badge": "Kecemerlangan Perubatan",
+    "title": "Gred Perubatan",
+    "subtitle": "Makanan tambahan gred farmaseutikal yang dikilangkan mengikut piawaian perubatan tertinggi, memastikan potensi maksimum, ketulenan dan keberkesanan terapeutik.",
+    "shopButton": "Katalog Perubatan"
+  },
+  "beautySupplements": {
+    "badge": "Penyelesaian Kecantikan Premium",
+    "title": "Makanan Tambahan Kecantikan",
+    "subtitle": "Formulasi revolusioner yang menggabungkan sains termaju dengan bahan semula jadi untuk kulit bercahaya, rambut berkilat dan peningkatan kecantikan keseluruhan.",
+    "shopCollection": "Beli Koleksi"
+  },
+  "quantumMaterials": {
+    "badge": "Inovasi Kuantum",
+    "title": "Bahan Kuantum",
+    "subtitle": "Bahan generasi akan datang yang direka pada tahap kuantum untuk membuka keupayaan yang tidak pernah berlaku sebelum ini dalam pengkomputeran, tenaga dan komunikasi.",
+    "shopButton": "Terokai Katalog"
+  },
+  "smartGadgets": {
+    "badge": "Inovasi Pintar",
+    "title": "Alat Pintar",
+    "subtitle": "Peranti teknologi kesihatan revolusioner yang menyepadukan dengan lancar ke dalam kehidupan harian anda, memberikan pandangan masa nyata dan pemantauan kesihatan pintar.",
+    "shopButton": "Beli Peranti"
+  },
+  "traditionalWellness": {
+    "badge": "Kebijaksanaan Kuno",
+    "title": "Kesihatan Tradisional",
+    "subtitle": "Kebijaksanaan penyembuhan abadi dari budaya kuno, digabungkan dengan piawaian kualiti moden untuk membawa anda ubat tradisional yang tulen dan kuat.",
+    "shopButton": "Terokai Tradisi"
   }
 }

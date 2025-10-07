@@ -776,5 +776,84 @@
       "marketplaceDescription": "製品と価格は選択した国に合わせて表示されます",
       "earnJoin": "すべての国の販売から手数料を獲得！"
     }
+  },
+  "beautySupplements": {
+    "badge": "プレミアムビューティソリューション",
+    "title": "美容サプリメント",
+    "subtitle": "輝く肌、艶やかな髪、総合的な美容向上のため、最先端の科学と天然成分を組み合わせた革新的な処方。",
+    "stats": {
+      "fda": "FDA",
+      "approved": "承認済み",
+      "natural": "100% 天然",
+      "gmp": "GMP",
+      "certified": "認定"
+    },
+    "shopCollection": "コレクションを見る",
+    "featuredProducts": "おすすめ製品",
+    "featuredDescription": "内側から自然な美しさを高めるよう科学的に設計されたサプリメント",
+    "bestseller": "ベストセラー",
+    "keyBenefits": "主な効能：",
+    "requestQuote": "見積もり依頼",
+    "ctaTitle": "今日あなたの美容ルーチンを変革",
+    "ctaDescription": "科学に裏付けられた美容サプリメントの力を発見した何千人もの満足した顧客に参加してください",
+    "startJourney": "旅を始める",
+    "certifications": {
+      "fdaApproved": "FDA承認",
+      "gmpCertified": "GMP認定",
+      "organicCertified": "オーガニック認定"
+    },
+    "products": {
+      "collagenMatrixPro": {
+        "name": "コラーゲンマトリックスプロ",
+        "description": "ヒアルロン酸を配合した先進的な海洋コラーゲンペプチド",
+        "benefits": {
+          "skinElasticity": "肌の弾力",
+          "wrinkleReduction": "しわ軽減",
+          "jointHealth": "関節の健康"
+        }
+      },
+      "vitaminCSerum": {
+        "name": "ビタミンC美容液コンプレックス",
+        "description": "ビタミンEとフェルラ酸を配合した20% L-アスコルビン酸",
+        "benefits": {
+          "brightening": "ブライトニング",
+          "antioxidant": "抗酸化保護",
+          "evenTone": "均一なトーン"
+        }
+      },
+      "biotinHairBoost": {
+        "name": "ビオチンヘアブースト",
+        "description": "ケラチンと竹エキスを配合した10,000mcgのビオチン",
+        "benefits": {
+          "hairGrowth": "髪の成長",
+          "nailStrength": "爪の強度",
+          "scalpHealth": "頭皮の健康"
+        }
+      }
+    }
+  },
+  "medicalGrade": {
+    "badge": "医療の卓越性",
+    "title": "医療グレード",
+    "subtitle": "最高の医療基準で製造された医薬品グレードのサプリメントで、最大の効力、純度、治療効果を保証します。",
+    "shopButton": "医療カタログ"
+  },
+  "quantumMaterials": {
+    "badge": "量子イノベーション",
+    "title": "量子材料",
+    "subtitle": "量子レベルで設計された次世代材料で、コンピューティング、エネルギー、通信において前例のない機能を実現します。",
+    "shopButton": "カタログを探索"
+  },
+  "smartGadgets": {
+    "badge": "スマートイノベーション",
+    "title": "スマートガジェット",
+    "subtitle": "日常生活にシームレスに統合され、リアルタイムの洞察とインテリジェントな健康モニタリングを提供する革新的な健康技術デバイス。",
+    "shopButton": "デバイスを購入"
+  },
+  "traditionalWellness": {
+    "badge": "古代の知恵",
+    "title": "伝統的なウェルネス",
+    "subtitle": "古代文化からの時代を超えた癒しの知恵を現代の品質基準と組み合わせ、純粋で強力な伝統的な治療法をお届けします。",
+    "shopButton": "伝統を探索"
   }
 }

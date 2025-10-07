@@ -776,5 +776,35 @@
       "marketplaceDescription": "Produkter och priser matchar ditt valda land",
       "earnJoin": "Tjäna provisioner från försäljning i alla länder!"
     }
+  },
+  "medicalGrade": {
+    "badge": "Medicinsk Excellens",
+    "title": "Medicinsk Kvalitet",
+    "subtitle": "Farmaceutiska tillskott tillverkade enligt de högsta medicinska standarderna, vilket garanterar maximal styrka, renhet och terapeutisk effekt.",
+    "shopButton": "Medicinsk Katalog"
+  },
+  "beautySupplements": {
+    "badge": "Premium Skönhetslösningar",
+    "title": "Skönhetstillskott",
+    "subtitle": "Revolutionerande formuleringar som kombinerar banbrytande vetenskap med naturliga ingredienser för strålande hud, glänsande hår och övergripande skönhetsförbättring.",
+    "shopCollection": "Handla Kollektion"
+  },
+  "quantumMaterials": {
+    "badge": "Kvantinnovation",
+    "title": "Kvantmaterial",
+    "subtitle": "Nästa generations material konstruerade på kvantnivå för att låsa upp oöverträffade möjligheter inom datorer, energi och kommunikation.",
+    "shopButton": "Utforska Katalog"
+  },
+  "smartGadgets": {
+    "badge": "Smart Innovation",
+    "title": "Smarta Gadgets",
+    "subtitle": "Revolutionerande hälsoteknikenheter som sömlöst integreras i ditt dagliga liv och ger realtidsinsikter och intelligent hälsoövervakning.",
+    "shopButton": "Köp Enheter"
+  },
+  "traditionalWellness": {
+    "badge": "Gammal Visdom",
+    "title": "Traditionellt Välbefinnande",
+    "subtitle": "Tidlös läkningsvisdom från gamla kulturer, kombinerat med moderna kvalitetsstandarder för att ge dig rena, potenta traditionella botemedel.",
+    "shopButton": "Utforska Traditioner"
   }
 }

@@ -775,5 +775,84 @@
       "marketplaceDescription": "产品和价格将与您选择的国家匹配",
       "earnJoin": "从所有国家的销售中赚取佣金！"
     }
+  },
+  "beautySupplements": {
+    "badge": "优质美容解决方案",
+    "title": "美容补充剂",
+    "subtitle": "结合尖端科学与天然成分的革命性配方，打造光彩照人的肌肤、亮丽的秀发和全面的美容提升。",
+    "stats": {
+      "fda": "FDA",
+      "approved": "已批准",
+      "natural": "100% 天然",
+      "gmp": "GMP",
+      "certified": "认证"
+    },
+    "shopCollection": "选购系列",
+    "featuredProducts": "精选产品",
+    "featuredDescription": "科学配制的补充剂，旨在从内部增强您的自然美丽",
+    "bestseller": "畅销品",
+    "keyBenefits": "主要功效：",
+    "requestQuote": "请求报价",
+    "ctaTitle": "立即改变您的美容日常",
+    "ctaDescription": "加入数千名已发现科学支持的美容补充剂力量的满意客户",
+    "startJourney": "开始您的旅程",
+    "certifications": {
+      "fdaApproved": "FDA批准",
+      "gmpCertified": "GMP认证",
+      "organicCertified": "有机认证"
+    },
+    "products": {
+      "collagenMatrixPro": {
+        "name": "胶原蛋白基质专业版",
+        "description": "含透明质酸的先进海洋胶原蛋白肽",
+        "benefits": {
+          "skinElasticity": "皮肤弹性",
+          "wrinkleReduction": "减少皱纹",
+          "jointHealth": "关节健康"
+        }
+      },
+      "vitaminCSerum": {
+        "name": "维生素C精华复合物",
+        "description": "含维生素E和阿魏酸的20% L-抗坏血酸",
+        "benefits": {
+          "brightening": "提亮",
+          "antioxidant": "抗氧化保护",
+          "evenTone": "均匀肤色"
+        }
+      },
+      "biotinHairBoost": {
+        "name": "生物素头发促进剂",
+        "description": "含角蛋白和竹提取物的10,000微克生物素",
+        "benefits": {
+          "hairGrowth": "头发生长",
+          "nailStrength": "指甲强度",
+          "scalpHealth": "头皮健康"
+        }
+      }
+    }
+  },
+  "medicalGrade": {
+    "badge": "医学卓越",
+    "title": "医疗级",
+    "subtitle": "按最高医疗标准制造的药品级补充剂，确保最大效力、纯度和治疗功效。",
+    "shopButton": "医疗目录"
+  },
+  "quantumMaterials": {
+    "badge": "量子创新",
+    "title": "量子材料",
+    "subtitle": "在量子级别设计的下一代材料，在计算、能源和通信领域释放前所未有的能力。",
+    "shopButton": "探索目录"
+  },
+  "smartGadgets": {
+    "badge": "智能创新",
+    "title": "智能小工具",
+    "subtitle": "无缝集成到您日常生活中的革命性健康技术设备，提供实时见解和智能健康监测。",
+    "shopButton": "购买设备"
+  },
+  "traditionalWellness": {
+    "badge": "古代智慧",
+    "title": "传统健康",
+    "subtitle": "来自古代文化的永恒治疗智慧，结合现代质量标准，为您带来纯净、强效的传统疗法。",
+    "shopButton": "探索传统"
   }
 }

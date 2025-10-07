@@ -776,5 +776,35 @@
       "marketplaceDescription": "Los productos y precios coincidirán con tu país seleccionado",
       "earnJoin": "¡Gana comisiones de ventas en todos los países!"
     }
+  },
+  "medicalGrade": {
+    "badge": "Excelencia Médica",
+    "title": "Grado Médico",
+    "subtitle": "Suplementos de grado farmacéutico fabricados según los más altos estándares médicos, garantizando máxima potencia, pureza y eficacia terapéutica.",
+    "shopButton": "Catálogo Médico"
+  },
+  "quantumMaterials": {
+    "badge": "Innovación Cuántica",
+    "title": "Materiales Cuánticos",
+    "subtitle": "Materiales de próxima generación diseñados a nivel cuántico para desbloquear capacidades sin precedentes en computación, energía y comunicaciones.",
+    "shopButton": "Explorar Catálogo"
+  },
+  "smartGadgets": {
+    "badge": "Innovación Inteligente",
+    "title": "Gadgets Inteligentes",
+    "subtitle": "Dispositivos revolucionarios de tecnología de salud que se integran perfectamente en tu vida diaria, proporcionando información en tiempo real y monitoreo inteligente de la salud.",
+    "shopButton": "Comprar Dispositivos"
+  },
+  "traditionalWellness": {
+    "badge": "Sabiduría Antigua",
+    "title": "Bienestar Tradicional",
+    "subtitle": "Sabiduría de curación atemporal de culturas antiguas, combinada con estándares de calidad modernos para ofrecerte remedios tradicionales puros y potentes.",
+    "shopButton": "Explorar Tradiciones"
+  },
+  "beautySupplements": {
+    "badge": "Soluciones de Belleza Premium",
+    "title": "Suplementos de Belleza",
+    "subtitle": "Formulaciones revolucionarias que combinan ciencia de vanguardia con ingredientes naturales para piel radiante, cabello lustroso y mejora general de la belleza.",
+    "shopCollection": "Comprar Colección"
   }
 }
