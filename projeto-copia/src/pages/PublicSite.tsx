@@ -17,6 +17,19 @@ import { TechWellnessBundles } from "@/components/premium/TechWellnessBundles";
 import { CertificationBadges } from "@/components/premium/CertificationBadges";
 import amazonLogo from "@/assets/amazon-logo-black.png";
 import amazonIcon from "@/assets/amazon-icon.png";
+import caFlag from "@/assets/flags/ca.png";
+import gbFlag from "@/assets/flags/gb.png";
+import deFlag from "@/assets/flags/de.png";
+import frFlag from "@/assets/flags/fr.png";
+import itFlag from "@/assets/flags/it.png";
+import esFlag from "@/assets/flags/es.png";
+import jpFlag from "@/assets/flags/jp.png";
+import auFlag from "@/assets/flags/au.png";
+import nlFlag from "@/assets/flags/nl.png";
+import seFlag from "@/assets/flags/se.png";
+import sgFlag from "@/assets/flags/sg.png";
+import plFlag from "@/assets/flags/pl.png";
+import saFlag from "@/assets/flags/sa.png";
 
 export default function PublicSite() {
   const { t } = useTranslation();
@@ -84,7 +97,24 @@ export default function PublicSite() {
                     <span className="font-semibold">Amazon Verified</span>
                   </div>
                   <div className="h-4 w-px bg-gray-300"></div>
-                  <div>Ships to: 🇨🇦 🇬🇧 🇩🇪 🇫🇷 🇮🇹 🇪🇸 🇯🇵 🇦🇺 🇳🇱 🇸🇪 🇸🇬 🇵🇱 🇸🇦</div>
+                  <div className="flex items-center gap-2">
+                    <span>Ships to:</span>
+                    <div className="flex items-center gap-1.5">
+                      <img src={caFlag} alt="Canada" className="h-4 w-6 object-cover rounded-sm" />
+                      <img src={gbFlag} alt="United Kingdom" className="h-4 w-6 object-cover rounded-sm" />
+                      <img src={deFlag} alt="Germany" className="h-4 w-6 object-cover rounded-sm" />
+                      <img src={frFlag} alt="France" className="h-4 w-6 object-cover rounded-sm" />
+                      <img src={itFlag} alt="Italy" className="h-4 w-6 object-cover rounded-sm" />
+                      <img src={esFlag} alt="Spain" className="h-4 w-6 object-cover rounded-sm" />
+                      <img src={jpFlag} alt="Japan" className="h-4 w-6 object-cover rounded-sm" />
+                      <img src={auFlag} alt="Australia" className="h-4 w-6 object-cover rounded-sm" />
+                      <img src={nlFlag} alt="Netherlands" className="h-4 w-6 object-cover rounded-sm" />
+                      <img src={seFlag} alt="Sweden" className="h-4 w-6 object-cover rounded-sm" />
+                      <img src={sgFlag} alt="Singapore" className="h-4 w-6 object-cover rounded-sm" />
+                      <img src={plFlag} alt="Poland" className="h-4 w-6 object-cover rounded-sm" />
+                      <img src={saFlag} alt="Saudi Arabia" className="h-4 w-6 object-cover rounded-sm" />
+                    </div>
+                  </div>
                 </div>
                 <a 
                   href="https://affiliate-program.amazon.com" 
