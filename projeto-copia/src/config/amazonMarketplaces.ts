@@ -9,15 +9,15 @@ export interface AmazonMarketplace {
   flagUrl: string;
 }
 
-// Amazon Associates program IDs por país
-// IMPORTANTE: Você precisa se registrar em cada programa de afiliados Amazon regional
-// Para maximizar ganhos, registre-se em: https://affiliate-program.amazon.com/help/node/topic/G200127830
+// Amazon Associates - Tag única para TODOS os países via OneLink
+// OneLink detecta automaticamente o país do visitante e redireciona mantendo a comissão
+// Saiba mais: https://affiliate-program.amazon.com/help/node/topic/G2L3ZBRGXTS7EMEY
 export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
   {
     id: 'US',
     name: 'United States',
     domain: 'amazon.com',
-    affiliateTag: 'globalsupleme-20', // US affiliate tag
+    affiliateTag: 'globalsupleme-20',
     language: 'en',
     currency: 'USD',
     flagCode: 'us',
@@ -27,7 +27,7 @@ export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
     id: 'CA',
     name: 'Canada',
     domain: 'amazon.ca',
-    affiliateTag: 'globalsupleme-20', // Registre tag CA: https://associates.amazon.ca
+    affiliateTag: 'globalsupleme-20',
     language: 'en',
     currency: 'CAD',
     flagCode: 'ca',
@@ -37,7 +37,7 @@ export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
     id: 'UK',
     name: 'United Kingdom',
     domain: 'amazon.co.uk',
-    affiliateTag: 'globalsup05-21', // Registre tag UK: https://affiliate-program.amazon.co.uk
+    affiliateTag: 'globalsupleme-20',
     language: 'en',
     currency: 'GBP',
     flagCode: 'gb',
@@ -47,7 +47,7 @@ export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
     id: 'DE',
     name: 'Germany',
     domain: 'amazon.de',
-    affiliateTag: 'globalsup0a6-21', // Registre tag DE: https://partnernet.amazon.de
+    affiliateTag: 'globalsupleme-20',
     language: 'de',
     currency: 'EUR',
     flagCode: 'de',
@@ -57,7 +57,7 @@ export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
     id: 'FR',
     name: 'France',
     domain: 'amazon.fr',
-    affiliateTag: 'globalsup0f6-21', // Registre tag FR: https://partenaires.amazon.fr
+    affiliateTag: 'globalsupleme-20',
     language: 'fr',
     currency: 'EUR',
     flagCode: 'fr',
@@ -67,7 +67,7 @@ export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
     id: 'IT',
     name: 'Italy',
     domain: 'amazon.it',
-    affiliateTag: 'globalsup0bb-21', // Registre tag IT: https://programma-affiliazione.amazon.it
+    affiliateTag: 'globalsupleme-20',
     language: 'it',
     currency: 'EUR',
     flagCode: 'it',
@@ -77,7 +77,7 @@ export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
     id: 'ES',
     name: 'Spain',
     domain: 'amazon.es',
-    affiliateTag: 'globalsup00f-21', // Registre tag ES: https://afiliados.amazon.es
+    affiliateTag: 'globalsupleme-20',
     language: 'es',
     currency: 'EUR',
     flagCode: 'es',
@@ -87,7 +87,7 @@ export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
     id: 'JP',
     name: 'Japan',
     domain: 'amazon.co.jp',
-    affiliateTag: 'globalsup-22', // Registre tag JP: https://affiliate.amazon.co.jp
+    affiliateTag: 'globalsupleme-20',
     language: 'ja',
     currency: 'JPY',
     flagCode: 'jp',
@@ -97,7 +97,7 @@ export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
     id: 'AU',
     name: 'Australia',
     domain: 'amazon.com.au',
-    affiliateTag: 'globalsup0e0-22', // Registre tag AU: https://affiliate-program.amazon.com.au
+    affiliateTag: 'globalsupleme-20',
     language: 'en',
     currency: 'AUD',
     flagCode: 'au',
@@ -107,7 +107,7 @@ export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
     id: 'NL',
     name: 'Netherlands',
     domain: 'amazon.nl',
-    affiliateTag: 'globalsup0ae-21', // Registre tag NL: https://partnernet.amazon.nl
+    affiliateTag: 'globalsupleme-20',
     language: 'nl',
     currency: 'EUR',
     flagCode: 'nl',
@@ -117,7 +117,7 @@ export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
     id: 'SE',
     name: 'Sweden',
     domain: 'amazon.se',
-    affiliateTag: 'globalsup07f-21', // Registre tag SE: https://partnernet.amazon.se
+    affiliateTag: 'globalsupleme-20',
     language: 'sv',
     currency: 'SEK',
     flagCode: 'se',
@@ -127,7 +127,7 @@ export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
     id: 'SG',
     name: 'Singapore',
     domain: 'amazon.sg',
-    affiliateTag: 'globalsup07-22', // Registre tag SG: https://affiliate-program.amazon.sg
+    affiliateTag: 'globalsupleme-20',
     language: 'en',
     currency: 'SGD',
     flagCode: 'sg',
@@ -137,8 +137,8 @@ export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
     id: 'PL',
     name: 'Poland',
     domain: 'amazon.pl',
-    affiliateTag: 'globalsup0c-21', // Registre tag PL: https://partnernet.amazon.pl
-    language: 'en', // Pode ajustar para 'pl' se tiver traduções
+    affiliateTag: 'globalsupleme-20',
+    language: 'en',
     currency: 'PLN',
     flagCode: 'pl',
     flagUrl: 'https://flagcdn.com/w80/pl.png'
@@ -147,7 +147,7 @@ export const AMAZON_MARKETPLACES: AmazonMarketplace[] = [
     id: 'SA',
     name: 'Saudi Arabia',
     domain: 'amazon.sa',
-    affiliateTag: 'globalsup03-22', // Registre tag SA: https://affiliate-program.amazon.sa
+    affiliateTag: 'globalsupleme-20',
     language: 'ar',
     currency: 'SAR',
     flagCode: 'sa',
