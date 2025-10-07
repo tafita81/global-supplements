@@ -13,7 +13,7 @@ import { useMarketplace } from "@/hooks/useMarketplace";
 import { getAffiliateLink } from "@/config/amazonMarketplaces";
 import { geolocationService } from "@/services/geolocation";
 import { currencyService } from "@/services/currency";
-import amazonLogo from "@/assets/amazon-logo-black.png";
+import amazonIcon from "@/assets/amazon-icon.png";
 
 // Import high-quality flags from assets
 import usFlag from "@/assets/flags/us.png";
@@ -1184,9 +1184,9 @@ const Amazon = () => {
                     onClick={() => window.open(product.affiliateLink, '_blank')}
                   >
                     <img 
-                      src={amazonLogo} 
+                      src={amazonIcon} 
                       alt="Amazon" 
-                      className="h-5 mr-2" 
+                      className="h-5 w-5 mr-2" 
                     />
                     Shop Premium Supplements →
                   </Button>

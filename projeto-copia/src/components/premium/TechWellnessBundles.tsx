@@ -7,7 +7,7 @@ import { useState } from "react";
 import skinAnalysis1 from "@/assets/skin-analysis-1.jpg";
 import skinAnalysis2 from "@/assets/skin-analysis-2.png";
 import skinAnalysis3 from "@/assets/skin-analysis-3.png";
-import amazonLogo from "@/assets/amazon-logo-black.png";
+import amazonIcon from "@/assets/amazon-icon.png";
 
 export function TechWellnessBundles() {
   const { t } = useTranslation();
@@ -128,9 +128,9 @@ export function TechWellnessBundles() {
                   size="lg"
                 >
                   <img 
-                    src={amazonLogo} 
+                    src={amazonIcon} 
                     alt="Amazon" 
-                    className="h-6 mr-3" 
+                    className="h-6 w-6 mr-3" 
                   />
                   Shop Premium Supplements →
                 </Button>
