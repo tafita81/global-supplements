@@ -116,15 +116,6 @@ export default function PublicSite() {
                     </div>
                   </div>
                 </div>
-                <a 
-                  href="https://affiliate-program.amazon.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline flex items-center gap-1"
-                >
-                  {t('amazon.partnership.verifyPartnership')}
-                  <ArrowRight className="h-3 w-3" />
-                </a>
               </div>
             </div>
           </div>
