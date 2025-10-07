@@ -238,11 +238,11 @@ export function PremiumVideoHeroPublic() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex items-start justify-center pt-28 min-h-[115vh]">
+      <div className="relative z-10 flex items-start justify-center pt-20 min-h-[115vh]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-5xl mx-auto">
             {/* Brand Name - Centered */}
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-white clean-fade-in">
+            <h1 className="text-6xl md:text-8xl font-bold mb-4 text-white clean-fade-in">
               <span className="block">{t('site.title').split(' ')[0]}</span>
               <span className="block subtle-gold">
                 {t('site.title').split(' ')[1]}
@@ -250,11 +250,11 @@ export function PremiumVideoHeroPublic() {
             </h1>
             
             {/* Centered Text Content */}
-            <p className="text-xl md:text-2xl text-white/90 mb-5 leading-relaxed clean-fade-in">
+            <p className="text-xl md:text-2xl text-white/90 mb-3 leading-relaxed clean-fade-in">
               {t(`hero.videoCategories.descriptions.${currentVideo.descriptionKey}`)}
             </p>
             
-            <p className="text-lg text-white/80 mb-10 leading-relaxed clean-fade-in max-w-3xl mx-auto">
+            <p className="text-lg text-white/80 mb-8 leading-relaxed clean-fade-in max-w-3xl mx-auto">
               {t('hero.subtitle')}
             </p>
             
