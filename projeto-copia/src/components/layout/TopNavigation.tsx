@@ -93,7 +93,7 @@ export function TopNavigation() {
                     <span className="text-[#FBBF24]">Supplements</span>
                   </h1>
                   
-                  {/* Marquee Hipnótico Infinito */}
+                  {/* Marquee Hipnótico Infinito - MANTÉM 100% ORIGINAL (direita→esquerda) */}
                   <div className="relative -mt-1 h-6 overflow-hidden">
                     <div className="absolute inset-0 flex items-center">
                       <div className="hypnotic-marquee flex gap-8">

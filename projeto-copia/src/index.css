@@ -14,13 +14,13 @@
   }
 }
 
-/* Marquee Infinito REVERSO - Scroll da Direita para Esquerda (oposto ao original) */
+/* Marquee Infinito REVERSO - Scroll da Esquerda para Direita (oposto ao original) */
 @keyframes hypnotic-marquee-reverse {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(50%);
   }
 }
 
