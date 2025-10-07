@@ -1,11 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Scan, Star, ShoppingCart } from "lucide-react";
+import { Scan, Star, ShoppingCart, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import skinAnalysis1 from "@/assets/skin-analysis-1.jpg";
+import skinAnalysis2 from "@/assets/skin-analysis-2.png";
+import skinAnalysis3 from "@/assets/skin-analysis-3.png";
 
 export function TechWellnessBundles() {
   const { t } = useTranslation();
+  const [currentImage, setCurrentImage] = useState(0);
+  
+  const images = [
+    { src: skinAnalysis1, alt: "8-Spectral AI Analysis - Precision for In-Depth Skin Insights" },
+    { src: skinAnalysis2, alt: "AI Skin Detector in Action" },
+    { src: skinAnalysis3, alt: "Real-Time Client Reports - Product Recommendations" }
+  ];
+
+  const nextImage = () => {
+    setCurrentImage((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+  };
   
   return (
     <section className="py-24 bg-gradient-to-b from-background to-muted/30">
@@ -19,12 +38,51 @@ export function TechWellnessBundles() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <Card className="premium-glass border-primary/20 hover:border-primary/40 transition-all duration-300 overflow-hidden">
-            <CardHeader className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/30 dark:to-purple-950/30">
-              <div className="mx-auto mb-4 p-4 rounded-full bg-primary/10 text-primary w-fit">
-                <Scan className="h-12 w-12" />
+            
+            {/* Image Carousel */}
+            <div className="relative w-full aspect-video bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/30 dark:to-purple-950/30">
+              <img 
+                src={images[currentImage].src} 
+                alt={images[currentImage].alt}
+                className="w-full h-full object-contain"
+              />
+              
+              {/* Navigation Arrows */}
+              <button
+                onClick={prevImage}
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-all"
+                aria-label="Previous image"
+              >
+                <ChevronLeft className="h-6 w-6" />
+              </button>
+              <button
+                onClick={nextImage}
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-all"
+                aria-label="Next image"
+              >
+                <ChevronRight className="h-6 w-6" />
+              </button>
+              
+              {/* Image Indicators */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                {images.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImage(index)}
+                    className={`w-2 h-2 rounded-full transition-all ${
+                      index === currentImage 
+                        ? 'bg-white w-8' 
+                        : 'bg-white/50 hover:bg-white/75'
+                    }`}
+                    aria-label={`Go to image ${index + 1}`}
+                  />
+                ))}
               </div>
+            </div>
+
+            <CardHeader className="text-center">
               <div className="flex items-center justify-center gap-2 mb-3">
                 <Badge className="bg-[#00A8E1] text-white font-bold px-3 py-1">
                   Prime
