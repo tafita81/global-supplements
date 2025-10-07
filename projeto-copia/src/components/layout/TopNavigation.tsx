@@ -92,13 +92,13 @@ export function TopNavigation() {
                 <div className="relative overflow-hidden" style={{width: '450px', height: '40px'}}>
                   <div className="absolute inset-0 flex items-center">
                     <div className="hypnotic-marquee flex gap-8 whitespace-nowrap">
-                      <span className="font-semibold text-black" style={{fontSize: '16px'}}>{t('navigation.tagline')}</span>
+                      <span className="font-semibold text-black uppercase" style={{fontSize: '16px'}}>{t('navigation.tagline')}</span>
                       <span className="inline-block w-4"></span>
-                      <span className="font-semibold text-black" style={{fontSize: '16px'}}>{t('navigation.tagline')}</span>
+                      <span className="font-semibold text-black uppercase" style={{fontSize: '16px'}}>{t('navigation.tagline')}</span>
                       <span className="inline-block w-4"></span>
-                      <span className="font-semibold text-black" style={{fontSize: '16px'}}>{t('navigation.tagline')}</span>
+                      <span className="font-semibold text-black uppercase" style={{fontSize: '16px'}}>{t('navigation.tagline')}</span>
                       <span className="inline-block w-4"></span>
-                      <span className="font-semibold text-black" style={{fontSize: '16px'}}>{t('navigation.tagline')}</span>
+                      <span className="font-semibold text-black uppercase" style={{fontSize: '16px'}}>{t('navigation.tagline')}</span>
                     </div>
                   </div>
                 </div>
