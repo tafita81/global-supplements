@@ -68,7 +68,7 @@ export default function PublicSite() {
                       alt="Amazon" 
                       className="h-7 w-7 mr-1" 
                     />
-                    Shop Premium Supplements →
+                    Shop Premium Products →
                   </Button>
                 </div>
               </div>
