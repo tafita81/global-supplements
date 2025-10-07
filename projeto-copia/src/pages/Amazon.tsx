@@ -29,7 +29,7 @@ import auFlag from "@/assets/flags/au.png";
 import nlFlag from "@/assets/flags/nl.png";
 import seFlag from "@/assets/flags/se.png";
 import sgFlag from "@/assets/flags/sg.png";
-import plFlag from "@/assets/flags/pl.png";
+import plFlag from "@/assets/flags/pl.svg";
 import saFlag from "@/assets/flags/sa.png";
 
 interface AmazonProduct {
