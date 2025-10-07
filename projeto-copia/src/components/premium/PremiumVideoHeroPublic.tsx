@@ -291,7 +291,7 @@ export function PremiumVideoHeroPublic() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 clean-fade-in">
               <div className="text-center">
-                <div className="text-4xl font-bold subtle-gold mb-2">52</div>
+                <div className="text-4xl font-bold subtle-gold mb-2">33</div>
                 <div className="text-white/80 text-sm uppercase tracking-wide">{t('hero.stats.countries')}</div>
               </div>
               <div className="text-center">
