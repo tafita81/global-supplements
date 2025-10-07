@@ -205,7 +205,6 @@ export function AppSidebar() {
           <h1 className="text-xl font-bold text-primary cursor-pointer hover:text-primary/80" onClick={() => navigate("/")}>
             Global Supplements
           </h1>
-          <p className="text-sm text-muted-foreground">{t("site.tagline", "Premium Global Network")}</p>
         </div>
       </SidebarHeader>
       <SidebarContent className="pb-20">
