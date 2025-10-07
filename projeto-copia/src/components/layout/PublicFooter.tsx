@@ -31,7 +31,7 @@ export function PublicFooter() {
               <div>
                 <h3 className="text-xl font-bold">
                   <span className="text-white">Global </span>
-                  <span className="text-yellow-500 attention-glow">Supplements</span>
+                  <span className="text-yellow-500">Supplements</span>
                 </h3>
                 <p className="text-sm text-gray-400">Premium Worldwide Network</p>
               </div>

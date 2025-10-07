@@ -86,7 +86,7 @@ export function PublicHeader() {
             <div>
               <h1 className="text-base sm:text-xl font-bold">
                 <span className="text-gray-900">Global </span>
-                <span className="text-yellow-500 attention-glow">Supplements</span>
+                <span className="text-yellow-500">Supplements</span>
               </h1>
               <p className="text-xs text-gray-600 hidden sm:block">Premium Worldwide Network</p>
             </div>
