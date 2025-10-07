@@ -28,6 +28,7 @@ import auFlag from "@/assets/flags/au.png";
 import nlFlag from "@/assets/flags/nl.png";
 import seFlag from "@/assets/flags/se.png";
 import sgFlag from "@/assets/flags/sg.png";
+import plFlag from "@/assets/flags/pl.png";
 import saFlag from "@/assets/flags/sa.png";
 
 interface AmazonProduct {
@@ -990,114 +991,72 @@ const Amazon = () => {
 
       <div className="w-full">
         
-        {/* Global Credibility Section - Optimized Layout */}
-        <div className="bg-gradient-to-r from-gray-50 via-white to-gray-50 border-t border-b border-gray-200 py-3 mb-6">
-          <div className="w-full flex flex-col md:flex-row items-center">
-            {/* Left: Logo & Text with Trust Badges - Colado na margem esquerda */}
-            <div className="flex items-center pl-4">
-              <div>
-                <div className="flex items-center gap-2 mb-1.5">
-                  <Badge className="bg-[#FF9900] text-black font-bold text-xs px-2 py-0.5">Amazon OneLink Partner</Badge>
-                  <Badge variant="outline" className="border-green-600 text-green-700 text-xs px-2 py-0.5">✓ Official</Badge>
-                </div>
-                <h3 className="text-base font-bold text-gray-900 leading-tight mb-1.5">Trusted Worldwide • Ship to 14 Countries</h3>
-                <p className="text-xs text-gray-600 leading-tight mb-2">Safe shopping with Amazon's global protection</p>
-                
-                {/* Trust Badges directly below text - Increased vertical spacing */}
-                <div className="flex flex-wrap gap-3 text-xs mt-0">
-                  <div className="flex items-center gap-1 text-gray-700">
-                    <svg className="h-3 w-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                    </svg>
-                    <span className="font-medium">Secure Payment</span>
-                  </div>
-                  <div className="flex items-center gap-1 text-gray-700">
-                    <svg className="h-3 w-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                    </svg>
-                    <span className="font-medium">Buyer Protection</span>
-                  </div>
-                  <div className="flex items-center gap-1 text-gray-700">
-                    <svg className="h-3 w-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                    </svg>
-                    <span className="font-medium">Global Delivery</span>
-                  </div>
-                  <div className="flex items-center gap-1 text-gray-700">
-                    <svg className="h-3 w-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                    </svg>
-                    <span className="font-medium">Easy Returns</span>
-                  </div>
-                </div>
+        {/* Global Credibility Section - Ultra Compact Premium Design */}
+        <div className="bg-gradient-to-r from-gray-50 via-white to-gray-50 border-t border-b border-gray-200 py-1.5 mb-6">
+          <div className="w-full px-4 flex items-center justify-between gap-6">
+            {/* Left: Compact Info */}
+            <div className="flex items-center gap-3">
+              <Badge className="bg-[#FF9900] text-black font-bold text-xs px-2 py-0.5 whitespace-nowrap">Amazon OneLink Partner</Badge>
+              <Badge variant="outline" className="border-green-600 text-green-700 text-xs px-2 py-0.5">✓ Official</Badge>
+              <div className="h-5 w-px bg-gray-300"></div>
+              <div className="flex items-center gap-2 text-xs">
+                <svg className="h-3.5 w-3.5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                </svg>
+                <span className="font-semibold text-gray-700">Secure Payment</span>
+                <span className="text-gray-400">•</span>
+                <span className="font-semibold text-gray-700">Buyer Protection</span>
+                <span className="text-gray-400">•</span>
+                <span className="font-semibold text-gray-700">Global Delivery</span>
+                <span className="text-gray-400">•</span>
+                <span className="font-semibold text-gray-700">Easy Returns</span>
               </div>
             </div>
             
-            {/* Right: Country Flags Grid - 2 rows × 7 columns - CLICÁVEIS PARA MUDAR MARKETPLACE - Colado na margem direita */}
-            <div className="flex flex-col gap-1.5 ml-auto pr-4">
-              {/* First Row - 7 flags */}
-              <div className="flex items-center gap-3 justify-end">
-                <button onClick={() => setMarketplaceById('US')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'US' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src={usFlag} width="40" height="30" alt="USA" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">USA</span>
-                </button>
-                <button onClick={() => setMarketplaceById('CA')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'CA' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src={caFlag} width="40" height="30" alt="Canada" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">Canada</span>
-                </button>
-                <button onClick={() => setMarketplaceById('UK')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'UK' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src={gbFlag} width="40" height="30" alt="UK" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">UK</span>
-                </button>
-                <button onClick={() => setMarketplaceById('DE')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'DE' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src={deFlag} width="40" height="30" alt="Germany" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">Germany</span>
-                </button>
-                <button onClick={() => setMarketplaceById('FR')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'FR' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src={frFlag} width="40" height="30" alt="France" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">France</span>
-                </button>
-                <button onClick={() => setMarketplaceById('IT')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'IT' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src={itFlag} width="40" height="30" alt="Italy" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">Italy</span>
-                </button>
-                <button onClick={() => setMarketplaceById('ES')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'ES' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src={esFlag} width="40" height="30" alt="Spain" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">Spain</span>
-                </button>
-              </div>
-              
-              {/* Second Row - 7 flags */}
-              <div className="flex items-center gap-3 justify-end">
-                <button onClick={() => setMarketplaceById('JP')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'JP' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src={jpFlag} width="40" height="30" alt="Japan" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">Japan</span>
-                </button>
-                <button onClick={() => setMarketplaceById('AU')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'AU' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src={auFlag} width="40" height="30" alt="Australia" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">Australia</span>
-                </button>
-                <button onClick={() => setMarketplaceById('NL')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'NL' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src={nlFlag} width="40" height="30" alt="Netherlands" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">Netherlands</span>
-                </button>
-                <button onClick={() => setMarketplaceById('SE')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'SE' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src={seFlag} width="40" height="30" alt="Sweden" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">Sweden</span>
-                </button>
-                <button onClick={() => setMarketplaceById('SG')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'SG' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src={sgFlag} width="40" height="30" alt="Singapore" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">Singapore</span>
-                </button>
-                <button onClick={() => setMarketplaceById('PL')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'PL' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src="https://flagcdn.com/w320/pl.png" width="40" height="30" alt="Poland" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">Poland</span>
-                </button>
-                <button onClick={() => setMarketplaceById('SA')} className={`flex flex-col items-center gap-0.5 hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'SA' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
-                  <img src={saFlag} width="40" height="30" alt="Saudi Arabia" className="rounded shadow-sm" />
-                  <span className="text-[9px] font-medium text-gray-600">Saudi Arabia</span>
-                </button>
-              </div>
+            {/* Right: All 14 Country Flags in Single Horizontal Row */}
+            <div className="flex items-center gap-1.5">
+              <button onClick={() => setMarketplaceById('US')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'US' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={usFlag} width="32" height="24" alt="USA" className="rounded shadow-sm" />
+              </button>
+              <button onClick={() => setMarketplaceById('CA')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'CA' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={caFlag} width="32" height="24" alt="Canada" className="rounded shadow-sm" />
+              </button>
+              <button onClick={() => setMarketplaceById('UK')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'UK' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={gbFlag} width="32" height="24" alt="UK" className="rounded shadow-sm" />
+              </button>
+              <button onClick={() => setMarketplaceById('DE')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'DE' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={deFlag} width="32" height="24" alt="Germany" className="rounded shadow-sm" />
+              </button>
+              <button onClick={() => setMarketplaceById('FR')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'FR' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={frFlag} width="32" height="24" alt="France" className="rounded shadow-sm" />
+              </button>
+              <button onClick={() => setMarketplaceById('IT')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'IT' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={itFlag} width="32" height="24" alt="Italy" className="rounded shadow-sm" />
+              </button>
+              <button onClick={() => setMarketplaceById('ES')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'ES' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={esFlag} width="32" height="24" alt="Spain" className="rounded shadow-sm" />
+              </button>
+              <button onClick={() => setMarketplaceById('JP')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'JP' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={jpFlag} width="32" height="24" alt="Japan" className="rounded shadow-sm" />
+              </button>
+              <button onClick={() => setMarketplaceById('AU')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'AU' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={auFlag} width="32" height="24" alt="Australia" className="rounded shadow-sm" />
+              </button>
+              <button onClick={() => setMarketplaceById('NL')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'NL' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={nlFlag} width="32" height="24" alt="Netherlands" className="rounded shadow-sm" />
+              </button>
+              <button onClick={() => setMarketplaceById('SE')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'SE' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={seFlag} width="32" height="24" alt="Sweden" className="rounded shadow-sm" />
+              </button>
+              <button onClick={() => setMarketplaceById('SG')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'SG' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={sgFlag} width="32" height="24" alt="Singapore" className="rounded shadow-sm" />
+              </button>
+              <button onClick={() => setMarketplaceById('PL')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'PL' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={plFlag} width="32" height="24" alt="Poland" className="rounded shadow-sm" />
+              </button>
+              <button onClick={() => setMarketplaceById('SA')} className={`hover:scale-110 transition-transform cursor-pointer ${currentMarketplace.id === 'SA' ? 'ring-2 ring-[#FF9900] rounded' : ''}`}>
+                <img src={saFlag} width="32" height="24" alt="Saudi Arabia" className="rounded shadow-sm" />
+              </button>
             </div>
           </div>
         </div>
