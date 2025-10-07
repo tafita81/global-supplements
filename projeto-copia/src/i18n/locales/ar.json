@@ -730,46 +730,46 @@
   },
   "amazon": {
     "header": {
-      "deliverTo": "Entregar em",
-      "helloSignIn": "Olá, Faça login",
-      "accountLists": "Conta e Listas",
-      "returns": "Devoluções",
-      "orders": "e Pedidos",
-      "cart": "Carrinho",
-      "all": "Todos",
-      "affiliatePartnerStore": "Loja Parceira Afiliada"
+      "deliverTo": "التوصيل إلى",
+      "helloSignIn": "مرحباً، تسجيل الدخول",
+      "accountLists": "الحساب والقوائم",
+      "returns": "المرتجعات",
+      "orders": "والطلبات",
+      "cart": "العربة",
+      "all": "الكل",
+      "affiliatePartnerStore": "متجر الشريك التابع"
     },
     "categories": {
-      "all": "Todos",
-      "beautyPersonalCare": "Beleza e Cuidados Pessoais",
-      "healthHousehold": "Saúde e Casa",
-      "healthWellnessDevices": "Dispositivos de Saúde",
-      "sportsNutrition": "Nutrição Esportiva",
-      "vitaminsSupplements": "Vitaminas e Suplementos"
+      "all": "الكل",
+      "beautyPersonalCare": "الجمال والعناية الشخصية",
+      "healthHousehold": "الصحة والمنزل",
+      "healthWellnessDevices": "أجهزة الصحة والعافية",
+      "sportsNutrition": "التغذية الرياضية",
+      "vitaminsSupplements": "الفيتامينات والمكملات"
     },
     "subcategories": {
-      "skinCare": "Cuidados com a Pele",
-      "hairCare": "Cuidados com o Cabelo",
-      "nailCare": "Cuidados com as Unhas",
-      "bathBody": "Banho e Corpo",
-      "makeup": "Maquiagem",
-      "antiAging": "Anti-Envelhecimento",
-      "fragrance": "Fragrâncias",
-      "toolsAccessories": "Ferramentas e Acessórios",
-      "oralCare": "Cuidados Orais",
-      "mensGrooming": "Cuidados Masculinos"
+      "skinCare": "العناية بالبشرة",
+      "hairCare": "العناية بالشعر",
+      "nailCare": "العناية بالأظافر",
+      "bathBody": "الحمام والجسم",
+      "makeup": "المكياج",
+      "antiAging": "مكافحة الشيخوخة",
+      "fragrance": "العطور",
+      "toolsAccessories": "الأدوات والإكسسوارات",
+      "oralCare": "العناية بالفم",
+      "mensGrooming": "العناية بالرجال"
     },
     "badges": {
-      "amazonOnelinkPartner": "Parceiro Amazon OneLink",
-      "official": "Oficial",
-      "securePayment": "Pagamento Seguro",
-      "buyerProtection": "Proteção ao Comprador",
-      "globalDelivery": "Entrega Global",
-      "easyReturns": "Devoluções Fáceis",
-      "amazonsChoice": "Escolha da Amazon"
+      "amazonOnelinkPartner": "شريك أمازون OneLink",
+      "official": "رسمي",
+      "securePayment": "دفع آمن",
+      "buyerProtection": "حماية المشتري",
+      "globalDelivery": "التوصيل العالمي",
+      "easyReturns": "إرجاع سهل",
+      "amazonsChoice": "اختيار أمازون"
     },
     "buttons": {
-      "shopPremiumProduct": "Comprar Produto Premium →"
+      "shopPremiumProduct": "تسوق المنتج المميز ←"
     }
   }
 }

@@ -1154,13 +1154,13 @@ const Amazon = () => {
                 </CardContent>
                 <CardFooter className="p-5 pt-0">
                   <Button 
-                    className="w-full bg-gradient-to-r from-[#FF9900] via-[#FFB84D] to-[#FF9900] hover:from-[#F08804] hover:to-[#F08804] text-black font-bold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 h-12"
+                    className="w-full bg-gradient-to-r from-[#FF9900] via-[#FFB84D] to-[#FF9900] hover:from-[#F08804] hover:to-[#F08804] text-black font-bold text-sm rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 h-12"
                     onClick={() => window.open(product.affiliateLink, '_blank')}
                   >
                     <img 
                       src={amazonIcon} 
                       alt="Amazon" 
-                      className="h-7 w-7 mr-1" 
+                      className="h-6 w-6 mr-1" 
                     />
                     {t('amazon.buttons.shopPremiumProduct')}
                   </Button>
