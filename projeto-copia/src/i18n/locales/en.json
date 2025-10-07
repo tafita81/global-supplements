@@ -11,7 +11,7 @@
     "solutions": "Solutions",
     "contact": "Contact",
     "getQuote": "Get Quote",
-    "partnerWithUs": "Buy on Amazon",
+    "partnerWithUs": "Shop Premium Supplements →",
     "beautySupplements": "Beauty Supplements",
     "quantumMaterials": "Quantum Materials",
     "medicalGrade": "Medical Grade",
@@ -463,7 +463,7 @@
         "partnership": {
           "title": "Partnership Inquiry",
           "description": "Explore supplier or distributor partnerships",
-          "action": "Buy on Amazon"
+          "action": "Shop Premium Supplements →"
         },
         "government": {
           "title": "Government Contracts",
@@ -539,7 +539,7 @@
       "badge": "COMPREHENSIVE SOLUTIONS",
       "title": "End-to-End Supplement Business Solutions",
       "learnMore": "Learn More",
-      "startPartnership": "Buy on Amazon",
+      "startPartnership": "Shop Premium Supplements →",
       "downloadBrochure": "Download Brochure",
       "description": "From sourcing to delivery, our Orlando-based team provides complete business solutions backed by advanced AI technology and 15+ years of global market expertise.",
       "services": {
