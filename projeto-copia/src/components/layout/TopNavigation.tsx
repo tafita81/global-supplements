@@ -87,32 +87,19 @@ export function TopNavigation() {
                     <Crown className="h-2 w-2 text-primary" />
                   </div>
                 </div>
-                <div className="relative overflow-hidden max-w-xs">
-                  {/* Marquee Reverso em Global Supplements */}
-                  <div className="relative h-8 overflow-hidden">
-                    <div className="absolute inset-0 flex items-center">
-                      <div className="hypnotic-marquee-reverse flex gap-8">
-                        <h1 className="text-2xl font-bold whitespace-nowrap">
-                          <span className="text-muted-foreground">Global</span>{' '}
-                          <span className="text-[#FBBF24]">Supplements</span>
-                        </h1>
-                        <span className="inline-block w-8"></span>
-                        <div className="text-2xl font-bold whitespace-nowrap" aria-hidden="true">
-                          <span className="text-muted-foreground">Global</span>{' '}
-                          <span className="text-[#FBBF24]">Supplements</span>
-                        </div>
-                        <span className="inline-block w-8"></span>
-                      </div>
-                    </div>
-                  </div>
+                <div className="relative">
+                  <h1 className="text-2xl font-bold">
+                    <span className="text-muted-foreground">Global</span>{' '}
+                    <span className="text-[#FBBF24]">Supplements</span>
+                  </h1>
                   
-                  {/* Marquee Hipnótico Infinito - Tagline */}
+                  {/* Marquee Hipnótico Infinito - Tagline com animação reversa */}
                   <div className="relative -mt-1 h-6 overflow-hidden">
                     <div className="absolute inset-0 flex items-center">
-                      <div className="hypnotic-marquee flex gap-8">
-                        <span className="text-sm font-medium text-gray-500">{t('navigation.tagline')}</span>
+                      <div className="hypnotic-marquee-reverse flex gap-8">
+                        <span className="text-sm font-medium text-gray-500 whitespace-nowrap">{t('navigation.tagline')}</span>
                         <span className="inline-block w-4"></span>
-                        <span className="text-sm font-medium text-gray-500">{t('navigation.tagline')}</span>
+                        <span className="text-sm font-medium text-gray-500 whitespace-nowrap">{t('navigation.tagline')}</span>
                         <span className="inline-block w-4"></span>
                       </div>
                     </div>

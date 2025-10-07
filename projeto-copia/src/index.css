@@ -17,10 +17,10 @@
 /* Marquee Infinito REVERSO - Scroll da Direita para Esquerda */
 @keyframes hypnotic-marquee-reverse {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(50%);
   }
 }
 
