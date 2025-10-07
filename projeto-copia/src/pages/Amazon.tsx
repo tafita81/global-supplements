@@ -165,8 +165,31 @@ const Amazon = () => {
   ];
 
   const subcategories: Record<string, Array<{key: string, label: string}>> = {
-    'vitamins': ['Multivitamins', 'Single Vitamins', 'Minerals', 'Herbs & Botanicals', 'Probiotics', 'Omega-3', 'Digestive Enzymes', 'Antioxidants', 'Amino Acids', 'Collagen Supplements'].map(s => ({key: s, label: s})),
-    'sports': ['Protein Powders', 'Pre-Workout', 'Post-Workout', 'Energy Drinks', 'BCAAs', 'Creatine', 'Amino Acids', 'Nutrition Bars', 'Fat Burners', 'Electrolytes', 'Nitric Oxide'].map(s => ({key: s, label: s})),
+    'vitamins': [
+      {key: 'Multivitamins', label: t('amazon.subcategories.multivitamins')},
+      {key: 'Single Vitamins', label: t('amazon.subcategories.singleVitamins')},
+      {key: 'Minerals', label: t('amazon.subcategories.minerals')},
+      {key: 'Herbs & Botanicals', label: t('amazon.subcategories.herbsBotanicals')},
+      {key: 'Probiotics', label: t('amazon.subcategories.probiotics')},
+      {key: 'Omega-3', label: t('amazon.subcategories.omega3')},
+      {key: 'Digestive Enzymes', label: t('amazon.subcategories.digestiveEnzymes')},
+      {key: 'Antioxidants', label: t('amazon.subcategories.antioxidants')},
+      {key: 'Amino Acids', label: t('amazon.subcategories.aminoAcids')},
+      {key: 'Collagen Supplements', label: t('amazon.subcategories.collagenSupplements')}
+    ],
+    'sports': [
+      {key: 'Protein Powders', label: t('amazon.subcategories.proteinPowders')},
+      {key: 'Pre-Workout', label: t('amazon.subcategories.preWorkout')},
+      {key: 'Post-Workout', label: t('amazon.subcategories.postWorkout')},
+      {key: 'Energy Drinks', label: t('amazon.subcategories.energyDrinks')},
+      {key: 'BCAAs', label: t('amazon.subcategories.bcaas')},
+      {key: 'Creatine', label: t('amazon.subcategories.creatine')},
+      {key: 'Amino Acids', label: t('amazon.subcategories.aminoAcids')},
+      {key: 'Nutrition Bars', label: t('amazon.subcategories.nutritionBars')},
+      {key: 'Fat Burners', label: t('amazon.subcategories.fatBurners')},
+      {key: 'Electrolytes', label: t('amazon.subcategories.electrolytes')},
+      {key: 'Nitric Oxide', label: t('amazon.subcategories.nitricOxide')}
+    ],
     'beauty': [
       {key: 'Skin Care', label: t('amazon.subcategories.skinCare')},
       {key: 'Hair Care', label: t('amazon.subcategories.hairCare')},
@@ -179,8 +202,26 @@ const Amazon = () => {
       {key: 'Oral Care', label: t('amazon.subcategories.oralCare')},
       {key: 'Men\'s Grooming', label: t('amazon.subcategories.mensGrooming')}
     ],
-    'devices': ['Fitness Trackers', 'Blood Pressure Monitors', 'Thermometers', 'Scales', 'Pulse Oximeters'].map(s => ({key: s, label: s})),
-    'wellness': ['First Aid', 'Pain Relief', 'Digestive Health', 'Cold & Flu', 'Sleep Support', 'Mobility Aids', 'Braces & Supports', 'Wound Care', 'Physical Therapy', 'Medical Storage', 'Respiratory Care'].map(s => ({key: s, label: s}))
+    'devices': [
+      {key: 'Fitness Trackers', label: t('amazon.subcategories.fitnessTrackers')},
+      {key: 'Blood Pressure Monitors', label: t('amazon.subcategories.bloodPressureMonitors')},
+      {key: 'Thermometers', label: t('amazon.subcategories.thermometers')},
+      {key: 'Scales', label: t('amazon.subcategories.scales')},
+      {key: 'Pulse Oximeters', label: t('amazon.subcategories.pulseOximeters')}
+    ],
+    'wellness': [
+      {key: 'First Aid', label: t('amazon.subcategories.firstAid')},
+      {key: 'Pain Relief', label: t('amazon.subcategories.painRelief')},
+      {key: 'Digestive Health', label: t('amazon.subcategories.digestiveHealth')},
+      {key: 'Cold & Flu', label: t('amazon.subcategories.coldFlu')},
+      {key: 'Sleep Support', label: t('amazon.subcategories.sleepSupport')},
+      {key: 'Mobility Aids', label: t('amazon.subcategories.mobilityAids')},
+      {key: 'Braces & Supports', label: t('amazon.subcategories.bracesSupports')},
+      {key: 'Wound Care', label: t('amazon.subcategories.woundCare')},
+      {key: 'Physical Therapy', label: t('amazon.subcategories.physicalTherapy')},
+      {key: 'Medical Storage', label: t('amazon.subcategories.medicalStorage')},
+      {key: 'Respiratory Care', label: t('amazon.subcategories.respiratoryCare')}
+    ]
   };
 
   // Mapping de subcategorias para queries específicas de busca
