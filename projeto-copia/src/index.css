@@ -14,13 +14,15 @@
   }
 }
 
-/* Marquee Infinito REVERSO - Scroll da Esquerda para Direita (oposto ao original) */
-@keyframes hypnotic-marquee-reverse {
-  0% {
-    transform: translateX(0%);
+/* Fade Pulsante Suave - Animação elegante para Global Supplements */
+@keyframes gentle-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
   }
-  100% {
-    transform: translateX(50%);
+  50% {
+    opacity: 0.85;
+    transform: scale(1.02);
   }
 }
 
@@ -76,16 +78,9 @@
   white-space: nowrap;
 }
 
-.hypnotic-marquee-reverse {
-  animation: hypnotic-marquee-reverse 40s linear infinite;
+.gentle-pulse {
+  animation: gentle-pulse 4s ease-in-out infinite;
   display: inline-block;
-  white-space: nowrap;
-}
-
-.hypnotic-marquee-reverse-fast {
-  animation: hypnotic-marquee-reverse 25s linear infinite;
-  display: inline-block;
-  white-space: nowrap;
 }
 
 .attention-glow {

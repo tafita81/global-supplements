@@ -88,7 +88,7 @@ export function TopNavigation() {
                   </div>
                 </div>
                 <div className="relative overflow-hidden max-w-xs">
-                  <h1 className="text-2xl font-bold">
+                  <h1 className="text-2xl font-bold gentle-pulse">
                     <span className="text-muted-foreground">Global</span>{' '}
                     <span className="text-[#FBBF24]">Supplements</span>
                   </h1>
