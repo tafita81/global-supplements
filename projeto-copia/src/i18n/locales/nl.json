@@ -712,8 +712,8 @@
     }
   },
   "bundles": {
-    "title": "Introducing: Global Supplement + Tech Bundles",
-    "subtitle": "We've combined science, beauty, and technology into curated kits for modern wellness.",
+    "title": "Introductie: Global Supplement + Tech Bundles",
+    "subtitle": "We hebben wetenschap, schoonheid en technologie gecombineerd in samengestelde kits voor modern welzijn.",
     "preOrderNow": "Pre-Order Now",
     "mindGlow": {
       "name": "Mind & Glow Bundle",
@@ -775,6 +775,30 @@
       "chooseMarketplace": "Kies je Amazon-marktplaats",
       "marketplaceDescription": "Producten en prijzen komen overeen met je geselecteerde land",
       "earnJoin": "Verdien commissies op verkopen in alle landen!"
+    },
+    "partnership": {
+      "officialPartner": "Officiële Partner",
+      "oneLinkProgram": "OneLink Wereldwijd Programma",
+      "shopTitle": "Shop Amazon Global Supplements",
+      "trustDescription": "Betrouwbare wereldwijde levering naar 13 landen • Veilige Amazon bescherming",
+      "verifiedPartner": "✓ Geverifieerde Partner",
+      "securePayment": "✓ Veilige Betaling",
+      "buyerProtection": "✓ Koperbescherming",
+      "shopButton": "Premium Producten Kopen →",
+      "amazonVerified": "Amazon Geverifieerd",
+      "shipsTo": "Verzendt naar:",
+      "verifyPartnership": "Partnerschap Verifiëren"
+    },
+    "product": {
+      "prime": "Prime",
+      "rating": "5.0 (2 beoordelingen)",
+      "productTitle": "Professionele Huidanalysemachine - 21.5\" HD-scherm",
+      "brand": "Merk: Cobbawe",
+      "description": "AI-aangedreven gezichtsscanner voor salons en spa's, productaanbevelingen, 8-spectrale beeldvorming (acne/pigmentatie/rimpeldetectie), meertalig",
+      "installmentPlan": "Of $526.67/maand (3 maanden)",
+      "freeReturns": "GRATIS Retourneren",
+      "shopButton": "Premium Product Kopen →",
+      "shippingInfo": "Verzonden en verkocht door Amazon"
     }
   },
   "medicalGrade": {

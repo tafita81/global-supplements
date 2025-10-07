@@ -712,8 +712,8 @@
     }
   },
   "bundles": {
-    "title": "Introducing: Global Supplement + Tech Bundles",
-    "subtitle": "We've combined science, beauty, and technology into curated kits for modern wellness.",
+    "title": "Introducerar: Global Supplement + Tech Bundles",
+    "subtitle": "Vi har kombinerat vetenskap, skönhet och teknik i kurerade kit för modernt välbefinnande.",
     "preOrderNow": "Pre-Order Now",
     "mindGlow": {
       "name": "Mind & Glow Bundle",
@@ -775,6 +775,30 @@
       "chooseMarketplace": "Välj din Amazon-marknadsplats",
       "marketplaceDescription": "Produkter och priser matchar ditt valda land",
       "earnJoin": "Tjäna provisioner från försäljning i alla länder!"
+    },
+    "partnership": {
+      "officialPartner": "Officiell Partner",
+      "oneLinkProgram": "OneLink Globalt Program",
+      "shopTitle": "Handla Amazon Global Supplements",
+      "trustDescription": "Pålitlig världsleverans till 13 länder • Säker Amazon-skydd",
+      "verifiedPartner": "✓ Verifierad Partner",
+      "securePayment": "✓ Säker Betalning",
+      "buyerProtection": "✓ Köparskydd",
+      "shopButton": "Köp Premiumprodukter →",
+      "amazonVerified": "Amazon Verifierad",
+      "shipsTo": "Skickas till:",
+      "verifyPartnership": "Verifiera Partnerskap"
+    },
+    "product": {
+      "prime": "Prime",
+      "rating": "5.0 (2 recensioner)",
+      "productTitle": "Professionell Hudanalysmaskin - 21.5\" HD-skärm",
+      "brand": "Märke: Cobbawe",
+      "description": "AI-driven ansiktsskanner för salonger och spa, produktrekommendationer, 8-spektral avbildning (akne/pigmentering/rynk-detektion), flerspråkig",
+      "installmentPlan": "Eller $526.67/månad (3 månader)",
+      "freeReturns": "GRATIS Returer",
+      "shopButton": "Köp Premiumprodukt →",
+      "shippingInfo": "Skickas och säljs av Amazon"
     }
   },
   "medicalGrade": {

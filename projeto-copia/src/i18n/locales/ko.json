@@ -711,8 +711,8 @@
     }
   },
   "bundles": {
-    "title": "Introducing: Global Supplement + Tech Bundles",
-    "subtitle": "We've combined science, beauty, and technology into curated kits for modern wellness.",
+    "title": "소개: Global Supplement + Tech 번들",
+    "subtitle": "우리는 과학, 미용 및 기술을 현대 웰니스를 위한 큐레이트된 키트로 결합했습니다.",
     "preOrderNow": "Pre-Order Now",
     "mindGlow": {
       "name": "Mind & Glow Bundle",
@@ -774,6 +774,30 @@
       "choosemarketplace": "Amazon 마켓플레이스 선택",
       "marketplaceDescription": "제품과 가격이 선택한 국가와 일치합니다",
       "earnjoin": "모든 국가의 판매로 수수료를 받으세요!"
+    },
+    "partnership": {
+      "officialPartner": "공식 파트너",
+      "oneLinkProgram": "OneLink 글로벌 프로그램",
+      "shopTitle": "Amazon Global Supplements 쇼핑",
+      "trustDescription": "13개국 신뢰할 수 있는 전 세계 배송 • Amazon 보안 보호",
+      "verifiedPartner": "✓ 인증 파트너",
+      "securePayment": "✓ 안전한 결제",
+      "buyerProtection": "✓ 구매자 보호",
+      "shopButton": "프리미엄 제품 쇼핑 →",
+      "amazonVerified": "Amazon 인증",
+      "shipsTo": "배송 가능:",
+      "verifyPartnership": "파트너십 확인"
+    },
+    "product": {
+      "prime": "프라임",
+      "rating": "5.0 (리뷰 2개)",
+      "productTitle": "피부 분석 기계 전문가용 - 21.5\" HD 디스플레이",
+      "brand": "브랜드: Cobbawe",
+      "description": "살롱 및 스파용 AI 기반 얼굴 스캐너, 제품 추천, 8-스펙트럼 이미징 (여드름/색소침착/주름 감지), 다국어",
+      "installmentPlan": "또는 $526.67/월 (3개월)",
+      "freeReturns": "무료 반품",
+      "shopButton": "프리미엄 제품 쇼핑 →",
+      "shippingInfo": "Amazon 배송 및 판매"
     }
   },
   "beautySupplements": {

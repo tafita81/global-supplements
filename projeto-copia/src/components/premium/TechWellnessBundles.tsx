@@ -13,6 +13,10 @@ export function TechWellnessBundles() {
   const { t } = useTranslation();
   const [currentImage, setCurrentImage] = useState(0);
   
+  // 🌍 Amazon OneLink - Link universal que redireciona automaticamente para o país do visitante
+  // OneLink aplica automaticamente sua tag de afiliado correta para cada região
+  const oneLinkUrl = "https://amzn.to/4mU7qT4"; // Skin Analysis Machine
+  
   const images = [
     { src: skinAnalysis1, alt: "8-Spectral AI Analysis - Precision for In-Depth Skin Insights" },
     { src: skinAnalysis2, alt: "AI Skin Detector in Action" },
@@ -86,21 +90,21 @@ export function TechWellnessBundles() {
             <CardHeader className="text-center">
               <div className="flex items-center justify-center gap-2 mb-3">
                 <Badge className="bg-[#00A8E1] text-white font-bold px-3 py-1">
-                  Prime
+                  {t('amazon.product.prime')}
                 </Badge>
                 <Badge variant="outline" className="border-yellow-500 text-yellow-600 dark:text-yellow-500">
                   <Star className="h-3 w-3 mr-1 fill-yellow-500 text-yellow-500" />
-                  5.0 (2 reviews)
+                  {t('amazon.product.rating')}
                 </Badge>
               </div>
               <CardTitle className="text-2xl md:text-3xl font-bold mb-2">
-                Skin Analysis Machine Professional - 21.5" HD Display
+                {t('amazon.product.productTitle')}
               </CardTitle>
               <div className="text-sm text-muted-foreground font-medium mb-2">
-                Brand: Cobbawe
+                {t('amazon.product.brand')}
               </div>
               <div className="text-sm text-muted-foreground max-w-2xl mx-auto">
-                AI-Powered Facial Scanner for Salons & Spas, Product recommendations, 8-Spectral Imaging (Acne/Pigmentation/Wrinkle Detection), Multi-Language
+                {t('amazon.product.description')}
               </div>
             </CardHeader>
             
@@ -110,15 +114,15 @@ export function TechWellnessBundles() {
                   $1,580.00
                 </div>
                 <div className="text-sm text-muted-foreground">
-                  Or $526.67/mo (3 mo)
+                  {t('amazon.product.installmentPlan')}
                 </div>
                 <Badge variant="outline" className="mt-2 border-green-600 text-green-600 dark:text-green-500">
-                  FREE Returns
+                  {t('amazon.product.freeReturns')}
                 </Badge>
               </div>
               
               <a 
-                href="https://amzn.to/4mU7qT4" 
+                href={oneLinkUrl}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block"
@@ -132,12 +136,12 @@ export function TechWellnessBundles() {
                     alt="Amazon" 
                     className="h-8 w-8 mr-1" 
                   />
-                  Shop Premium Product →
+                  {t('amazon.product.shopButton')}
                 </Button>
               </a>
               
               <div className="text-xs text-muted-foreground">
-                Ships from and sold by Amazon
+                {t('amazon.product.shippingInfo')}
               </div>
             </CardContent>
           </Card>

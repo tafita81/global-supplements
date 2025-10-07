@@ -712,8 +712,8 @@
     }
   },
   "bundles": {
-    "title": "Introducing: Global Supplement + Tech Bundles",
-    "subtitle": "We've combined science, beauty, and technology into curated kits for modern wellness.",
+    "title": "紹介：Global Supplement + テックバンドル",
+    "subtitle": "科学、美容、テクノロジーを組み合わせた現代のウェルネスキュレーションキット。",
     "preOrderNow": "Pre-Order Now",
     "mindGlow": {
       "name": "Mind & Glow Bundle",
@@ -775,6 +775,30 @@
       "chooseMarketplace": "Amazonマーケットプレイスを選択",
       "marketplaceDescription": "製品と価格は選択した国に合わせて表示されます",
       "earnJoin": "すべての国の販売から手数料を獲得！"
+    },
+    "partnership": {
+      "officialPartner": "公式パートナー",
+      "oneLinkProgram": "OneLink グローバルプログラム",
+      "shopTitle": "Amazon Global Supplements ショップ",
+      "trustDescription": "13カ国への信頼できる世界配送 • Amazonセキュリティ保護",
+      "verifiedPartner": "✓ 認証パートナー",
+      "securePayment": "✓ 安全な支払い",
+      "buyerProtection": "✓ 購入者保護",
+      "shopButton": "プレミアム製品を購入 →",
+      "amazonVerified": "Amazon認証",
+      "shipsTo": "配送先:",
+      "verifyPartnership": "パートナーシップを確認"
+    },
+    "product": {
+      "prime": "プライム",
+      "rating": "5.0 (2件のレビュー)",
+      "productTitle": "プロフェッショナル肌分析機 - 21.5\" HDディスプレイ",
+      "brand": "ブランド: Cobbawe",
+      "description": "サロン＆スパ用AIパワード顔スキャナー、製品推奨、8スペクトルイメージング（ニキビ/色素沈着/シワ検出）、多言語対応",
+      "installmentPlan": "または月額$526.67（3か月）",
+      "freeReturns": "無料返品",
+      "shopButton": "プレミアム製品を購入 →",
+      "shippingInfo": "Amazonが発送・販売"
     }
   },
   "beautySupplements": {

@@ -712,8 +712,8 @@
     }
   },
   "bundles": {
-    "title": "Introducing: Global Supplement + Tech Bundles",
-    "subtitle": "We've combined science, beauty, and technology into curated kits for modern wellness.",
+    "title": "Présentation: Global Supplement + Tech Bundles",
+    "subtitle": "Nous avons combiné science, beauté et technologie dans des kits sélectionnés pour le bien-être moderne.",
     "preOrderNow": "Pre-Order Now",
     "mindGlow": {
       "name": "Mind & Glow Bundle",
@@ -775,6 +775,30 @@
       "chooseMarketplace": "Choisissez votre marketplace Amazon",
       "marketplaceDescription": "Les produits et prix correspondront à votre pays sélectionné",
       "earnJoin": "Gagnez des commissions sur les ventes dans tous les pays !"
+    },
+    "partnership": {
+      "officialPartner": "Partenaire Officiel",
+      "oneLinkProgram": "Programme OneLink Global",
+      "shopTitle": "Acheter Amazon Global Supplements",
+      "trustDescription": "Livraison mondiale fiable vers 13 pays • Protection sécurisée Amazon",
+      "verifiedPartner": "✓ Partenaire Vérifié",
+      "securePayment": "✓ Paiement Sécurisé",
+      "buyerProtection": "✓ Protection Acheteur",
+      "shopButton": "Acheter Produits Premium →",
+      "amazonVerified": "Amazon Vérifié",
+      "shipsTo": "Expédie vers:",
+      "verifyPartnership": "Vérifier Partenariat"
+    },
+    "product": {
+      "prime": "Prime",
+      "rating": "5.0 (2 avis)",
+      "productTitle": "Machine d'Analyse de Peau Professionnelle - Écran HD 21.5\"",
+      "brand": "Marque: Cobbawe",
+      "description": "Scanner Facial IA pour Salons & Spas, Recommandations de produits, Imagerie 8-Spectrale (Détection Acné/Pigmentation/Rides), Multi-langue",
+      "installmentPlan": "Ou $526.67/mois (3 mois)",
+      "freeReturns": "Retours GRATUITS",
+      "shopButton": "Acheter Produit Premium →",
+      "shippingInfo": "Expédié et vendu par Amazon"
     }
   },
   "medicalGrade": {

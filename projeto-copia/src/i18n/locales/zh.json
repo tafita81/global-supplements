@@ -711,8 +711,8 @@
     }
   },
   "bundles": {
-    "title": "Introducing: Global Supplement + Tech Bundles",
-    "subtitle": "We've combined science, beauty, and technology into curated kits for modern wellness.",
+    "title": "介绍：Global Supplement + 科技套装",
+    "subtitle": "我们将科学、美容和技术融合到现代健康的精选套装中。",
     "preOrderNow": "Pre-Order Now",
     "mindGlow": {
       "name": "Mind & Glow Bundle",
@@ -774,6 +774,30 @@
       "chooseMarketplace": "选择您的Amazon市场",
       "marketplaceDescription": "产品和价格将与您选择的国家匹配",
       "earnJoin": "从所有国家的销售中赚取佣金！"
+    },
+    "partnership": {
+      "officialPartner": "官方合作伙伴",
+      "oneLinkProgram": "OneLink 全球计划",
+      "shopTitle": "购买 Amazon Global Supplements",
+      "trustDescription": "可信赖的全球13国配送 • Amazon安全保护",
+      "verifiedPartner": "✓ 认证合作伙伴",
+      "securePayment": "✓ 安全支付",
+      "buyerProtection": "✓ 买家保护",
+      "shopButton": "购买优质产品 →",
+      "amazonVerified": "Amazon 认证",
+      "shipsTo": "配送至:",
+      "verifyPartnership": "验证合作伙伴关系"
+    },
+    "product": {
+      "prime": "Prime会员",
+      "rating": "5.0 (2条评论)",
+      "productTitle": "专业皮肤分析仪 - 21.5\" 高清显示屏",
+      "brand": "品牌: Cobbawe",
+      "description": "AI智能面部扫描仪，适用于沙龙和水疗中心，产品推荐，8光谱成像（痤疮/色素沉着/皱纹检测），多语言",
+      "installmentPlan": "或每月$526.67（3个月）",
+      "freeReturns": "免费退货",
+      "shopButton": "购买优质产品 →",
+      "shippingInfo": "由Amazon配送和销售"
     }
   },
   "beautySupplements": {

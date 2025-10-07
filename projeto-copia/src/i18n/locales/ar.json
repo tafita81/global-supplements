@@ -711,8 +711,8 @@
     }
   },
   "bundles": {
-    "title": "Introducing: Global Supplement + Tech Bundles",
-    "subtitle": "We've combined science, beauty, and technology into curated kits for modern wellness.",
+    "title": "تقديم: Global Supplement + حزم التكنولوجيا",
+    "subtitle": "لقد جمعنا العلم والجمال والتكنولوجيا في مجموعات منسقة للعافية الحديثة.",
     "preOrderNow": "Pre-Order Now",
     "mindGlow": {
       "name": "Mind & Glow Bundle",
@@ -774,6 +774,30 @@
       "chooseMarketplace": "اختر سوق Amazon الخاص بك",
       "marketplaceDescription": "ستتطابق المنتجات والأسعار مع بلدك المحدد",
       "earnJoin": "اكسب عمولات من المبيعات في جميع البلدان!"
+    },
+    "partnership": {
+      "officialPartner": "شريك رسمي",
+      "oneLinkProgram": "برنامج OneLink العالمي",
+      "shopTitle": "تسوق Amazon Global Supplements",
+      "trustDescription": "توصيل موثوق عالميًا إلى 13 دولة • حماية Amazon الآمنة",
+      "verifiedPartner": "✓ شريك موثق",
+      "securePayment": "✓ دفع آمن",
+      "buyerProtection": "✓ حماية المشتري",
+      "shopButton": "تسوق المنتجات المميزة →",
+      "amazonVerified": "موثق من Amazon",
+      "shipsTo": "يشحن إلى:",
+      "verifyPartnership": "التحقق من الشراكة"
+    },
+    "product": {
+      "prime": "برايم",
+      "rating": "5.0 (مراجعتان)",
+      "productTitle": "جهاز تحليل البشرة الاحترافي - شاشة عالية الدقة 21.5 بوصة",
+      "brand": "العلامة التجارية: Cobbawe",
+      "description": "ماسح وجه يعمل بالذكاء الاصطناعي للصالونات والمنتجعات، توصيات المنتجات، تصوير 8 أطياف (كشف حب الشباب/التصبغ/التجاعيد)، متعدد اللغات",
+      "installmentPlan": "أو 526.67 دولار/شهر (3 أشهر)",
+      "freeReturns": "إرجاع مجاني",
+      "shopButton": "تسوق المنتج المميز →",
+      "shippingInfo": "يشحن ويباع بواسطة Amazon"
     }
   },
   "beautySupplements": {

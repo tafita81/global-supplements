@@ -711,8 +711,8 @@
     }
   },
   "bundles": {
-    "title": "Introducing: Global Supplement + Tech Bundles",
-    "subtitle": "We've combined science, beauty, and technology into curated kits for modern wellness.",
+    "title": "परिचय: Global Supplement + टेक बंडल",
+    "subtitle": "हमने विज्ञान, सुंदरता और प्रौद्योगिकी को आधुनिक कल्याण के लिए क्यूरेटेड किट में संयोजित किया है।",
     "preOrderNow": "Pre-Order Now",
     "mindGlow": {
       "name": "Mind & Glow Bundle",
@@ -774,6 +774,30 @@
       "chooseMarketplace": "अपना Amazon मार्केटप्लेस चुनें",
       "marketplaceDescription": "उत्पाद और कीमतें आपके चयनित देश से मेल खाएंगी",
       "earnJoin": "सभी देशों में बिक्री से कमीशन कमाएं!"
+    },
+    "partnership": {
+      "officialPartner": "आधिकारिक भागीदार",
+      "oneLinkProgram": "OneLink ग्लोबल प्रोग्राम",
+      "shopTitle": "Amazon Global Supplements खरीदें",
+      "trustDescription": "13 देशों में विश्वसनीय विश्वव्यापी डिलीवरी • सुरक्षित Amazon सुरक्षा",
+      "verifiedPartner": "✓ सत्यापित भागीदार",
+      "securePayment": "✓ सुरक्षित भुगतान",
+      "buyerProtection": "✓ खरीदार सुरक्षा",
+      "shopButton": "प्रीमियम उत्पाद खरीदें →",
+      "amazonVerified": "Amazon सत्यापित",
+      "shipsTo": "यहाँ भेजता है:",
+      "verifyPartnership": "भागीदारी सत्यापित करें"
+    },
+    "product": {
+      "prime": "प्राइम",
+      "rating": "5.0 (2 समीक्षाएं)",
+      "productTitle": "पेशेवर त्वचा विश्लेषण मशीन - 21.5\" एचडी डिस्प्ले",
+      "brand": "ब्रांड: Cobbawe",
+      "description": "सैलून और स्पा के लिए AI-संचालित चेहरे का स्कैनर, उत्पाद सिफारिशें, 8-स्पेक्ट्रल इमेजिंग (मुँहासे/पिगमेंटेशन/झुर्रियों का पता लगाना), बहुभाषी",
+      "installmentPlan": "या $526.67/माह (3 महीने)",
+      "freeReturns": "मुफ़्त रिटर्न",
+      "shopButton": "प्रीमियम उत्पाद खरीदें →",
+      "shippingInfo": "Amazon द्वारा भेजा और बेचा गया"
     }
   },
   "medicalGrade": {

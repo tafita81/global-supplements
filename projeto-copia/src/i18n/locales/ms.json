@@ -711,8 +711,8 @@
     }
   },
   "bundles": {
-    "title": "Introducing: Global Supplement + Tech Bundles",
-    "subtitle": "We've combined science, beauty, and technology into curated kits for modern wellness.",
+    "title": "Memperkenalkan: Global Supplement + Tech Bundles",
+    "subtitle": "Kami telah menggabungkan sains, kecantikan dan teknologi dalam kit yang dikurasi untuk kesihatan moden.",
     "preOrderNow": "Pre-Order Now",
     "mindGlow": {
       "name": "Mind & Glow Bundle",
@@ -774,6 +774,30 @@
       "chooseMarketplace": "Pilih pasaran Amazon anda",
       "marketplaceDescription": "Produk dan harga akan sepadan dengan negara anda yang dipilih",
       "earnJoin": "Dapatkan komisen daripada jualan di semua negara!"
+    },
+    "partnership": {
+      "officialPartner": "Rakan Kongsi Rasmi",
+      "oneLinkProgram": "Program OneLink Global",
+      "shopTitle": "Beli Amazon Global Supplements",
+      "trustDescription": "Penghantaran dipercayai ke seluruh dunia ke 13 negara • Perlindungan Amazon yang selamat",
+      "verifiedPartner": "✓ Rakan Kongsi Disahkan",
+      "securePayment": "✓ Pembayaran Selamat",
+      "buyerProtection": "✓ Perlindungan Pembeli",
+      "shopButton": "Beli Produk Premium →",
+      "amazonVerified": "Amazon Disahkan",
+      "shipsTo": "Hantar ke:",
+      "verifyPartnership": "Sahkan Perkongsian"
+    },
+    "product": {
+      "prime": "Prime",
+      "rating": "5.0 (2 ulasan)",
+      "productTitle": "Mesin Analisis Kulit Profesional - Paparan HD 21.5\"",
+      "brand": "Jenama: Cobbawe",
+      "description": "Pengimbas Muka Berkuasa AI untuk Salon & Spa, Cadangan produk, Pengimejan 8-Spektrum (Pengesanan Jerawat/Pigmentasi/Kedut), Berbilang Bahasa",
+      "installmentPlan": "Atau $526.67/bulan (3 bulan)",
+      "freeReturns": "Pulangan PERCUMA",
+      "shopButton": "Beli Produk Premium →",
+      "shippingInfo": "Dihantar dan dijual oleh Amazon"
     }
   },
   "medicalGrade": {

@@ -760,11 +760,35 @@
       "chooseMarketplace": "Escolha seu marketplace Amazon",
       "marketplaceDescription": "Produtos e preços corresponderão ao seu país selecionado",
       "earnJoin": "Ganhe comissões de vendas em todos os países!"
+    },
+    "partnership": {
+      "officialPartner": "Parceiro Oficial",
+      "oneLinkProgram": "Programa OneLink Global",
+      "shopTitle": "Comprar Amazon Global Supplements",
+      "trustDescription": "Entrega mundial confiável para 13 países • Proteção segura da Amazon",
+      "verifiedPartner": "✓ Parceiro Verificado",
+      "securePayment": "✓ Pagamento Seguro",
+      "buyerProtection": "✓ Proteção ao Comprador",
+      "shopButton": "Comprar Produtos Premium →",
+      "amazonVerified": "Amazon Verificado",
+      "shipsTo": "Envia para:",
+      "verifyPartnership": "Verificar Parceria"
+    },
+    "product": {
+      "prime": "Prime",
+      "rating": "5.0 (2 avaliações)",
+      "productTitle": "Máquina de Análise de Pele Profissional - Display HD 21.5\"",
+      "brand": "Marca: Cobbawe",
+      "description": "Scanner Facial com IA para Salões e Spas, Recomendações de produtos, Imagem 8-Espectral (Detecção de Acne/Pigmentação/Rugas), Multi-idioma",
+      "installmentPlan": "Ou $526.67/mês (3 meses)",
+      "freeReturns": "Devoluções GRÁTIS",
+      "shopButton": "Comprar Produto Premium →",
+      "shippingInfo": "Enviado e vendido pela Amazon"
     }
   },
   "bundles": {
-    "title": "Introducing: Global Supplement + Tech Bundles",
-    "subtitle": "We've combined science, beauty, and technology into curated kits for modern wellness.",
+    "title": "Apresentando: Global Supplement + Tech Bundles",
+    "subtitle": "Combinamos ciência, beleza e tecnologia em kits curados para o bem-estar moderno.",
     "preOrderNow": "Pre-Order Now",
     "mindGlow": {
       "name": "Mind & Glow Bundle",

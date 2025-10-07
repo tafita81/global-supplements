@@ -777,6 +777,30 @@
       "chooseMarketplace": "Choose your Amazon marketplace",
       "marketplaceDescription": "Products and prices will match your selected country",
       "earnJoin": "💰 Earn commissions from sales in all countries!"
+    },
+    "partnership": {
+      "officialPartner": "Official Partner",
+      "oneLinkProgram": "OneLink Global Program",
+      "shopTitle": "Shop Amazon Global Supplements",
+      "trustDescription": "Trusted worldwide delivery to 13 countries • Secure Amazon protection",
+      "verifiedPartner": "✓ Verified Partner",
+      "securePayment": "✓ Secure Payment",
+      "buyerProtection": "✓ Buyer Protection",
+      "shopButton": "Shop Premium Products →",
+      "amazonVerified": "Amazon Verified",
+      "shipsTo": "Ships to:",
+      "verifyPartnership": "Verify Partnership"
+    },
+    "product": {
+      "prime": "Prime",
+      "rating": "5.0 (2 reviews)",
+      "productTitle": "Skin Analysis Machine Professional - 21.5\" HD Display",
+      "brand": "Brand: Cobbawe",
+      "description": "AI-Powered Facial Scanner for Salons & Spas, Product recommendations, 8-Spectral Imaging (Acne/Pigmentation/Wrinkle Detection), Multi-Language",
+      "installmentPlan": "Or $526.67/mo (3 mo)",
+      "freeReturns": "FREE Returns",
+      "shopButton": "Shop Premium Product →",
+      "shippingInfo": "Ships from and sold by Amazon"
     }
   },
   "beautySupplements": {
