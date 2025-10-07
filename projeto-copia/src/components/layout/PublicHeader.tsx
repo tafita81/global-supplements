@@ -84,7 +84,11 @@ export function PublicHeader() {
               <Globe className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
             </div>
             <div>
-              <p className="text-base sm:text-xl font-semibold text-gray-700">Beauty • Quantum • Medical • Gadgets • Wellness</p>
+              <h1 className="text-sm sm:text-lg font-bold">
+                <span className="text-gray-900">Global </span>
+                <span className="text-yellow-500">Supplements</span>
+              </h1>
+              <p className="text-sm text-gray-600 hidden sm:block">Beauty • Quantum • Medical • Gadgets • Wellness</p>
             </div>
           </div>
 
