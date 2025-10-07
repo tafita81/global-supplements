@@ -69,18 +69,18 @@
     }
   },
   "countries": {
-    "badge": "Strategic Global Partnerships",
-    "title": "Elite Worldwide Network of Premium Suppliers",
-    "subtitle": "Our exclusive partnerships span 32 countries across 6 continents, connecting governments, enterprises, and healthcare organizations to the world's most trusted supplement manufacturers. Each partnership represents years of rigorous vetting, regulatory compliance, and proven track records in delivering pharmaceutical-grade products to global markets.",
+    "badge": "战略全球合作伙伴关系",
+    "title": "优质供应商的精英全球网络",
+    "subtitle": "我们的独家合作伙伴关系遍及6大洲32个国家，将政府、企业和医疗保健组织与世界上最值得信赖的补充剂制造商联系起来。每个合作伙伴关系都代表了多年严格的审查、监管合规和向全球市场提供药品级产品的经过验证的记录。",
     "stats": {
-      "active": "Active Countries",
-      "market": "Global Market Value",
-      "suppliers": "Verified Suppliers",
-      "verified": "Quality Certified"
+      "active": "活跃国家",
+      "market": "全球市场价值",
+      "suppliers": "经过验证的供应商",
+      "verified": "质量认证"
     },
     "contact": {
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "international": "联系国际团队",
+      "operations": "全球运营中心"
     },
     "statusLabels": {
       "strategic": "strategic",
@@ -95,9 +95,9 @@
       "logistics": "logistics"
     },
     "cta": {
-      "title": "Interested in expanding to strategic markets? Contact our global team",
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "title": "有兴趣扩展到战略市场？联系我们的全球团队",
+      "international": "联系国际团队",
+      "operations": "全球运营中心"
     }
   },
   "products": {
@@ -770,6 +770,11 @@
     },
     "buttons": {
       "shopPremiumProduct": "Comprar Produto Premium →"
+    },
+    "countrySelector": {
+      "chooseMarketplace": "选择您的Amazon市场",
+      "marketplaceDescription": "产品和价格将与您选择的国家匹配",
+      "earnJoin": "从所有国家的销售中赚取佣金！"
     }
   }
 }

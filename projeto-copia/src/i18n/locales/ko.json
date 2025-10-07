@@ -69,18 +69,18 @@
     }
   },
   "countries": {
-    "badge": "Strategic Global Partnerships",
-    "title": "Elite Worldwide Network of Premium Suppliers",
-    "subtitle": "Our exclusive partnerships span 32 countries across 6 continents, connecting governments, enterprises, and healthcare organizations to the world's most trusted supplement manufacturers. Each partnership represents years of rigorous vetting, regulatory compliance, and proven track records in delivering pharmaceutical-grade products to global markets.",
+    "badge": "전략적 글로벌 파트너십",
+    "title": "프리미엄 공급업체의 엘리트 글로벌 네트워크",
+    "subtitle": "6개 대륙 32개국에 걸친 독점 파트너십으로 정부, 기업 및 의료 기관을 세계에서 가장 신뢰할 수 있는 보충제 제조업체에 연결합니다. 각 파트너십은 엄격한 검증, 규제 준수 및 글로벌 시장에 제약 등급 제품을 제공하는 입증된 실적을 나타냅니다.",
     "stats": {
-      "active": "Active Countries",
-      "market": "Global Market Value",
-      "suppliers": "Verified Suppliers",
-      "verified": "Quality Certified"
+      "active": "활성 국가",
+      "market": "글로벌 시장 가치",
+      "suppliers": "검증된 공급업체",
+      "verified": "품질 인증"
     },
     "contact": {
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "international": "국제 팀에 문의",
+      "operations": "글로벌 운영 센터"
     },
     "statusLabels": {
       "strategic": "strategic",
@@ -95,9 +95,9 @@
       "logistics": "logistics"
     },
     "cta": {
-      "title": "Interested in expanding to strategic markets? Contact our global team",
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "title": "전략적 시장으로의 확장에 관심이 있으십니까? 글로벌 팀에 문의하세요",
+      "international": "국제 팀에 문의",
+      "operations": "글로벌 운영 센터"
     }
   },
   "products": {
@@ -770,6 +770,11 @@
     },
     "buttons": {
       "shopPremiumProduct": "Comprar Produto Premium →"
+    },
+    "countrySelector": {
+      "choosemarketplace": "Amazon 마켓플레이스 선택",
+      "marketplaceDescription": "제품과 가격이 선택한 국가와 일치합니다",
+      "earnjoin": "모든 국가의 판매로 수수료를 받으세요!"
     }
   }
 }

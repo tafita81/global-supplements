@@ -770,6 +770,11 @@
     },
     "buttons": {
       "shopPremiumProduct": "تسوق المنتج المميز ←"
+    },
+    "countrySelector": {
+      "chooseMarketplace": "اختر سوق Amazon الخاص بك",
+      "marketplaceDescription": "ستتطابق المنتجات والأسعار مع بلدك المحدد",
+      "earnJoin": "اكسب عمولات من المبيعات في جميع البلدان!"
     }
   }
 }

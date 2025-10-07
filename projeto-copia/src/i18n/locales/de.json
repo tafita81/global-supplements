@@ -770,6 +770,11 @@
     },
     "buttons": {
       "shopPremiumProduct": "Premium-Produkt kaufen →"
+    },
+    "countrySelector": {
+      "chooseMarketplace": "Wählen Sie Ihren Amazon-Marktplatz",
+      "marketplaceDescription": "Produkte und Preise entsprechen Ihrem ausgewählten Land",
+      "earnJoin": "Verdienen Sie Provisionen aus Verkäufen in allen Ländern!"
     }
   }
 }

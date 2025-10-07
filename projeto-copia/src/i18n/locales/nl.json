@@ -770,6 +770,11 @@
     },
     "buttons": {
       "shopPremiumProduct": "Koop Premium Product →"
+    },
+    "countrySelector": {
+      "chooseMarketplace": "Kies je Amazon-marktplaats",
+      "marketplaceDescription": "Producten en prijzen komen overeen met je geselecteerde land",
+      "earnJoin": "Verdien commissies op verkopen in alle landen!"
     }
   }
 }

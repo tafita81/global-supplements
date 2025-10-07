@@ -69,18 +69,18 @@
     }
   },
   "countries": {
-    "badge": "Strategic Global Partnerships",
-    "title": "Elite Worldwide Network of Premium Suppliers",
-    "subtitle": "Our exclusive partnerships span 32 countries across 6 continents, connecting governments, enterprises, and healthcare organizations to the world's most trusted supplement manufacturers. Each partnership represents years of rigorous vetting, regulatory compliance, and proven track records in delivering pharmaceutical-grade products to global markets.",
+    "badge": "戦略的グローバルパートナーシップ",
+    "title": "プレミアムサプライヤーのエリートワールドワイドネットワーク",
+    "subtitle": "6大陸32カ国にわたる独占的パートナーシップにより、政府、企業、医療機関を世界で最も信頼されるサプリメントメーカーに接続します。各パートナーシップは、厳格な審査、規制遵守、および医薬品グレードの製品をグローバル市場に提供する実績を表しています。",
     "stats": {
-      "active": "Active Countries",
-      "market": "Global Market Value",
-      "suppliers": "Verified Suppliers",
-      "verified": "Quality Certified"
+      "active": "アクティブな国",
+      "market": "グローバル市場価値",
+      "suppliers": "検証済みサプライヤー",
+      "verified": "品質認定"
     },
     "contact": {
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "international": "国際チームに連絡",
+      "operations": "グローバルオペレーションセンター"
     },
     "statusLabels": {
       "strategic": "strategic",
@@ -95,9 +95,9 @@
       "logistics": "logistics"
     },
     "cta": {
-      "title": "Interested in expanding to strategic markets? Contact our global team",
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "title": "戦略的市場への拡大に関心がありますか？グローバルチームにお問い合わせください",
+      "international": "国際チームに連絡",
+      "operations": "グローバルオペレーションセンター"
     }
   },
   "products": {
@@ -770,6 +770,11 @@
     },
     "buttons": {
       "shopPremiumProduct": "プレミアム商品を購入 →"
+    },
+    "countrySelector": {
+      "chooseMarketplace": "Amazonマーケットプレイスを選択",
+      "marketplaceDescription": "製品と価格は選択した国に合わせて表示されます",
+      "earnJoin": "すべての国の販売から手数料を獲得！"
     }
   }
 }

@@ -69,18 +69,18 @@
     }
   },
   "countries": {
-    "badge": "Strategic Global Partnerships",
-    "title": "Elite Worldwide Network of Premium Suppliers",
-    "subtitle": "Our exclusive partnerships span 32 countries across 6 continents, connecting governments, enterprises, and healthcare organizations to the world's most trusted supplement manufacturers. Each partnership represents years of rigorous vetting, regulatory compliance, and proven track records in delivering pharmaceutical-grade products to global markets.",
+    "badge": "रणनीतिक वैश्विक साझेदारी",
+    "title": "प्रीमियम आपूर्तिकर्ताओं का अभिजात वैश्विक नेटवर्क",
+    "subtitle": "6 महाद्वीपों में 32 देशों में हमारी विशेष साझेदारी, सरकारों, उद्यमों और स्वास्थ्य सेवा संगठनों को दुनिया के सबसे विश्वसनीय पूरक निर्माताओं से जोड़ती है। प्रत्येक साझेदारी वर्षों की कठोर जांच, नियामक अनुपालन और वैश्विक बाजारों में फार्मास्युटिकल-ग्रेड उत्पादों को वितरित करने के सिद्ध ट्रैक रिकॉर्ड का प्रतिनिधित्व करती है।",
     "stats": {
-      "active": "Active Countries",
-      "market": "Global Market Value",
-      "suppliers": "Verified Suppliers",
-      "verified": "Quality Certified"
+      "active": "सक्रिय देश",
+      "market": "वैश्विक बाजार मूल्य",
+      "suppliers": "सत्यापित आपूर्तिकर्ता",
+      "verified": "गुणवत्ता प्रमाणित"
     },
     "contact": {
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "international": "अंतर्राष्ट्रीय टीम से संपर्क करें",
+      "operations": "वैश्विक संचालन केंद्र"
     },
     "statusLabels": {
       "strategic": "strategic",
@@ -95,9 +95,9 @@
       "logistics": "logistics"
     },
     "cta": {
-      "title": "Interested in expanding to strategic markets? Contact our global team",
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "title": "रणनीतिक बाजारों में विस्तार में रुचि? हमारी वैश्विक टीम से संपर्क करें",
+      "international": "अंतर्राष्ट्रीय टीम से संपर्क करें",
+      "operations": "वैश्विक संचालन केंद्र"
     }
   },
   "products": {
@@ -770,6 +770,11 @@
     },
     "buttons": {
       "shopPremiumProduct": "Comprar Produto Premium →"
+    },
+    "countrySelector": {
+      "chooseMarketplace": "अपना Amazon मार्केटप्लेस चुनें",
+      "marketplaceDescription": "उत्पाद और कीमतें आपके चयनित देश से मेल खाएंगी",
+      "earnJoin": "सभी देशों में बिक्री से कमीशन कमाएं!"
     }
   }
 }

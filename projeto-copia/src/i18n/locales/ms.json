@@ -69,18 +69,18 @@
     }
   },
   "countries": {
-    "badge": "Strategic Global Partnerships",
-    "title": "Elite Worldwide Network of Premium Suppliers",
-    "subtitle": "Our exclusive partnerships span 32 countries across 6 continents, connecting governments, enterprises, and healthcare organizations to the world's most trusted supplement manufacturers. Each partnership represents years of rigorous vetting, regulatory compliance, and proven track records in delivering pharmaceutical-grade products to global markets.",
+    "badge": "Perkongsian Global Strategik",
+    "title": "Rangkaian Global Elit Pembekal Premium",
+    "subtitle": "Perkongsian eksklusif kami merangkumi 32 negara merentasi 6 benua, menghubungkan kerajaan, perusahaan dan organisasi penjagaan kesihatan kepada pengeluar makanan tambahan yang paling dipercayai di dunia. Setiap perkongsian mewakili tahun pemeriksaan yang ketat, pematuhan peraturan dan rekod prestasi yang terbukti dalam menyampaikan produk gred farmaseutikal ke pasaran global.",
     "stats": {
-      "active": "Active Countries",
-      "market": "Global Market Value",
-      "suppliers": "Verified Suppliers",
-      "verified": "Quality Certified"
+      "active": "Negara Aktif",
+      "market": "Nilai Pasaran Global",
+      "suppliers": "Pembekal Disahkan",
+      "verified": "Pensijilan Kualiti"
     },
     "contact": {
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "international": "Hubungi Pasukan Antarabangsa",
+      "operations": "Pusat Operasi Global"
     },
     "statusLabels": {
       "strategic": "strategic",
@@ -95,9 +95,9 @@
       "logistics": "logistics"
     },
     "cta": {
-      "title": "Interested in expanding to strategic markets? Contact our global team",
-      "international": "Contact International Team",
-      "operations": "Global Operations Center"
+      "title": "Berminat untuk berkembang ke pasaran strategik? Hubungi pasukan global kami",
+      "international": "Hubungi Pasukan Antarabangsa",
+      "operations": "Pusat Operasi Global"
     }
   },
   "products": {
@@ -770,6 +770,11 @@
     },
     "buttons": {
       "shopPremiumProduct": "Comprar Produto Premium →"
+    },
+    "countrySelector": {
+      "chooseMarketplace": "Pilih pasaran Amazon anda",
+      "marketplaceDescription": "Produk dan harga akan sepadan dengan negara anda yang dipilih",
+      "earnJoin": "Dapatkan komisen daripada jualan di semua negara!"
     }
   }
 }

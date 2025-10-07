@@ -770,6 +770,11 @@
     },
     "buttons": {
       "shopPremiumProduct": "Handla Premiumprodukter →"
+    },
+    "countrySelector": {
+      "chooseMarketplace": "Välj din Amazon-marknadsplats",
+      "marketplaceDescription": "Produkter och priser matchar ditt valda land",
+      "earnJoin": "Tjäna provisioner från försäljning i alla länder!"
     }
   }
 }

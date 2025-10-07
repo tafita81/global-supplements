@@ -69,9 +69,9 @@ export const CountrySelector = () => {
       {isOpen && (
         <div className="absolute top-full left-0 mt-1 bg-white text-black rounded shadow-xl border border-gray-200 z-50 w-72 max-h-96 overflow-y-auto">
           <div className="p-3 border-b border-gray-200 bg-gray-50">
-            <h3 className="font-bold text-sm">Choose your Amazon marketplace</h3>
+            <h3 className="font-bold text-sm">{t('amazon.countrySelector.chooseMarketplace')}</h3>
             <p className="text-xs text-gray-600 mt-1">
-              Products and prices will match your selected country
+              {t('amazon.countrySelector.marketplaceDescription')}
             </p>
           </div>
           
@@ -104,7 +104,7 @@ export const CountrySelector = () => {
 
           <div className="p-3 border-t border-gray-200 bg-gray-50">
             <p className="text-xs text-gray-600">
-              💰 <strong>Earn commissions</strong> from sales in all countries!
+              {t('amazon.countrySelector.earnJoin')}
             </p>
           </div>
         </div>
