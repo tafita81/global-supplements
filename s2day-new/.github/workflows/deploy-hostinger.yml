@@ -50,7 +50,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./dist/
-          server-dir: /public_html/s2day/
+          server-dir: /public_html/shippingtoday.shop/
           dangerous-clean-slate: false
           exclude: |
             **/.git*
