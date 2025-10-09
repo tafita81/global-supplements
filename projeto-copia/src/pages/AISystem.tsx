@@ -6,54 +6,20 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Brain, Cpu, Zap, TrendingUp, AlertTriangle, Settings, Activity } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-interface AIModule {
-  name: string;
-  status: "active" | "inactive" | "training";
-  performance: number;
-  description: string;
-  lastUpdate: string;
-}
-
 export default function AISystem() {
   const { t } = useTranslation();
 
-  const aiModules: AIModule[] = [
+  // Dados dos módulos IA REAIS que estão no sistema
+  const realAiModules = [
     {
-      name: t('aiSystem.modules.globalAiBrain.name'),
+      name: "Opportunity Detector",
       status: "active",
-      performance: 94,
-      description: t('aiSystem.modules.globalAiBrain.description'),
-      lastUpdate: "2024-01-15 14:30"
-    },
-    {
-      name: t('aiSystem.modules.b2bAnalyzer.name'),
-      status: "active", 
-      performance: 87,
-      description: t('aiSystem.modules.b2bAnalyzer.description'),
-      lastUpdate: "2024-01-15 13:45"
-    },
-    {
-      name: t('aiSystem.modules.b2cAnalyzer.name'),
-      status: "active",
-      performance: 91,
-      description: t('aiSystem.modules.b2cAnalyzer.description'),
-      lastUpdate: "2024-01-15 14:15"
-    },
-    {
-      name: t('aiSystem.modules.mycogenesisAi.name'),
-      status: "training",
-      performance: 76,
-      description: t('aiSystem.modules.mycogenesisAi.description'),
-      lastUpdate: "2024-01-15 12:20"
-    },
-    {
-      name: t('aiSystem.modules.complianceChecker.name'),
-      status: "active",
-      performance: 98,
-      description: t('aiSystem.modules.complianceChecker.description'),
-      lastUpdate: "2024-01-15 14:45"
+      performance: 0, // Será calculado com base em detecções reais
+      description: "Detecção automática de oportunidades em marketplaces globais",
+      lastUpdate: new Date().toISOString()
     }
   ];
+
   const getStatusColor = (status: string) => {
     switch (status) {
       case "active": return "success";
@@ -61,12 +27,6 @@ export default function AISystem() {
       case "inactive": return "destructive";
       default: return "secondary";
     }
-  };
-
-  const getPerformanceColor = (performance: number) => {
-    if (performance >= 90) return "text-success";
-    if (performance >= 70) return "text-warning";
-    return "text-destructive";
   };
 
   const getStatusIcon = (status: string) => {
@@ -78,8 +38,7 @@ export default function AISystem() {
     }
   };
 
-  const activeModules = aiModules.filter(m => m.status === "active").length;
-  const avgPerformance = Math.round(aiModules.reduce((acc, m) => acc + m.performance, 0) / aiModules.length);
+  const activeModules = realAiModules.filter(m => m.status === "active").length;
 
   return (
     <div className="space-y-6">
@@ -113,7 +72,7 @@ export default function AISystem() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">{t('aiSystem.averagePerformance')}</p>
-                <p className="text-2xl font-bold">{avgPerformance}%</p>
+                <p className="text-2xl font-bold">0%</p>
               </div>
               <TrendingUp className="h-8 w-8 text-primary" />
             </div>
@@ -135,7 +94,7 @@ export default function AISystem() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">{t('aiSystem.uptime')}</p>
-                <p className="text-2xl font-bold">99.9%</p>
+                <p className="text-2xl font-bold">0%</p>
               </div>
               <Activity className="h-8 w-8 text-accent" />
             </div>
@@ -152,7 +111,7 @@ export default function AISystem() {
 
         <TabsContent value="modules" className="space-y-4">
           <div className="grid gap-4">
-            {aiModules.map((module, index) => (
+            {realAiModules.map((module, index) => (
               <Card key={index} className="hover:shadow-md transition-shadow">
                 <CardHeader>
                   <div className="flex items-center justify-between">
@@ -176,49 +135,62 @@ export default function AISystem() {
                       <h4 className="font-medium mb-2">{t('aiSystem.performance')}</h4>
                       <div className="space-y-2">
                         <Progress value={module.performance} className="h-2" />
-                        <div className="flex justify-between text-sm">
-                          <span className={getPerformanceColor(module.performance)}>
-                            {module.performance}%
-                          </span>
-                          <span className="text-muted-foreground">
-                            {t('aiSystem.lastUpdate')}: {module.lastUpdate}
-                          </span>
-                        </div>
+                        <p className="text-sm font-medium text-muted-foreground">
+                          {module.performance}%
+                        </p>
                       </div>
                     </div>
                     
-                    <div className="flex items-end justify-end space-x-2">
-                      <Button variant="outline" size="sm">
-                        {t('aiSystem.configure')}
-                      </Button>
-                      <Button variant="outline" size="sm">
-                        {t('aiSystem.logs')}
-                      </Button>
-                      {module.status === "training" && (
-                        <Button variant="outline" size="sm">
-                          {t('aiSystem.stopTraining')}
-                        </Button>
-                      )}
+                    <div>
+                      <h4 className="font-medium mb-2">{t('aiSystem.lastUpdate')}</h4>
+                      <p className="text-sm text-muted-foreground">
+                        {new Date(module.lastUpdate).toLocaleString('pt-BR')}
+                      </p>
                     </div>
+                  </div>
+                  
+                  <div className="flex gap-2 mt-4 pt-4 border-t">
+                    <Button variant="outline" size="sm">
+                      {t('aiSystem.configure')}
+                    </Button>
+                    <Button variant="outline" size="sm">
+                      {t('aiSystem.logs')}
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
             ))}
           </div>
+
+          {realAiModules.length === 0 && (
+            <Card>
+              <CardContent className="p-6 text-center">
+                <Brain className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
+                <h3 className="text-lg font-semibold mb-2">Nenhum Módulo Ativo</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Configure módulos de IA para começar a análise automática.
+                </p>
+                <Button>
+                  <Settings className="h-4 w-4 mr-2" />
+                  Configurar Módulos
+                </Button>
+              </CardContent>
+            </Card>
+          )}
         </TabsContent>
 
         <TabsContent value="training">
           <Card>
             <CardHeader>
-              <CardTitle>{t('aiSystem.training.title')}</CardTitle>
+              <CardTitle>{t('aiSystem.training')}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                {t('aiSystem.training.description')}
+                Dados de treinamento serão exibidos quando houver atividade de IA.
               </p>
-              <Button>
+              <Button variant="outline">
                 <Brain className="h-4 w-4 mr-2" />
-                {t('aiSystem.training.startNew')}
+                Ver Histórico de Treinamento
               </Button>
             </CardContent>
           </Card>
@@ -227,23 +199,15 @@ export default function AISystem() {
         <TabsContent value="logs">
           <Card>
             <CardHeader>
-              <CardTitle>{t('aiSystem.systemLogs.title')}</CardTitle>
+              <CardTitle>{t('aiSystem.logs')}</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="space-y-2 font-mono text-sm">
-                <div className="p-2 bg-muted rounded text-success">
-                  [2024-01-15 14:45] ✅ Compliance Checker: Verificação concluída - 100% conforme
-                </div>
-                <div className="p-2 bg-muted rounded text-primary">
-                  [2024-01-15 14:30] 🧠 Cérebro IA Global: Nova oportunidade identificada - Score: 94%
-                </div>
-                <div className="p-2 bg-muted rounded text-warning">
-                  [2024-01-15 14:15] ⚠️ Mycogenesis AI: Iniciando nova sessão de treinamento
-                </div>
-                <div className="p-2 bg-muted rounded text-success">
-                  [2024-01-15 14:00] ✅ B2C Analyzer: Análise de tendências completada
-                </div>
-              </div>
+              <p className="text-muted-foreground mb-4">
+                Logs de sistema serão exibidos quando houver atividade.
+              </p>
+              <Button variant="outline">
+                Ver Todos os Logs
+              </Button>
             </CardContent>
           </Card>
         </TabsContent>

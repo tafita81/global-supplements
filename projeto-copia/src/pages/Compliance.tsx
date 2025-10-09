@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Shield, AlertTriangle, CheckCircle, FileText, Globe, Users, Gavel } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
+import { supabase } from "@/integrations/supabase/client";
 
 interface ComplianceCheck {
   id: string;
@@ -14,42 +16,21 @@ interface ComplianceCheck {
   created_at: string;
 }
 
-const mockComplianceChecks: ComplianceCheck[] = [
-  {
-    id: "1",
-    opportunity_id: "opp-1",
-    check_type: "Sanctions Check",
-    status: "passed",
-    result: { score: 100, details: "Nenhuma sanção encontrada" },
-    created_at: "2024-01-15"
-  },
-  {
-    id: "2",
-    opportunity_id: "opp-2", 
-    check_type: "ESG Validation",
-    status: "passed",
-    result: { score: 95, details: "Conformidade ESG verificada" },
-    created_at: "2024-01-15"
-  },
-  {
-    id: "3",
-    opportunity_id: "opp-3",
-    check_type: "Patent Check",
-    status: "warning",
-    result: { score: 78, details: "Possível conflito de patente - revisar" },
-    created_at: "2024-01-14"
-  },
-  {
-    id: "4",
-    opportunity_id: "opp-4",
-    check_type: "Quality Certification",
-    status: "passed", 
-    result: { score: 98, details: "Certificações de qualidade válidas" },
-    created_at: "2024-01-14"
-  }
-];
-
 export default function Compliance() {
+  // Buscar dados REAIS do Supabase
+  const { data: complianceChecks = [], isLoading } = useQuery({
+    queryKey: ['compliance_checks'],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from('compliance_checks')
+        .select('*')
+        .order('created_at', { ascending: false });
+      
+      if (error) throw error;
+      return data as ComplianceCheck[];
+    },
+  });
+
   const getStatusColor = (status: string) => {
     switch (status) {
       case "passed": return "success";
@@ -80,9 +61,11 @@ export default function Compliance() {
     }
   };
 
-  const passedChecks = mockComplianceChecks.filter(c => c.status === "passed").length;
-  const warningChecks = mockComplianceChecks.filter(c => c.status === "warning").length;
-  const overallScore = Math.round(mockComplianceChecks.reduce((acc, c) => acc + c.result.score, 0) / mockComplianceChecks.length);
+  const passedChecks = complianceChecks.filter(c => c.status === "passed").length;
+  const warningChecks = complianceChecks.filter(c => c.status === "warning").length;
+  const overallScore = complianceChecks.length > 0 
+    ? Math.round(complianceChecks.reduce((acc, c) => acc + (c.result?.score || 0), 0) / complianceChecks.length)
+    : 0;
 
   return (
     <div className="space-y-6">
@@ -138,7 +121,7 @@ export default function Compliance() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">Países Cobertos</p>
-                <p className="text-2xl font-bold">45</p>
+                <p className="text-2xl font-bold">0</p>
               </div>
               <Globe className="h-8 w-8 text-accent" />
             </div>
@@ -154,77 +137,99 @@ export default function Compliance() {
         </TabsList>
 
         <TabsContent value="checks" className="space-y-4">
-          <div className="grid gap-4">
-            {mockComplianceChecks.map((check) => (
-              <Card key={check.id} className="hover:shadow-md transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-3">
-                      <div className="p-2 bg-primary/10 rounded-lg">
-                        {getCheckIcon(check.check_type)}
+          {isLoading ? (
+            <Card>
+              <CardContent className="p-6 text-center text-muted-foreground">
+                Carregando verificações de compliance...
+              </CardContent>
+            </Card>
+          ) : complianceChecks.length === 0 ? (
+            <Card>
+              <CardContent className="p-6 text-center">
+                <Shield className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
+                <h3 className="text-lg font-semibold mb-2">Nenhuma Verificação Ainda</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  As verificações de compliance serão criadas automaticamente quando oportunidades forem detectadas.
+                </p>
+                <Button>
+                  <Shield className="h-4 w-4 mr-2" />
+                  Criar Verificação Manual
+                </Button>
+              </CardContent>
+            </Card>
+          ) : (
+            <div className="grid gap-4">
+              {complianceChecks.map((check) => (
+                <Card key={check.id} className="hover:shadow-md transition-shadow">
+                  <CardHeader>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center space-x-3">
+                        <div className="p-2 bg-primary/10 rounded-lg">
+                          {getCheckIcon(check.check_type)}
+                        </div>
+                        <div>
+                          <CardTitle className="text-lg">{check.check_type}</CardTitle>
+                          <p className="text-sm text-muted-foreground">
+                            Oportunidade: {check.opportunity_id}
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <CardTitle className="text-lg">{check.check_type}</CardTitle>
-                        <p className="text-sm text-muted-foreground">
-                          Oportunidade: {check.opportunity_id}
-                        </p>
-                      </div>
-                    </div>
-                    <Badge variant={getStatusColor(check.status) as any}>
-                      {getStatusLabel(check.status)}
-                    </Badge>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid gap-4 md:grid-cols-3">
-                    <div>
-                      <h4 className="font-medium mb-2">Score de Conformidade</h4>
-                      <div className="space-y-2">
-                        <Progress value={check.result.score} className="h-2" />
-                        <p className={`text-sm font-medium ${
-                          check.result.score >= 90 ? "text-success" : 
-                          check.result.score >= 70 ? "text-warning" : "text-destructive"
-                        }`}>
-                          {check.result.score}%
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <h4 className="font-medium mb-2">Detalhes da Verificação</h4>
-                      <p className="text-sm text-muted-foreground">
-                        {check.result.details}
-                      </p>
-                    </div>
-                    
-                    <div>
-                      <h4 className="font-medium mb-2">Data da Verificação</h4>
-                      <p className="text-sm">
-                        {new Date(check.created_at).toLocaleDateString('pt-BR')}
-                      </p>
-                      <Badge variant="outline" className="mt-1 text-xs">
-                        ID: {check.id}
+                      <Badge variant={getStatusColor(check.status) as any}>
+                        {getStatusLabel(check.status)}
                       </Badge>
                     </div>
-                  </div>
-                  
-                  <div className="flex gap-2 mt-4 pt-4 border-t">
-                    <Button variant="outline" size="sm">
-                      Ver Detalhes
-                    </Button>
-                    <Button variant="outline" size="sm">
-                      Relatório
-                    </Button>
-                    {check.status === "warning" && (
-                      <Button variant="outline" size="sm" className="text-warning">
-                        Resolver
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid gap-4 md:grid-cols-3">
+                      <div>
+                        <h4 className="font-medium mb-2">Score de Conformidade</h4>
+                        <div className="space-y-2">
+                          <Progress value={check.result?.score || 0} className="h-2" />
+                          <p className={`text-sm font-medium ${
+                            (check.result?.score || 0) >= 90 ? "text-success" : 
+                            (check.result?.score || 0) >= 70 ? "text-warning" : "text-destructive"
+                          }`}>
+                            {check.result?.score || 0}%
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <div>
+                        <h4 className="font-medium mb-2">Detalhes da Verificação</h4>
+                        <p className="text-sm text-muted-foreground">
+                          {check.result?.details || 'Sem detalhes disponíveis'}
+                        </p>
+                      </div>
+                      
+                      <div>
+                        <h4 className="font-medium mb-2">Data da Verificação</h4>
+                        <p className="text-sm">
+                          {new Date(check.created_at).toLocaleDateString('pt-BR')}
+                        </p>
+                        <Badge variant="outline" className="mt-1 text-xs">
+                          ID: {check.id}
+                        </Badge>
+                      </div>
+                    </div>
+                    
+                    <div className="flex gap-2 mt-4 pt-4 border-t">
+                      <Button variant="outline" size="sm">
+                        Ver Detalhes
                       </Button>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                      <Button variant="outline" size="sm">
+                        Relatório
+                      </Button>
+                      {check.status === "warning" && (
+                        <Button variant="outline" size="sm" className="text-warning">
+                          Resolver
+                        </Button>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          )}
         </TabsContent>
 
         <TabsContent value="regulations">
@@ -241,9 +246,9 @@ export default function Compliance() {
                   Verificação automática contra listas de sanções OFAC, UE, UN.
                 </p>
                 <div className="space-y-2">
-                  <Badge variant="default">OFAC - Atualizado</Badge>
-                  <Badge variant="default">EU Sanctions - Atualizado</Badge>
-                  <Badge variant="default">UN Sanctions - Atualizado</Badge>
+                  <Badge variant="outline">OFAC - Aguardando dados</Badge>
+                  <Badge variant="outline">EU Sanctions - Aguardando dados</Badge>
+                  <Badge variant="outline">UN Sanctions - Aguardando dados</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -260,9 +265,9 @@ export default function Compliance() {
                   Validação de critérios ambientais, sociais e de governança.
                 </p>
                 <div className="space-y-2">
-                  <Badge variant="default">Environmental - OK</Badge>
-                  <Badge variant="default">Social - OK</Badge>
-                  <Badge variant="default">Governance - OK</Badge>
+                  <Badge variant="outline">Environmental - Aguardando dados</Badge>
+                  <Badge variant="outline">Social - Aguardando dados</Badge>
+                  <Badge variant="outline">Governance - Aguardando dados</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -279,9 +284,9 @@ export default function Compliance() {
                   Verificação de patentes e direitos autorais.
                 </p>
                 <div className="space-y-2">
-                  <Badge variant="default">USPTO - Verificado</Badge>
-                  <Badge variant="outline">EPO - Atenção</Badge>
-                  <Badge variant="default">WIPO - Verificado</Badge>
+                  <Badge variant="outline">USPTO - Aguardando dados</Badge>
+                  <Badge variant="outline">EPO - Aguardando dados</Badge>
+                  <Badge variant="outline">WIPO - Aguardando dados</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -298,9 +303,9 @@ export default function Compliance() {
                   Validação de certificados ISO, FDA, CE, etc.
                 </p>
                 <div className="space-y-2">
-                  <Badge variant="default">ISO 9001 - Válido</Badge>
-                  <Badge variant="default">FDA - Aprovado</Badge>
-                  <Badge variant="default">CE Mark - Válido</Badge>
+                  <Badge variant="outline">ISO 9001 - Aguardando dados</Badge>
+                  <Badge variant="outline">FDA - Aguardando dados</Badge>
+                  <Badge variant="outline">CE Mark - Aguardando dados</Badge>
                 </div>
               </CardContent>
             </Card>
