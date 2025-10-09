@@ -59,7 +59,8 @@ export default function Opportunities() {
       const { data, error } = await supabase.functions.invoke('opportunity-detector', {
         body: { 
           categories: ['electronics', 'health-supplements', 'industrial'],
-          auto_analyze: true 
+          auto_analyze: true,
+          rapidapi_key: import.meta.env.VITE_RAPIDAPI_KEY_1 || ''
         }
       });
       

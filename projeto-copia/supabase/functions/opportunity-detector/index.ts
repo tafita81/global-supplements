@@ -13,6 +13,8 @@ const openaiKey = Deno.env.get('OPENAI_API_KEY') || 'demo-key';
 
 const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
+let rapidApiKey = '';
+
 interface MarketplaceOpportunity {
   source: string;
   product_name: string;
@@ -20,6 +22,46 @@ interface MarketplaceOpportunity {
   target_market: string;
   estimated_demand: number;
   margin_potential: number;
+  amazon_price?: number;
+  real_margin?: number;
+}
+
+// Função para buscar preços reais na Amazon via RapidAPI
+async function getAmazonRealPrice(productName: string): Promise<number | null> {
+  if (!rapidApiKey) {
+    console.log('⚠️ RapidAPI key not configured, skipping Amazon price check');
+    return null;
+  }
+
+  try {
+    const response = await fetch(`https://real-time-amazon-data.p.rapidapi.com/search?query=${encodeURIComponent(productName)}&page=1&country=US&sort_by=RELEVANCE&product_condition=ALL`, {
+      method: 'GET',
+      headers: {
+        'x-rapidapi-key': rapidApiKey,
+        'x-rapidapi-host': 'real-time-amazon-data.p.rapidapi.com'
+      }
+    });
+
+    if (!response.ok) {
+      console.log(`Amazon API error: ${response.status}`);
+      return null;
+    }
+
+    const data = await response.json();
+    const products = data.data?.products || [];
+    
+    if (products.length > 0) {
+      const price = products[0].product_price || products[0].product_original_price;
+      const numPrice = typeof price === 'string' ? parseFloat(price.replace(/[$,]/g, '')) : price;
+      console.log(`✅ Amazon price for "${productName}": $${numPrice}`);
+      return numPrice || null;
+    }
+    
+    return null;
+  } catch (error) {
+    console.error('Error fetching Amazon price:', error);
+    return null;
+  }
 }
 
 // APIs reais para detectar oportunidades
@@ -267,9 +309,14 @@ async function analyzeWithAI(opportunities: MarketplaceOpportunity[]): Promise<a
 }
 
 async function calculateProfitability(opportunities: any[]): Promise<any[]> {
-  return opportunities.map(opp => {
-    // Cálculos de lucratividade baseados em dados reais
-    const targetPrice = opp.supplier_price * (1 + opp.margin_potential / 100);
+  const results = [];
+  
+  for (const opp of opportunities) {
+    // Busca preço real da Amazon se disponível
+    const amazonPrice = await getAmazonRealPrice(opp.product_name);
+    
+    // Usa preço real da Amazon se encontrado, senão calcula estimativa
+    const targetPrice = amazonPrice || (opp.supplier_price * (1 + opp.margin_potential / 100));
     const shippingCost = opp.supplier_price * 0.15; // 15% do valor
     const taxesCost = targetPrice * 0.08; // 8% em impostos médios
     const totalCost = opp.supplier_price + shippingCost + taxesCost;
@@ -277,20 +324,26 @@ async function calculateProfitability(opportunities: any[]): Promise<any[]> {
     const monthlyRevenue = targetPrice * opp.estimated_demand;
     const monthlyProfit = (targetPrice - totalCost) * opp.estimated_demand;
     
-    return {
+    results.push({
       ...opp,
+      amazon_price: amazonPrice,
+      real_margin: amazonPrice ? netMargin : null,
       pricing: {
         supplier_price: opp.supplier_price,
         target_price: targetPrice,
+        amazon_real_price: amazonPrice,
         shipping_cost: shippingCost,
         taxes_cost: taxesCost,
         total_cost: totalCost,
         net_margin: netMargin,
         monthly_revenue: monthlyRevenue,
-        monthly_profit: monthlyProfit
+        monthly_profit: monthlyProfit,
+        is_real_price: !!amazonPrice
       }
-    };
-  });
+    });
+  }
+  
+  return results;
 }
 
 // Novas Plataformas para Oportunidades de Produtos - Somente Dados Reais
@@ -589,7 +642,11 @@ serve(async (req) => {
   }
 
   try {
+    const requestBody = await req.json();
+    rapidApiKey = requestBody.rapidapi_key || Deno.env.get('RAPIDAPI_KEY') || '';
+    
     console.log('🔍 Starting opportunity detection scan...');
+    console.log(`RapidAPI configured: ${rapidApiKey ? 'YES ✅' : 'NO ❌'}`);
     
     // Scan múltiplos marketplaces com dados reais
     const [alibabaOps, samGovOps] = await Promise.all([
