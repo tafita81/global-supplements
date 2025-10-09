@@ -19,7 +19,7 @@ const testimonials = [
     company: "HealthTech Solutions",
     country: "United States",
     rating: 5,
-    content: "Global Supplements has transformed our procurement process. Their AI-powered system identified suppliers we never knew existed, resulting in 45% cost savings and premium quality products. The Orlando team's expertise in international regulations saved us months of compliance work.",
+    content: "Shipping Today has transformed our procurement process. Their AI-powered system identified suppliers we never knew existed, resulting in 45% cost savings and premium quality products. The Orlando team's expertise in international regulations saved us months of compliance work.",
     avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b278?w=100&h=100&fit=crop&crop=face",
     results: "$2.3M saved annually",
     logo: "🏥"
@@ -30,7 +30,7 @@ const testimonials = [
     company: "Federal Health Services",
     country: "United States",
     rating: 5,
-    content: "Working with Global Supplements on government contracts has been exceptional. Their SAM.gov integration and automated compliance checks have helped us secure $50M in contracts. The transparency and documentation quality exceed all government requirements.",
+    content: "Working with Shipping Today on government contracts has been exceptional. Their SAM.gov integration and automated compliance checks have helped us secure $50M in contracts. The transparency and documentation quality exceed all government requirements.",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
     results: "$50M contracts secured",
     logo: "🏛️"
@@ -52,7 +52,7 @@ const testimonials = [
     company: "Asia Pacific Nutrition",
     country: "Singapore",
     rating: 5,
-    content: "Global Supplements connected us with FDA-certified manufacturers in the US, opening doors to American markets we couldn't access before. The Orlando team understands both Asian business culture and American regulations perfectly. Revenue grew 400% in 18 months.",
+    content: "Shipping Today connected us with FDA-certified manufacturers in the US, opening doors to American markets we couldn't access before. The Orlando team understands both Asian business culture and American regulations perfectly. Revenue grew 400% in 18 months.",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
     results: "400% revenue growth",
     logo: "🚀"

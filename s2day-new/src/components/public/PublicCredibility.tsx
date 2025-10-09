@@ -135,7 +135,7 @@ export function PublicCredibility() {
                 <Building2 className="h-5 w-5 text-blue-500" />
                 <span className="font-semibold text-gray-900">Legal Entity</span>
               </div>
-              <p className="text-gray-700 mb-2">Global Supplements Corporation</p>
+              <p className="text-gray-700 mb-2">Shipping Today Corporation</p>
               <p className="text-sm text-gray-600">
                 {t('public.credibility.legalEntity.description')}
               </p>

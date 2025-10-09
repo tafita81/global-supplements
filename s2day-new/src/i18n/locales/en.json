@@ -1,8 +1,8 @@
 {
   "site": {
-    "title": "Global Supplements - Advanced Solutions Worldwide",
-    "description": "Global leader in advanced supplements: beauty enhancers, medical-grade compounds, quantum processing materials, smart gadgets, and traditional wellness products. Serving B2B, B2C, and government procurement worldwide.",
-    "tagline": "Advanced Solutions Worldwide"
+    "title": "Shipping Today - Premium Products Worldwide",
+    "description": "Leading global trading platform connecting businesses and consumers to premium products worldwide. Fast shipping, verified suppliers, and trusted marketplace.",
+    "tagline": "Premium Products Worldwide"
   },
   "navigation": {
     "home": "Home",
@@ -37,8 +37,8 @@
     "settings": "Settings"
   },
   "hero": {
-    "title": "Advanced Global Supplements Network",
-    "subtitle": "Connecting governments, businesses and consumers to revolutionary supplements: beauty enhancers, quantum processing materials, medical-grade compounds, smart gadgets and traditional wellness products through AI technology",
+    "title": "Global Trading Platform",
+    "subtitle": "Connecting businesses and consumers worldwide to premium products with fast shipping, verified suppliers, and trusted marketplace technology",
     "premiumSupplements": "Advanced Supplements",
     "executiveDashboard": "Executive Dashboard",
     "scroll": "Scroll",
@@ -314,7 +314,7 @@
         "name": "Dr. Sarah Chen",
         "position": "CEO, MedTech Global",
         "company": "Fortune 500 Healthcare",
-        "content": "Global Supplements revolutionized our supply chain. The AI identifies opportunities we would never see manually. 340% ROI in the first year.",
+        "content": "Shipping Today revolutionized our supply chain. The AI identifies opportunities we would never see manually. 340% ROI in the first year.",
         "revenue": "$2.3M saved"
       },
       "2": {
@@ -362,7 +362,7 @@
   },
   "footer": {
     "description": "World leader in dietary supplements connecting governments, businesses and consumers to premium suppliers through advanced AI technology.",
-    "companyName": "Global Supplements",
+    "companyName": "Shipping Today",
     "premiumNetwork": "Premium Network",
     "businessSolutions": "Business Solutions",
     "b2bGlobalTrading": "B2B Global Trading",
@@ -376,7 +376,7 @@
     "executiveDashboard": "Executive Dashboard",
     "premiumContact": "Premium Contact",
     "globalNetwork": "Global Network",
-    "copyright": "© 2024 Global Supplements. All rights reserved.",
+    "copyright": "© 2024 Shipping Today. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfUse": "Terms of Use",
     "compliance": "Compliance"
@@ -546,7 +546,7 @@
         }
       },
       "trustIndicators": {
-        "title": "Why Choose Global Supplements?",
+        "title": "Why Choose Shipping Today?",
         "bbbRating": {
           "title": "A+ BBB Rating",
           "subtitle": "Trusted since 2008"
@@ -721,7 +721,7 @@
       },
       "legalEntity": {
         "title": "Legal Entity",
-        "name": "Global Supplements Corporation",
+        "name": "Shipping Today Corporation",
         "description": "Delaware C-Corporation registered in Florida with international operations license for dietary supplement distribution."
       },
       "memberships": {
@@ -860,7 +860,7 @@
     "partnership": {
       "officialPartner": "Official Partner",
       "oneLinkProgram": "OneLink Global Program",
-      "shopTitle": "Shop Amazon Global Supplements",
+      "shopTitle": "Shop Amazon Shipping Today",
       "trustDescription": "Trusted worldwide delivery to 13 countries • Secure Amazon protection",
       "verifiedPartner": "✓ Verified Partner",
       "securePayment": "✓ Secure Payment",

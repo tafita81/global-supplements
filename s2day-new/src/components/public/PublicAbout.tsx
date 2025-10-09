@@ -141,7 +141,7 @@ export function PublicAbout() {
             <div className="relative">
               <img 
                 src={corporateHqImage} 
-                alt="Global Supplements Orlando headquarters" 
+                alt="Shipping Today Global Operations" 
                 className="w-full h-64 object-cover rounded-lg shadow-lg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg"></div>

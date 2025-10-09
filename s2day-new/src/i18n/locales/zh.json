@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Global Supplements - 全球先进解决方案",
+    "title": "Shipping Today - 全球先进解决方案",
     "description": "美容增强剂、医疗级化合物、量子处理材料、智能小工具和传统健康产品的全球领导者。为全球B2B、B2C和政府采购提供服务。",
     "tagline": "全球先进解决方案"
   },
@@ -36,7 +36,7 @@
     "settings": "设置"
   },
   "hero": {
-    "title": "先进 Global Supplements 网络",
+    "title": "先进 Shipping Today 网络",
     "subtitle": "通过AI技术将政府、企业和消费者连接到革命性补充剂：美容增强剂、量子处理材料、医疗级化合物、智能小工具和传统健康产品",
     "premiumSupplements": "先进补充剂",
     "executiveDashboard": "执行仪表板",
@@ -99,7 +99,7 @@
   },
   "products": {
     "badge": "🚀 先进解决方案组合",
-    "title": "先进 Global Supplements 类别",
+    "title": "先进 Shipping Today 类别",
     "description": "发现我们涵盖5大类别的革命性系列：美容增强补充剂、量子处理材料、医疗级化合物、智能健康小工具和传统健康产品。每个类别代表B2B、B2C和政府采购的尖端创新。",
     "reviews": "评论",
     "requestQuote": "请求报价",
@@ -313,7 +313,7 @@
         "name": "Dr. Sarah Chen",
         "position": "首席执行官, MedTech Global",
         "company": "Fortune 500 Healthcare",
-        "content": "Global Supplements彻底改变了我们的供应链。AI识别出我们手动永远看不到的机会。第一年就实现了340%的投资回报率。",
+        "content": "Shipping Today彻底改变了我们的供应链。AI识别出我们手动永远看不到的机会。第一年就实现了340%的投资回报率。",
         "revenue": "$2.3M saved"
       },
       "2": {
@@ -361,7 +361,7 @@
   },
   "footer": {
     "description": "通过先进的AI技术将政府、企业和消费者连接到优质供应商的膳食补充剂世界领导者。",
-    "companyName": "Global Supplements",
+    "companyName": "Shipping Today",
     "premiumNetwork": "优质网络",
     "businessSolutions": "商业解决方案",
     "b2bGlobalTrading": "B2B全球贸易",
@@ -375,7 +375,7 @@
     "executiveDashboard": "执行仪表板",
     "premiumContact": "优质联系",
     "globalNetwork": "全球网络",
-    "copyright": "© 2024 Global Supplements. 保留所有权利。",
+    "copyright": "© 2024 Shipping Today. 保留所有权利。",
     "privacyPolicy": "隐私政策",
     "termsOfUse": "使用条款",
     "compliance": "合规"
@@ -543,7 +543,7 @@
         }
       },
       "trustIndicators": {
-        "title": "Why Choose Global Supplements?",
+        "title": "Why Choose Shipping Today?",
         "bbbRating": {
           "title": "A+ BBB Rating",
           "subtitle": "Trusted since 2008"
@@ -718,7 +718,7 @@
       },
       "legalEntity": {
         "title": "Legal Entity",
-        "name": "Global Supplements Corporation",
+        "name": "Shipping Today Corporation",
         "description": "Delaware C-Corporation registered in Florida with international operations license for dietary supplement distribution."
       },
       "memberships": {
@@ -857,7 +857,7 @@
     "partnership": {
       "officialPartner": "官方合作伙伴",
       "oneLinkProgram": "OneLink 全球计划",
-      "shopTitle": "购买 Amazon Global Supplements",
+      "shopTitle": "购买 Amazon Shipping Today",
       "trustDescription": "可信赖的全球13国配送 • Amazon安全保护",
       "verifiedPartner": "✓ 认证合作伙伴",
       "securePayment": "✓ 安全支付",

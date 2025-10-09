@@ -30,15 +30,15 @@ export function PublicFooter() {
               </div>
               <div>
                 <h3 className="text-xl font-bold">
-                  <span className="text-white">Global </span>
-                  <span className="text-yellow-500">Supplements</span>
+                  <span className="text-white">Shipping </span>
+                  <span className="text-yellow-500">Today</span>
                 </h3>
-                <p className="text-sm text-gray-400">Premium Worldwide Network</p>
+                <p className="text-sm text-gray-400">Global Trading Network</p>
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Leading global supplier network connecting businesses, governments, and consumers 
-              to premium supplement manufacturers through advanced AI technology and strategic partnerships.
+              Leading global trading platform connecting businesses and consumers 
+              to premium products worldwide through advanced technology and strategic partnerships.
             </p>
             
             {/* Trust Badges */}
@@ -98,8 +98,8 @@ export function PublicFooter() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400 mt-0.5" />
                 <div>
-                  <p className="text-gray-300">Global Headquarters</p>
-                  <p className="text-sm text-gray-400">6200 Metrowest<br />Orlando, FL 32835, USA</p>
+                  <p className="text-gray-300">Global Operations</p>
+                  <p className="text-sm text-gray-400">Worldwide Shipping<br />Available 24/7</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -112,7 +112,7 @@ export function PublicFooter() {
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
                 <div>
-                  <p className="text-gray-300">contact@globalsupplements.com</p>
+                  <p className="text-gray-300">support@shippingtoday.shop</p>
                   <p className="text-sm text-gray-400">Business Inquiries</p>
                 </div>
               </div>
@@ -126,7 +126,7 @@ export function PublicFooter() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-400 mb-4 md:mb-0">
-              © {currentYear} Global Supplements Corporation. All rights reserved.
+              © {currentYear} Shipping Today. All rights reserved.
             </div>
             <div className="flex flex-wrap gap-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>

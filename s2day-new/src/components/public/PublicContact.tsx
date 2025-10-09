@@ -312,7 +312,7 @@ export function PublicContact() {
             {/* Trust Indicators */}
             <Card className="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-4">Why Choose Global Supplements?</h3>
+                <h3 className="text-xl font-bold mb-4">Why Choose Shipping Today?</h3>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <Star className="h-5 w-5 text-yellow-400" />
