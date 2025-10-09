@@ -61,6 +61,7 @@ import B2BDistribution from "./pages/B2BDistribution";
 import Products from "./pages/Products";
 import PreOrderPolicy from "./pages/PreOrderPolicy";
 import Amazon from "./pages/Amazon";
+import AIContentGenerator from "./pages/AIContentGenerator";
 
 const queryClient = new QueryClient();
 
@@ -262,6 +263,11 @@ const App = () => (
               <Route path="/products" element={<PublicSiteLayout><Products /></PublicSiteLayout>} />
               <Route path="/pre-order-policy" element={<PublicSiteLayout><PreOrderPolicy /></PublicSiteLayout>} />
               <Route path="/amazon" element={<Amazon />} />
+              <Route path="/ai-content-generator" element={
+                <AppLayout>
+                  <AIContentGenerator />
+                </AppLayout>
+              } />
               
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
