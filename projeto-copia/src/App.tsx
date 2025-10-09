@@ -63,6 +63,7 @@ import PreOrderPolicy from "./pages/PreOrderPolicy";
 import Amazon from "./pages/Amazon";
 import AIContentGenerator from "./pages/AIContentGenerator";
 import GoogleAdsCampaignsPage from "./pages/GoogleAdsCampaigns";
+import MarketingDashboard from "./pages/MarketingDashboard";
 
 const queryClient = new QueryClient();
 
@@ -272,6 +273,11 @@ const App = () => (
               <Route path="/google-ads-campaigns" element={
                 <AppLayout>
                   <GoogleAdsCampaignsPage />
+                </AppLayout>
+              } />
+              <Route path="/marketing-dashboard" element={
+                <AppLayout>
+                  <MarketingDashboard />
                 </AppLayout>
               } />
               
