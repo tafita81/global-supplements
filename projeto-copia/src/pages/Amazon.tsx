@@ -88,6 +88,14 @@ const Amazon = () => {
     const detectUserCountry = async () => {
       try {
         setIsDetectingLocation(true);
+        
+        // 🔧 LIMPA CACHE UK CORROMPIDO na primeira carga
+        const ukCacheKey = 'amazon_products_UK_beauty_all';
+        if (localStorage.getItem(ukCacheKey)) {
+          localStorage.removeItem(ukCacheKey);
+          console.log('🗑️ Cache UK corrompido removido');
+        }
+        
         const marketplaceId = await geolocationService.detectMarketplace();
         initializeFromGeolocation(marketplaceId);
       } catch (error) {
@@ -709,6 +717,17 @@ const Amazon = () => {
           // 🛡️ Só atualiza estado se ESTA requisição ainda é a mais recente
           if (thisRequestId === searchFetchRequestId.current) {
             console.log(`📊 Definindo ${topProducts.length} produtos no estado (Req #${thisRequestId})...`);
+            
+            // 🔍 DEBUG: Log primeiros 3 produtos para verificar diversidade
+            console.log(`🔍 [${currentMarketplace.id}] Amostra de produtos:`, 
+              topProducts.slice(0, 3).map(p => ({
+                asin: p.asin,
+                title: p.title?.substring(0, 40),
+                image: p.image ? (p.image.substring(0, 50) + '...') : 'MISSING',
+                price: p.price
+              }))
+            );
+            
             setProducts([...topProducts]); // Força um novo array
             instantCache.save(currentMarketplace.id, selectedCategory, selectedSubcategory, topProducts);
             setLoading(false);

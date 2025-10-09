@@ -124,17 +124,37 @@ export class MultiAPIClient {
     // Parser para Real-Time Amazon Data API
     const products = data.data?.products || [];
     
-    return products.map((p: any) => ({
+    // 🔍 DEBUG: Log primeiro produto para verificar estrutura
+    if (products.length > 0) {
+      console.log(`📦 [${domain}] Estrutura do produto:`, {
+        asin: products[0].asin,
+        title: products[0].product_title?.substring(0, 50),
+        photo: products[0].product_photo ? 'OK' : 'MISSING',
+        url: products[0].product_url ? 'OK' : 'MISSING',
+        image: products[0].image ? 'OK' : 'MISSING',
+        keys: Object.keys(products[0]).filter(k => k.includes('photo') || k.includes('image') || k.includes('url'))
+      });
+    }
+    
+    const parsed = products.map((p: any) => ({
       asin: p.asin,
       title: p.product_title || p.title,
       price: p.product_price || p.price || '$0.00',
       rating: p.product_star_rating || p.rating || 4.5,
       reviews: p.product_num_ratings || p.reviews_count || 0,
-      image: p.product_photo || p.product_url || p.image,
+      image: p.product_photo || p.product_url || p.image || '',
       category: p.product_category || p.category || 'Health & Personal Care',
       prime: p.is_prime || p.prime || false,
       affiliateLink: `https://www.${domain}/dp/${p.asin}?tag=${AFFILIATE_TAG}`
     }));
+    
+    // 🔍 DEBUG: Verifica se há produtos sem imagem ou link
+    const problematicos = parsed.filter(p => !p.image || !p.asin);
+    if (problematicos.length > 0) {
+      console.warn(`⚠️ [${domain}] ${problematicos.length} produtos sem imagem/ASIN!`);
+    }
+    
+    return parsed;
   }
 
   private getCategoryKeywords(category: string): string {

@@ -47,6 +47,12 @@ class InstantCache {
       const data: CachedProducts = JSON.parse(cached);
       const age = Date.now() - data.timestamp;
       
+      // 🔧 FORÇA REFRESH UK: Sempre retorna false para UK forçar nova busca
+      if (marketplace === 'UK') {
+        console.log(`⚠️ [UK] Forçando refresh - cache ignorado`);
+        return false;
+      }
+      
       return age < this.CACHE_MAX_AGE;
     } catch {
       return false;
