@@ -55,6 +55,40 @@ The backend is primarily built on Supabase, providing authentication, a PostgreS
 -   **Document Management**: Supabase storage for company certificates, FDA approvals, quality certifications, patents, insurance, and tax documents.
 -   **Marketing Automation APIs**: Buffer (social media scheduling), SendGrid (email service provider), Google Search Console (SEO data).
 
+## 🚨 CRITICAL: Sistema 100% Dados Reais - ZERO Mock Data
+
+**Última Atualização:** 2025-10-09
+
+### Configuração Supabase Cloud (PRODUCTION)
+- **URL:** `https://twglceexfetejawoumsr.supabase.co`
+- **Frontend:** Conecta diretamente no Cloud (hardcoded em `src/integrations/supabase/client.ts`)
+- **Edge Functions:** TODAS configuradas para usar Cloud URL (mesmo do frontend)
+- **Migrations:** LIMPAS - sem INSERTs mockados
+
+### Sistema de Auto-Refresh
+- **Arquivo:** `projeto-copia/auto-refresh-opportunities.ts`
+- **Frequência:** A cada 6 horas
+- **Categorias:** health-supplements, electronics, industrial
+- **Inserção:** Automática no Supabase Cloud após análise IA
+
+### Dados Limpos (ZERO Mock)
+✅ `opportunities`: Apenas dados reais detectados pelo sistema
+✅ `suppliers`: Limpo - preencher com detecção real
+✅ `mycogenesis_products`: Limpo - preencher com produtos reais
+✅ `negotiations`: Apenas negociações reais
+✅ Migrations 20250927130507, 130555, 130753: Limpas
+
+### Padrão para Novas Edge Functions
+```typescript
+// ✅ CORRETO - Usar Cloud URL (mesmo do frontend)
+const supabaseUrl = 'https://twglceexfetejawoumsr.supabase.co';
+const supabaseKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') || 'anon_key_aqui';
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+// ❌ ERRADO - Não usar env vars que apontam para local
+const supabaseUrl = Deno.env.get('SUPABASE_URL')!; // NÃO USAR
+```
+
 ## Database Schema
 
 ### Automation Tables (11 total)
