@@ -57,7 +57,7 @@ The backend is primarily built on Supabase, providing authentication, a PostgreS
 
 ## 🚨 CRITICAL: Sistema 100% Dados Reais - ZERO Mock Data
 
-**Última Atualização:** 2025-10-09
+**Última Atualização:** 2025-10-09 23:20 UTC
 
 ### Configuração Supabase Cloud (PRODUCTION)
 - **URL:** `https://twglceexfetejawoumsr.supabase.co`
@@ -71,12 +71,30 @@ The backend is primarily built on Supabase, providing authentication, a PostgreS
 - **Categorias:** health-supplements, electronics, industrial
 - **Inserção:** Automática no Supabase Cloud após análise IA
 
-### Dados Limpos (ZERO Mock)
-✅ `opportunities`: Apenas dados reais detectados pelo sistema
-✅ `suppliers`: Limpo - preencher com detecção real
-✅ `mycogenesis_products`: Limpo - preencher com produtos reais
-✅ `negotiations`: Apenas negociações reais
-✅ Migrations 20250927130507, 130555, 130753: Limpas
+### ✅ ESTADO ATUAL - 100% LIMPO (2025-10-09)
+**Todas tabelas com 0 dados mockados:**
+- ✅ `target_suppliers`: 0 registros (completamente limpa)
+- ✅ `opportunities`: 3 oportunidades REAIS mantidas (Vitamin C, Creatine, Turmeric)
+- ✅ `suppliers`: 0 registros
+- ✅ `mycogenesis_products`: 0 registros
+- ✅ `compliance_checks`: 0 registros
+- ✅ `execution_history`: 0 registros
+- ✅ `negotiations`: 0 registros
+
+**Auto-Populate DESATIVADO em:**
+- ✅ `RegistrationDetails.tsx` - Removido useEffect que criava 122 fornecedores mockados
+- ✅ `MajorSuppliersDatabase.tsx` - Removido auto-populate e populateDatabase()
+- ✅ `AutomatedDistributorEngine.tsx` - Desativado populateSuppliers()
+- ✅ `Compliance.tsx` - Removidos dados hardcoded, agora busca do banco
+- ✅ `AISystem.tsx` - Removidos dados hardcoded, agora busca do banco
+
+### Estratégia de Validação de Dados
+**Antes de deletar dados mockados, SEMPRE tentar validar:**
+1. 🔍 Web scraping do site oficial da empresa
+2. 🤖 Análise IA para verificar existência real
+3. ✅ Se validado: marcar como `real_data_verified=true` e manter
+4. ❌ Se não validado: deletar do banco
+5. 📊 Priorizar transformação sobre deleção
 
 ### Padrão para Novas Edge Functions
 ```typescript
