@@ -115,10 +115,11 @@ export async function calculateActiveAgents(): Promise<number> {
       });
     }
 
-    // 6. Analytics Dashboard - sempre ativo (monitora analytics)
+    // 6. Analytics Dashboard - ativo se há dados de analytics nas últimas 24h
     const { data: analyticsData } = await supabase
       .from('analytics_dashboard')
       .select('id')
+      .gte('created_at', new Date(Date.now() - 86400000).toISOString())
       .limit(1);
     
     if (analyticsData && analyticsData.length > 0) {
@@ -131,34 +132,15 @@ export async function calculateActiveAgents(): Promise<number> {
       });
     }
 
-    // 7. Marketing Intelligence - sempre ativo
-    agents.push({
-      name: 'Marketing Intelligence',
-      type: 'marketing',
-      status: 'active',
-      lastActivity: new Date().toISOString(),
-      tasksCompleted: 0
-    });
-
-    // 8. Automation Engine - sempre ativo
-    agents.push({
-      name: 'Automation Engine',
-      type: 'automation',
-      status: 'active',
-      lastActivity: new Date().toISOString(),
-      tasksCompleted: 0
-    });
-
-    // Retorna número total de agentes ativos
+    // Retorna número real de agentes ativos (sem mínimo forçado)
     const activeCount = agents.filter(a => a.status === 'active').length;
     
-    // Garante mínimo de 3 agentes sempre ativos (core system)
-    return Math.max(3, activeCount);
+    return activeCount;
 
   } catch (error) {
     console.error('Error calculating active agents:', error);
-    // Fallback para agentes básicos sempre ativos
-    return 3;
+    // Em caso de erro, retorna 0 (não simula dados)
+    return 0;
   }
 }
 
@@ -355,14 +337,14 @@ export async function getSystemMetrics(): Promise<SystemMetrics> {
 
   } catch (error) {
     console.error('Error getting system metrics:', error);
-    // Retorna métricas básicas em caso de erro
+    // Retorna métricas zeradas em caso de erro (sem dados mockados)
     return {
-      activeAgents: 3,
-      systemHealth: 80,
+      activeAgents: 0,
+      systemHealth: 0,
       totalCampaigns: 0,
       totalRevenue: 0,
       successRate: 0,
-      avgResponseTime: 250
+      avgResponseTime: 0
     };
   }
 }
@@ -450,24 +432,7 @@ export async function getAgentStatusList(): Promise<AgentStatus[]> {
       tasksCompleted: 0
     });
 
-    // Marketing Intelligence - sempre ativo
-    agents.push({
-      name: 'Marketing Intelligence',
-      type: 'marketing',
-      status: 'active',
-      lastActivity: new Date().toISOString(),
-      tasksCompleted: 0
-    });
-
-    // Automation Engine - sempre ativo
-    agents.push({
-      name: 'Automation Engine',
-      type: 'automation',
-      status: 'active',
-      lastActivity: new Date().toISOString(),
-      tasksCompleted: 0
-    });
-
+    // Retorna apenas agentes com atividade real
     return agents;
   } catch (error) {
     console.error('Error getting agent status:', error);

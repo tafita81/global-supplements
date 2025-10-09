@@ -42,6 +42,7 @@ import { toast } from "sonner";
 import { useQuantumPersistence } from "@/hooks/useQuantumPersistence";
 import { AlertaCredenciais } from "@/components/dashboard/AlertaCredenciais";
 import RegistrationTracker from "@/components/dashboard/RegistrationTracker";
+import { getSystemMetrics, getAgentStatusList } from "@/services/systemMetrics";
 
 interface RealTimeMetrics {
   activeDeals: number;
@@ -99,55 +100,51 @@ export default function Dashboard() {
 
   const loadDashboardData = async () => {
     try {
-      // Load all opportunities (historical total)
-      const { data: opportunities } = await supabase
-        .from('opportunities')
+      // Usar systemMetrics para obter dados reais do sistema
+      const metrics = await getSystemMetrics();
+      const agentsList = await getAgentStatusList();
+
+      // Calcular métricas baseadas em dados reais de marketing automation
+      const { data: campaigns } = await supabase
+        .from('google_ads_campaigns')
         .select('*');
 
-      // Load ALL execution history (historical total)
-      const { data: executions } = await supabase
-        .from('execution_history')
+      const { data: emails } = await supabase
+        .from('email_campaigns')
         .select('*')
         .order('created_at', { ascending: false });
 
-      // Load active negotiations
-      const { data: negotiations } = await supabase
-        .from('negotiations')
-        .select('*')
-        .in('status', ['sent', 'in_progress']);
+      const { data: performance } = await supabase
+        .from('campaign_performance')
+        .select('*');
 
-      // Calculate historical total metrics
-      const activeDeals = opportunities?.filter(o => o.status === 'active').length || 0;
-      const totalRevenue = opportunities?.reduce((sum, o) => sum + (o.estimated_value || 0), 0) || 0;
-      const completedDeals = opportunities?.filter(o => o.status === 'completed').length || 0;
-      const successRate = opportunities?.length ? (completedDeals / opportunities.length) * 100 : 0;
-      const quantumExecutions = executions?.filter(e => e.entity_type === 'quantum_arbitrage').length || 0;
-      const aiNegotiations = negotiations?.length || 0;
+      // Métricas calculadas
+      const activeCampaigns = campaigns?.filter(c => c.status === 'active').length || 0;
+      const totalRevenue = performance?.reduce((sum, p) => sum + (p.revenue || 0), 0) || 0;
+      const avgClickRate = performance && performance.length > 0
+        ? (performance.reduce((sum, p) => sum + (p.ctr || 0), 0) / performance.length).toFixed(2)
+        : 0;
 
       setRealTimeMetrics({
-        activeDeals,
-        totalRevenue,
-        successRate,
-        avgMargin: opportunities?.reduce((sum, o) => sum + (o.margin_percentage || 0), 0) / (opportunities?.length || 1),
-        quantumExecutions,
-        aiNegotiations,
-        systemHealth: 98.5
+        activeDeals: activeCampaigns,
+        totalRevenue: totalRevenue,
+        successRate: metrics.successRate,
+        avgMargin: Number(avgClickRate),
+        quantumExecutions: metrics.totalCampaigns,
+        aiNegotiations: emails?.length || 0,
+        systemHealth: metrics.systemHealth
       });
 
-      // Update live status with historical totals
-      const lastExec = executions?.[0]?.created_at || '';
-      const totalHistoricalProfit = executions?.reduce((sum, e) => {
-        const resultData = e.result_data as any;
-        return sum + (resultData?.profit || 0);
-      }, 0) || 0;
-
+      // Status do sistema com agentes reais
+      const lastEmail = emails?.[0]?.created_at || '';
+      
       setLiveStatus(prev => ({
         ...prev,
-        lastExecution: lastExec,
+        lastExecution: lastEmail,
         nextScheduledScan: new Date(Date.now() + 30000).toLocaleTimeString(),
-        currentProfit: totalHistoricalProfit,
-        todayExecutions: quantumExecutions,
-        aiAgentsRunning: Math.max(3, Math.floor(Math.random() * 8) + 5)
+        currentProfit: totalRevenue,
+        todayExecutions: activeCampaigns,
+        aiAgentsRunning: metrics.activeAgents
       }));
 
     } catch (error) {
