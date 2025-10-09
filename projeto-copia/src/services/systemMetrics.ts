@@ -272,8 +272,8 @@ export async function calculateSystemHealth(): Promise<number> {
 
   } catch (error) {
     console.error('Error calculating system health:', error);
-    // Fallback para saúde moderada em caso de erro
-    return 80;
+    // Retorna 0 em caso de erro (sem dados mockados)
+    return 0;
   }
 }
 
@@ -323,8 +323,16 @@ export async function getSystemMetrics(): Promise<SystemMetrics> {
     
     const successRate = (avgEmailOpenRate + avgSocialEngagement) / 2;
 
-    // Tempo médio de resposta baseado em analytics
-    const avgResponseTime = 250; // ms - valor padrão otimizado
+    // Tempo médio de resposta calculado de analytics_dashboard se disponível
+    const { data: analyticsMetrics } = await supabase
+      .from('analytics_dashboard')
+      .select('bounce_rate, session_duration')
+      .gte('created_at', new Date(Date.now() - 86400000).toISOString())
+      .limit(10);
+    
+    const avgResponseTime = analyticsMetrics && analyticsMetrics.length > 0
+      ? analyticsMetrics.reduce((sum, a) => sum + (a.session_duration || 0), 0) / analyticsMetrics.length
+      : 0;
 
     return {
       activeAgents,
