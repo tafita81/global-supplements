@@ -74,3 +74,4 @@ export class GoogleSearchConsoleIntegration {
 }
 
 export const googleSearchConsoleIntegration = new GoogleSearchConsoleIntegration();
+export const gscIntegration = googleSearchConsoleIntegration; // Alias for compatibility

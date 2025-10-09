@@ -79,14 +79,24 @@ All tables include proper indexes, foreign keys with CASCADE delete, and Row Lev
 
 ## API Integration Security
 
-**Current State:**
-- Frontend services use mock mode by default for demo/development
-- Production API integrations designed for backend/Edge Functions
-- Credentials should never be stored in frontend bundle
-- All services gracefully degrade to mock data when credentials unavailable
+**Current State (✅ Migrated to Edge Functions):**
+- **Buffer Integration**: Supabase Edge Function `/functions/v1/buffer-integration`
+- **SendGrid Integration**: Supabase Edge Function `/functions/v1/sendgrid-integration`
+- **Google Search Console**: Supabase Edge Function `/functions/v1/gsc-integration`
+- Frontend services call Edge Functions (no credentials in bundle)
+- Mock mode by default when secrets not configured
+- Graceful degradation to demo data
 
 **Production Deployment:**
-- Move Buffer/SendGrid/GSC integrations to Supabase Edge Functions (similar to OpenAI)
-- Keep API keys server-side only
-- Frontend calls secure Edge Function endpoints
-- Edge Functions return only necessary data (no credential exposure)
+1. Configure secrets in Supabase Dashboard (BUFFER_ACCESS_TOKEN, SENDGRID_API_KEY, GSC_CREDENTIALS)
+2. Deploy Edge Functions via Supabase CLI: `supabase functions deploy`
+3. Frontend automatically switches to production mode when secrets are available
+4. All API keys remain server-side only
+5. Edge Functions return only necessary data (no credential exposure)
+
+**Security Benefits:**
+- ✅ Zero credential exposure in frontend bundle
+- ✅ Server-side API key management
+- ✅ CORS handled by Edge Functions
+- ✅ Rate limiting capability
+- ✅ Full audit trail via Supabase logs
