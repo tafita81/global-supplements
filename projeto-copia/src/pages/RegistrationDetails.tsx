@@ -102,7 +102,7 @@ const RegistrationDetails: React.FC = () => {
   const loadSuppliers = async () => {
     setSuppliersLoading(true);
     try {
-      // First check if we have suppliers in the database
+      // Buscar APENAS fornecedores REAIS do banco
       const { data: existingSuppliers, error: fetchError } = await supabase
         .from('target_suppliers')
         .select('*')
@@ -110,40 +110,15 @@ const RegistrationDetails: React.FC = () => {
 
       if (fetchError) throw fetchError;
 
-      if (!existingSuppliers || existingSuppliers.length === 0) {
-        // If no suppliers exist, populate them first
-        await populateSuppliers();
-        // Then fetch again
-        const { data: newSuppliers } = await supabase
-          .from('target_suppliers')
-          .select('*')
-          .order('annual_revenue', { ascending: false });
-        
-        if (newSuppliers) {
-          setSuppliers(newSuppliers);
-          setTotalSuppliers(newSuppliers.length);
-        }
-      } else {
-        setSuppliers(existingSuppliers);
-        setTotalSuppliers(existingSuppliers.length);
-      }
+      // Usar APENAS dados reais - NUNCA criar mocks
+      setSuppliers(existingSuppliers || []);
+      setTotalSuppliers(existingSuppliers?.length || 0);
     } catch (error) {
       console.error('Error loading suppliers:', error);
+      setSuppliers([]);
+      setTotalSuppliers(0);
     } finally {
       setSuppliersLoading(false);
-    }
-  };
-
-  const populateSuppliers = async () => {
-    try {
-      const { data, error } = await supabase.functions.invoke('major-suppliers-populator', {
-        body: { action: 'populate_database' }
-      });
-
-      if (error) throw error;
-      console.log('Suppliers populated successfully:', data);
-    } catch (error) {
-      console.error('Error populating suppliers:', error);
     }
   };
 

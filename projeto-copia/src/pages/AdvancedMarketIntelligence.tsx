@@ -50,83 +50,11 @@ interface MarketTrend {
   opportunity_window: string;
 }
 
-const mockGovernmentContracts: GovernmentContract[] = [
-  {
-    id: "contract-1",
-    title: "AI-Powered Supply Chain Optimization Platform",
-    agency: "Department of Defense",
-    value: 15000000,
-    posted_date: "2025-01-15",
-    deadline: "2025-03-15",
-    naics_code: "541511",
-    set_aside: "Small Business",
-    opportunity_type: "licitação",
-    ai_match_score: 94,
-    predicted_win_probability: 78,
-    compliance_requirements: ["DFARS", "NIST SP 800-171", "FedRAMP Moderate"],
-    estimated_competition: 12
-  },
-  {
-    id: "contract-2", 
-    title: "ESG Compliance Automation Software",
-    agency: "General Services Administration",
-    value: 8500000,
-    posted_date: "2025-01-20",
-    deadline: "2025-04-10",
-    naics_code: "541512",
-    set_aside: "8(a) Program",
-    opportunity_type: "gsa_schedule",
-    ai_match_score: 91,
-    predicted_win_probability: 82,
-    compliance_requirements: ["FedRAMP High", "Section 508", "TAA Compliant"],
-    estimated_competition: 8
-  },
-  {
-    id: "contract-3",
-    title: "Quantum-Safe Cryptography Implementation",
-    agency: "National Security Agency",
-    value: 25000000,
-    posted_date: "2025-01-10",
-    deadline: "2025-02-28",
-    naics_code: "541330",
-    set_aside: "Unrestricted",
-    opportunity_type: "contrato_aberto",
-    ai_match_score: 96,
-    predicted_win_probability: 65,
-    compliance_requirements: ["Top Secret Clearance", "NIST PQC Standards", "FIPS 140-3"],
-    estimated_competition: 6
-  }
-];
+// Dados serão carregados de fontes reais (SAM.gov API, etc)
+const mockGovernmentContracts: GovernmentContract[] = [];
 
-const marketTrends: MarketTrend[] = [
-  {
-    sector: "ESG & Sustainability Tech",
-    growth_rate: 127,
-    market_size: 15000000000,
-    trend_direction: "crescendo",
-    disruption_probability: 85,
-    key_drivers: ["EU CSRD Mandate", "SEC Climate Rules", "Investor Pressure"],
-    opportunity_window: "Q1 2025 - Q4 2026"
-  },
-  {
-    sector: "Post-Quantum Cryptography",
-    growth_rate: 156,
-    market_size: 8500000000,
-    trend_direction: "crescendo",
-    disruption_probability: 92,
-    key_drivers: ["NIST PQC Standards", "Quantum Computing Threat", "Government Mandates"],
-    opportunity_window: "Q2 2025 - Q3 2027"
-  },
-  {
-    sector: "GovTech AI Solutions",
-    growth_rate: 98,
-    market_size: 22000000000,
-    trend_direction: "crescendo",
-    disruption_probability: 76,
-    key_drivers: ["AI in Government Act", "Digital Transformation", "Efficiency Mandates"],
-    opportunity_window: "Q1 2025 - Q4 2028"
-  }
-];
+// Tendências serão detectadas de fontes reais de mercado
+const marketTrends: MarketTrend[] = [];
 
 export default function AdvancedMarketIntelligence() {
   const [searchQuery, setSearchQuery] = useState("");

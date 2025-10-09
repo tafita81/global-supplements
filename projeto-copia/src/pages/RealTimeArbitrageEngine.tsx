@@ -52,8 +52,7 @@ export default function RealTimeArbitrageEngine() {
   const [realTimeProfit, setRealTimeProfit] = useState(0);
 
   useEffect(() => {
-    generateMockOpportunities();
-    
+    // Dados reais serão carregados de APIs reais
     if (isScanning) {
       const interval = setInterval(() => {
         scanForNewOpportunities();
@@ -64,6 +63,7 @@ export default function RealTimeArbitrageEngine() {
   }, [isScanning]);
 
   const generateMockOpportunities = () => {
+    // REMOVIDO - Dados virão de fontes reais
     const mockOpps: ArbitrageOpportunity[] = [
       {
         id: "gov-ai-001",

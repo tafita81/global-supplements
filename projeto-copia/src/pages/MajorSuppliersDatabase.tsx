@@ -51,95 +51,34 @@ const MajorSuppliersDatabase = () => {
   const [selectedCountry, setSelectedCountry] = useState('');
   const [populating, setPopulating] = useState(false);
 
-  // Fetch suppliers from Supabase
+  // Fetch REAL suppliers from Supabase ONLY
   const fetchSuppliers = async () => {
     try {
       setLoading(true);
-      console.log('Fetching suppliers...');
+      const { data, error } = await supabase
+        .from('target_suppliers')
+        .select('*')
+        .order('annual_revenue', { ascending: false });
+
+      if (error) throw error;
       
-      const { data, error } = await supabase.functions.invoke('major-suppliers-populator', {
-        body: { action: 'get_high_margin_suppliers' }
-      });
-
-      console.log('Function response:', { data, error });
-
-      if (error) {
-        console.error('Error fetching suppliers:', error);
-        toast.error(`Erro ao carregar fornecedores: ${error.message}`);
-        return;
-      }
-
-      if (data?.success) {
-        const suppliers = data.suppliers || data.data?.suppliers || [];
-        setSuppliers(suppliers);
-        if (suppliers.length > 0) {
-          toast.success(`${suppliers.length} fornecedores carregados com sucesso`);
-        } else {
-          toast.info('Base de dados vazia. Clique em "Popular Base de Dados" para carregar fornecedores.');
-        }
-      } else {
-        console.log('No suppliers found in response:', data);
-        setSuppliers([]);
-        toast.info('Base de dados vazia. Clique em "Popular Base de Dados" para carregar fornecedores.');
+      setSuppliers(data || []);
+      if (data && data.length > 0) {
+        toast.success(`${data.length} fornecedores reais carregados`);
       }
     } catch (error) {
-      console.error('Fetch error:', error);
-      toast.error(`Erro ao conectar com o sistema: ${error.message || 'Erro desconhecido'}`);
+      console.error('Error fetching suppliers:', error);
+      setSuppliers([]);
     } finally {
       setLoading(false);
     }
   };
 
-  // Populate database with high-margin suppliers
-  const populateDatabase = async () => {
-    try {
-      setPopulating(true);
-      console.log('Starting database population...');
-      toast.info('Populando base de dados com fornecedores premium...');
-
-      const { data, error } = await supabase.functions.invoke('major-suppliers-populator', {
-        body: { action: 'populate_high_margin_suppliers' }
-      });
-
-      console.log('Populate response:', { data, error });
-
-      if (error) {
-        console.error('Error populating database:', error);
-        toast.error(`Erro ao popular base de dados: ${error.message}`);
-        return;
-      }
-
-      if (data?.success) {
-        const totalSuppliers = data.data?.inserted || data.inserted || data.total_suppliers || 'vários';
-        toast.success(`✅ Base de dados populada com ${totalSuppliers} fornecedores premium!`);
-        // Wait a moment then refresh the list
-        setTimeout(() => {
-          fetchSuppliers();
-        }, 1000);
-      } else {
-        console.error('Population failed:', data);
-        toast.error(`Erro ao popular base: ${data?.error || 'Erro desconhecido'}`);
-      }
-    } catch (error) {
-      console.error('Population error:', error);
-      toast.error(`Erro ao conectar: ${error.message || 'Falha na conexão'}`);
-    } finally {
-      setPopulating(false);
-    }
-  };
+  // REMOVED - No more mock data population
 
   useEffect(() => {
-    const initializeDatabase = async () => {
-      await fetchSuppliers();
-      
-      // Auto-populate if database is empty
-      if (suppliers.length === 0) {
-        console.log('Database empty, auto-populating...');
-        await populateDatabase();
-      }
-    };
-    
-    initializeDatabase();
+    // Carregar APENAS fornecedores REAIS - NUNCA criar mocks
+    fetchSuppliers();
   }, []);
 
   // Filter suppliers based on search term and country
@@ -360,7 +299,7 @@ const MajorSuppliersDatabase = () => {
           </Button>
           
           <Button 
-            onClick={populateDatabase}
+            onClick={() => toast.info('Função de popular removida - use dados reais')}
             disabled={populating}
             className="bg-green-600 hover:bg-green-700"
           >
@@ -633,7 +572,7 @@ const MajorSuppliersDatabase = () => {
               </p>
               {suppliers.length === 0 && (
                 <Button 
-                  onClick={populateDatabase}
+                  onClick={() => toast.info('Função de popular removida - use dados reais')}
                   disabled={populating}
                   className="bg-primary hover:bg-primary/90"
                 >
