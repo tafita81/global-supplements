@@ -64,6 +64,27 @@ export class MultiAPIClient {
     // Usando endpoint /search da Real-Time Amazon Data
     const url = `https://${api.host}/search`;
     
+    // 🔧 FIX: Mapeia marketplace IDs internos para códigos ISO que a API Amazon aceita
+    const countryCodeMapping: Record<string, string> = {
+      'UK': 'GB',  // ⚠️ FIX CRÍTICO: API Amazon usa GB ao invés de UK
+      'US': 'US',
+      'CA': 'CA',
+      'DE': 'DE',
+      'FR': 'FR',
+      'IT': 'IT',
+      'ES': 'ES',
+      'JP': 'JP',
+      'AU': 'AU',
+      'NL': 'NL',
+      'SE': 'SE',
+      'SG': 'SG',
+      'PL': 'PL',
+      'SA': 'SA'
+    };
+    
+    const apiCountryCode = countryCodeMapping[countryCode] || countryCode;
+    console.log(`🌍 Marketplace: ${countryCode} → API Country: ${apiCountryCode}`);
+    
     // Mapeamento de ordenação para valores aceitos pela API Real-Time Amazon Data
     const sortMapping: Record<string, string> = {
       'HIGHEST_RATED': 'REVIEWS',  // Tenta REVIEWS ao invés de HIGHEST_RATED
@@ -76,7 +97,7 @@ export class MultiAPIClient {
     const params = new URLSearchParams({
       query: query,  // Usa a query diretamente sem mapear keywords
       page: '1',
-      country: countryCode,
+      country: apiCountryCode,  // ✅ Usa código mapeado (UK → GB)
       sort_by: apiSortValue,  // Permite ordenação customizada
       product_condition: 'ALL'
     });
