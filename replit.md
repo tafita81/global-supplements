@@ -79,24 +79,28 @@ All tables include proper indexes, foreign keys with CASCADE delete, and Row Lev
 
 ## API Integration Security
 
-**Current State (✅ Migrated to Edge Functions):**
-- **Buffer Integration**: Supabase Edge Function `/functions/v1/buffer-integration`
-- **SendGrid Integration**: Supabase Edge Function `/functions/v1/sendgrid-integration`
-- **Google Search Console**: Supabase Edge Function `/functions/v1/gsc-integration`
-- Frontend services call Edge Functions (no credentials in bundle)
+**Current State (✅ Migrated to Edge Functions with JWT Auth):**
+- **Buffer Integration**: Supabase Edge Function `/functions/v1/buffer-integration` (JWT protected)
+- **SendGrid Integration**: Supabase Edge Function `/functions/v1/sendgrid-integration` (JWT protected)
+- **Google Search Console**: Supabase Edge Function `/functions/v1/gsc-integration` (JWT protected)
+- **AI Content Generator**: Supabase Edge Function `/functions/v1/generate-content` (JWT protected)
+- All Edge Functions validate user authentication before executing
+- Frontend services call Edge Functions with Authorization header
 - Mock mode by default when secrets not configured
 - Graceful degradation to demo data
 
-**Production Deployment:**
+**Production Deployment Guide:**
+See `SETUP_PRODUCAO.md` for complete step-by-step instructions:
 1. Configure secrets in Supabase Dashboard (BUFFER_ACCESS_TOKEN, SENDGRID_API_KEY, GSC_CREDENTIALS)
-2. Deploy Edge Functions via Supabase CLI: `supabase functions deploy`
-3. Frontend automatically switches to production mode when secrets are available
-4. All API keys remain server-side only
-5. Edge Functions return only necessary data (no credential exposure)
+2. Deploy Edge Functions: Run `./DEPLOY_COMMANDS.sh` or `supabase functions deploy`
+3. Test integrations: Use `QUICK_TEST.md` browser console tests
+4. Configure GitHub FTP_PASSWORD secret for automatic Hostinger deployment
+5. Push to `main` or `experimentos` branch for automatic CI/CD deployment
 
 **Security Benefits:**
+- ✅ JWT authentication required for all Edge Functions
 - ✅ Zero credential exposure in frontend bundle
-- ✅ Server-side API key management
+- ✅ Server-side API key management with user validation
 - ✅ CORS handled by Edge Functions
-- ✅ Rate limiting capability
-- ✅ Full audit trail via Supabase logs
+- ✅ Blocks unauthorized access and quota abuse
+- ✅ Full audit trail with user_id in Supabase logs
