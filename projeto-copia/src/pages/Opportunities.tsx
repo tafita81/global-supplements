@@ -8,6 +8,8 @@ import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
+const CACHE_BUSTER = "v2";
+
 interface Opportunity {
   id: string;
   type: string;
