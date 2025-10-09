@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { Loader2, Wand2, FileText, Eye, Save } from 'lucide-react';
-import { contentGenerator } from '../services/contentGenerator';
+import { secureContentGenerator } from '../services/contentGeneratorSecure';
 import { supabase } from '@/integrations/supabase/client';
 import type { ContentGenerationRequest } from '../types/content';
 
@@ -79,7 +79,7 @@ export function ContentGenerator() {
         keywords: keywords.split(',').map(k => k.trim()).filter(Boolean)
       };
 
-      const content = await contentGenerator.generateContent(request);
+      const content = await secureContentGenerator.generateContent(request);
       setGeneratedContent(content);
       
       toast({
