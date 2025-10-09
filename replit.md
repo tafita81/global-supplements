@@ -2,9 +2,7 @@
 
 ## Overview
 
-Global Supplements is a comprehensive B2B/B2C platform connecting global supplement suppliers with buyers, leveraging AI-powered market intelligence and automated distribution systems. The platform facilitates international trade, government contracts, and enterprise solutions across beauty supplements, quantum materials, medical-grade products, smart gadgets, and traditional wellness products.
-
-The system integrates multiple APIs for marketplace intelligence, logistics, compliance verification, and payment processing to enable automated arbitrage opportunities and real-time execution of high-margin deals.
+Global Supplements is a comprehensive B2B/B2C platform connecting global supplement suppliers with buyers. It leverages AI-powered market intelligence and automated distribution systems to facilitate international trade, government contracts, and enterprise solutions across various product categories, including beauty supplements, quantum materials, medical-grade products, smart gadgets, and traditional wellness products. The platform aims to identify arbitrage opportunities and execute high-margin deals in real-time by integrating numerous APIs for marketplace intelligence, logistics, compliance, and payment processing.
 
 ## User Preferences
 
@@ -12,246 +10,39 @@ Preferred communication style: Simple, everyday language.
 
 ## System Architecture
 
-### Frontend Architecture
+### Frontend
 
-**Technology Stack:**
-- React 18 with TypeScript for type safety
-- Vite as the build tool and development server
-- React Router for client-side routing with multiple layouts (AppLayout for dashboard, PublicSiteLayout for marketing pages)
-- Tailwind CSS for styling with custom design system
-- shadcn/ui component library built on Radix UI primitives
+The frontend uses React 18 with TypeScript, Vite, React Router, Tailwind CSS, and shadcn/ui. It follows a component-based, responsive design with mobile-first principles, supports 15+ languages via i18next, and includes a theme system for dark/light modes. The application utilizes two main layouts: `AppLayout` for authenticated dashboard experiences and `PublicSiteLayout` for marketing pages.
 
-**Design Patterns:**
-- Component-based architecture with clear separation between UI components, pages, and business logic
-- Responsive layouts with mobile-first approach using custom ResponsiveLayout components
-- Internationalization (i18n) support with 15+ languages using i18next
-- Custom hooks for business logic (useQuantumPersistence, useIsMobile, use-toast)
-- Theme system supporting dark/light modes via next-themes
+### Backend
 
-**Routing Strategy:**
-The application uses two distinct layouts:
-1. **AppLayout** - Authenticated dashboard experience with sidebar navigation
-2. **PublicSiteLayout** - Marketing and public-facing pages with header/footer
-
-Key routes include dashboard, opportunities, suppliers, AI system, compliance, market intelligence, execution hubs, and product category pages.
-
-### Backend Architecture
-
-**Primary Backend Service:**
-- Supabase for backend-as-a-service providing authentication, database, and real-time capabilities
-- RESTful API integration layer in `@/integrations/supabase/client`
-
-**Data Layer:**
-- Supabase PostgreSQL database (schema not visible but referenced throughout)
-- Tables include: execution_history, compliance_checks, opportunities, suppliers, government_contracts, market_trends
-- Real-time subscriptions for live updates on executions and metrics
-
-**State Management:**
-- TanStack React Query (v5) for server state management, caching, and data synchronization
-- Local React state for UI interactions
-- Custom persistence hooks for quantum execution tracking
+The backend is primarily built on Supabase, providing authentication, a PostgreSQL database, and real-time capabilities. Data tables include `execution_history`, `compliance_checks`, `opportunities`, `suppliers`, `government_contracts`, and `market_trends`. TanStack React Query is used for server state management.
 
 ### Key Architectural Decisions
 
-**Multi-API Integration System:**
-The platform integrates 50+ external APIs across categories:
-- **AI/Analysis**: OpenAI GPT, Google Gemini for market intelligence and opportunity analysis
-- **Marketplaces**: Alibaba, IndiaMART, Global Sources, AliExpress for supplier discovery
-- **E-commerce**: Amazon MWS, eBay, Shopify for B2C channels
-- **Google Workspace**: Gmail, Drive, Sheets, Calendar, Maps for workflow automation
-- **Logistics**: DHL, FedEx, UPS for shipping calculations
-- **Compliance**: FDA, WHO, EPA for regulatory checks
-- **Payments**: Stripe, PayPal, Wise for transaction processing
-
-**Rationale**: Centralized API management enables automated arbitrage detection, compliance verification, and seamless execution across global markets.
-
-**Quantum Execution System:**
-The platform implements a "quantum" approach to opportunity detection and execution:
-- Real-time monitoring of price discrepancies across platforms
-- AI-powered margin calculation and risk assessment
-- Automated execution pipelines with status tracking
-- Persistent storage of execution history for analytics
-
-**Rationale**: Eliminates manual research and enables zero-investment arbitrage through automated supplier-buyer matching with real-time margin optimization.
-
-**Progressive Registration Strategy:**
-Automated company registration across government and B2B platforms:
-- SAM.gov for US government contracts
-- GSA Schedule for federal purchasing
-- Canton Fair for Asian suppliers
-- Alibaba.com for global B2B trade
-
-**Rationale**: Establishes credibility and unlocks high-value contract opportunities without manual paperwork.
-
-**Internationalization Architecture:**
-Full i18n support with browser language detection:
-- 14 language files covering major markets (EN, ES, PT, FR, DE, IT, JA, KO, ZH, AR, HI, MS, NL, SV)
-- Context-based translation provider wrapping the application
-- Fallback to English for missing translations
-- **Complete translation coverage**: 392 total translations for Amazon Partnership section
-  - amazon.partnership (11 keys): officialPartner, oneLinkProgram, shopTitle, trustDescription, verifiedPartner, securePayment, buyerProtection, shopButton, amazonVerified, shipsTo, verifyPartnership
-  - amazon.product (9 keys): prime, rating, productTitle, brand, description, installmentPlan, freeReturns, shopButton, shippingInfo
-  - bundles (2 keys): title, subtitle
-  - bundles.accessibility (6 keys): imageAlt1, imageAlt2, imageAlt3, prevImage, nextImage, goToImage
-- **Critical rule**: Brand name "Global Supplements" is NEVER translated, always remains in English across all languages
-
-**Rationale**: Enables global reach for both supplier and buyer sides of the marketplace while maintaining brand consistency.
-
-**Amazon OneLink Integration:**
-Universal affiliate link system for global product promotion:
-- **OneLink URL**: https://amzn.to/4mU7qT4 (Skin Analysis Machine Professional)
-- **Automatic geo-redirection**: Single link redirects visitors to their country-specific Amazon store
-- **Affiliate tracking**: Automatically applies correct affiliate tag for each region ensuring commission attribution
-- **Supported regions**: US, CA, UK, DE, FR, IT, ES, JP, AU, NL, SE, SG, PL, SA (13 countries)
-- **Implementation**: Fixed OneLink URL in TechWellnessBundles.tsx, no dynamic link generation needed
-
-**Rationale**: Simplifies affiliate link management by using Amazon's intelligent geo-redirection technology, ensuring proper commission tracking across all 13 global Amazon marketplaces without maintaining separate affiliate links.
-
-**3-Layer Product Aggregation System:**
-Marketplace-aware product discovery architecture ensuring high-review products always surface:
-- **Layer 0 - Global Top Products**: Fetches TOP 40 most popular products across all categories, filtered for current marketplace (stores `{marketplaceId, domain, products}`)
-- **Layer 1 - Category Top Products**: Fetches TOP 40 products specific to the selected category
-- **Layer 2 - Subcategory Products**: Fetches 20 products from each of 5 subcategories with specialized search queries
-- **Deduplication**: ASIN-based duplicate removal across all layers
-- **Sorting**: Final products sorted by review count (descending), top 40 displayed
-
-**Technical Safeguards:**
-- Triple protection against stale data: cache cleared on marketplace change, double verification (marketplaceId + domain), request ID prevents race conditions
-- Request ID system prevents older API responses from overwriting newer ones when user switches marketplaces rapidly
-- Marketplace change triggers automatic re-fetch and re-aggregation with fresh data
-- Deterministic filtering with category/subcategory-specific forbidden keywords, beauty supplement exceptions (hair/skin/nail products)
-
-**Rationale**: Guarantees that products with 100K+ reviews (e.g., Biotin 109K, DIM 32K) always appear in appropriate categories, regardless of API response timing or marketplace switches. The 3-layer approach ensures both popularity and diversity in product listings while maintaining perfect marketplace consistency.
-
-**Instant Cache System (LocalStorage):**
-Ultra-fast product loading with intelligent cache management:
-- **0ms Initial Load**: Products appear instantly from LocalStorage cache on repeat visits
-- **Smart Freshness Check**: Cache valid for 1 hour, auto-refreshes in background if stale
-- **Cache Strategy**:
-  - First visit: Normal API load + save to LocalStorage
-  - Visits < 1 hour: INSTANT display from cache (no API calls)
-  - Visits > 1 hour: Instant display of cached products + background refresh
-- **Storage Structure**: Cache key format `amazon_products_{marketplace}_{category}_{subcategory}`
-- **Auto Cleanup**: Removes cache entries older than 24 hours to prevent quota issues
-- **Fallback Handling**: Automatic cleanup + retry on LocalStorage quota errors
-
-**Performance Impact**:
-- Traditional load time: 2-5 seconds (API latency)
-- With instant cache: <100ms (LocalStorage retrieval)
-- **~95% load time reduction** for repeat visitors within cache window
-- Zero additional API costs for cached responses
-
-**Implementation Details** (`src/services/instantCache.ts`):
-- `getInstant()`: Returns cached products immediately, regardless of age
-- `isFresh()`: Checks if cache is < 1 hour old
-- `save()`: Persists products to LocalStorage with metadata
-- `cleanup()`: Removes entries > 24 hours old
-- Integration in `Amazon.tsx`: Early getInstant check → conditional API skip if fresh → save after successful responses
-
-**Rationale**: Dramatically improves user experience with instant product display while maintaining data freshness through smart background updates. Reduces server costs by minimizing unnecessary API calls for frequently visited categories.
+-   **Multi-API Integration System**: Integrates over 50 external APIs for AI/analysis (OpenAI, Google Gemini), marketplaces (Alibaba, IndiaMART), e-commerce (Amazon MWS, eBay), Google Workspace, logistics (DHL, FedEx), compliance (FDA, WHO), and payments (Stripe, PayPal). This enables automated arbitrage, compliance verification, and seamless execution.
+-   **Quantum Execution System**: Detects and executes opportunities in real-time by monitoring price discrepancies, performing AI-powered margin and risk assessments, and using automated execution pipelines.
+-   **Progressive Registration Strategy**: Automates company registration across government (SAM.gov, GSA Schedule) and B2B platforms (Canton Fair, Alibaba.com) to unlock high-value contracts.
+-   **Internationalization Architecture**: Supports 14+ languages with full i18n, ensuring global reach. The brand name "Global Supplements" is never translated.
+-   **Amazon OneLink Integration**: Utilizes Amazon OneLink for universal affiliate links, ensuring geo-redirection and proper affiliate tracking across 13 global Amazon marketplaces.
+-   **3-Layer Product Aggregation System**: A marketplace-aware system that fetches and aggregates products from global top, category top, and subcategory layers, deduplicates by ASIN, and sorts by review count to ensure high-review products are always visible.
+-   **Instant Cache System**: Implements a LocalStorage-based caching mechanism for ultra-fast product loading (<100ms), reducing initial load times by approximately 95% for repeat visitors while maintaining data freshness through background refreshes.
+-   **AI Content Automation System (Phase 1)**: A modular system for generating SEO-optimized content (articles, landing pages, product reviews, comparisons) using OpenAI GPT-4o-mini across 14 languages and 10 niches. It integrates Amazon OneLink and uses Supabase Edge Functions for secure OpenAI API key management and content storage.
 
 ### Design Trade-offs
 
-**TypeScript Configuration:**
-- Relaxed strictness settings (`strict: false`, `noImplicitAny: false`)
-- **Trade-off**: Faster development velocity but reduced type safety guarantees
-- **Alternative considered**: Full strict mode would catch more errors but slow initial development
-
-**Component Library Choice:**
-- shadcn/ui over Material-UI or Ant Design
-- **Pros**: Unstyled primitives allow full design customization, copy-paste architecture reduces bundle size
-- **Cons**: More initial setup required compared to opinionated frameworks
-
-**Single-Page Application:**
-- Client-side routing rather than server-side rendering
-- **Pros**: Fast navigation, rich interactivity, simplified deployment
-- **Cons**: Larger initial bundle, SEO challenges (mitigated by meta tags)
+-   **TypeScript Configuration**: Relaxed strictness for faster development over full type safety.
+-   **Component Library**: shadcn/ui chosen for design customization and reduced bundle size over opinionated frameworks.
+-   **Single-Page Application**: Prioritizes fast navigation and interactivity, mitigating SEO challenges with meta tags.
 
 ## External Dependencies
 
-### Primary Infrastructure
-
-**Supabase** (Backend-as-a-Service)
-- PostgreSQL database with real-time subscriptions
-- Authentication and authorization
-- File storage for documents
-- Edge functions for serverless operations
-
-### AI & Market Intelligence
-
-**OpenAI API** (Required)
-- GPT models for opportunity analysis
-- Business intelligence and market trend prediction
-- Automated content generation
-
-**Google Gemini AI** (Optional)
-- Translation services
-- Additional market analysis capabilities
-
-### B2B Marketplace APIs
-
-**Critical Integrations:**
-- Alibaba.com API (access key + secret key)
-- IndiaMART API
-- Global Sources API
-- Made-in-China API
-- Canton Fair Online platform
-
-### E-commerce & Dropshipping
-
-- Amazon MWS (access + secret keys)
-- eBay App ID
-- Shopify API
-- AliExpress API (key + secret)
-
-### Google Workspace Suite
-
-Full integration with Google services:
-- Gmail API for automated communications
-- Google Drive for document management
-- Google Sheets for data export/import
-- Google Calendar for scheduling
-- Google Maps for logistics
-- Google Translate for internationalization
-- Google Cloud Storage for file management
-
-### Logistics & Shipping
-
-- DHL Express API
-- FedEx Web Services
-- UPS API
-- USPS Web Tools
-- Major freight forwarders
-
-### Compliance & Regulatory
-
-- FDA API for product verification
-- WHO database integration
-- EPA compliance checking
-- Government contract databases (SAM.gov, GSA)
-
-### Payment Processing
-
-- Stripe for card payments
-- PayPal for international transactions
-- Wise (TransferWide) for currency exchange
-- Banking APIs for wire transfers
-
-### Additional Services
-
-- Lovable platform for development (referenced in README)
-- Email service providers for campaigns
-- SMS/WhatsApp for notifications
-- Analytics platforms for tracking
-
-### Document Management
-
-The system handles multiple document types:
-- Company incorporation certificates
-- FDA approvals
-- Quality certifications (GMP, ISO)
-- Product patents
-- Insurance documents
-- Tax documentation
-
-All documents are stored in Supabase storage with metadata tracking for automated platform registrations.
+-   **Primary Infrastructure**: Supabase (PostgreSQL, Auth, Storage, Edge Functions).
+-   **AI & Market Intelligence**: OpenAI API (GPT models), Google Gemini AI.
+-   **B2B Marketplace APIs**: Alibaba.com, IndiaMART, Global Sources, Made-in-China, Canton Fair Online.
+-   **E-commerce & Dropshipping**: Amazon MWS, eBay, Shopify, AliExpress.
+-   **Google Workspace Suite**: Gmail API, Google Drive, Google Sheets, Google Calendar, Google Maps, Google Translate, Google Cloud Storage.
+-   **Logistics & Shipping**: DHL Express, FedEx Web Services, UPS, USPS.
+-   **Compliance & Regulatory**: FDA API, WHO database, EPA, SAM.gov, GSA.
+-   **Payment Processing**: Stripe, PayPal, Wise, Banking APIs.
+-   **Document Management**: Supabase storage for company certificates, FDA approvals, quality certifications, patents, insurance, and tax documents.
