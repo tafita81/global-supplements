@@ -6,7 +6,7 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
-import { Loader2, PlusCircle, TrendingUp, Eye, Play, Pause } from 'lucide-react';
+import { Loader2, PlusCircle, TrendingUp, Eye, Play, Pause, BarChart3 } from 'lucide-react';
 import { campaignsService } from '../services/campaignsService';
 import { GLOBAL_HEADLINES, GLOBAL_DESCRIPTIONS } from '../types/campaigns';
 import type { GoogleAdsCampaign } from '../types/campaigns';
@@ -24,6 +24,8 @@ export function GoogleAdsCampaigns() {
   const [campaigns, setCampaigns] = useState<GoogleAdsCampaign[]>([]);
   const [isCreating, setIsCreating] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [viewingMetrics, setViewingMetrics] = useState<string | null>(null);
+  const [metrics, setMetrics] = useState<any>(null);
   
   const [name, setName] = useState('');
   const [country, setCountry] = useState('US');
@@ -112,6 +114,20 @@ export function GoogleAdsCampaigns() {
       toast({
         title: 'Error',
         description: 'Failed to update campaign',
+        variant: 'destructive'
+      });
+    }
+  };
+
+  const viewMetrics = async (campaignId: string) => {
+    try {
+      const data = await campaignsService.getPerformanceMetrics(campaignId);
+      setMetrics(data);
+      setViewingMetrics(campaignId);
+    } catch (error) {
+      toast({
+        title: 'Error',
+        description: 'Failed to load metrics',
         variant: 'destructive'
       });
     }
@@ -280,6 +296,13 @@ export function GoogleAdsCampaigns() {
                   <div className="flex gap-2">
                     <Button
                       size="sm"
+                      variant="outline"
+                      onClick={() => viewMetrics(campaign.id)}
+                    >
+                      <BarChart3 className="mr-1 h-3 w-3" /> Metrics
+                    </Button>
+                    <Button
+                      size="sm"
                       variant={campaign.status === 'active' ? 'destructive' : 'default'}
                       onClick={() => toggleStatus(campaign.id, campaign.status)}
                     >
@@ -296,6 +319,40 @@ export function GoogleAdsCampaigns() {
           )}
         </CardContent>
       </Card>
+
+      {viewingMetrics && metrics && (
+        <Card>
+          <CardHeader>
+            <CardTitle>Performance Metrics</CardTitle>
+            <CardDescription>Campaign performance by country</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-4">
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground">Impressions</p>
+                <p className="text-2xl font-bold">{metrics.totals.impressions.toLocaleString()}</p>
+              </div>
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground">Clicks</p>
+                <p className="text-2xl font-bold">{metrics.totals.clicks.toLocaleString()}</p>
+              </div>
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground">CTR</p>
+                <p className="text-2xl font-bold">{metrics.ctr}%</p>
+              </div>
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground">Revenue</p>
+                <p className="text-2xl font-bold">${metrics.totals.revenue.toLocaleString()}</p>
+              </div>
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground">ROI</p>
+                <p className="text-2xl font-bold">{metrics.roi}%</p>
+              </div>
+            </div>
+            <Button variant="outline" onClick={() => setViewingMetrics(null)}>Close</Button>
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 }

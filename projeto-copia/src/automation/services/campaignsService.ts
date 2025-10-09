@@ -35,10 +35,20 @@ export class CampaignsService {
       language: 'en'
     }));
 
-    await Promise.all([
+    const [headlinesResult, descriptionsResult] = await Promise.all([
       supabase.from('google_ads_headlines' as any).insert(headlines),
       supabase.from('google_ads_descriptions' as any).insert(descriptions)
     ]);
+
+    if (headlinesResult.error) {
+      await supabase.from('google_ads_campaigns' as any).delete().eq('id', campaign.id);
+      throw new Error(`Failed to insert headlines: ${headlinesResult.error.message}`);
+    }
+
+    if (descriptionsResult.error) {
+      await supabase.from('google_ads_campaigns' as any).delete().eq('id', campaign.id);
+      throw new Error(`Failed to insert descriptions: ${descriptionsResult.error.message}`);
+    }
 
     return campaign;
   }
