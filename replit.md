@@ -29,11 +29,12 @@ The backend is primarily built on Supabase, providing authentication, a PostgreS
 -   **Instant Cache System**: Implements a LocalStorage-based caching mechanism for ultra-fast product loading (<100ms), reducing initial load times by approximately 95% for repeat visitors while maintaining data freshness through background refreshes.
 -   **AI Content Automation System (Phase 1)**: A modular system for generating SEO-optimized content (articles, landing pages, product reviews, comparisons) using OpenAI GPT-4o-mini across 14 languages and 10 niches. It integrates Amazon OneLink and uses Supabase Edge Functions for secure OpenAI API key management and content storage.
 -   **Google Ads Campaign Management System**: Comprehensive campaign management with 15 pre-optimized global headlines (max 30 chars) and 15 descriptions (max 90 chars) in English with icons. Supports 14 Amazon marketplaces, 10 niches, campaign status tracking (draft/active/paused/completed), and performance metrics by country (impressions, clicks, CTR, revenue, ROI). Database includes 4 tables: google_ads_campaigns, google_ads_headlines, google_ads_descriptions, campaign_performance with CASCADE delete for data integrity.
--   **Multi-Channel Marketing Dashboard (Phase 2)**: Integrated marketing automation hub with 4 core modules:
+-   **Multi-Channel Marketing Dashboard (Phase 2)**: Integrated marketing automation hub with 4 core modules and production-ready API integrations:
     *   **Analytics Dashboard**: Real-time tracking of visitors, pageviews, conversions, revenue, bounce rate, session duration, and top countries/products with 7-day overview and historical trends.
-    *   **Social Media Automation**: Multi-platform post scheduling and management (Facebook, Instagram, Twitter/X, LinkedIn, Pinterest, TikTok) with AI-powered content generation, engagement tracking, and automated publishing.
-    *   **Email Marketing Automation**: Campaign creation with AI-generated templates (welcome, promotion, newsletter), audience segmentation (7 segments), performance metrics (open rate, click rate, sent count), and scheduled delivery.
-    *   **SEO Performance Tracker**: Keyword tracking with Google Search Console integration, position monitoring, impressions/clicks/CTR tracking, top performing keywords analysis, and page-level SEO metrics.
+    *   **Social Media Automation**: Multi-platform post scheduling (Facebook, Instagram, Twitter/X, LinkedIn, Pinterest, TikTok) with Buffer API integration, AI-powered content generation, engagement tracking, automated publishing, profile matching by platform, and mock/production mode switching.
+    *   **Email Marketing Automation**: SendGrid ESP integration with campaign creation, AI-generated templates (welcome, promotion, newsletter), audience segmentation (7 segments), database-driven recipient fetching, fail-fast validation when no audience exists, performance metrics (open rate, click rate, sent count), and scheduled delivery.
+    *   **SEO Performance Tracker**: Google Search Console integration with keyword tracking, position monitoring, impressions/clicks/CTR tracking, top performing keywords analysis, one-click GSC data sync, 30-day historical import, page-level SEO metrics, and mock data fallback.
+    *   **Integration Architecture**: Decoupled credential checking per provider (Buffer, SendGrid, GSC), independent mock mode detection, environment-aware configuration with graceful degradation, console warnings in mock mode, and production-ready real API support when credentials provided.
 
 ### Design Trade-offs
 
@@ -52,3 +53,40 @@ The backend is primarily built on Supabase, providing authentication, a PostgreS
 -   **Compliance & Regulatory**: FDA API, WHO database, EPA, SAM.gov, GSA.
 -   **Payment Processing**: Stripe, PayPal, Wise, Banking APIs.
 -   **Document Management**: Supabase storage for company certificates, FDA approvals, quality certifications, patents, insurance, and tax documents.
+-   **Marketing Automation APIs**: Buffer (social media scheduling), SendGrid (email service provider), Google Search Console (SEO data).
+
+## Database Schema
+
+### Automation Tables (11 total)
+**Phase 1 - AI Content Generation:**
+- `ai_content` - Generated content (articles, landing pages, reviews, comparisons)
+- `seo_pages` - SEO-optimized pages metadata
+
+**Phase 1.5 - Google Ads Management:**
+- `google_ads_campaigns` - Campaign metadata and status
+- `google_ads_headlines` - 15 pre-optimized headlines with icons
+- `google_ads_descriptions` - 15 pre-optimized descriptions with icons
+- `campaign_performance` - Performance metrics by country (impressions, clicks, CTR, revenue, ROI)
+
+**Phase 2 - Multi-Channel Marketing:**
+- `analytics_dashboard` - Real-time visitor and conversion metrics
+- `social_media_posts` - Platform-specific posts with engagement tracking
+- `email_campaigns` - Email campaigns with performance metrics
+- `seo_performance` - Keyword rankings and GSC data
+- `leads` - Email recipient database for segmented campaigns
+
+All tables include proper indexes, foreign keys with CASCADE delete, and Row Level Security (RLS) policies.
+
+## API Integration Security
+
+**Current State:**
+- Frontend services use mock mode by default for demo/development
+- Production API integrations designed for backend/Edge Functions
+- Credentials should never be stored in frontend bundle
+- All services gracefully degrade to mock data when credentials unavailable
+
+**Production Deployment:**
+- Move Buffer/SendGrid/GSC integrations to Supabase Edge Functions (similar to OpenAI)
+- Keep API keys server-side only
+- Frontend calls secure Edge Function endpoints
+- Edge Functions return only necessary data (no credential exposure)
