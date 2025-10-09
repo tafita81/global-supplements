@@ -14,10 +14,10 @@ interface MetricCardProps {
 }
 
 interface MetricsData {
-  activeOpportunities: number;
-  totalValue: number;
-  activeProducts: number;
-  complianceScore: number;
+  activeCampaigns: number;
+  totalRevenue: number;
+  activeContent: number;
+  emailPerformance: number;
 }
 
 function MetricCard({ title, value, change, trend, icon, status }: MetricCardProps) {
@@ -54,10 +54,10 @@ function MetricCard({ title, value, change, trend, icon, status }: MetricCardPro
 
 export function MetricsCards() {
   const [metrics, setMetrics] = useState<MetricsData>({
-    activeOpportunities: 0,
-    totalValue: 0,
-    activeProducts: 0,
-    complianceScore: 0
+    activeCampaigns: 0,
+    totalRevenue: 0,
+    activeContent: 0,
+    emailPerformance: 0
   });
 
   useEffect(() => {
@@ -66,42 +66,40 @@ export function MetricsCards() {
 
   const fetchRealMetrics = async () => {
     try {
-      // Fetch ALL opportunities (total accumulated)
-      const { data: allOpportunities } = await supabase
-        .from('opportunities')
-        .select('estimated_value, status');
-
-      // Fetch all Mycogenesis products
-      const { data: allProducts } = await supabase
-        .from('mycogenesis_products')
-        .select('id');
-
-      // Check company configurations for compliance score
-      const { data: companyData } = await supabase
-        .from('company_memory')
+      // Fetch active Google Ads campaigns
+      const { data: campaigns } = await supabase
+        .from('google_ads_campaigns')
         .select('*')
-        .limit(1)
-        .maybeSingle();
+        .eq('status', 'active');
 
-      const activeOpportunities = allOpportunities?.length || 0;
-      const totalValue = allOpportunities?.reduce((sum, opp) => sum + (Number(opp.estimated_value) || 0), 0) || 0;
-      const activeProducts = allProducts?.length || 0;
-      
-      // Calculate compliance score based on configurations
-      let complianceScore = 0;
-      if (companyData?.company_data) {
-        const data = companyData.company_data as any;
-        if (data.payoneerId) complianceScore += 25;
-        if (data.samGovCredentials) complianceScore += 25;
-        if (data.alibabaCredentials) complianceScore += 25;
-        if (data.ein_number) complianceScore += 25;
-      }
+      // Fetch campaign performance for revenue
+      const { data: performance } = await supabase
+        .from('campaign_performance')
+        .select('revenue');
+
+      // Fetch active AI content (last 30 days)
+      const { data: content } = await supabase
+        .from('ai_content')
+        .select('id')
+        .gte('created_at', new Date(Date.now() - 2592000000).toISOString()); // 30 days
+
+      // Fetch email campaigns for performance
+      const { data: emails } = await supabase
+        .from('email_campaigns')
+        .select('open_rate');
+
+      const activeCampaigns = campaigns?.length || 0;
+      const totalRevenue = performance?.reduce((sum, p) => sum + (Number(p.revenue) || 0), 0) || 0;
+      const activeContent = content?.length || 0;
+      const emailPerformance = emails && emails.length > 0
+        ? emails.reduce((sum, e) => sum + (Number(e.open_rate) || 0), 0) / emails.length
+        : 0;
 
       setMetrics({
-        activeOpportunities,
-        totalValue,
-        activeProducts,
-        complianceScore
+        activeCampaigns,
+        totalRevenue,
+        activeContent,
+        emailPerformance
       });
 
     } catch (error) {
@@ -112,36 +110,36 @@ export function MetricsCards() {
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
       <MetricCard
-        title="Active Opportunities"
-        value={metrics.activeOpportunities.toString()}
-        change="Detected in real time"
-        trend={metrics.activeOpportunities > 0 ? "up" : "neutral"}
+        title="Active Campaigns"
+        value={metrics.activeCampaigns.toString()}
+        change="Google Ads running"
+        trend={metrics.activeCampaigns > 0 ? "up" : "neutral"}
         icon={<TrendingUp className="h-4 w-4" />}
-        status={metrics.activeOpportunities > 0 ? "success" : "warning"}
+        status={metrics.activeCampaigns > 0 ? "success" : "warning"}
       />
       <MetricCard
-        title="Value Under Analysis"
-        value={`$${(metrics.totalValue / 1000).toFixed(0)}K`}
-        change="Total value detected"
-        trend={metrics.totalValue > 0 ? "up" : "neutral"}
+        title="Total Revenue"
+        value={`$${(metrics.totalRevenue / 1000).toFixed(1)}K`}
+        change="Campaign performance"
+        trend={metrics.totalRevenue > 0 ? "up" : "neutral"}
         icon={<DollarSign className="h-4 w-4" />}
         status="info"
       />
       <MetricCard
-        title="Active Products"
-        value={metrics.activeProducts.toString()}
-        change="Mycogenesis Portfolio"
+        title="AI Content Generated"
+        value={metrics.activeContent.toString()}
+        change="Last 30 days"
         trend="neutral"
         icon={<Package className="h-4 w-4" />}
         status="success"
       />
       <MetricCard
-        title="Compliance Score"
-        value={`${metrics.complianceScore}%`}
-        change={metrics.complianceScore === 0 ? "Requires attention" : "Configured"}
-        trend={metrics.complianceScore >= 90 ? "up" : "down"}
-        icon={metrics.complianceScore === 0 ? <AlertTriangle className="h-4 w-4" /> : <CheckCircle className="h-4 w-4" />}
-        status={metrics.complianceScore >= 90 ? "success" : "warning"}
+        title="Email Open Rate"
+        value={`${metrics.emailPerformance.toFixed(1)}%`}
+        change={metrics.emailPerformance === 0 ? "No data yet" : "Average performance"}
+        trend={metrics.emailPerformance >= 20 ? "up" : metrics.emailPerformance > 0 ? "neutral" : "down"}
+        icon={metrics.emailPerformance >= 20 ? <CheckCircle className="h-4 w-4" /> : <AlertTriangle className="h-4 w-4" />}
+        status={metrics.emailPerformance >= 20 ? "success" : "warning"}
       />
     </div>
   );
