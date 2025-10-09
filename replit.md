@@ -28,6 +28,7 @@ The backend is primarily built on Supabase, providing authentication, a PostgreS
 -   **3-Layer Product Aggregation System**: A marketplace-aware system that fetches and aggregates products from global top, category top, and subcategory layers, deduplicates by ASIN, and sorts by review count to ensure high-review products are always visible.
 -   **Instant Cache System**: Implements a LocalStorage-based caching mechanism for ultra-fast product loading (<100ms), reducing initial load times by approximately 95% for repeat visitors while maintaining data freshness through background refreshes.
 -   **AI Content Automation System (Phase 1)**: A modular system for generating SEO-optimized content (articles, landing pages, product reviews, comparisons) using OpenAI GPT-4o-mini across 14 languages and 10 niches. It integrates Amazon OneLink and uses Supabase Edge Functions for secure OpenAI API key management and content storage.
+-   **Google Ads Campaign Management System**: Comprehensive campaign management with 15 pre-optimized global headlines (max 30 chars) and 15 descriptions (max 90 chars) in English with icons. Supports 14 Amazon marketplaces, 10 niches, campaign status tracking (draft/active/paused/completed), and performance metrics by country (impressions, clicks, CTR, revenue, ROI). Database includes 4 tables: google_ads_campaigns, google_ads_headlines, google_ads_descriptions, campaign_performance with CASCADE delete for data integrity.
 
 ### Design Trade-offs
 
