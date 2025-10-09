@@ -47,34 +47,8 @@ export default function Suppliers() {
     }
   };
 
-  const createSampleSupplier = async () => {
-    try {
-      const sampleSupplier = {
-        name: `Fornecedor Global ${Date.now()}`,
-        country: "China",
-        category: "Manufacturing",
-        reliability_score: Math.floor(Math.random() * 40) + 60, // 60-100
-        contact_info: {
-          platform: "alibaba.com",
-          verified: true,
-          email: "contact@supplier.com"
-        },
-        active: true
-      };
-
-      const { error } = await supabase
-        .from('suppliers')
-        .insert([sampleSupplier]);
-
-      if (error) throw error;
-
-      toast.success('Novo fornecedor adicionado!');
-      fetchSuppliers();
-
-    } catch (error) {
-      console.error('Erro ao criar fornecedor:', error);
-      toast.error('Erro ao adicionar fornecedor');
-    }
+  const addSupplier = () => {
+    toast.info('Para adicionar fornecedores, use a integração com Alibaba, IndiaMART ou adicione manualmente na tabela suppliers do banco de dados.');
   };
 
   const getReliabilityColor = (score: number) => {
@@ -132,9 +106,9 @@ export default function Suppliers() {
           </p>
         </div>
         <div className="flex gap-2">
-          <Button onClick={createSampleSupplier}>
+          <Button onClick={addSupplier}>
             <Plus className="h-4 w-4 mr-2" />
-            Novo Fornecedor
+            Adicionar Fornecedor
           </Button>
           <Button variant="outline" onClick={fetchSuppliers}>
             <RefreshCw className="h-4 w-4 mr-2" />
@@ -254,7 +228,7 @@ export default function Suppliers() {
                     : "Tente ajustar os filtros para ver mais resultados"
                   }
                 </p>
-                <Button onClick={createSampleSupplier}>
+                <Button onClick={addSupplier}>
                   <Plus className="h-4 w-4 mr-2" />
                   Adicionar Primeiro Fornecedor
                 </Button>
