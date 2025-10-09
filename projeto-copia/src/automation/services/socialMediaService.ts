@@ -1,5 +1,6 @@
 import { supabase } from '@/integrations/supabase/client';
 import type { SocialMediaPost } from '../types/analytics';
+import { bufferIntegration } from './integrations/bufferIntegration';
 
 export class SocialMediaService {
   async createPost(postData: Omit<SocialMediaPost, 'id' | 'created_at' | 'published_at' | 'engagement_data'>) {
@@ -46,11 +47,37 @@ export class SocialMediaService {
   }
 
   async publishPost(postId: string) {
+    const { data: post } = await supabase
+      .from('social_media_posts' as any)
+      .select('*')
+      .eq('id', postId)
+      .single();
+
+    if (!post) throw new Error('Post not found');
+
+    const profiles = await bufferIntegration.getProfiles();
+    const matchingProfile = profiles.find(p => p.service === post.platform);
+    
+    if (!matchingProfile) {
+      throw new Error(`No Buffer profile found for ${post.platform}`);
+    }
+
+    const bufferResult = await bufferIntegration.createPost(
+      matchingProfile.id,
+      post.content,
+      post.scheduled_date
+    );
+
     const { data, error } = await supabase
       .from('social_media_posts' as any)
       .update({ 
         status: 'published',
-        published_at: new Date().toISOString()
+        published_at: new Date().toISOString(),
+        engagement_data: { 
+          buffer_id: bufferResult.id,
+          buffer_profile_id: matchingProfile.id,
+          mock_mode: bufferResult.mock || false
+        }
       })
       .eq('id', postId)
       .select()

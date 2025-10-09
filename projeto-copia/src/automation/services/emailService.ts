@@ -1,5 +1,6 @@
 import { supabase } from '@/integrations/supabase/client';
 import type { EmailCampaign } from '../types/analytics';
+import { sendgridIntegration } from './integrations/sendgridIntegration';
 
 export class EmailService {
   async createCampaign(campaignData: Omit<EmailCampaign, 'id' | 'created_at' | 'sent_count' | 'open_rate' | 'click_rate'>) {
@@ -32,15 +33,66 @@ export class EmailService {
   }
 
   async sendCampaign(campaignId: string) {
+    const { data: campaign } = await supabase
+      .from('email_campaigns' as any)
+      .select('*')
+      .eq('id', campaignId)
+      .single();
+
+    if (!campaign) throw new Error('Campaign not found');
+
+    const recipients = await this.getRecipientsForSegment(campaign.segment);
+
+    const sendResult = await sendgridIntegration.sendEmail({
+      to: recipients,
+      from: 'noreply@globalsupplements.com',
+      subject: campaign.subject,
+      html: campaign.content,
+      segment: campaign.segment
+    });
+
     const { data, error } = await supabase
       .from('email_campaigns' as any)
-      .update({ status: 'sent' })
+      .update({ 
+        status: 'sent',
+        sent_count: sendResult.sent_count,
+        open_rate: sendResult.open_rate || 0,
+        click_rate: sendResult.click_rate || 0
+      })
       .eq('id', campaignId)
       .select()
       .single();
 
     if (error) throw error;
     return data;
+  }
+
+  private async getRecipientsForSegment(segment?: string): Promise<string[]> {
+    const { data: leads, error } = await supabase
+      .from('leads' as any)
+      .select('email')
+      .eq('segment', segment || 'all_subscribers');
+
+    if (error) {
+      console.error('Error fetching leads:', error);
+      throw new Error('Failed to fetch recipient list from database');
+    }
+
+    if (!leads || leads.length === 0) {
+      if (sendgridIntegration.isMock) {
+        console.warn('[MOCK MODE] No real leads found, using mock recipients for demo');
+        return this.getMockRecipientsForSegment(segment);
+      } else {
+        throw new Error(`No recipients found for segment: ${segment || 'all_subscribers'}. Cannot send campaign with empty audience.`);
+      }
+    }
+
+    return leads.map(lead => lead.email);
+  }
+
+  private getMockRecipientsForSegment(segment?: string): string[] {
+    const baseCount = 100;
+    return Array.from({ length: baseCount }, (_, i) => `demo-user${i}@globalsupplements-mock.com`);
   }
 
   async updateMetrics(campaignId: string, metrics: { sent_count?: number; open_rate?: number; click_rate?: number }) {

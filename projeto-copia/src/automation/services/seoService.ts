@@ -1,5 +1,6 @@
 import { supabase } from '@/integrations/supabase/client';
 import type { SEOPerformance } from '../types/analytics';
+import { gscIntegration } from './integrations/googleSearchConsoleIntegration';
 
 export class SEOService {
   async trackKeyword(data: Omit<SEOPerformance, 'id' | 'created_at'>) {
@@ -61,6 +62,26 @@ export class SEOService {
 
     if (error) throw error;
     return data;
+  }
+
+  async importFromGoogleSearchConsole(siteUrl: string, days: number = 30) {
+    const records = await gscIntegration.importToDatabase(siteUrl, days);
+    
+    if (records.length === 0) {
+      throw new Error('No data retrieved from Google Search Console');
+    }
+
+    return this.bulkImportFromGSC(records);
+  }
+
+  async syncGSCData(siteUrl: string = 'https://globalsupplements.com/') {
+    console.log('Starting GSC data sync for:', siteUrl);
+    
+    const result = await this.importFromGoogleSearchConsole(siteUrl, 30);
+    
+    console.log(`✅ Imported ${result?.length || 0} SEO records from GSC`);
+    
+    return result;
   }
 }
 

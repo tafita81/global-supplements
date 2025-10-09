@@ -29,6 +29,11 @@ The backend is primarily built on Supabase, providing authentication, a PostgreS
 -   **Instant Cache System**: Implements a LocalStorage-based caching mechanism for ultra-fast product loading (<100ms), reducing initial load times by approximately 95% for repeat visitors while maintaining data freshness through background refreshes.
 -   **AI Content Automation System (Phase 1)**: A modular system for generating SEO-optimized content (articles, landing pages, product reviews, comparisons) using OpenAI GPT-4o-mini across 14 languages and 10 niches. It integrates Amazon OneLink and uses Supabase Edge Functions for secure OpenAI API key management and content storage.
 -   **Google Ads Campaign Management System**: Comprehensive campaign management with 15 pre-optimized global headlines (max 30 chars) and 15 descriptions (max 90 chars) in English with icons. Supports 14 Amazon marketplaces, 10 niches, campaign status tracking (draft/active/paused/completed), and performance metrics by country (impressions, clicks, CTR, revenue, ROI). Database includes 4 tables: google_ads_campaigns, google_ads_headlines, google_ads_descriptions, campaign_performance with CASCADE delete for data integrity.
+-   **Multi-Channel Marketing Dashboard (Phase 2)**: Integrated marketing automation hub with 4 core modules:
+    *   **Analytics Dashboard**: Real-time tracking of visitors, pageviews, conversions, revenue, bounce rate, session duration, and top countries/products with 7-day overview and historical trends.
+    *   **Social Media Automation**: Multi-platform post scheduling and management (Facebook, Instagram, Twitter/X, LinkedIn, Pinterest, TikTok) with AI-powered content generation, engagement tracking, and automated publishing.
+    *   **Email Marketing Automation**: Campaign creation with AI-generated templates (welcome, promotion, newsletter), audience segmentation (7 segments), performance metrics (open rate, click rate, sent count), and scheduled delivery.
+    *   **SEO Performance Tracker**: Keyword tracking with Google Search Console integration, position monitoring, impressions/clicks/CTR tracking, top performing keywords analysis, and page-level SEO metrics.
 
 ### Design Trade-offs
 
