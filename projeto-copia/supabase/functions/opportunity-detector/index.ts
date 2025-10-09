@@ -75,7 +75,7 @@ async function scanAlibaba(category: string): Promise<MarketplaceOpportunity[]> 
       product_name: product.product_name,
       supplier_price: product.supplier_price || 0,
       target_market: "USA",
-      estimated_demand: Math.floor(Math.random() * 2000) + 500, // Will be refined with real market research
+      estimated_demand: product.minimum_order ? parseInt(product.minimum_order.replace(/\D/g, '')) || 1000 : 1000,
       margin_potential: product.estimated_margin || 45
     }));
 
@@ -357,7 +357,7 @@ HTML content: ${html.substring(0, 4000)}`
       product_name: product.product_name,
       supplier_price: product.supplier_price || 0,
       target_market: "Global",
-      estimated_demand: Math.floor(Math.random() * 5000) + 1000,
+      estimated_demand: product.minimum_order ? parseInt(product.minimum_order.replace(/\D/g, '')) || 2000 : 2000,
       margin_potential: product.estimated_margin || 40
     }));
 
@@ -429,7 +429,7 @@ HTML content: ${html.substring(0, 4000)}`
       product_name: product.product_name,
       supplier_price: product.fob_price || 0,
       target_market: "Asia-Pacific",
-      estimated_demand: Math.floor(Math.random() * 3000) + 800,
+      estimated_demand: product.minimum_order ? parseInt(product.minimum_order.replace(/\D/g, '')) || 1500 : 1500,
       margin_potential: 45
     }));
 
@@ -501,7 +501,7 @@ HTML content: ${html.substring(0, 4000)}`
       product_name: product.product_name,
       supplier_price: product.unit_price || 0,
       target_market: "Global",
-      estimated_demand: Math.floor(Math.random() * 4000) + 1200,
+      estimated_demand: product.minimum_quantity ? parseInt(product.minimum_quantity.replace(/\D/g, '')) || 2000 : 2000,
       margin_potential: 38
     }));
 
@@ -573,7 +573,7 @@ HTML content: ${html.substring(0, 4000)}`
       product_name: product.product_name,
       supplier_price: product.export_price || 0,
       target_market: product.origin_country || "International",
-      estimated_demand: Math.floor(Math.random() * 2500) + 600,
+      estimated_demand: product.moq ? parseInt(product.moq.replace(/\D/g, '')) || 1500 : 1500,
       margin_potential: 42
     }));
 
@@ -626,18 +626,24 @@ serve(async (req) => {
             type: op.estimated_demand > 1000 ? 'B2B' : 'B2C',
             product_name: op.product_name,
             target_country: op.target_market,
+            buy_price: op.supplier_price,
+            sell_price: op.pricing.target_price,
             estimated_value: op.pricing.monthly_revenue,
             margin_percentage: Math.round(op.pricing.net_margin),
+            profit_potential: op.pricing.monthly_profit,
+            confidence_score: op.ai_analysis.confidence,
             risk_score: op.ai_analysis.risk_score,
             source: op.source,
             status: op.ai_analysis.viability_score > 85 ? 'approved' : 'analyzing',
-            ai_analysis: op.ai_analysis,
-            execution_data: {
+            analysis_result: op.ai_analysis,
+            execution_result: null,
+            metadata: {
               pricing: op.pricing,
               demand_data: {
                 monthly_units: op.estimated_demand,
                 market_trend: 'growing'
-              }
+              },
+              viability_score: op.ai_analysis.viability_score
             }
           })
           .select()
