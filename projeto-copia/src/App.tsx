@@ -3,6 +3,8 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { supabase } from "@/integrations/supabase/client";
 import Index from "./pages/Index";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
@@ -72,12 +74,49 @@ import RFQMatcher from "./pages/RFQMatcher";
 
 const queryClient = new QueryClient();
 
+const AutoLogin = () => {
+  useEffect(() => {
+    const autoLogin = async () => {
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
+        
+        if (!session) {
+          console.log('🔐 Auto-login: Fazendo login automático...');
+          const { error } = await supabase.auth.signInWithPassword({
+            email: 'admin@globalsuplements.com',
+            password: 'GlobalSupplements2025!'
+          });
+          
+          if (error) {
+            console.log('🔐 Auto-login: Criando conta automaticamente...');
+            await supabase.auth.signUp({
+              email: 'admin@globalsuplements.com',
+              password: 'GlobalSupplements2025!'
+            });
+          } else {
+            console.log('✅ Auto-login: Sucesso!');
+          }
+        } else {
+          console.log('✅ Já autenticado:', session.user.email);
+        }
+      } catch (err) {
+        console.error('❌ Erro no auto-login:', err);
+      }
+    };
+    
+    autoLogin();
+  }, []);
+  
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <I18nProvider>
         <Toaster />
         <Sonner />
+        <AutoLogin />
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<PublicSite />} />
