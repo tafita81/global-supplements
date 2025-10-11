@@ -17,26 +17,20 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '20'
-        cache: 'npm'
-        cache-dependency-path: projeto-copia/package-lock.json
         
     - name: 🔧 Install dependencies
-      run: |
-        cd projeto-copia
-        npm ci
+      run: npm ci
         
     - name: 🏗️ Build application
-      run: |
-        cd projeto-copia
-        npm run build
+      run: npm run build
       env:
         VITE_SUPABASE_URL: https://twglceexfetejawoumsr.supabase.co
         VITE_SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR3Z2xjZWV4ZmV0ZWphd291bXNyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg5MjExOTAsImV4cCI6MjA3NDQ5NzE5MH0.kVKkE-dbIDi2-31-pCKBVzjjk5Hu-SV7SgmKzQVkaeY
         
     - name: 📋 Copy deployment files
       run: |
-        cp .htaccess projeto-copia/dist/.htaccess
-        cp DEPLOY_HOSTINGER.md projeto-copia/dist/
+        cp .htaccess dist/.htaccess
+        cp DEPLOY_HOSTINGER.md dist/ 2>/dev/null || true
         
     - name: 🗑️ Clean Hostinger server (force delete all)
       run: |
@@ -57,5 +51,5 @@ jobs:
         server: ${{ secrets.HOSTINGER_FTP_HOST }}
         username: ${{ secrets.HOSTINGER_FTP_USER }}
         password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-        local-dir: ./projeto-copia/dist/
+        local-dir: ./dist/
         server-dir: /public_html/
