@@ -97,15 +97,32 @@ export function QuantumSystemStatus() {
         return sum + (resultData?.profit || 0);
       }, 0) || 0;
 
+      // Calculate REAL metrics from database - NO Math.random() or hardcoded values!
+      const successfulExecs = executions?.filter(e => e.execution_status === 'completed').length || 0;
+      const totalExecs = executions?.length || 1;
+      const realSuccessRate = (successfulExecs / totalExecs) * 100;
+      
+      const avgExecTime = executions?.reduce((sum, exec) => {
+        const resultData = exec.result_data as any;
+        return sum + (resultData?.execution_time || 0);
+      }, 0) / totalExecs || 0;
+
+      // Calculate REAL system health based on actual data
+      const activeOpportunities = opportunities?.filter(o => o.status === 'active').length || 0;
+      const totalOpportunities = opportunities?.length || 0;
+      const realSystemHealth = totalOpportunities > 0 
+        ? ((activeOpportunities + successfulExecs) / (totalOpportunities + totalExecs)) * 100
+        : 0;
+
       setMetrics({
-        quantumProcessing: Math.min(95 + Math.random() * 5, 100),
+        quantumProcessing: realSuccessRate || 0,
         totalProfitToday: todayProfits,
         executionsPerMinute: executions?.length || 0,
         activeNegotiations: negotiations?.length || 0,
-        avgExecutionTime: 234 + Math.random() * 100,
-        successRate: 94.7 + Math.random() * 3,
-        systemHealth: opportunities?.length ? 98 : 85,
-        realTimeOperations: opportunities?.filter(o => o.status === 'active').length || 0
+        avgExecutionTime: avgExecTime,
+        successRate: realSuccessRate || 0,
+        systemHealth: realSystemHealth,
+        realTimeOperations: activeOpportunities
       });
 
     } catch (error) {
@@ -161,10 +178,9 @@ export function QuantumSystemStatus() {
       });
 
       if (data?.opportunities) {
-        // Log system actions
+        // Log system actions - REAL data only
         const actions = [
           `Quantum scan executed: ${data.opportunities.length} opportunities detected`,
-          `AI analysis completed in ${Math.floor(Math.random() * 500 + 200)}ms`,
           `Market arbitrage opportunities identified: ${data.opportunities.filter((o: any) => o.quantum_score > 80).length}`,
           `Real-time execution pipeline activated`
         ];
@@ -234,7 +250,7 @@ export function QuantumSystemStatus() {
           description: 'Dados básicos da empresa necessários para operação',
           status: 'missing',
           action: 'Configurar dados da empresa',
-          profitImpact: 'Bloqueando $500K+/mês',
+          profitImpact: 'Bloqueando operações automáticas',
           steps: [
             '1. Acesse Implementação Prática',
             '2. Preencha dados da empresa',
@@ -269,7 +285,7 @@ export function QuantumSystemStatus() {
             description: 'Credenciais para contratos governamentais',
             status: 'missing',
             action: 'Completar registro SAM.gov',
-            profitImpact: 'Perdendo $2M+ em contratos gov.',
+            profitImpact: 'Bloqueando contratos governamentais',
             steps: [
               '1. Acesse sam.gov',
               '2. Complete o registro da empresa',
@@ -339,104 +355,69 @@ export function QuantumSystemStatus() {
         <CardContent>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 rounded-xl">
-              <div className="text-3xl font-bold text-purple-600">{metrics.quantumProcessing.toFixed(1)}%</div>
-              <div className="text-sm text-muted-foreground">Precisão Quantum</div>
-              <div className="text-xs text-green-600 font-medium">Meta: 94.7%</div>
-              <Progress value={metrics.quantumProcessing} className="mt-2" />
+              <div className="text-3xl font-bold text-purple-600">{metrics.successRate.toFixed(1)}%</div>
+              <div className="text-sm text-muted-foreground">Taxa de Sucesso Real</div>
+              <div className="text-xs text-muted-foreground">Calculado do banco</div>
+              <Progress value={metrics.successRate} className="mt-2" />
             </div>
             <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 rounded-xl">
               <div className="text-3xl font-bold text-green-600">${(metrics.totalProfitToday / 1000).toFixed(0)}K</div>
-              <div className="text-sm text-muted-foreground">Lucro Executado</div>
-              <div className="text-xs text-blue-600 font-medium">Em 2.3ms médio</div>
+              <div className="text-sm text-muted-foreground">Lucro Executado Hoje</div>
+              <div className="text-xs text-blue-600 font-medium">{metrics.avgExecutionTime.toFixed(0)}ms médio</div>
               <Progress value={Math.min(metrics.totalProfitToday / 1000, 100)} className="mt-2" />
             </div>
             <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 rounded-xl">
               <div className="text-3xl font-bold text-blue-600">{metrics.activeNegotiations}</div>
-              <div className="text-sm text-muted-foreground">IA Negociando</div>
-              <div className="text-xs text-purple-600 font-medium">Taxa: 84.7%</div>
+              <div className="text-sm text-muted-foreground">Negociações Ativas</div>
+              <div className="text-xs text-purple-600 font-medium">Taxa: {metrics.successRate.toFixed(1)}%</div>
               <Progress value={metrics.activeNegotiations * 10} className="mt-2" />
             </div>
             <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 rounded-xl">
-              <div className="text-3xl font-bold text-orange-600">47</div>
-              <div className="text-sm text-muted-foreground">Mercados Globais</div>
-              <div className="text-xs text-indigo-600 font-medium">$7.8T Volume</div>
-              <Progress value={94} className="mt-2" />
+              <div className="text-3xl font-bold text-orange-600">{metrics.realTimeOperations}</div>
+              <div className="text-sm text-muted-foreground">Operações Ativas</div>
+              <div className="text-xs text-indigo-600 font-medium">Tempo real</div>
+              <Progress value={metrics.systemHealth} className="mt-2" />
             </div>
           </div>
         </CardContent>
       </Card>
 
-      {/* Estratégias Baseadas em Dados Reais 2025 */}
-      <Card className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 border-green-200">
-        <CardHeader>
-          <CardTitle className="text-xl text-green-800 dark:text-green-200 flex items-center gap-2">
-            📊 Estratégias Baseadas em Dados Reais 2025
-          </CardTitle>
-          <CardDescription className="text-green-700 dark:text-green-300">
-            Setores com maior potencial de arbitragem identificados pela IA
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              { name: 'Hardware Quantum', margin: 156.7, status: 'CRÍTICO', color: 'purple' },
-              { name: 'Semicondutores Avançados', margin: 67.8, status: 'ALTO', color: 'blue' },
-              { name: 'Energia Renovável', margin: 52.6, status: 'MÉDIO', color: 'green' },
-              { name: 'Dispositivos Médicos', margin: 45.2, status: 'MÉDIO', color: 'indigo' },
-              { name: 'Automação Industrial', margin: 38.9, status: 'BAIXO', color: 'orange' }
-            ].map((strategy, index) => (
-              <div key={index} className="p-4 bg-white dark:bg-gray-800 rounded-lg border shadow-sm">
-                <div className="flex items-center justify-between mb-2">
-                  <Badge variant={strategy.status === 'CRÍTICO' ? 'destructive' : strategy.status === 'ALTO' ? 'default' : 'secondary'}>
-                    {strategy.status}
-                  </Badge>
-                  <span className="text-2xl font-bold text-green-600">{strategy.margin}%</span>
-                </div>
-                <h4 className="font-semibold text-gray-900 dark:text-gray-100">{strategy.name}</h4>
-                <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                  Margem média detectada pela IA
-                </div>
-                <Progress value={strategy.margin > 100 ? 100 : strategy.margin} className="mt-2" />
-              </div>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
+      {/* REMOVED - Estratégias hardcoded. TODO: Buscar do banco opportunities agrupadas por categoria */}
 
-      {/* Características Quantum */}
+      {/* Características Quantum - DADOS REAIS */}
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            🎯 Características do Sistema Quantum
+            🎯 Métricas Reais do Sistema Quantum
           </CardTitle>
           <CardDescription>
-            Capacidades avançadas da IA para detecção e execução automática
+            Dados calculados em tempo real do banco de dados
           </CardDescription>
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
-                <span className="font-medium">Detecção de Oportunidades</span>
-                <Badge variant="default">94.7% Precisão</Badge>
+                <span className="font-medium">Taxa de Sucesso Real</span>
+                <Badge variant="default">{metrics.successRate.toFixed(1)}%</Badge>
               </div>
               <div className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
-                <span className="font-medium">Execução Automática</span>
-                <Badge variant="default">2.3ms Médio</Badge>
+                <span className="font-medium">Tempo Médio Execução</span>
+                <Badge variant="default">{metrics.avgExecutionTime.toFixed(0)}ms</Badge>
               </div>
               <div className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
-                <span className="font-medium">Negociações IA</span>
-                <Badge variant="default">84.7% Sucesso</Badge>
+                <span className="font-medium">Negociações Ativas</span>
+                <Badge variant="default">{metrics.activeNegotiations}</Badge>
               </div>
             </div>
             <div className="space-y-4">
               <div className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
-                <span className="font-medium">Cobertura Global</span>
-                <Badge variant="default">47 Mercados</Badge>
+                <span className="font-medium">Operações em Tempo Real</span>
+                <Badge variant="default">{metrics.realTimeOperations}</Badge>
               </div>
               <div className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
-                <span className="font-medium">Volume B2B</span>
-                <Badge variant="default">$7.8 Trilhões</Badge>
+                <span className="font-medium">Lucro Hoje</span>
+                <Badge variant="default">${(metrics.totalProfitToday / 1000).toFixed(1)}K</Badge>
               </div>
               <div className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
                 <span className="font-medium">Status do Sistema</span>
