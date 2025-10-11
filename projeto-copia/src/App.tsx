@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useAutoLogin } from "@/hooks/useAutoLogin";
 import Index from "./pages/Index";
 import Home from "./pages/Home";
@@ -97,7 +97,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <AutoLogin />
-          <BrowserRouter>
+          <HashRouter>
             <Routes>
               <Route path="/" element={<PublicSite />} />
               <Route path="/dashboard" element={<Index />} />
@@ -333,7 +333,7 @@ const App = () => (
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
         </I18nProvider>
       </TooltipProvider>
   </QueryClientProvider>
