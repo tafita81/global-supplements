@@ -1,0 +1,267 @@
+~/workspace$ git checkout main
+git merge experimentos -m "Deploy completo: projeto-copia com IA autônoma"
+git push origin main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Updating 52f29c6..6a3d608
+Fast-forward (no commit created; -m option ignored)
+ .github/workflows/deploy.yml                                                      |   49 ++
+ .htaccess                                                                         |   42 ++
+ .replit                                                                           |   26 +-
+ CASOS_REAIS_COMISSAO_B2B.md                                                       |  249 +++++++++
+ COMANDOS_GITHUB.sh                                                                |   37 ++
+ CONFIGURAR_AGORA.md                                                               |  654 +++++++++++++++++++++++
+ CORRECAO_DADOS_REAIS_PROGRESSO.md                                                 |  147 ++++++
+ DEPLOY_COMMANDS.sh                                                                |  147 ++++++
+ DEPLOY_GITHUB.md                                                                  |  127 +++++
+ DEPLOY_HOSTINGER.md                                                               |  176 +++++++
+ DEPLOY_MAIN_AGORA.sh                                                              |   24 +
+ DEPLOY_RAPIDO.md                                                                  |  114 ++++
+ EDGE_FUNCTIONS_SETUP.md                                                           |  373 +++++++++++++
+ GUIA_APIS_B2B_FORNECEDORES.md                                                     |  323 ++++++++++++
+ GUIA_COMPLETO_FLUXO_BROKER_B2B.md                                                 |  501 ++++++++++++++++++
+ GUIA_CREDENCIAIS_PASSO_A_PASSO.md                                                 | 1062 ++++++++++++++++++++++++++++++++++++++
+ GUIA_PAYONEER_API.md                                                              |  402 +++++++++++++++
+ INDICE_COMPLETO.md                                                                |  434 ++++++++++++++++
+ INICIO_AQUI.md                                                                    |  227 ++++++++
+ MAPA_SISTEMA.md                                                                   |  507 ++++++++++++++++++
+ MODO_MOCK_DEMO.md                                                                 |  380 ++++++++++++++
+ QUICK_TEST.md                                                                     |  434 ++++++++++++++++
+ README_FINAL.md                                                                   |  299 +++++++++++
+ SETUP_GITHUB_DEPLOY.md                                                            |  173 +++++++
+ SETUP_PRODUCAO.md                                                                 |  424 +++++++++++++++
+ SISTEMA_IA_AUTONOMA.md                                                            |  320 ++++++++++++
+ SISTEMA_NEGOCIACAO_AUTOMATICA.md                                                  |  220 ++++++++
+ SISTEMA_RFQ_MATCHER.md                                                            |  596 +++++++++++++++++++++
+ STATUS_FINAL.md                                                                   |  369 +++++++++++++
+ TESTING_GUIDE.md                                                                  |  624 ++++++++++++++++++++++
+ ...ments-Rafael-Oliveira-tafita1981novo-gmail-com-1760036231269_1760036231280.txt |   51 ++
+ ...istema-Detectar-Novas-Atualizar-Filtros-e-Busc-1760048103799_1760048103800.txt |  176 +++++++
+ ...istema-Detectar-Novas-Atualizar-Filtros-e-Busc-1760049471053_1760049471053.txt |  176 +++++++
+ ...istema-Detectar-Novas-Atualizar-Filtros-e-Busc-1760049699696_1760049699697.txt |  176 +++++++
+ ...istema-Detectar-Novas-Atualizar-Filtros-e-Busc-1760050274892_1760050274893.txt |  176 +++++++
+ attached_assets/REPLIT 1_1760034926837.docx                                       |  Bin 0 -> 516881 bytes
+ attached_assets/image_1760166513171.png                                           |  Bin 0 -> 90930 bytes
+ attached_assets/image_1760167275481.png                                           |  Bin 0 -> 44568 bytes
+ attached_assets/image_1760168161866.png                                           |  Bin 0 -> 19053 bytes
+ projeto-copia/.github/workflows/deploy-experimentos.yml                           |   41 ++
+ projeto-copia/.gitignore                                                          |    7 +
+ projeto-copia/AUTOMATION_GUIDE.md                                                 |  372 +++++++++++++
+ projeto-copia/GUIA-BRANCHES.md                                                    |  228 ++++++++
+ projeto-copia/auto-refresh-opportunities.ts                                       |   35 ++
+ projeto-copia/global-supplements-deploy.tar.gz                                    |  Bin 5848179 -> 0 bytes
+ projeto-copia/index.html                                                          |    3 +
+ projeto-copia/src/App.tsx                                                         |   48 ++
+ projeto-copia/src/automation/components/AnalyticsDashboard.tsx                    |  123 +++++
+ projeto-copia/src/automation/components/ContentGenerator.tsx                      |  281 ++++++++++
+ projeto-copia/src/automation/components/EmailCampaignManager.tsx                  |  252 +++++++++
+ projeto-copia/src/automation/components/GoogleAdsCampaigns.tsx                    |  358 +++++++++++++
+ projeto-copia/src/automation/components/SEOPerformanceTracker.tsx                 |  214 ++++++++
+ projeto-copia/src/automation/components/SocialMediaManager.tsx                    |  243 +++++++++
+ projeto-copia/src/automation/services/analyticsService.ts                         |   83 +++
+ projeto-copia/src/automation/services/campaignsService.ts                         |  131 +++++
+ projeto-copia/src/automation/services/contentGenerator.ts                         |  188 +++++++
+ projeto-copia/src/automation/services/contentGeneratorSecure.ts                   |   27 +
+ projeto-copia/src/automation/services/emailService.ts                             |  165 ++++++
+ projeto-copia/src/automation/services/integrations/bufferIntegration.ts           |  128 +++++
+ projeto-copia/src/automation/services/integrations/config.ts                      |   29 ++
+ .../src/automation/services/integrations/googleSearchConsoleIntegration.ts        |   77 +++
+ projeto-copia/src/automation/services/integrations/sendgridIntegration.ts         |   75 +++
+ projeto-copia/src/automation/services/seoService.ts                               |   88 ++++
+ projeto-copia/src/automation/services/socialMediaService.ts                       |  137 +++++
+ projeto-copia/src/automation/services/supabaseContent.ts                          |  142 +++++
+ projeto-copia/src/automation/types/analytics.ts                                   |   75 +++
+ projeto-copia/src/automation/types/campaigns.ts                                   |   79 +++
+ projeto-copia/src/automation/types/content.ts                                     |   56 ++
+ projeto-copia/src/components/dashboard/MetricsCards.tsx                           |  112 ++--
+ projeto-copia/src/components/dashboard/QuantumSystemStatus.tsx                    |  121 ++---
+ projeto-copia/src/i18n/locales/ar.tmp                                             |    0
+ projeto-copia/src/i18n/locales/de.tmp                                             |    0
+ projeto-copia/src/i18n/locales/en.tmp                                             |    0
+ projeto-copia/src/i18n/locales/es.tmp                                             |    0
+ projeto-copia/src/i18n/locales/fr.tmp                                             |    0
+ projeto-copia/src/i18n/locales/it.tmp                                             |    0
+ projeto-copia/src/i18n/locales/ja.tmp                                             |    0
+ projeto-copia/src/i18n/locales/ko.tmp                                             |    0
+ projeto-copia/src/i18n/locales/pt.tmp                                             |    0
+ projeto-copia/src/i18n/locales/zh.tmp                                             |    0
+ projeto-copia/src/integrations/supabase/types.ts                                  |  186 +++++++
+ projeto-copia/src/main.tsx                                                        |    1 +
+ projeto-copia/src/pages/AIContentGenerator.tsx                                    |   16 +
+ projeto-copia/src/pages/AISystem.tsx                                              |  148 ++----
+ projeto-copia/src/pages/AdvancedMarketIntelligence.tsx                            |   80 +--
+ projeto-copia/src/pages/AutonomousAIDashboard.tsx                                 |  336 ++++++++++++
+ projeto-copia/src/pages/Compliance.tsx                                            |  231 +++++----
+ projeto-copia/src/pages/Dashboard.tsx                                             |   69 ++-
+ projeto-copia/src/pages/GlobalB2BConnector.tsx                                    |  369 +++++++++++++
+ projeto-copia/src/pages/GoogleAdsCampaigns.tsx                                    |   16 +
+ projeto-copia/src/pages/LiveProfitDashboard.tsx                                   |  368 +++++++------
+ projeto-copia/src/pages/MajorSuppliersDatabase.tsx                                |   95 +---
+ projeto-copia/src/pages/MarketingDashboard.tsx                                    |   43 ++
+ projeto-copia/src/pages/Opportunities.tsx                                         |    5 +-
+ projeto-copia/src/pages/QuantumSystemComplete.tsx                                 |  363 +------------
+ projeto-copia/src/pages/RFQMatcher.tsx                                            |  559 ++++++++++++++++++++
+ projeto-copia/src/pages/RealTimeArbitrageEngine.tsx                               |    4 +-
+ projeto-copia/src/pages/RealTimeMetricsDashboard.tsx                              |  405 +++++++++++++++
+ projeto-copia/src/pages/RegistrationDetails.tsx                                   |   37 +-
+ projeto-copia/src/pages/RevenueAutomationSetup.tsx                                |  394 ++++++++++++++
+ projeto-copia/src/pages/Suppliers.tsx                                             |   36 +-
+ projeto-copia/src/services/revenueAutomationService.ts                            |  160 ++++++
+ projeto-copia/src/services/systemMetrics.ts                                       |  449 ++++++++++++++++
+ projeto-copia/supabase/functions/api-configurator/index.ts                        |    2 +-
+ projeto-copia/supabase/functions/auto-executor/index.ts                           |    2 +-
+ projeto-copia/supabase/functions/autonomous-negotiator/index.ts                   |    2 +-
+ projeto-copia/supabase/functions/b2b-buyer-detector/index.ts                      |    2 +-
+ projeto-copia/supabase/functions/buffer-integration/index.ts                      |  143 +++++
+ projeto-copia/supabase/functions/compliance-checker/index.ts                      |    2 +-
+ projeto-copia/supabase/functions/email-automation/index.ts                        |    2 +-
+ projeto-copia/supabase/functions/generate-content/index.ts                        |  177 +++++++
+ projeto-copia/supabase/functions/gsc-integration/index.ts                         |  145 ++++++
+ projeto-copia/supabase/functions/logistics-optimizer/index.ts                     |    2 +-
+ projeto-copia/supabase/functions/notification-manager/index.ts                    |    2 +-
+ projeto-copia/supabase/functions/opportunity-detector/index.ts                    |   95 +++-
+ projeto-copia/supabase/functions/order-manager/index.ts                           |    2 +-
+ projeto-copia/supabase/functions/qa-assistant/index.ts                            |    2 +-
+ projeto-copia/supabase/functions/quantum-arbitrage-executor/index.ts              |    2 +-
+ projeto-copia/supabase/functions/quantum-distributorship-engine/index.ts          |    2 +-
+ projeto-copia/supabase/functions/quantum-market-scanner/index.ts                  |    2 +-
+ projeto-copia/supabase/functions/quantum-opportunity-detector/index.ts            |    2 +-
+ projeto-copia/supabase/functions/sendgrid-integration/index.ts                    |  123 +++++
+ .../supabase/migrations/20250927130507_54ac387a-5ce0-4200-beac-f8f3e26fd338.sql   |   29 +-
+ .../supabase/migrations/20250927130555_f4160132-cd4b-4e1e-9710-aa0b1ab1bf95.sql   |   29 +-
+ .../supabase/migrations/20250927130753_607934cd-0939-4a2f-ac1b-2e6d377427b1.sql   |   29 +-
+ projeto-copia/supabase/migrations/20251009_automation_tables.sql                  |  102 ++++
+ projeto-copia/test_detection.sh                                                   |    6 +
+ projeto-copia/vite.config.ts                                                      |   29 +-
+ replit.md                                                                         |  429 +++++++--------
+ supabase/functions/ai-negotiation-agent/index.ts                                  |  275 ++++++++++
+ supabase/functions/auto-negotiation-engine/index.ts                               |  129 +++++
+ supabase/functions/autonomous-ai-agent/index.ts                                   |  506 ++++++++++++++++++
+ supabase/functions/global-arbitrage-detector/index.ts                             |  392 ++++++++++++++
+ supabase/functions/global-b2b-connector/index.ts                                  |  312 +++++++++++
+ supabase/functions/import-replit-secrets/index.ts                                 |  213 ++++++++
+ supabase/functions/opportunity-detector/index.ts                                  |    5 +-
+ supabase/functions/payoneer-commission-handler/index.ts                           |  174 +++++++
+ supabase/functions/real-opportunity-generator/index.ts                            |  211 ++++++++
+ supabase/functions/rfq-supplier-matcher/index.ts                                  |  488 ++++++++++++++++++
+ supabase/functions/stripe-payment-webhook/index.ts                                |  225 ++++++++
+ supabase/functions/zero-investment-broker/index.ts                                |  260 ++++++++++
+ supabase/migrations/20250111_api_credentials.sql                                  |   48 ++
+ supabase/migrations/20250927130507_54ac387a-5ce0-4200-beac-f8f3e26fd338.sql       |   29 +-
+ supabase/migrations/20250927130555_f4160132-cd4b-4e1e-9710-aa0b1ab1bf95.sql       |   29 +-
+ supabase/migrations/20250927130753_607934cd-0939-4a2f-ac1b-2e6d377427b1.sql       |   29 +-
+ zirTRlGZ                                                                          |  Bin 0 -> 808611 bytes
+ 146 files changed, 21628 insertions(+), 1564 deletions(-)
+ create mode 100644 .github/workflows/deploy.yml
+ create mode 100644 .htaccess
+ create mode 100644 CASOS_REAIS_COMISSAO_B2B.md
+ create mode 100755 COMANDOS_GITHUB.sh
+ create mode 100644 CONFIGURAR_AGORA.md
+ create mode 100644 CORRECAO_DADOS_REAIS_PROGRESSO.md
+ create mode 100755 DEPLOY_COMMANDS.sh
+ create mode 100644 DEPLOY_GITHUB.md
+ create mode 100644 DEPLOY_HOSTINGER.md
+ create mode 100755 DEPLOY_MAIN_AGORA.sh
+ create mode 100644 DEPLOY_RAPIDO.md
+ create mode 100644 EDGE_FUNCTIONS_SETUP.md
+ create mode 100644 GUIA_APIS_B2B_FORNECEDORES.md
+ create mode 100644 GUIA_COMPLETO_FLUXO_BROKER_B2B.md
+ create mode 100644 GUIA_CREDENCIAIS_PASSO_A_PASSO.md
+ create mode 100644 GUIA_PAYONEER_API.md
+ create mode 100644 INDICE_COMPLETO.md
+ create mode 100644 INICIO_AQUI.md
+ create mode 100644 MAPA_SISTEMA.md
+ create mode 100644 MODO_MOCK_DEMO.md
+ create mode 100644 QUICK_TEST.md
+ create mode 100644 README_FINAL.md
+ create mode 100644 SETUP_GITHUB_DEPLOY.md
+ create mode 100644 SETUP_PRODUCAO.md
+ create mode 100644 SISTEMA_IA_AUTONOMA.md
+ create mode 100644 SISTEMA_NEGOCIACAO_AUTOMATICA.md
+ create mode 100644 SISTEMA_RFQ_MATCHER.md
+ create mode 100644 STATUS_FINAL.md
+ create mode 100644 TESTING_GUIDE.md
+ create mode 100644 attached_assets/Pasted-Melhores-descri-es-para-Google-ads-global-supplements-Rafael-Oliveira-tafita1981novo-gmail-com-1760036231269_1760036231280.txt
+ create mode 100644 attached_assets/Pasted-Oportunidades-15-oportunidades-detectadas-pelo-sistema-Detectar-Novas-Atualizar-Filtros-e-Busc-1760048103799_1760048103800.txt
+ create mode 100644 attached_assets/Pasted-Oportunidades-15-oportunidades-detectadas-pelo-sistema-Detectar-Novas-Atualizar-Filtros-e-Busc-1760049471053_1760049471053.txt
+ create mode 100644 attached_assets/Pasted-Oportunidades-15-oportunidades-detectadas-pelo-sistema-Detectar-Novas-Atualizar-Filtros-e-Busc-1760049699696_1760049699697.txt
+ create mode 100644 attached_assets/Pasted-Oportunidades-15-oportunidades-detectadas-pelo-sistema-Detectar-Novas-Atualizar-Filtros-e-Busc-1760050274892_1760050274893.txt
+ create mode 100644 attached_assets/REPLIT 1_1760034926837.docx
+ create mode 100644 attached_assets/image_1760166513171.png
+ create mode 100644 attached_assets/image_1760167275481.png
+ create mode 100644 attached_assets/image_1760168161866.png
+ create mode 100644 projeto-copia/.github/workflows/deploy-experimentos.yml
+ create mode 100644 projeto-copia/AUTOMATION_GUIDE.md
+ create mode 100644 projeto-copia/GUIA-BRANCHES.md
+ create mode 100644 projeto-copia/auto-refresh-opportunities.ts
+ delete mode 100644 projeto-copia/global-supplements-deploy.tar.gz
+ create mode 100644 projeto-copia/src/automation/components/AnalyticsDashboard.tsx
+ create mode 100644 projeto-copia/src/automation/components/ContentGenerator.tsx
+ create mode 100644 projeto-copia/src/automation/components/EmailCampaignManager.tsx
+ create mode 100644 projeto-copia/src/automation/components/GoogleAdsCampaigns.tsx
+ create mode 100644 projeto-copia/src/automation/components/SEOPerformanceTracker.tsx
+ create mode 100644 projeto-copia/src/automation/components/SocialMediaManager.tsx
+ create mode 100644 projeto-copia/src/automation/services/analyticsService.ts
+ create mode 100644 projeto-copia/src/automation/services/campaignsService.ts
+ create mode 100644 projeto-copia/src/automation/services/contentGenerator.ts
+ create mode 100644 projeto-copia/src/automation/services/contentGeneratorSecure.ts
+ create mode 100644 projeto-copia/src/automation/services/emailService.ts
+ create mode 100644 projeto-copia/src/automation/services/integrations/bufferIntegration.ts
+ create mode 100644 projeto-copia/src/automation/services/integrations/config.ts
+ create mode 100644 projeto-copia/src/automation/services/integrations/googleSearchConsoleIntegration.ts
+ create mode 100644 projeto-copia/src/automation/services/integrations/sendgridIntegration.ts
+ create mode 100644 projeto-copia/src/automation/services/seoService.ts
+ create mode 100644 projeto-copia/src/automation/services/socialMediaService.ts
+ create mode 100644 projeto-copia/src/automation/services/supabaseContent.ts
+ create mode 100644 projeto-copia/src/automation/types/analytics.ts
+ create mode 100644 projeto-copia/src/automation/types/campaigns.ts
+ create mode 100644 projeto-copia/src/automation/types/content.ts
+ delete mode 100644 projeto-copia/src/i18n/locales/ar.tmp
+ delete mode 100644 projeto-copia/src/i18n/locales/de.tmp
+ delete mode 100644 projeto-copia/src/i18n/locales/en.tmp
+ delete mode 100644 projeto-copia/src/i18n/locales/es.tmp
+ delete mode 100644 projeto-copia/src/i18n/locales/fr.tmp
+ delete mode 100644 projeto-copia/src/i18n/locales/it.tmp
+ delete mode 100644 projeto-copia/src/i18n/locales/ja.tmp
+ delete mode 100644 projeto-copia/src/i18n/locales/ko.tmp
+ delete mode 100644 projeto-copia/src/i18n/locales/pt.tmp
+ delete mode 100644 projeto-copia/src/i18n/locales/zh.tmp
+ create mode 100644 projeto-copia/src/pages/AIContentGenerator.tsx
+ create mode 100644 projeto-copia/src/pages/AutonomousAIDashboard.tsx
+ create mode 100644 projeto-copia/src/pages/GlobalB2BConnector.tsx
+ create mode 100644 projeto-copia/src/pages/GoogleAdsCampaigns.tsx
+ create mode 100644 projeto-copia/src/pages/MarketingDashboard.tsx
+ create mode 100644 projeto-copia/src/pages/RFQMatcher.tsx
+ create mode 100644 projeto-copia/src/pages/RealTimeMetricsDashboard.tsx
+ create mode 100644 projeto-copia/src/pages/RevenueAutomationSetup.tsx
+ create mode 100644 projeto-copia/src/services/revenueAutomationService.ts
+ create mode 100644 projeto-copia/src/services/systemMetrics.ts
+ create mode 100644 projeto-copia/supabase/functions/buffer-integration/index.ts
+ create mode 100644 projeto-copia/supabase/functions/generate-content/index.ts
+ create mode 100644 projeto-copia/supabase/functions/gsc-integration/index.ts
+ create mode 100644 projeto-copia/supabase/functions/sendgrid-integration/index.ts
+ create mode 100644 projeto-copia/supabase/migrations/20251009_automation_tables.sql
+ create mode 100755 projeto-copia/test_detection.sh
+ create mode 100644 supabase/functions/ai-negotiation-agent/index.ts
+ create mode 100644 supabase/functions/auto-negotiation-engine/index.ts
+ create mode 100644 supabase/functions/autonomous-ai-agent/index.ts
+ create mode 100644 supabase/functions/global-arbitrage-detector/index.ts
+ create mode 100644 supabase/functions/global-b2b-connector/index.ts
+ create mode 100644 supabase/functions/import-replit-secrets/index.ts
+ create mode 100644 supabase/functions/payoneer-commission-handler/index.ts
+ create mode 100644 supabase/functions/real-opportunity-generator/index.ts
+ create mode 100644 supabase/functions/rfq-supplier-matcher/index.ts
+ create mode 100644 supabase/functions/stripe-payment-webhook/index.ts
+ create mode 100644 supabase/functions/zero-investment-broker/index.ts
+ create mode 100644 supabase/migrations/20250111_api_credentials.sql
+ create mode 100644 zirTRlGZ
+Enumerating objects: 659, done.
+Counting objects: 100% (658/658), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (544/544), done.
+Writing objects: 100% (595/595), 1.68 MiB | 4.29 MiB/s, done.
+Total 595 (delta 380), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (380/380), completed with 39 local objects.
+To https://github.com/tafita81/global-supplements.git
+   52f29c6..6a3d608  main -> main
+~/workspace$ ^C
