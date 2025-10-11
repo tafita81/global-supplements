@@ -77,7 +77,29 @@ export default function RevenueAutomationSetup() {
     const { data: { user } } = await supabase.auth.getUser();
     setUser(user);
     if (user) {
-      loadCredentials();
+      // Importar automaticamente do Replit Secrets ao fazer login
+      await importReplitSecretsAuto();
+      await loadCredentials();
+    }
+  };
+
+  const importReplitSecretsAuto = async () => {
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) return;
+
+      await fetch(
+        `${supabase.supabaseUrl}/functions/v1/import-replit-secrets`,
+        {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${session.access_token}`,
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+    } catch (error) {
+      // Silencioso - não mostrar erro na importação automática
     }
   };
 
@@ -310,8 +332,25 @@ export default function RevenueAutomationSetup() {
   // Se não está logado, mostrar tela de login
   if (!user) {
     return (
-      <div className="container mx-auto p-6 max-w-md">
-        <Card>
+      <div className="container mx-auto p-6 space-y-6">
+        {/* Aviso de Importação Automática */}
+        <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20 border-blue-300">
+          <CardContent className="py-4">
+            <div className="flex items-center gap-3">
+              <Zap className="h-6 w-6 text-blue-600" />
+              <div>
+                <h3 className="font-semibold text-lg">
+                  Sistema de Importação Automática Ativo
+                </h3>
+                <p className="text-sm text-muted-foreground mt-1">
+                  Ao fazer login, TODAS as credenciais (OpenAI, SendGrid, Stripe, RapidAPI, Amazon, Alibaba) serão importadas automaticamente dos Replit Secrets
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="max-w-md mx-auto">
           <CardHeader>
             <CardTitle className="text-2xl">🔐 Login Necessário</CardTitle>
             <CardDescription>
@@ -388,35 +427,20 @@ export default function RevenueAutomationSetup() {
         </div>
       </div>
 
-      {/* Botão de Importação Rápida */}
-      {user && !allConfigured && (
-        <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20 border-blue-300">
+      {/* Status das Credenciais - Importadas Automaticamente */}
+      {user && allConfigured && (
+        <Card className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 border-green-300">
           <CardContent className="py-4">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <CheckCircle2 className="h-6 w-6 text-green-600" />
               <div>
-                <h3 className="font-semibold text-lg">⚡ Importação Automática</h3>
+                <h3 className="font-semibold text-lg text-green-700 dark:text-green-400">
+                  ✅ Todas as Credenciais Configuradas Automaticamente
+                </h3>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Importe automaticamente as credenciais configuradas nos Replit Secrets
+                  OpenAI, SendGrid, Stripe, RapidAPI, Amazon, Alibaba - Importadas dos Replit Secrets
                 </p>
               </div>
-              <Button
-                onClick={importReplitSecrets}
-                disabled={loading}
-                size="lg"
-                className="bg-blue-600 hover:bg-blue-700"
-              >
-                {loading ? (
-                  <>
-                    <Loader2 className="h-4 w-4 mr-2 animate-spin" />
-                    Importando...
-                  </>
-                ) : (
-                  <>
-                    <DollarSign className="h-4 w-4 mr-2" />
-                    Importar Credenciais
-                  </>
-                )}
-              </Button>
             </div>
           </CardContent>
         </Card>
