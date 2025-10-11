@@ -12,6 +12,9 @@ export default function RevenueAutomationSetup() {
   const [loading, setLoading] = useState(false);
   const [credentials, setCredentials] = useState<any>({});
   const [configured, setConfigured] = useState<string[]>([]);
+  const [user, setUser] = useState<any>(null);
+  const [authEmail, setAuthEmail] = useState('');
+  const [authPassword, setAuthPassword] = useState('');
 
   const requiredServices = [
     {
@@ -67,8 +70,71 @@ export default function RevenueAutomationSetup() {
   ];
 
   useEffect(() => {
-    loadCredentials();
+    checkUser();
   }, []);
+
+  const checkUser = async () => {
+    const { data: { user } } = await supabase.auth.getUser();
+    setUser(user);
+    if (user) {
+      loadCredentials();
+    }
+  };
+
+  const handleLogin = async () => {
+    if (!authEmail || !authPassword) {
+      toast({
+        title: 'Erro',
+        description: 'Preencha email e senha',
+        variant: 'destructive'
+      });
+      return;
+    }
+
+    setLoading(true);
+
+    // Tentar login
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: authEmail,
+      password: authPassword
+    });
+
+    if (error) {
+      // Se erro, tentar criar conta automaticamente
+      const { data: signUpData, error: signUpError } = await supabase.auth.signUp({
+        email: authEmail,
+        password: authPassword,
+        options: {
+          emailRedirectTo: window.location.origin
+        }
+      });
+
+      if (signUpError) {
+        toast({
+          title: 'Erro ao autenticar',
+          description: signUpError.message,
+          variant: 'destructive'
+        });
+        setLoading(false);
+        return;
+      }
+
+      setUser(signUpData.user);
+      toast({
+        title: 'Conta criada!',
+        description: 'Você está autenticado e pode salvar credenciais'
+      });
+    } else {
+      setUser(data.user);
+      toast({
+        title: 'Login realizado!',
+        description: 'Você está autenticado'
+      });
+    }
+
+    setLoading(false);
+    loadCredentials();
+  };
 
   const loadCredentials = async () => {
     const { data: { user } } = await supabase.auth.getUser();
@@ -159,6 +225,63 @@ export default function RevenueAutomationSetup() {
     .filter(s => !s.optional)
     .every(s => configured.includes(s.name));
 
+  // Se não está logado, mostrar tela de login
+  if (!user) {
+    return (
+      <div className="container mx-auto p-6 max-w-md">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl">🔐 Login Necessário</CardTitle>
+            <CardDescription>
+              Faça login ou crie uma conta para configurar suas credenciais
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div className="space-y-2">
+              <Label htmlFor="auth-email">Email</Label>
+              <Input
+                id="auth-email"
+                type="email"
+                placeholder="seu@email.com"
+                value={authEmail}
+                onChange={(e) => setAuthEmail(e.target.value)}
+                onKeyPress={(e) => e.key === 'Enter' && handleLogin()}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="auth-password">Senha</Label>
+              <Input
+                id="auth-password"
+                type="password"
+                placeholder="Mínimo 6 caracteres"
+                value={authPassword}
+                onChange={(e) => setAuthPassword(e.target.value)}
+                onKeyPress={(e) => e.key === 'Enter' && handleLogin()}
+              />
+            </div>
+            <Button 
+              onClick={handleLogin} 
+              disabled={loading}
+              className="w-full"
+            >
+              {loading ? (
+                <>
+                  <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                  Autenticando...
+                </>
+              ) : (
+                'Entrar / Criar Conta'
+              )}
+            </Button>
+            <p className="text-xs text-muted-foreground text-center">
+              Se a conta não existir, será criada automaticamente
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
   return (
     <div className="container mx-auto p-6 space-y-6">
       <div className="flex items-center justify-between">
@@ -168,12 +291,19 @@ export default function RevenueAutomationSetup() {
             Configure suas credenciais para começar a ganhar comissões SEM INVESTIMENTO
           </p>
         </div>
-        {allConfigured && (
-          <div className="text-green-600 flex items-center gap-2">
-            <CheckCircle2 className="h-6 w-6" />
-            <span className="font-semibold">Sistema Pronto!</span>
-          </div>
-        )}
+        <div className="flex items-center gap-4">
+          {user && (
+            <div className="text-sm text-muted-foreground">
+              {user.email}
+            </div>
+          )}
+          {allConfigured && (
+            <div className="text-green-600 flex items-center gap-2">
+              <CheckCircle2 className="h-6 w-6" />
+              <span className="font-semibold">Sistema Pronto!</span>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Explicação do Fluxo */}
