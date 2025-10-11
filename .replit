@@ -55,10 +55,6 @@ externalPort = 3003
 localPort = 44153
 externalPort = 3001
 
-[[ports]]
-localPort = 44835
-externalPort = 4200
-
 [deployment]
 deploymentTarget = "autoscale"
 build = ["bash", "-c", "cd projeto-copia && npm run build"]
