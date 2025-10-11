@@ -68,6 +68,7 @@ import RevenueAutomationSetup from "./pages/RevenueAutomationSetup";
 import GlobalB2BConnector from "./pages/GlobalB2BConnector";
 import AutonomousAIDashboard from "./pages/AutonomousAIDashboard";
 import RealTimeMetricsDashboard from "./pages/RealTimeMetricsDashboard";
+import RFQMatcher from "./pages/RFQMatcher";
 
 const queryClient = new QueryClient();
 
@@ -302,6 +303,11 @@ const App = () => (
               <Route path="/realtime-metrics" element={
                 <AppLayout>
                   <RealTimeMetricsDashboard />
+                </AppLayout>
+              } />
+              <Route path="/rfq-matcher" element={
+                <AppLayout>
+                  <RFQMatcher />
                 </AppLayout>
               } />
               

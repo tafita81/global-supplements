@@ -1320,6 +1320,192 @@ export type Database = {
           },
         ]
       }
+      rfqs: {
+        Row: {
+          id: string
+          user_id: string
+          source: string | null
+          external_id: string | null
+          buyer_name: string | null
+          buyer_email: string | null
+          buyer_location: string | null
+          product_name: string
+          product_description: string | null
+          quantity: number
+          unit: string | null
+          target_price: number | null
+          expected_delivery_days: number | null
+          status: string | null
+          created_at: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          source?: string | null
+          external_id?: string | null
+          buyer_name?: string | null
+          buyer_email?: string | null
+          buyer_location?: string | null
+          product_name: string
+          product_description?: string | null
+          quantity: number
+          unit?: string | null
+          target_price?: number | null
+          expected_delivery_days?: number | null
+          status?: string | null
+          created_at?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          source?: string | null
+          external_id?: string | null
+          buyer_name?: string | null
+          buyer_email?: string | null
+          buyer_location?: string | null
+          product_name?: string
+          product_description?: string | null
+          quantity?: number
+          unit?: string | null
+          target_price?: number | null
+          expected_delivery_days?: number | null
+          status?: string | null
+          created_at?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      rfq_matches: {
+        Row: {
+          id: string
+          user_id: string
+          rfq_id: string | null
+          supplier_id: string | null
+          shipping_carrier: string | null
+          shipping_days: number | null
+          shipping_cost: number | null
+          total_delivery_days: number | null
+          meets_deadline: boolean | null
+          total_cost: number | null
+          expected_revenue: number | null
+          margin_percentage: number | null
+          risk_score: number | null
+          ai_decision: string | null
+          ai_reasoning: string | null
+          status: string | null
+          created_at: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          rfq_id?: string | null
+          supplier_id?: string | null
+          shipping_carrier?: string | null
+          shipping_days?: number | null
+          shipping_cost?: number | null
+          total_delivery_days?: number | null
+          meets_deadline?: boolean | null
+          total_cost?: number | null
+          expected_revenue?: number | null
+          margin_percentage?: number | null
+          risk_score?: number | null
+          ai_decision?: string | null
+          ai_reasoning?: string | null
+          status?: string | null
+          created_at?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          rfq_id?: string | null
+          supplier_id?: string | null
+          shipping_carrier?: string | null
+          shipping_days?: number | null
+          shipping_cost?: number | null
+          total_delivery_days?: number | null
+          meets_deadline?: boolean | null
+          total_cost?: number | null
+          expected_revenue?: number | null
+          margin_percentage?: number | null
+          risk_score?: number | null
+          ai_decision?: string | null
+          ai_reasoning?: string | null
+          status?: string | null
+          created_at?: string | null
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "rfq_matches_rfq_id_fkey"
+            columns: ["rfq_id"]
+            isOneToOne: false
+            referencedRelation: "rfqs"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "rfq_matches_supplier_id_fkey"
+            columns: ["supplier_id"]
+            isOneToOne: false
+            referencedRelation: "supplier_inventory"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      supplier_inventory: {
+        Row: {
+          id: string
+          user_id: string
+          supplier_name: string
+          supplier_source: string | null
+          supplier_location: string | null
+          product_name: string
+          sku: string | null
+          quantity_available: number
+          unit_price: number
+          moq: number | null
+          lead_time_days: number | null
+          warehouse_zip: string | null
+          created_at: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          supplier_name: string
+          supplier_source?: string | null
+          supplier_location?: string | null
+          product_name: string
+          sku?: string | null
+          quantity_available: number
+          unit_price: number
+          moq?: number | null
+          lead_time_days?: number | null
+          warehouse_zip?: string | null
+          created_at?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          supplier_name?: string
+          supplier_source?: string | null
+          supplier_location?: string | null
+          product_name?: string
+          sku?: string | null
+          quantity_available?: number
+          unit_price?: number
+          moq?: number | null
+          lead_time_days?: number | null
+          warehouse_zip?: string | null
+          created_at?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

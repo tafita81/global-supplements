@@ -58,9 +58,11 @@ serve(async (req) => {
 
       if (rfqError) throw rfqError;
 
-      const matches = [];
+      const allMatches = [];
 
       for (const rfq of (pendingRFQs || [])) {
+        const rfqMatches = []; // Track matches PER RFQ
+        
         // Buscar fornecedores com produto similar
         const { data: suppliers, error: supplierError } = await supabaseClient
           .from('supplier_inventory')
@@ -80,14 +82,30 @@ serve(async (req) => {
           const meetsDeadline = totalDeliveryDays <= rfq.expected_delivery_days;
 
           // Calcular custos e margem
-          const totalCost = (supplier.unit_price * rfq.quantity) + calculateShippingCost(supplier.warehouse_zip, rfq.buyer_location, rfq.quantity);
+          const shippingCost = calculateShippingCost(supplier.warehouse_zip, rfq.buyer_location, rfq.quantity);
+          const totalCost = (supplier.unit_price * rfq.quantity) + shippingCost;
           const expectedRevenue = rfq.target_price ? (rfq.target_price * rfq.quantity) : totalCost * 1.3;
           const marginPercentage = ((expectedRevenue - totalCost) / expectedRevenue) * 100;
           const riskScore = calculateRiskScore(marginPercentage, meetsDeadline, totalDeliveryDays);
 
-          // IA decide (integrar com OpenAI depois)
-          const aiDecision = riskScore < 30 ? 'EXECUTE' : 'REJECT';
-          const aiReasoning = generateAIReasoning(rfq, supplier, marginPercentage, riskScore, meetsDeadline);
+          // IA autônoma analisa com ChatGPT
+          const aiAnalysis = await analyzeRFQMatchWithAI(
+            {
+              rfq,
+              supplier,
+              totalCost,
+              expectedRevenue,
+              marginPercentage,
+              totalDeliveryDays,
+              meetsDeadline,
+              shippingCost
+            },
+            user.id,
+            supabaseClient
+          );
+
+          const aiDecision = aiAnalysis.decision;
+          const aiReasoning = aiAnalysis.reasoning;
 
           // Salvar match
           const { data: match, error: matchError } = await supabaseClient
@@ -113,12 +131,13 @@ serve(async (req) => {
             .single();
 
           if (!matchError && match) {
-            matches.push(match);
+            rfqMatches.push(match);
+            allMatches.push(match);
           }
         }
 
-        // Atualizar status do RFQ se encontrou matches
-        if (matches.length > 0) {
+        // Atualizar status do RFQ SOMENTE se ESTE RFQ encontrou matches
+        if (rfqMatches.length > 0) {
           await supabaseClient
             .from('rfqs')
             .update({ status: 'matched', updated_at: new Date().toISOString() })
@@ -126,16 +145,16 @@ serve(async (req) => {
         }
       }
 
-      // Enviar email com matches (integrar com SendGrid depois)
-      if (matches.length > 0) {
-        await sendMatchNotification(user.id, matches, supabaseClient);
+      // Enviar email com matches se encontrou algum
+      if (allMatches.length > 0) {
+        await sendMatchNotification(user.id, allMatches, supabaseClient);
       }
 
       return new Response(
         JSON.stringify({ 
           success: true, 
-          message: `${matches.length} matches encontrados`,
-          matches 
+          message: `${allMatches.length} matches encontrados`,
+          matches: allMatches 
         }),
         { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
       );
@@ -237,11 +256,145 @@ function calculateRiskScore(margin: number, meetsDeadline: boolean, deliveryDays
   return Math.max(0, Math.min(100, risk));
 }
 
-function generateAIReasoning(rfq: RFQ, supplier: Supplier, margin: number, risk: number, meetsDeadline: boolean): string {
+async function analyzeRFQMatchWithAI(matchData: any, userId: string, supabaseClient: any) {
+  try {
+    // Buscar OpenAI API key
+    const { data: credentials } = await supabaseClient
+      .from('api_credentials')
+      .select('openai_api_key')
+      .eq('user_id', userId)
+      .single();
+
+    if (!credentials?.openai_api_key) {
+      // Fallback para análise simples sem IA
+      const riskScore = calculateRiskScore(
+        matchData.marginPercentage,
+        matchData.meetsDeadline,
+        matchData.totalDeliveryDays
+      );
+      
+      return {
+        decision: riskScore < 30 ? 'EXECUTE' : 'REJECT',
+        reasoning: generateSimpleReasoning(matchData, riskScore)
+      };
+    }
+
+    // Buscar histórico de aprendizado
+    const { data: history } = await supabaseClient
+      .from('ai_learning_history')
+      .select('*')
+      .eq('user_id', userId)
+      .order('created_at', { ascending: false })
+      .limit(20);
+
+    const successfulMatches = history?.filter((h: any) => h.success === true) || [];
+    const failedMatches = history?.filter((h: any) => h.success === false) || [];
+
+    // Chamar ChatGPT para análise inteligente
+    const prompt = `Analise este match RFQ → Fornecedor e decida se deve EXECUTAR ou REJEITAR:
+
+DADOS DO MATCH:
+- Produto: ${matchData.rfq.product_name}
+- Quantidade: ${matchData.rfq.quantity}
+- Fornecedor: ${matchData.supplier.supplier_name}
+- Margem: ${matchData.marginPercentage.toFixed(1)}%
+- Custo Total: $${matchData.totalCost.toFixed(2)}
+- Receita Esperada: $${matchData.expectedRevenue.toFixed(2)}
+- Prazo Entrega: ${matchData.totalDeliveryDays} dias
+- Prazo Esperado: ${matchData.rfq.expected_delivery_days} dias
+- Cumpre Prazo: ${matchData.meetsDeadline ? 'SIM' : 'NÃO'}
+
+HISTÓRICO DE APRENDIZADO:
+- ${successfulMatches.length} matches bem-sucedidos
+- ${failedMatches.length} matches falharam
+- Taxa de sucesso histórica: ${history?.length > 0 ? ((successfulMatches.length / history.length) * 100).toFixed(1) : 0}%
+
+LIÇÕES APRENDIDAS:
+${history?.slice(0, 5).map((h: any) => `- ${h.lesson_learned || 'N/A'}`).join('\n')}
+
+RESPONDA EM JSON:
+{
+  "decision": "EXECUTE" ou "REJECT",
+  "risk_score": 0-100,
+  "reasoning": "Explicação detalhada da decisão",
+  "expected_profit": valor estimado,
+  "confidence": 0-100
+}`;
+
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${credentials.openai_api_key}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'gpt-4o-mini',
+        messages: [
+          {
+            role: 'system',
+            content: 'Você é um especialista em análise B2B e arbitragem internacional. Analise matches RFQ-Fornecedor e tome decisões baseadas em dados históricos e padrões de sucesso.'
+          },
+          {
+            role: 'user',
+            content: prompt
+          }
+        ],
+        temperature: 0.3,
+        response_format: { type: "json_object" }
+      })
+    });
+
+    if (!response.ok) {
+      throw new Error('OpenAI API error');
+    }
+
+    const aiResponse = await response.json();
+    const aiDecision = JSON.parse(aiResponse.choices[0].message.content);
+
+    // Salvar no histórico de aprendizado
+    await supabaseClient
+      .from('ai_learning_history')
+      .insert({
+        user_id: userId,
+        decision_type: 'rfq_match',
+        opportunity_data: matchData,
+        ai_analysis: aiDecision,
+        decision_made: aiDecision.decision,
+        risk_score: aiDecision.risk_score,
+        expected_profit: aiDecision.expected_profit,
+        execution_time: new Date().toISOString()
+      });
+
+    return {
+      decision: aiDecision.decision,
+      reasoning: aiDecision.reasoning,
+      riskScore: aiDecision.risk_score,
+      confidence: aiDecision.confidence
+    };
+
+  } catch (error) {
+    console.error('AI Analysis Error:', error);
+    
+    // Fallback para análise simples
+    const riskScore = calculateRiskScore(
+      matchData.marginPercentage,
+      matchData.meetsDeadline,
+      matchData.totalDeliveryDays
+    );
+    
+    return {
+      decision: riskScore < 30 ? 'EXECUTE' : 'REJECT',
+      reasoning: generateSimpleReasoning(matchData, riskScore)
+    };
+  }
+}
+
+function generateSimpleReasoning(matchData: any, risk: number): string {
   const parts = [];
+  const { rfq, supplier, marginPercentage, meetsDeadline } = matchData;
   
   parts.push(`Produto "${rfq.product_name}" encontrado com fornecedor ${supplier.supplier_name}.`);
-  parts.push(`Margem de ${margin.toFixed(1)}% ${margin > 25 ? '(boa)' : margin > 15 ? '(aceitável)' : '(baixa)'}.`);
+  parts.push(`Margem de ${marginPercentage.toFixed(1)}% ${marginPercentage > 25 ? '(boa)' : marginPercentage > 15 ? '(aceitável)' : '(baixa)'}.`);
   
   if (meetsDeadline) {
     parts.push(`Prazo de entrega dentro do esperado.`);
@@ -261,7 +414,6 @@ function generateAIReasoning(rfq: RFQ, supplier: Supplier, margin: number, risk:
 }
 
 async function sendMatchNotification(userId: string, matches: any[], supabaseClient: any) {
-  // Placeholder - integrar com SendGrid depois
   const sendgridKey = Deno.env.get('SENDGRID_API_KEY');
   
   if (!sendgridKey) {
@@ -269,27 +421,34 @@ async function sendMatchNotification(userId: string, matches: any[], supabaseCli
     return;
   }
   
-  // Buscar email do usuário
-  const { data: credentials } = await supabaseClient
-    .from('api_credentials')
-    .select('credential_value')
-    .eq('user_id', userId)
-    .eq('credential_key', 'user_email')
-    .single();
-  
-  const userEmail = credentials?.credential_value || 'tafita81@gmail.com';
+  // Email SEMPRE para tafita81@gmail.com (conforme especificação)
+  const userEmail = 'tafita81@gmail.com';
   
   const emailBody = `
     <h2>🎯 ${matches.length} Novos Matches RFQ → Fornecedor</h2>
+    <p><strong>Sistema RFQ Matcher</strong> encontrou automaticamente as seguintes oportunidades:</p>
     ${matches.map(m => `
-      <div style="border:1px solid #ccc; padding:10px; margin:10px 0;">
-        <h3>${m.ai_decision === 'EXECUTE' ? '✅' : '❌'} ${m.ai_decision}</h3>
-        <p><strong>Margem:</strong> ${m.margin_percentage.toFixed(1)}%</p>
-        <p><strong>Risco:</strong> ${m.risk_score.toFixed(1)}%</p>
-        <p><strong>Prazo:</strong> ${m.total_delivery_days} dias ${m.meets_deadline ? '✅' : '❌'}</p>
-        <p><strong>Raciocínio IA:</strong> ${m.ai_reasoning}</p>
+      <div style="border:1px solid ${m.ai_decision === 'EXECUTE' ? '#22c55e' : '#ef4444'}; border-radius:8px; padding:15px; margin:15px 0; background:${m.ai_decision === 'EXECUTE' ? '#f0fdf4' : '#fef2f2'};">
+        <h3 style="color:${m.ai_decision === 'EXECUTE' ? '#16a34a' : '#dc2626'}; margin:0 0 10px 0;">
+          ${m.ai_decision === 'EXECUTE' ? '✅ EXECUTAR' : '❌ REJEITAR'}
+        </h3>
+        <p style="margin:5px 0;"><strong>Margem de Lucro:</strong> <span style="color:${m.margin_percentage > 25 ? '#16a34a' : m.margin_percentage > 15 ? '#ca8a04' : '#dc2626'}">${m.margin_percentage?.toFixed(1)}%</span></p>
+        <p style="margin:5px 0;"><strong>Risco Calculado:</strong> <span style="color:${m.risk_score < 30 ? '#16a34a' : m.risk_score < 60 ? '#ca8a04' : '#dc2626'}">${m.risk_score?.toFixed(1)}%</span></p>
+        <p style="margin:5px 0;"><strong>Prazo de Entrega:</strong> ${m.total_delivery_days} dias ${m.meets_deadline ? '✅ (dentro do esperado)' : '❌ (excede esperado)'}</p>
+        <p style="margin:5px 0;"><strong>Receita Esperada:</strong> <span style="color:#16a34a;font-weight:600;">$${m.expected_revenue?.toFixed(2)}</span></p>
+        <p style="margin:5px 0;"><strong>Custo Total:</strong> $${m.total_cost?.toFixed(2)}</p>
+        <div style="background:#f3f4f6; padding:10px; margin-top:10px; border-radius:4px;">
+          <p style="margin:0;"><strong>Raciocínio da IA:</strong></p>
+          <p style="margin:5px 0 0 0; font-style:italic;">${m.ai_reasoning}</p>
+        </div>
       </div>
     `).join('')}
+    <hr style="margin:30px 0;">
+    <p style="color:#6b7280; font-size:14px;">
+      <strong>Sistema Automático RFQ Matcher</strong><br>
+      Consultoria em Tecnologia da Informação Corp<br>
+      EIN: 33-3939483 | Orlando, FL, USA
+    </p>
   `;
   
   try {
@@ -302,9 +461,12 @@ async function sendMatchNotification(userId: string, matches: any[], supabaseCli
       body: JSON.stringify({
         personalizations: [{
           to: [{ email: userEmail }],
-          subject: `🎯 ${matches.length} Novos Matches RFQ Encontrados`
+          subject: `🎯 ${matches.length} Novos Matches RFQ Encontrados - Ação Requerida`
         }],
-        from: { email: 'ai@globalsupplements.site', name: 'RFQ Matcher AI' },
+        from: { 
+          email: 'noreply@globalsupplements.site', 
+          name: 'RFQ Matcher AI' 
+        },
         content: [{
           type: 'text/html',
           value: emailBody
@@ -313,9 +475,14 @@ async function sendMatchNotification(userId: string, matches: any[], supabaseCli
     });
 
     if (!response.ok) {
-      console.error('Erro SendGrid:', await response.text());
+      const errorText = await response.text();
+      console.error('Erro SendGrid:', response.status, errorText);
+      throw new Error(`SendGrid API error: ${response.status}`);
     }
+
+    console.log(`✅ Email enviado com sucesso para ${userEmail} com ${matches.length} matches`);
   } catch (error) {
-    console.error('Erro ao enviar email:', error);
+    console.error('❌ Erro ao enviar email:', error);
+    throw error; // Re-throw para que o chamador saiba que falhou
   }
 }

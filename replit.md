@@ -57,6 +57,60 @@ All sensitive API integrations (Buffer, SendGrid, Google Search Console, AI Cont
 
 ## Recent Changes
 
+### 2025-01-11: Sistema RFQ Matcher com IA Autônoma Implementado
+
+**🎯 NOVO SISTEMA COMPLETO: RFQ MATCHER**
+Sistema automatizado de matching RFQ → Fornecedor com análise inteligente via ChatGPT, validação de prazos e decisão automática de execução.
+
+**TABELAS CRIADAS:**
+1. **`rfqs`** - Pedidos de compradores (Alibaba/IndiaMART/Manual)
+2. **`supplier_inventory`** - Estoque de fornecedores globais
+3. **`rfq_matches`** - Matches RFQ→Fornecedor com decisão IA
+
+**EDGE FUNCTION:** `rfq-supplier-matcher`
+- Action: `match_rfqs` - Busca RFQs pendentes e faz matching automático
+- Action: `fetch_alibaba_rfqs` - Busca RFQs Alibaba (quando API disponível)
+- Action: `fetch_suppliers` - Busca fornecedores Inventory Source (quando API disponível)
+- Integração completa com ChatGPT para análise inteligente
+- Aprendizado contínuo salvo em `ai_learning_history`
+- Email automático via SendGrid para tafita81@gmail.com
+
+**FRONTEND:** `/rfq-matcher`
+- Dashboard com 4 tabs: Matches, RFQs, Fornecedores, Adicionar
+- Estatísticas: RFQs pendentes, matches encontrados, taxa de sucesso
+- Visualização de decisões IA (EXECUTE ✅ / REJECT ❌)
+- Formulários para adicionar RFQs e Fornecedores manualmente
+- Botão "Buscar Matches" para execução automática
+
+**INTEGRAÇÃO IA AUTÔNOMA:**
+- ChatGPT GPT-4o-mini analisa cada match com histórico completo
+- Busca últimas 20 decisões para aprendizado contextual
+- Retorna: decision, risk_score, reasoning, confidence
+- Salva tudo em `ai_learning_history` para evolução contínua
+- Fallback para análise simples se OpenAI não configurada
+
+**FLUXO COMPLETO:**
+```
+RFQs (Alibaba/IndiaMART/Manual) → 
+Match Fornecedores (estoque ≥ quantidade) → 
+Calcular Prazo (lead time + shipping) → 
+Validar (prazo < esperado?) → 
+ChatGPT Analisa (histórico + contexto) → 
+Decisão EXECUTE/REJECT → 
+Salvar Match + Histórico → 
+Email tafita81@gmail.com
+```
+
+**DOCUMENTAÇÃO:** `SISTEMA_RFQ_MATCHER.md` (completa)
+
+**APIs PREPARADAS (aguardando credenciais):**
+- Alibaba RFQ Market: 20K RFQs/dia ($3K-6K/ano)
+- IndiaMART Push API: Tempo real (grátis para vendedores)
+- Inventory Source: 180+ fornecedores, 3.5M produtos
+- ShipStation/Shippo: Cálculo preciso de frete e prazo
+
+---
+
 ### 2025-01-11: Sistema de IA Autônoma e B2B Global Implementado
 
 **CONTEXTO DA EMPRESA:**
