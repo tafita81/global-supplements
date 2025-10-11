@@ -46,4 +46,4 @@ jobs:
         password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
         local-dir: ./projeto-copia/dist/
         server-dir: /public_html/
-        dangerous-clean-slate: false
+        dangerous-clean-slate: true
