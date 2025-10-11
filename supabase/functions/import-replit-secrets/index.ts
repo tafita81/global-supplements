@@ -120,6 +120,59 @@ serve(async (req) => {
       });
     }
 
+    // Adicionar Alibaba Dropshipping (hardcoded)
+    const { error: alibabaError } = await supabaseClient
+      .from('api_credentials')
+      .upsert({
+        user_id: user.id,
+        service_name: 'alibaba',
+        credentials: { 
+          email: 'contact@globalsuplements.com',
+          dropshipping_id: 'us29218711001mvvi'
+        },
+        is_active: true
+      }, {
+        onConflict: 'user_id,service_name'
+      });
+
+    if (!alibabaError) {
+      results.push({
+        service: 'alibaba',
+        status: 'importado (contact@globalsuplements.com)'
+      });
+    } else {
+      errors.push({
+        service: 'alibaba',
+        error: alibabaError.message
+      });
+    }
+
+    // Adicionar Payoneer ID (placeholder - usuário pode atualizar depois)
+    const { error: payoneerError } = await supabaseClient
+      .from('api_credentials')
+      .upsert({
+        user_id: user.id,
+        service_name: 'payoneer',
+        credentials: { 
+          payoneer_id: 'P12345678'
+        },
+        is_active: true
+      }, {
+        onConflict: 'user_id,service_name'
+      });
+
+    if (!payoneerError) {
+      results.push({
+        service: 'payoneer',
+        status: 'importado (atualizar se necessário)'
+      });
+    } else {
+      errors.push({
+        service: 'payoneer',
+        error: payoneerError.message
+      });
+    }
+
     console.log('✅ Credenciais importadas:', results);
     if (errors.length > 0) {
       console.error('❌ Erros ao importar:', errors);

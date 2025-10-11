@@ -3,6 +3,12 @@
 ## Overview
 Global Supplements is a B2B/B2C platform that connects global supplement suppliers with buyers. It uses AI and automated distribution to facilitate international trade, government contracts, and enterprise solutions across various product categories (beauty, quantum materials, medical, smart gadgets, traditional wellness). The platform aims to identify arbitrage opportunities and execute high-margin deals in real-time by integrating numerous APIs for market intelligence, logistics, compliance, and payment processing. The project also has ambitions for government contracts (SAM.gov), Amazon affiliate commissions, and B2B dropshipping.
 
+### Company Credentials
+- **Alibaba Dropshipping Email:** contact@globalsuplements.com
+- **Alibaba Dropshipping ID:** us29218711001mvvi
+- **Amazon Affiliate Tag:** globalsupleme-20
+- **Owner Personal Email:** tafita81@gmail.com (for all automated notifications)
+
 ## User Preferences
 Preferred communication style: Simple, everyday language.
 
