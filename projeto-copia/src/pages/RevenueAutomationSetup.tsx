@@ -221,6 +221,88 @@ export default function RevenueAutomationSetup() {
     }
   };
 
+  const importReplitSecrets = async () => {
+    setLoading(true);
+
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      
+      if (!session) {
+        toast({
+          title: 'Erro',
+          description: 'Você precisa estar logado',
+          variant: 'destructive'
+        });
+        setLoading(false);
+        return;
+      }
+
+      const response = await fetch(
+        `${supabase.supabaseUrl}/functions/v1/import-replit-secrets`,
+        {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${session.access_token}`,
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast({
+          title: result.errors ? '⚠️ Importação parcial' : '✅ Importação completa!',
+          description: result.message,
+          variant: result.errors ? 'default' : 'default'
+        });
+        
+        // Mostrar erros específicos se houver
+        if (result.errors && result.errors.length > 0) {
+          setTimeout(() => {
+            result.errors.forEach((err: any) => {
+              toast({
+                title: `❌ ${err.service}`,
+                description: err.error,
+                variant: 'destructive'
+              });
+            });
+          }, 1000);
+        }
+        
+        // Recarregar credenciais
+        await loadCredentials();
+      } else {
+        toast({
+          title: 'Erro na importação',
+          description: result.message || result.error || 'Erro desconhecido',
+          variant: 'destructive'
+        });
+        
+        // Mostrar erros específicos
+        if (result.errors && result.errors.length > 0) {
+          setTimeout(() => {
+            result.errors.forEach((err: any) => {
+              toast({
+                title: `❌ ${err.service}`,
+                description: err.error,
+                variant: 'destructive'
+              });
+            });
+          }, 1000);
+        }
+      }
+    } catch (error: any) {
+      toast({
+        title: 'Erro ao importar',
+        description: error.message,
+        variant: 'destructive'
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const allConfigured = requiredServices
     .filter(s => !s.optional)
     .every(s => configured.includes(s.name));
@@ -305,6 +387,40 @@ export default function RevenueAutomationSetup() {
           )}
         </div>
       </div>
+
+      {/* Botão de Importação Rápida */}
+      {user && !allConfigured && (
+        <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20 border-blue-300">
+          <CardContent className="py-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <h3 className="font-semibold text-lg">⚡ Importação Automática</h3>
+                <p className="text-sm text-muted-foreground mt-1">
+                  Importe automaticamente as credenciais configuradas nos Replit Secrets
+                </p>
+              </div>
+              <Button
+                onClick={importReplitSecrets}
+                disabled={loading}
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700"
+              >
+                {loading ? (
+                  <>
+                    <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                    Importando...
+                  </>
+                ) : (
+                  <>
+                    <DollarSign className="h-4 w-4 mr-2" />
+                    Importar Credenciais
+                  </>
+                )}
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       {/* Explicação do Fluxo */}
       <Card className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20">

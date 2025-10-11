@@ -125,12 +125,27 @@ serve(async (req) => {
       console.error('❌ Erros ao importar:', errors);
     }
 
+    // Determinar sucesso: pelo menos 1 credencial importada E nenhum erro crítico
+    const success = results.length > 0;
+    const hasErrors = errors.length > 0;
+
+    let message = '';
+    if (!success && hasErrors) {
+      message = `Falha ao importar credenciais. ${errors.length} erro(s) encontrado(s).`;
+    } else if (success && hasErrors) {
+      message = `${results.length} credenciais importadas, mas ${errors.length} falharam.`;
+    } else if (success) {
+      message = `${results.length} credenciais importadas com sucesso!`;
+    } else {
+      message = 'Nenhuma credencial disponível nos Replit Secrets.';
+    }
+
     return new Response(
       JSON.stringify({ 
-        success: true,
+        success,
         imported: results,
-        errors: errors.length > 0 ? errors : undefined,
-        message: `${results.length} credenciais importadas com sucesso!`
+        errors: hasErrors ? errors : undefined,
+        message
       }),
       { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     );
