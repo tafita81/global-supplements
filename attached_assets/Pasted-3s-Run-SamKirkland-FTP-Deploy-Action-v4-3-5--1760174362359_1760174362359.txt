@@ -1,0 +1,101 @@
+3s
+Run SamKirkland/FTP-Deploy-Action@v4.3.5
+----------------------------------------------------------------
+🚀 Thanks for using ftp-deploy. Let's deploy some stuff!   
+----------------------------------------------------------------
+If you found this project helpful, please support it
+by giving it a ⭐ on Github --> https://github.com/SamKirkland/FTP-Deploy-Action
+or add a badge 🏷️ to your projects readme --> https://github.com/SamKirkland/FTP-Deploy-Action#badge
+----------------------------------------------------------------
+Last published on 📅 Saturday, October 11, 2025 at 9:08 AM
+----------------------------------------------------------------
+Local Files:	52
+Server Files:	57
+----------------------------------------------------------------
+Calculating differences between client & server
+----------------------------------------------------------------
+📄 Upload: assets/index-CdhyXUGN.js
+📄 Upload: assets/index-CxIeRr1H.css
+📄 Upload: codigo-fonte.zip
+📄 Upload: download.html
+📄 Upload: global-supplements-site.zip
+🔁 File replace: global-supplements-complete.html
+🔁 File replace: index.html
+📄 Delete: .htaccess    
+📄 Delete: assets/index-B0Uct52e.css    
+📄 Delete: assets/index-DdnmOZZ0.js    
+📄 Delete: assets/skin-analysis-1-CD3mmdXk.jpg    
+📄 Delete: assets/skin-analysis-2-Bwr2Af--.png    
+📄 Delete: assets/skin-analysis-3-DUomtpz0.png    
+📄 Delete: DEPLOY_INSTRUCTIONS.html    
+📄 Delete: download-latest.html    
+📄 Delete: gs-elite-logo.svg    
+📄 Delete: NOVO_GITHUB.html    
+⚖️  File content is the same, doing nothing: assets/b2b-executive-meeting-4k-B7sP3Kkr.jpg
+⚖️  File content is the same, doing nothing: assets/beauty-supplements-4k-DDBLo-oh.jpg
+⚖️  File content is the same, doing nothing: assets/br-Cu5YU29T.svg
+⚖️  File content is the same, doing nothing: assets/corporate-headquarters-4k-DV_hpltF.jpg
+⚖️  File content is the same, doing nothing: assets/es-d5m8M5h8.svg
+⚖️  File content is the same, doing nothing: assets/global-network-4k-CXHkx6n1.jpg
+⚖️  File content is the same, doing nothing: assets/manufacturing-facility-4k-Ct8U6g4v.jpg
+⚖️  File content is the same, doing nothing: assets/medical-grade-4k-C5x2tjtY.jpg
+⚖️  File content is the same, doing nothing: assets/mx-Cc8Ccfe8.svg
+⚖️  File content is the same, doing nothing: assets/om-DcqxRdQL.svg
+⚖️  File content is the same, doing nothing: assets/pt-DZ2ADgIR.svg
+⚖️  File content is the same, doing nothing: assets/py-mNzh0mZC.svg
+⚖️  File content is the same, doing nothing: assets/quantum-processing-4k-BgpXHqY2.jpg
+⚖️  File content is the same, doing nothing: assets/sa-Dh79zbT9.svg
+⚖️  File content is the same, doing nothing: assets/smart-health-gadgets-4k-ChIknQnr.jpg
+⚖️  File content is the same, doing nothing: assets/traditional-wellness-4k-CHysMB2l.jpg
+⚖️  File content is the same, doing nothing: documents/florida-certificate.jpeg
+⚖️  File content is the same, doing nothing: documents/florida-filing-stamp.jpeg
+⚖️  File content is the same, doing nothing: documents/florida-state-certificate.jpeg
+⚖️  File content is the same, doing nothing: favicon.ico
+⚖️  File content is the same, doing nothing: global-supplements-standalone.html
+⚖️  File content is the same, doing nothing: images/beauty-supplements-4k.jpg
+⚖️  File content is the same, doing nothing: images/corporate-headquarters-4k.jpg
+⚖️  File content is the same, doing nothing: images/flags/br.png
+⚖️  File content is the same, doing nothing: images/flags/ca.png
+⚖️  File content is the same, doing nothing: images/flags/cn.png
+⚖️  File content is the same, doing nothing: images/flags/de.png
+⚖️  File content is the same, doing nothing: images/flags/fr.png
+⚖️  File content is the same, doing nothing: images/flags/gb.png
+⚖️  File content is the same, doing nothing: images/flags/jp.png
+⚖️  File content is the same, doing nothing: images/flags/us.png
+⚖️  File content is the same, doing nothing: images/global-network-4k.jpg
+⚖️  File content is the same, doing nothing: images/manufacturing-facility-4k.jpg
+⚖️  File content is the same, doing nothing: images/medical-grade-4k.jpg
+⚖️  File content is the same, doing nothing: images/premium-products-showcase-4k.jpg
+⚖️  File content is the same, doing nothing: images/quantum-processing-4k.jpg
+⚖️  File content is the same, doing nothing: images/smart-health-gadgets-4k.jpg
+⚖️  File content is the same, doing nothing: images/tech-globe-4k.jpg
+⚖️  File content is the same, doing nothing: images/traditional-wellness-4k.jpg
+⚖️  File content is the same, doing nothing: placeholder.svg
+⚖️  File content is the same, doing nothing: robots.txt
+----------------------------------------------------------------
+Making changes to 17 files/folders to sync server state
+Uploading: 18.8 MB -- Deleting: 3.89 MB -- Replacing: 54.8 kB
+----------------------------------------------------------------
+uploading "assets/index-CdhyXUGN.js"
+uploading "assets/index-CxIeRr1H.css"
+uploading "codigo-fonte.zip"
+
+----------------------------------------------------------------
+--------------  🔥🔥🔥 an error occurred  🔥🔥🔥  --------------
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+----------------------  full error below  ----------------------
+----------------------------------------------------------------
+
+FTPError: 550 /public_html/codigo-fonte.zip: Rename of hidden file /public_html/.in.codigo-fonte.zip. failed: No such file or directory
+    at FTPContext._onControlSocketData (/home/runner/work/_actions/SamKirkland/FTP-Deploy-Action/v4.3.5/dist/index.js:5263:39)
+    at Socket.<anonymous> (/home/runner/work/_actions/SamKirkland/FTP-Deploy-Action/v4.3.5/dist/index.js:5107:44)
+    at Socket.emit (node:events:524:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+  code: 550
+}
+Error: FTPError: 550 /public_html/codigo-fonte.zip: Rename of hidden file /public_html/.in.codigo-fonte.zip. failed: No such file or directory
