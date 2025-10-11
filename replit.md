@@ -124,6 +124,8 @@ All sensitive API integrations (Buffer, SendGrid, Google Search Console, AI Cont
 - `SISTEMA_NEGOCIACAO_AUTOMATICA.md` - Sistema de negociação completo com Edge Functions
 - `CASOS_REAIS_COMISSAO_B2B.md` - 3 casos reais de empresas americanas ($1.5M-$3.2M/ano)
 - `SISTEMA_IA_AUTONOMA.md` - IA autônoma, aprendizado contínuo, email automático
+- `GUIA_APIS_B2B_FORNECEDORES.md` - Como obter APIs Alibaba, IndiaMART, Global Sources
+- `GUIA_PAYONEER_API.md` - Passo a passo completo para obter API do Payoneer
 
 **⚠️ IMPORTANTE - NÃO MISTURAR CONTEXTOS:**
 - Esta empresa é **Rafael Roberto Rodrigues de Oliveira** (Orlando, Florida)
