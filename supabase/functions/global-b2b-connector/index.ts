@@ -39,7 +39,9 @@ serve(async (req) => {
       throw new Error('RapidAPI key não configurada. Configure em /revenue-automation-setup');
     }
 
-    const { action } = await req.json();
+    // CRÍTICO: Parsear JSON apenas UMA VEZ (Supabase não permite múltiplas leituras)
+    const payload = await req.json();
+    const { action, product, target_price, quantity, rfq_id, supplier_id } = payload;
 
     if (action === 'find_buyer_rfqs') {
       const rfqs = await findGlobalBuyerRFQs(credentials.rapidapi_key);
@@ -49,7 +51,6 @@ serve(async (req) => {
     }
 
     if (action === 'find_suppliers') {
-      const { product, target_price, quantity } = await req.json();
       const suppliers = await findGlobalSuppliers(credentials.rapidapi_key, product, target_price, quantity);
       return new Response(JSON.stringify({ suppliers }), {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' }
@@ -57,7 +58,6 @@ serve(async (req) => {
     }
 
     if (action === 'connect_opportunity') {
-      const { rfq_id, supplier_id } = await req.json();
       const result = await connectBuyerToSupplier(supabase, user.id, rfq_id, supplier_id, credentials);
       return new Response(JSON.stringify(result), {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' }

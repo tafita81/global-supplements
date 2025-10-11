@@ -66,6 +66,7 @@ import GoogleAdsCampaignsPage from "./pages/GoogleAdsCampaigns";
 import MarketingDashboard from "./pages/MarketingDashboard";
 import RevenueAutomationSetup from "./pages/RevenueAutomationSetup";
 import GlobalB2BConnector from "./pages/GlobalB2BConnector";
+import AutonomousAIDashboard from "./pages/AutonomousAIDashboard";
 
 const queryClient = new QueryClient();
 
@@ -290,6 +291,11 @@ const App = () => (
               <Route path="/global-b2b-connector" element={
                 <AppLayout>
                   <GlobalB2BConnector />
+                </AppLayout>
+              } />
+              <Route path="/autonomous-ai" element={
+                <AppLayout>
+                  <AutonomousAIDashboard />
                 </AppLayout>
               } />
               
