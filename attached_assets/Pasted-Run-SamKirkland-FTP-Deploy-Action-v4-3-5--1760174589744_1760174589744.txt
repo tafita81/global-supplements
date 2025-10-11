@@ -1,0 +1,109 @@
+Run SamKirkland/FTP-Deploy-Action@v4.3.5
+----------------------------------------------------------------
+🚀 Thanks for using ftp-deploy. Let's deploy some stuff!   
+----------------------------------------------------------------
+If you found this project helpful, please support it
+by giving it a ⭐ on Github --> https://github.com/SamKirkland/FTP-Deploy-Action
+or add a badge 🏷️ to your projects readme --> https://github.com/SamKirkland/FTP-Deploy-Action#badge
+----------------------------------------------------------------
+No file exists on the server "/public_html/.ftp-deploy-sync-state.json" - this must be your first publish! 🎉
+The first publish will take a while... but once the initial sync is done only differences are published!
+If you get this message and its NOT your first publish, something is wrong.
+----------------------------------------------------------------
+Local Files:	52
+Server Files:	0
+----------------------------------------------------------------
+Calculating differences between client & server
+----------------------------------------------------------------
+📁 Create: assets
+📁 Create: documents
+📁 Create: images
+📁 Create: images/flags
+📄 Upload: assets/b2b-executive-meeting-4k-B7sP3Kkr.jpg
+📄 Upload: assets/beauty-supplements-4k-DDBLo-oh.jpg
+📄 Upload: assets/br-Cu5YU29T.svg
+📄 Upload: assets/corporate-headquarters-4k-DV_hpltF.jpg
+📄 Upload: assets/es-d5m8M5h8.svg
+📄 Upload: assets/global-network-4k-CXHkx6n1.jpg
+📄 Upload: assets/index-CdhyXUGN.js
+📄 Upload: assets/index-CxIeRr1H.css
+📄 Upload: assets/manufacturing-facility-4k-Ct8U6g4v.jpg
+📄 Upload: assets/medical-grade-4k-C5x2tjtY.jpg
+📄 Upload: assets/mx-Cc8Ccfe8.svg
+📄 Upload: assets/om-DcqxRdQL.svg
+📄 Upload: assets/pt-DZ2ADgIR.svg
+📄 Upload: assets/py-mNzh0mZC.svg
+📄 Upload: assets/quantum-processing-4k-BgpXHqY2.jpg
+📄 Upload: assets/sa-Dh79zbT9.svg
+📄 Upload: assets/smart-health-gadgets-4k-ChIknQnr.jpg
+📄 Upload: assets/traditional-wellness-4k-CHysMB2l.jpg
+📄 Upload: codigo-fonte.zip
+📄 Upload: documents/florida-certificate.jpeg
+📄 Upload: documents/florida-filing-stamp.jpeg
+📄 Upload: documents/florida-state-certificate.jpeg
+📄 Upload: download.html
+📄 Upload: favicon.ico
+📄 Upload: global-supplements-complete.html
+📄 Upload: global-supplements-site.zip
+📄 Upload: global-supplements-standalone.html
+📄 Upload: images/beauty-supplements-4k.jpg
+📄 Upload: images/corporate-headquarters-4k.jpg
+📄 Upload: images/flags/br.png
+📄 Upload: images/flags/ca.png
+📄 Upload: images/flags/cn.png
+📄 Upload: images/flags/de.png
+📄 Upload: images/flags/fr.png
+📄 Upload: images/flags/gb.png
+📄 Upload: images/flags/jp.png
+📄 Upload: images/flags/us.png
+📄 Upload: images/global-network-4k.jpg
+📄 Upload: images/manufacturing-facility-4k.jpg
+📄 Upload: images/medical-grade-4k.jpg
+📄 Upload: images/premium-products-showcase-4k.jpg
+📄 Upload: images/quantum-processing-4k.jpg
+📄 Upload: images/smart-health-gadgets-4k.jpg
+📄 Upload: images/tech-globe-4k.jpg
+📄 Upload: images/traditional-wellness-4k.jpg
+📄 Upload: index.html
+📄 Upload: placeholder.svg
+📄 Upload: robots.txt
+----------------------------------------------------------------
+Making changes to 52 files/folders to sync server state
+Uploading: 23.6 MB -- Deleting: 0 B -- Replacing: 0 B
+----------------------------------------------------------------
+creating folder "assets/"
+creating folder "documents/"
+creating folder "images/"
+creating folder "images/flags/"
+uploading "assets/b2b-executive-meeting-4k-B7sP3Kkr.jpg"
+uploading "assets/beauty-supplements-4k-DDBLo-oh.jpg"
+uploading "assets/br-Cu5YU29T.svg"
+uploading "assets/corporate-headquarters-4k-DV_hpltF.jpg"
+uploading "assets/es-d5m8M5h8.svg"
+uploading "assets/global-network-4k-CXHkx6n1.jpg"
+uploading "assets/index-CdhyXUGN.js"
+uploading "assets/index-CxIeRr1H.css"
+uploading "assets/manufacturing-facility-4k-Ct8U6g4v.jpg"
+uploading "assets/medical-grade-4k-C5x2tjtY.jpg"
+uploading "assets/mx-Cc8Ccfe8.svg"
+uploading "assets/om-DcqxRdQL.svg"
+
+----------------------------------------------------------------
+--------------  🔥🔥🔥 an error occurred  🔥🔥🔥  --------------
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+----------------------  full error below  ----------------------
+----------------------------------------------------------------
+
+FTPError: 550 assets/om-DcqxRdQL.svg: Temporary hidden file /public_html/assets/.in.om-DcqxRdQL.svg. already exists
+    at FTPContext._onControlSocketData (/home/runner/work/_actions/SamKirkland/FTP-Deploy-Action/v4.3.5/dist/index.js:5263:39)
+    at Socket.<anonymous> (/home/runner/work/_actions/SamKirkland/FTP-Deploy-Action/v4.3.5/dist/index.js:5107:44)
+    at Socket.emit (node:events:524:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+  code: 550
+}
+Error: FTPError: 550 assets/om-DcqxRdQL.svg: Temporary hidden file /public_html/assets/.in.om-DcqxRdQL.svg. already exists
