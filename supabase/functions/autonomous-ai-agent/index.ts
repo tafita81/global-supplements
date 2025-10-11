@@ -127,6 +127,17 @@ async function analyzeAndDecide(supabase: any, userId: string, openaiKey: string
       .select()
       .single();
 
+    // Enviar email automático para tafita81@gmail.com
+    const { data: credentials } = await supabase
+      .from('api_credentials')
+      .select('sendgrid_key')
+      .eq('user_id', userId)
+      .single();
+    
+    if (credentials?.sendgrid_key && decision) {
+      await sendDecisionEmail(credentials.sendgrid_key, decision, opp, 'analyzed');
+    }
+
     decisions.push({
       opportunity_id: opp.id,
       decision: analysis.decision,
@@ -262,6 +273,11 @@ async function autoExecuteOpportunities(supabase: any, userId: string, credentia
         })
         .eq('id', decision.id);
 
+      // 4. Enviar email automático para tafita81@gmail.com
+      if (credentials.sendgrid_key) {
+        await sendDecisionEmail(credentials.sendgrid_key, decision, opp, 'executed');
+      }
+
       executions.push({
         opportunity_id: opp.id,
         status: 'executed',
@@ -384,4 +400,107 @@ async function createPaymentLink(stripeKey: string, opportunity: any) {
 async function sendAutomatedProposal(sendgridKey: string, opportunity: any, paymentLink: string) {
   // Simulação - Em produção seria SendGrid API real
   console.log('Proposta enviada automaticamente para:', opportunity.buyer_email);
+}
+
+// HELPER: Enviar email com detalhes da decisão para tafita81@gmail.com
+async function sendDecisionEmail(sendgridKey: string, decision: any, opportunity: any, status: string) {
+  const emailContent = `
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; }
+        .content { background: #f8f9fa; padding: 20px; border-radius: 8px; margin-top: 20px; }
+        .metric { background: white; padding: 15px; margin: 10px 0; border-left: 4px solid #667eea; }
+        .success { border-left-color: #10b981; }
+        .warning { border-left-color: #f59e0b; }
+        .danger { border-left-color: #ef4444; }
+        .footer { text-align: center; margin-top: 20px; color: #6b7280; font-size: 12px; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="header">
+          <h1>🤖 IA Autônoma - Nova Decisão</h1>
+          <p>Sistema de aprendizado automático tomou uma decisão</p>
+        </div>
+        
+        <div class="content">
+          <h2>📊 Detalhes da Decisão</h2>
+          
+          <div class="metric ${decision.decision_made === 'EXECUTE' ? 'success' : 'danger'}">
+            <strong>Decisão:</strong> ${decision.decision_made || 'PENDING'}<br>
+            <strong>Status:</strong> ${status.toUpperCase()}<br>
+            <strong>Tipo:</strong> ${decision.decision_type}
+          </div>
+          
+          <div class="metric">
+            <strong>🎯 Oportunidade:</strong><br>
+            Produto: ${opportunity.product_name || 'N/A'}<br>
+            Quantidade: ${opportunity.quantity || 'N/A'} unidades<br>
+            Preço: $${opportunity.sell_price || 'N/A'}
+          </div>
+          
+          <div class="metric ${decision.risk_score <= 30 ? 'success' : decision.risk_score <= 60 ? 'warning' : 'danger'}">
+            <strong>⚠️ Análise de Risco:</strong><br>
+            Score de Risco: ${decision.risk_score || 'N/A'}%<br>
+            Lucro Esperado: $${decision.expected_profit || 'N/A'}<br>
+            ${decision.ai_analysis?.reasoning ? `Raciocínio: ${decision.ai_analysis.reasoning}` : ''}
+          </div>
+          
+          <div class="metric">
+            <strong>📈 Análise da IA:</strong><br>
+            ${JSON.stringify(decision.ai_analysis || {}, null, 2)}
+          </div>
+          
+          <div class="metric">
+            <strong>⏰ Timestamps:</strong><br>
+            Decisão: ${decision.execution_time || new Date().toISOString()}<br>
+            Resultado: ${decision.result_time || 'Pendente'}
+          </div>
+        </div>
+        
+        <div class="footer">
+          <p>Global Supplements - IA Autônoma<br>
+          Rafael Roberto Rodrigues de Oliveira<br>
+          Orlando, Florida, USA</p>
+        </div>
+      </div>
+    </body>
+    </html>
+  `;
+
+  try {
+    const response = await fetch('https://api.sendgrid.com/v3/mail/send', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${sendgridKey}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        personalizations: [{
+          to: [{ email: 'tafita81@gmail.com' }],
+          subject: `🤖 IA Autônoma: ${decision.decision_made || 'NOVA'} - ${opportunity.product_name || 'Oportunidade'}`
+        }],
+        from: {
+          email: 'ai@globalsupplements.site',
+          name: 'Global Supplements IA Autônoma'
+        },
+        content: [{
+          type: 'text/html',
+          value: emailContent
+        }]
+      })
+    });
+
+    if (response.ok) {
+      console.log('✅ Email enviado para tafita81@gmail.com');
+    } else {
+      console.error('❌ Falha ao enviar email:', await response.text());
+    }
+  } catch (error) {
+    console.error('❌ Erro ao enviar email:', error);
+  }
 }

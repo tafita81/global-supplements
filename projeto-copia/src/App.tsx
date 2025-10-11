@@ -67,6 +67,7 @@ import MarketingDashboard from "./pages/MarketingDashboard";
 import RevenueAutomationSetup from "./pages/RevenueAutomationSetup";
 import GlobalB2BConnector from "./pages/GlobalB2BConnector";
 import AutonomousAIDashboard from "./pages/AutonomousAIDashboard";
+import RealTimeMetricsDashboard from "./pages/RealTimeMetricsDashboard";
 
 const queryClient = new QueryClient();
 
@@ -296,6 +297,11 @@ const App = () => (
               <Route path="/autonomous-ai" element={
                 <AppLayout>
                   <AutonomousAIDashboard />
+                </AppLayout>
+              } />
+              <Route path="/realtime-metrics" element={
+                <AppLayout>
+                  <RealTimeMetricsDashboard />
                 </AppLayout>
               } />
               
