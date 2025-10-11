@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 
 export const useAutoLogin = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const autoLogin = async () => {
@@ -34,11 +36,19 @@ export const useAutoLogin = () => {
         // SEMPRE permitir acesso, independente de autenticação
         setIsAuthenticated(true);
         setIsLoading(false);
+        
+        // Verificar se há redirect salvo (do 404.html)
+        const savedRedirect = sessionStorage.getItem('redirect');
+        if (savedRedirect && savedRedirect !== '/') {
+          console.log('🔄 Navegando para rota salva:', savedRedirect);
+          sessionStorage.removeItem('redirect');
+          navigate(savedRedirect);
+        }
       }
     };
     
     autoLogin();
-  }, []);
+  }, [navigate]);
 
   return { isAuthenticated, isLoading };
 };
