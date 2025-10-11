@@ -105,11 +105,13 @@ All sensitive API integrations (Buffer, SendGrid, Google Search Console, AI Cont
 - ✅ Links Stripe mockados removidos (zero-investment-broker)
 
 **CREDENCIAIS NECESSÁRIAS** (configurar em `/revenue-automation-setup`):
-1. **OpenAI API Key** (OBRIGATÓRIO) - IA toma decisões com ChatGPT
-2. **SendGrid API Key** (OBRIGATÓRIO) - Email automático para tafita81@gmail.com
-3. **RapidAPI Key** - APIs B2B (Alibaba, IndiaMART, Global Sources)
-4. **Stripe Secret Key** - Criar links de pagamento reais
-5. **Payoneer ID** - Receber comissões automaticamente
+1. **OpenAI API Key** (OBRIGATÓRIO) - IA toma decisões com ChatGPT ✅
+2. **SendGrid API Key** (OBRIGATÓRIO) - Email automático para tafita81@gmail.com ✅
+3. **RapidAPI Key** - APIs Amazon (produtos de vários países) ✅
+4. **Stripe Secret Key** - Criar links de pagamento reais ✅
+5. **Payoneer ID** - Receber comissões automaticamente (opcional)
+
+**NOTA IMPORTANTE:** RapidAPI atual é APENAS Amazon. Para fornecedores B2B globais (Alibaba, IndiaMART), veja `GUIA_APIS_B2B_FORNECEDORES.md`
 
 **HISTÓRICO COMPLETO GUARDADO EM:**
 - **Tabela `ai_learning_history`** - TODAS as decisões da IA (tipo, análise, risco, lucro esperado, lucro real, sucesso/falha, lições aprendidas)
