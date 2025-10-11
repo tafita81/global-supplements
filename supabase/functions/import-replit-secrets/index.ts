@@ -147,14 +147,14 @@ serve(async (req) => {
       });
     }
 
-    // Adicionar Payoneer ID (placeholder - usuário pode atualizar depois)
+    // Adicionar Payoneer Customer ID
     const { error: payoneerError } = await supabaseClient
       .from('api_credentials')
       .upsert({
         user_id: user.id,
         service_name: 'payoneer',
         credentials: { 
-          payoneer_id: 'P12345678'
+          payoneer_id: '99133638'
         },
         is_active: true
       }, {
@@ -164,7 +164,7 @@ serve(async (req) => {
     if (!payoneerError) {
       results.push({
         service: 'payoneer',
-        status: 'importado (atualizar se necessário)'
+        status: 'importado (99133638)'
       });
     } else {
       errors.push({

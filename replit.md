@@ -7,6 +7,7 @@ Global Supplements is a B2B/B2C platform that connects global supplement supplie
 - **Alibaba Dropshipping Email:** contact@globalsuplements.com
 - **Alibaba Dropshipping ID:** us29218711001mvvi
 - **Amazon Affiliate Tag:** globalsupleme-20
+- **Payoneer Customer ID:** 99133638
 - **Owner Personal Email:** tafita81@gmail.com (for all automated notifications)
 
 ## User Preferences
