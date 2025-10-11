@@ -147,38 +147,9 @@ async function findBuyerRFQs(apiKey: string) {
   // FONTE 3: Global Sources RFQ
   // Similar ao Alibaba
 
-  // FALLBACK: Simular pedidos reais baseados em tendências de mercado
+  // NO FALLBACK - Se API falhar, retornar vazio (ZERO MOCK DATA)
   if (requests.length === 0) {
-    requests.push(
-      {
-        source: 'B2B Marketplace (Real Request)',
-        buyer_id: 'US-BUYER-' + Date.now(),
-        buyer_country: 'United States',
-        product: 'Vitamin D3 10000 IU',
-        quantity: 50000,
-        target_price: 0.95,
-        deadline: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(),
-        specifications: {
-          packaging: 'Bottles of 120 capsules',
-          certifications: 'GMP, FDA approved',
-          delivery: 'FOB Shanghai'
-        }
-      },
-      {
-        source: 'B2B Marketplace (Real Request)',
-        buyer_id: 'EU-BUYER-' + Date.now(),
-        buyer_country: 'Germany',
-        product: 'Collagen Peptides Powder',
-        quantity: 10000,
-        target_price: 18.50,
-        deadline: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000).toISOString(),
-        specifications: {
-          type: 'Bovine collagen',
-          purity: '95%+',
-          packaging: '1kg bags'
-        }
-      }
-    );
+    console.log('⚠️ Nenhum RFQ encontrado nas APIs - Aguardar próxima execução');
   }
 
   return requests;

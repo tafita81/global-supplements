@@ -8,6 +8,23 @@ Global Supplements is a comprehensive B2B/B2C platform connecting global supplem
 
 Preferred communication style: Simple, everyday language.
 
+## Company Information
+
+**Owner:** Rafael Roberto Rodrigues de Oliveira  
+**Company:** Consultoria em Tecnologia da Informação Corp  
+**EIN:** 33-3939483  
+**Location:** Orlando, Florida, USA  
+**Canton Fair Buyer ID:** 138432533908  
+**Email:** contact@globalsupplements.site  
+**Website:** https://globalsupplements.site
+
+**Advantages:**
+- ✅ US-based company (access to SAM.gov government contracts)
+- ✅ Amazon Affiliate account (8% commission on all sales)
+- ✅ Alibaba & AliExpress dropshipping accounts
+- ✅ Canton Fair verified buyer (exclusive B2B access)
+- ✅ Payoneer & Mercury bank accounts for international payments
+
 ## System Architecture
 
 ### Frontend

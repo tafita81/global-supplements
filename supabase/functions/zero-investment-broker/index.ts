@@ -158,16 +158,13 @@ serve(async (req) => {
   }
 });
 
-// Criar link de pagamento Stripe
+// Criar link de pagamento Stripe (APENAS API REAL)
 async function createStripePaymentLink(stripeKey: string, opportunity: any, userId: string) {
-  // Em produção: Stripe Payment Links API
-  // https://stripe.com/docs/api/payment_links
-  
   const totalPrice = opportunity.sell_price * (opportunity.moq || 1);
   
-  // Simulação (em produção seria chamada real à Stripe API)
-  if (!stripeKey.startsWith('sk_live_') && !stripeKey.startsWith('sk_test_')) {
-    return `https://buy.stripe.com/mock_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  // VALIDAÇÃO: Exigir chave Stripe válida
+  if (!stripeKey || (!stripeKey.startsWith('sk_live_') && !stripeKey.startsWith('sk_test_'))) {
+    throw new Error('Stripe API Key inválida ou não configurada. Configure em /revenue-automation-setup');
   }
 
   try {
@@ -187,11 +184,16 @@ async function createStripePaymentLink(stripeKey: string, opportunity: any, user
       }).toString()
     });
 
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(`Stripe API Error: ${errorData.error?.message || 'Unknown error'}`);
+    }
+
     const data = await response.json();
-    return data.url || `https://stripe.com/payment/${data.id}`;
+    return data.url;
   } catch (error) {
-    console.log('Stripe API error, using mock link');
-    return `https://buy.stripe.com/mock_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    console.error('Stripe Payment Link creation failed:', error);
+    throw error; // NO FALLBACK - Propagar erro
   }
 }
 
