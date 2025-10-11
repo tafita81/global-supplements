@@ -53,6 +53,11 @@ serve(async (req) => {
         envVar: 'RAPIDAPI_KEY',
         serviceName: 'rapidapi',
         credentialKey: 'api_key'
+      },
+      {
+        envVar: 'GITHUB_TOKEN',
+        serviceName: 'github',
+        credentialKey: 'token'
       }
     ];
 
@@ -171,6 +176,40 @@ serve(async (req) => {
         service: 'payoneer',
         error: payoneerError.message
       });
+    }
+
+    // Adicionar Hostinger FTP (do Replit Secrets)
+    const ftpHost = Deno.env.get('HOSTINGER_FTP_HOST');
+    const ftpUser = Deno.env.get('HOSTINGER_FTP_USER');
+    const ftpPassword = Deno.env.get('HOSTINGER_FTP_PASSWORD');
+
+    if (ftpHost && ftpUser && ftpPassword) {
+      const { error: hostingerError } = await supabaseClient
+        .from('api_credentials')
+        .upsert({
+          user_id: user.id,
+          service_name: 'hostinger_ftp',
+          credentials: { 
+            ftp_host: ftpHost,
+            ftp_user: ftpUser,
+            ftp_password: ftpPassword
+          },
+          is_active: true
+        }, {
+          onConflict: 'user_id,service_name'
+        });
+
+      if (!hostingerError) {
+        results.push({
+          service: 'hostinger_ftp',
+          status: `importado (${ftpHost})`
+        });
+      } else {
+        errors.push({
+          service: 'hostinger_ftp',
+          error: hostingerError.message
+        });
+      }
     }
 
     console.log('✅ Credenciais importadas:', results);

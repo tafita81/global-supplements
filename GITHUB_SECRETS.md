@@ -1,90 +1,89 @@
-# 🔑 Configurar Secrets do GitHub
+# 🔑 SECRETS DO GITHUB - ATUALIZADO
 
-## ❌ PROBLEMA ATUAL:
-O GitHub Actions está falhando porque faltam **5 secrets** necessários.
+## ✅ **O QUE JÁ FOI FEITO:**
 
-## ✅ SOLUÇÃO - Adicionar Secrets Manualmente:
+1. ✅ **Sistema usa TODAS as secrets do Replit:**
+   - OpenAI, SendGrid, Stripe, RapidAPI ← Funcionam via import-replit-secrets
+   - GitHub Token ← Adicionado
+   - Hostinger FTP ← Adicionado na Edge Function
+   - Amazon, Alibaba, Payoneer ← Hardcoded (valores fixos)
 
-### 📋 **PASSO A PASSO:**
+2. ✅ **Build corrigido:**
+   - Usa credenciais Supabase diretamente no workflow
+   - Não precisa mais de secrets para Supabase!
 
-1. **Acesse:** https://github.com/tafita81/global-supplements/settings/secrets/actions
-
-2. **Clique em:** "New repository secret"
-
-3. **Adicione CADA secret abaixo:**
-
----
-
-### 🔐 **SECRET 1: VITE_SUPABASE_URL**
-```
-Name: VITE_SUPABASE_URL
-Value: https://twglceexfetejawoumsr.supabase.co
-```
+3. ✅ **Workflow atualizado:**
+   - Usa secrets corretas: HOSTINGER_FTP_HOST, HOSTINGER_FTP_USER, HOSTINGER_FTP_PASSWORD
 
 ---
 
-### 🔐 **SECRET 2: VITE_SUPABASE_ANON_KEY**
+## 🔐 **ADICIONE APENAS 3 SECRETS NO GITHUB:**
+
+**Link direto:** https://github.com/tafita81/global-supplements/settings/secrets/actions
+
+Clique em **"New repository secret"** e adicione:
+
+### **SECRET 1:**
 ```
-Name: VITE_SUPABASE_ANON_KEY
-Value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR3Z2xjZWV4ZmV0ZWphd291bXNyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg5MjExOTAsImV4cCI6MjA3NDQ5NzE5MH0.kVKkE-dbIDi2-31-pCKBVzjjk5Hu-SV7SgmKzQVkaeY
+Name: HOSTINGER_FTP_HOST
+Value: 82.29.199.81
 ```
+
+### **SECRET 2:**
+```
+Name: HOSTINGER_FTP_USER
+Value: u930134944
+```
+
+### **SECRET 3:**
+```
+Name: HOSTINGER_FTP_PASSWORD
+Value: Dani2025@
+```
+*(Use a senha completa dos Replit Secrets)*
 
 ---
 
-### 🔐 **SECRET 3: FTP_SERVER**
-```
-Name: FTP_SERVER
-Value: [SEU_SERVIDOR_HOSTINGER]
-Exemplo: ftp.seudominio.com
-```
+## 🚀 **APÓS ADICIONAR AS SECRETS:**
 
----
-
-### 🔐 **SECRET 4: FTP_USERNAME**
-```
-Name: FTP_USERNAME
-Value: [SEU_USUARIO_FTP]
-Exemplo: user@seudominio.com
-```
-
----
-
-### 🔐 **SECRET 5: FTP_PASSWORD**
-```
-Name: FTP_PASSWORD
-Value: [SUA_SENHA_FTP]
-(Já existe, mas verifique se está correto)
-```
-
----
-
-## 🚀 **APÓS ADICIONAR OS SECRETS:**
-
-1. **Commit e push das mudanças:**
+Execute:
 ```bash
-git add projeto-copia/src/integrations/supabase/client.ts projeto-copia/.env
-git commit -m "Fix: Use env vars for Supabase credentials"
+git add .
+git commit -m "Fix: Integrar todas as secrets do Replit"
 git push origin main
 ```
 
-2. **O GitHub Actions vai rodar automaticamente**
+GitHub Actions vai:
+1. ✅ Build do projeto-copia
+2. ✅ Deploy FTP para Hostinger
+3. ✅ Site publicado!
 
-3. **Acompanhe em:** https://github.com/tafita81/global-supplements/actions
-
----
-
-## 📝 **NOTA IMPORTANTE:**
-
-Se você **NÃO TIVER** credenciais FTP do Hostinger ainda:
-- Você pode desabilitar temporariamente o deploy FTP
-- O build vai funcionar mesmo assim
-- Adicione as credenciais FTP depois
+**Acompanhe:** https://github.com/tafita81/global-supplements/actions
 
 ---
 
-## ✅ **VERIFICAR SE FUNCIONOU:**
+## 🎯 **CREDENCIAIS COMPLETAS NO SISTEMA:**
 
-Após adicionar os secrets e fazer push:
-- ✅ Build passa com sucesso
-- ✅ Deploy FTP funciona (se credenciais corretas)
-- ✅ Site publicado no Hostinger
+### **Via Replit Secrets (auto-import):**
+- ✅ OpenAI API Key
+- ✅ SendGrid API Key
+- ✅ Stripe Secret Key
+- ✅ RapidAPI Key
+- ✅ GitHub Token
+- ✅ Hostinger FTP (host, user, password)
+
+### **Hardcoded (valores fixos):**
+- ✅ Amazon Affiliate: globalsupleme-20
+- ✅ Alibaba Email: contact@globalsuplements.com
+- ✅ Alibaba ID: us29218711001mvvi
+- ✅ Payoneer ID: 99133638
+- ✅ Supabase URL + Key (públicas)
+
+### **Email automático:**
+- ✅ TODAS as decisões da IA → tafita81@gmail.com
+
+---
+
+## 📋 **INSTRUÇÕES COMPLETAS:**
+
+Veja também: `ADICIONAR_SECRETS_GITHUB.md` (mais detalhado)
