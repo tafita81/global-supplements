@@ -126,6 +126,7 @@ All sensitive API integrations (Buffer, SendGrid, Google Search Console, AI Cont
 - `SISTEMA_IA_AUTONOMA.md` - IA autônoma, aprendizado contínuo, email automático
 - `GUIA_APIS_B2B_FORNECEDORES.md` - Como obter APIs Alibaba, IndiaMART, Global Sources
 - `GUIA_PAYONEER_API.md` - Passo a passo completo para obter API do Payoneer
+- `GUIA_COMPLETO_FLUXO_BROKER_B2B.md` - Fluxo completo: RFQs → Fornecedores → Prazos (links exatos, APIs reais, código Python)
 
 **⚠️ IMPORTANTE - NÃO MISTURAR CONTEXTOS:**
 - Esta empresa é **Rafael Roberto Rodrigues de Oliveira** (Orlando, Florida)
