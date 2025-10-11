@@ -1,19 +1,18 @@
 # Global Supplements - Hostinger Configuration
+
+# Error Pages
+ErrorDocument 404 /index.html
+
 <IfModule mod_rewrite.c>
   # Redirect HTTP para HTTPS
   RewriteEngine On
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   
-  # React Router SPA - Hostinger specific
-  Options -MultiViews
-  RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.html$ - [L]
+  # React Router SPA - Todas as rotas vão para index.html
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule ^ index.html [QSA,L]
+  RewriteRule . /index.html [L]
 </IfModule>
 
 # Cache Control para Performance
